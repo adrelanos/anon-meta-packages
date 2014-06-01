@@ -16,7 +16,7 @@ Package: anon-shared-packages-dependencies
 Architecture: all
 Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file,
  lsof, most, pciutils, strace, sysfsutils, acpi-support,
- keyboard-configuration, less, kbd, haveged, locales,
+ keyboard-configuration, less, kbd, haveged, locales, apt-transport-https,
  anon-base-files, sdwdate, sdwdate-plugin-anon-shared-con-check,
  sdwdate-plugin-anon-shared-streamiso, bootclockrandomization, timesanitycheck,
  timesync, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
