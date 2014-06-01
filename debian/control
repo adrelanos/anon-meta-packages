@@ -2,24 +2,26 @@
 ## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-Source: anon-shared-packages-dependencies
+Source: anon-meta-packages
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
 Build-Depends: debhelper (>= 8)
-Homepage: https://www.whonix.org
-Vcs-Browser: https://github.com/anon-shared-packages-dependencies/Whonix
-Vcs-Git: https://github.com/anon-shared-packages-dependencies/Whonix.git
+Homepage: https://github.com/Whonix/anon-meta-packages
+Vcs-Browser: https://github.com/Whonix/anon-meta-packages
+Vcs-Git: https://github.com/Whonix/anon-meta-packages.git
 Standards-Version: 3.9.4
 
 Package: anon-shared-packages-dependencies
 Architecture: all
-Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file, lsof, most,
- pciutils, strace, sysfsutils, acpi-support, keyboard-configuration, sudo, rungetty, mingetty,
- less, ed, gnupg, gnupg-curl, ifupdown, netbase, net-tools, kbd, debsums, iptables, haveged,
- ca-certificates, curl, zenity, libnotify-bin,
- imagemagick, gsfonts, virt-what, python-stem, uuid-runtime, vrms, wmctrl,
- psmisc, locales, dialog, ${misc:Depends}
+Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file,
+ lsof, most, pciutils, strace, sysfsutils, acpi-support,
+ keyboard-configuration, less, kbd, haveged, locales,
+ anon-base-files, sdwdate, sdwdate-plugin-anon-shared-con-check,
+ sdwdate-plugin-anon-shared-streamiso, bootclockrandomization, timesanitycheck,
+ timesync, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
+ pkg-manager-no-autoupdate, kde-no-move-max-win, kde-apper-no-autoupdate,
+ ${misc:Depends}
 Description: Dependencies for Anon-Gateway and Anon-Workstation
  A metapackage, which installs packages which both, Anon-Gateway
  and Anon-Workstation, depend on.
@@ -30,7 +32,10 @@ Package: anon-shared-packages-recommended
 Priority: optional
 Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus, iputils-ping,
- apparmor-profiles, apparmor-utils, apparmor-notify, udisks, secure-delete, ${misc:Depends}
+ apparmor-profiles, apparmor-utils, apparmor-notify, apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
+ anon-icon-pack, gpl-sources-download,
+ poweroff-passwordless, power-savings-disable-in-vms, rads, scurl, anon-banned-packages,
+ shared-folder-help, swap-file-creator, swappiness-lowest, tor-ctrl, uwt, knetattach-hide, ${misc:Depends}
 Description: Recommended packages for Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
@@ -40,8 +45,9 @@ Description: Recommended packages for Anon-Gateway and Anon-Workstation
 Package: anon-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: tor, torsocks, dhcp3-client, isc-dhcp-client,
- telnet, ucspi-tcp, netcat-traditional, ${misc:Depends}
+Depends: tor, anon-gw-base-files, ipv4-forward-disable,
+ ipv6-disable, anon-gw-sdwdate-conf,
+ ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
 Description: Dependencies for Anon-Gateway
  A metapackage, which installs packages which Anon-Gateway
@@ -53,7 +59,8 @@ Package: anon-gateway-packages-recommended
 Priority: optional
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: tor-geoipdb, tor-arm, obfsproxy, ${misc:Depends}
+Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter,
+ anon-gw-clearnet-user, anon-gw-first-run-notice, anon-gw-leaktest, ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
  A metapackage, which installs packages, which are recommended for
@@ -64,12 +71,12 @@ Description: Recommended packages for Anon-Gateway
 Package: anon-workstation-packages-dependencies
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: torsocks, rinetd, ${misc:Depends}
+Depends: anon-ws-base-files, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended (= ${source:Version})
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version})
-Conflicts: anon-gateway-packages
+Conflicts: anon-gateway-packages-dependencies
 Description: Dependencies for Anon-Workstation
  A metapackage, which installs packages which Anon-Workstation
  depends on.
@@ -80,8 +87,11 @@ Package: anon-workstation-packages-recommended
 Priority: optional
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: libasound2, alsa-base, alsa-utils, iceweasel,
- faketime, ${misc:Depends}
+Depends: libasound2, alsa-base, alsa-utils, iceweasel, anon-iceweasel-warning,
+ xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
+ pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
+ tb-starter, tb-updater, open-link-confirmation, anon-ws-leaktest,
+ ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version})
@@ -109,7 +119,8 @@ Architecture: all
 Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm, kdesudo, kdepasswd, kfind,
  ksysguard, plasma-widget-folderview, kde-baseapps-bin, polkit-kde-1, konsole, kwrite, dolphin, ark,
  p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
- ${misc:Depends}
+ kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
+ kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
@@ -196,3 +207,91 @@ Description: Extra language support for the KDE desktop
  .
  Does not get installed by default, because it takes a lot of
  space and requires a better solution.
+
+Package: apparmor-profiles-whonix
+Priority: optional
+Architecture: all
+Depends: apparmor-profile-icedove, apparmor-profile-pidgin,
+ apparmor-profile-sdwdate, apparmor-profile-timesync,
+ apparmor-profile-torbrowser, apparmor-profile-virtualbox,
+ apparmor-profile-whonixcheck, apparmor-profile-xchat, ${misc:Depends}
+Description: Extra AppArmor profiles developed by the Whonix team
+ A metapackage, which installs apparmor profiles developed by the Whonix team.
+ .
+ Safe to remove, if you know what you are doing.
+
+Package: whonix-gateway-packages-dependencies
+Priority: optional
+Architecture: all
+Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
+Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
+ whonix-gw-network-conf, anon-gw-dhcp-conf, anon-gw-dns-conf,
+ whonix-gw-firewall, ${misc:Depends}
+Conflicts: whonix-workstation-packages-dependencies
+Description: Dependencies for Whonix-Gateway
+ A metapackage, which installs packages which Whonix-Gateway
+ depends on.
+ .
+ Do not remove.
+
+Package: whonix-gateway-packages-recommended
+Priority: optional
+Architecture: all
+Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
+Depends: anon-gw-kde-startmenu, whonix-gw-desktop-shortcuts,
+ whonix-gw-kde-desktop-conf, ${misc:Depends}
+Recommends: anon-gateway-packages-recommended
+Conflicts: whonix-workstation-packages-recommended
+Description: Recommended packages for Anon-Gateway
+ A metapackage, which installs packages, which are recommended for
+ Whonix-Gateway.
+ .
+ Safe to remove, if you know what you are doing.
+
+Package: whonix-shared-packages-dependencies
+Architecture: all
+Depends: whonix-base-files, anon-apt-sources-list, whonix-legacy,
+ whonix-initializer, whonixsetup, whonix-repository, grub-enable-apparmor,
+ ${misc:Depends}
+Description: Dependencies for Whonix-Gateway and Whonix-Workstation
+ A metapackage, which installs packages which both, Whonix-Gateway
+ and Whonix-Workstation, depend on.
+ .
+ Do not remove.
+
+Package: whonix-shared-packages-recommended
+Priority: optional
+Architecture: all
+Depends: anon-shared-packages-recommended, anon-kde-streamiso, whonixcheck,
+ ${misc:Depends}
+Description: Recommended packages for Whonix-Gateway and Whonix-Workstation
+ A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
+ standard tools are available and other useful recommended packages.
+ .
+ Safe to remove, if you know what you are doing.
+
+Package: whonix-workstation-packages-dependencies
+Architecture: all
+Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
+Depends: anon-ws-dns-conf, whonix-ws-network-config,
+ whonix-ws-firewall, ${misc:Depends}
+Recommends: whonix-workstation-packages-recommended (= ${source:Version})
+Conflicts: whonix-gateway-packages-dependencies
+Description: Dependencies for Anon-Workstation
+ A metapackage, which installs packages which Anon-Workstation
+ depends on.
+ .
+ Do not remove.
+
+Package: whonix-workstation-packages-recommended
+Priority: optional
+Architecture: all
+Depends: anon-ws-kde-startmenu,
+ whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
+ whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions, ${misc:Depends}
+Recommends: anon-workstation-packages-recommended
+Description: Recommended packages for Whonix-Workstation
+ A metapackage, which installs packages, which are recommended for
+ Whonix-Workstation, because they are useful for a Tor Workstation.
+ .
+ Feel free to remove, if you know what you are doing.
