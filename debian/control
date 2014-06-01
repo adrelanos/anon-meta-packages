@@ -33,7 +33,7 @@ Priority: optional
 Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus, iputils-ping,
  apparmor-profiles, apparmor-utils, apparmor-notify, apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
- anon-icon-pack, gpl-sources-download,
+ anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl, anon-banned-packages,
  shared-folder-help, swap-file-creator, swappiness-lowest, tor-ctrl, uwt, knetattach-hide, ${misc:Depends}
 Description: Recommended packages for Anon-Gateway and Anon-Workstation
@@ -87,7 +87,7 @@ Package: anon-workstation-packages-recommended
 Priority: optional
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: libasound2, alsa-base, alsa-utils, iceweasel, anon-iceweasel-warning,
+Depends: libasound2, alsa-base, alsa-utils, iceweasel,
  xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, anon-ws-leaktest,
