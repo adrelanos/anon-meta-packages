@@ -60,7 +60,7 @@ Priority: optional
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter,
- anon-gw-clearnet-user, anon-gw-first-run-notice, anon-gw-leaktest, ${misc:Depends}
+ anon-gw-first-run-notice, anon-gw-leaktest, ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
  A metapackage, which installs packages, which are recommended for
