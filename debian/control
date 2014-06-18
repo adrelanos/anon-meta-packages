@@ -95,7 +95,7 @@ Depends: libasound2, alsa-base, alsa-utils, iceweasel,
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version})
-Conflicts: anon-gateway-packages
+Conflicts: anon-gateway-packages-recommended
 Description: Recommended packages for Anon-Workstation
  A metapackage, which installs packages, which are recommended for
  Anon-Workstation, because they are useful for a Tor Workstation.
