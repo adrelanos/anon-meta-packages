@@ -35,7 +35,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus, ip
  apparmor-profiles, apparmor-utils, apparmor-notify, apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl, anon-banned-packages,
- shared-folder-help, swap-file-creator, swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ${misc:Depends}
+ shared-folder-help, swap-file-creator, swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, spice-vdagent, ${misc:Depends}
 Description: Recommended packages for Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
