@@ -321,3 +321,19 @@ Description: Recommended packages for Whonix-Workstation
  Whonix-Workstation, because they are useful for a Tor Workstation.
  .
  Feel free to remove, if you know what you are doing.
+
+Package: anon-banned-packages
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: popularity-contest, canonical-census, unity-lens-shopping,
+ unity-scope-video-remote, unity-scope-musicstores, geoclue-ubuntu-geoip,
+ geoclue, resolvconf, openresolv, ufw
+Description: Removes packages recommended against on Anonymity Linux Distributions
+ A metapackage which conflicts with packages that are recommended against in
+ context of Anonymity Linux Distributions.
+ .
+ No conflicting software should be installed, but just in case.
+ .
+ This might be useful for users creating custom builds for example based on
+ Ubuntu and for physical isolation users who installed using a standard
+ installation medium as well.
