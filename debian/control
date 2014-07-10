@@ -46,7 +46,7 @@ Package: anon-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
- ipv6-disable, anon-gw-sdwdate-conf,
+ ipv6-disable
  ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
 Description: Dependencies for Anon-Gateway
