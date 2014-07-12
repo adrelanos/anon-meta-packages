@@ -25,7 +25,7 @@ Package: anon-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
-ipv6-disable, anon-gw-sdwdate-conf,
+ipv6-disable
 ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
 Description: Dependencies for Anon-Gateway
@@ -340,6 +340,24 @@ A metapackage, which installs packages, which are recommended for
 Whonix-Workstation, because they are useful for a Tor Workstation.
 
 Feel free to remove, if you know what you are doing.
+
+Package: anon-banned-packages
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: popularity-contest, canonical-census, unity-lens-shopping,
+unity-scope-video-remote, unity-scope-musicstores, geoclue-ubuntu-geoip,
+geoclue, resolvconf, openresolv, ufw
+Description: Removes packages recommended against on Anonymity Linux Distributions
+# Removes packages recommended against on Anonymity Linux Distributions #
+
+A metapackage which conflicts with packages that are recommended against in
+context of Anonymity Linux Distributions.
+
+No conflicting software should be installed, but just in case.
+
+This might be useful for users creating custom builds for example based on
+Ubuntu and for physical isolation users who installed using a standard
+installation medium as well.
 
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
 
