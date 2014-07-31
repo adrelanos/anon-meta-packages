@@ -21,7 +21,7 @@ Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file,
  sdwdate-plugin-anon-shared-streamiso, bootclockrandomization, timesanitycheck,
  timesync, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
  pkg-manager-no-autoupdate, kde-no-move-max-win, kde-apper-no-autoupdate,
- ${misc:Depends}
+ tcp-timestamps-disable, ${misc:Depends}
 Description: Dependencies for both, Anon-Gateway and Anon-Workstation
  A metapackage, which installs packages which both, Anon-Gateway
  and Anon-Workstation, depend on.
