@@ -116,7 +116,7 @@ Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm, kdesudo,
  p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
  kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
  kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
- network-manager-kde, ${misc:Depends}
+ plasma-widget-networkmanagement, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
