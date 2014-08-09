@@ -22,6 +22,7 @@ Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file,
  timesync, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
  pkg-manager-no-autoupdate, kde-no-move-max-win, kde-apper-no-autoupdate,
  tcp-timestamps-disable, ${misc:Depends}
+Replaces: whonix-shared-files
 Description: Dependencies for both, Anon-Gateway and Anon-Workstation
  A metapackage, which installs packages which both, Anon-Gateway
  and Anon-Workstation, depend on.
@@ -47,6 +48,7 @@ Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
+Replaces: whonix-gateway-files
 Description: Dependencies for Anon-Gateway
  A metapackage, which installs packages which Anon-Gateway
  depends on.
@@ -75,6 +77,7 @@ Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version})
 Conflicts: anon-gateway-packages-dependencies
+Replaces: whonix-workstation-files
 Description: Dependencies for Anon-Workstation
  A metapackage, which installs packages which Anon-Workstation
  depends on.
@@ -104,6 +107,7 @@ Architecture: all
 Depends: libgl1-mesa-dri, xserver-xorg, libupower-glib1 | upower, upower,
  ${misc:Depends}
 Suggests: anon-shared-desktop-kde (= ${source:Version})
+Replaces: whonix-shared-desktop
 Description: Desktop Depends
  A metapackage, which installs dependencies for desktop environments,
  such as KDE, GNOME, etc.
@@ -120,6 +124,7 @@ Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm, kdesudo,
  plasma-widget-networkmanagement, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
+Replaces: whonix-shared-desktop-kde
 Description: Recommended packages for Gateway/Workstation base KDE desktop
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE desktop. The Anon-Gateway desktop and the
@@ -130,6 +135,7 @@ Description: Recommended packages for Gateway/Workstation base KDE desktop
 Package: anon-shared-kde-accessibility
 Architecture: all
 Depends: kdeaccessibility, kvkbd, kmousetool, kmag, kmouth, jovie, ${misc:Depends}
+Replaces: whonix-shared-kde-accessibility
 Description: KDE accessibility tools
  A metapackage, which installs accessibility tools for the KDE desktop.
  .
@@ -145,6 +151,7 @@ Depends: xchat, vlc, mixmaster,
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version}),
  anon-workstation-langpack-common (= ${source:Version})
+Replaces: whonix-workstation-default-applications
 Description: Recommended default applications for Anon-Workstation
  A metapackage, which installs recommended default applications,
  which are useful in a default installation of a Tor Workstation.
@@ -159,6 +166,7 @@ Recommends: anon-workstation-packages-recommended (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}), shutter,
  gtk-recordmydesktop, libreoffice, kdenlive, kolourpaint4
 Suggests: anon-workstation-langpack-common (= ${source:Version})
+Replaces: whonix-workstation-extra-applications
 Description: Complements anon-workstation-default-applications
  A metapackage, which installs extra applications, to complement the
  default applications.
@@ -174,6 +182,7 @@ Recommends: iceweasel-l10n-all | firefox-l10n-all, ttf-dejavu, ttf-liberation, l
  culmus, libfribidi0, ttf-indic-fonts, scim-anthy, ttf-khmeros, ttf-unfonts-core, ttf-lao,
  ttf-thai-tlwg, xfonts-intl-chinese, xfonts-wqy, xfonts-bolkhov-koi8r-75dpi,
  xfonts-bolkhov-koi8r-misc, xfonts-cronyx-koi8r-100dpi
+Replaces: whonix-workstation-langpack-common
 Description: Fonts and language packages for better internationalization support
  A metapackage which installs fonts and language packages for better
  internationalization support.
@@ -193,6 +202,7 @@ Recommends: kde-l10n-ar, kde-l10n-bg, kde-l10n-bs,
  kde-l10n-ptbr, kde-l10n-ro, kde-l10n-ru, kde-l10n-si, kde-l10n-sk, kde-l10n-sl, kde-l10n-sr,
  kde-l10n-sv, kde-l10n-tg, kde-l10n-th, kde-l10n-tr, kde-l10n-ug, kde-l10n-uk, kde-l10n-vi,
  kde-l10n-wa, kde-l10n-zhcn, kde-l10n-zhtw, anon-workstation-langpack-common (= ${source:Version})
+Replaces: whonix-shared-desktop-langpack-kde
 Description: Extra language support for the KDE desktop
  A metapackage, which includes extra language support for the
  KDE desktop.
@@ -252,7 +262,8 @@ Description: Recommended packages for Whonix-Gateway
 
 Package: whonix-shared-packages-dependencies
 Architecture: all
-Depends: whonix-base-files, anon-apt-sources-list, whonix-legacy,
+Pre-Depends: whonix-legacy
+Depends: whonix-base-files, anon-apt-sources-list,
  whonix-initializer, whonixsetup, whonix-repository, grub-enable-apparmor,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation
