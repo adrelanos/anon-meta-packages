@@ -322,7 +322,7 @@ Package: anon-banned-packages
 Architecture: all
 Depends: ${misc:Depends}
 Conflicts: popularity-contest, canonical-census, unity-lens-shopping,
- unity-scope-video-remote, unity-scope-musicstores, resolvconf, openresolv, ufw
+ unity-scope-video-remote, unity-scope-musicstores, ufw
 Description: Removes packages recommended against on Anonymity Linux Distributions
  A metapackage which conflicts with packages that are recommended against in
  context of Anonymity Linux Distributions.
