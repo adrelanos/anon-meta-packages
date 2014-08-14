@@ -383,7 +383,7 @@ Depends: whonix-workstation-packages-dependencies-pre,
  anon-workstation-packages-recommended,
  anon-workstation-default-applications,
  whonix-workstation-packages-dependencies,
- whonix-workstation-packages-recommended
+ whonix-workstation-packages-recommended,
  ${misc:Depends}
 Description: Whonix-Default-Workstation
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
