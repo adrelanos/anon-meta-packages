@@ -359,6 +359,8 @@ Depends: whonix-gateway-packages-dependencies-pre,
 Description: Whonix-Default-Gateway
  A metapackage, which installs packages, for a Whonix-Default-Gateway.
  .
+ It will install build chroot scripts, but not run them.
+ .
  Feel free to remove, if you know what you are doing.
 
 Package: whonix-workstation
@@ -387,5 +389,7 @@ Depends: whonix-workstation-packages-dependencies-pre,
  ${misc:Depends}
 Description: Whonix-Default-Workstation
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
+ .
+ It will install build chroot scripts, but not run them.
  .
  Feel free to remove, if you know what you are doing.
