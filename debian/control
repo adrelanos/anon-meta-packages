@@ -335,6 +335,7 @@ Description: Removes packages recommended against on Anonymity Linux Distributio
 
 Package: whonix-gateway
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-build-upgrade-torsocks,
  anon-shared-build-fix-grub,
@@ -364,6 +365,7 @@ Description: Whonix-Default-Gateway
 
 Package: whonix-workstation
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-build-upgrade-torsocks,
  anon-shared-build-fix-grub,
