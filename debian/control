@@ -14,7 +14,7 @@ Standards-Version: 3.9.4
 
 Package: anon-shared-packages-dependencies
 Architecture: all
-Depends: console-common, initramfs-tools, grub-pc, os-prober, bzip2, file,
+Depends: console-common, initramfs-tools, os-prober, bzip2, file,
  lsof, most, pciutils, strace, sysfsutils, acpi-support,
  keyboard-configuration, less, kbd, haveged, locales, apt-transport-https,
  sdwdate, sdwdate-plugin-anon-shared-con-check,
