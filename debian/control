@@ -424,9 +424,7 @@ Description: Anon Host Additions
 
 Package: whonix-host-additions
 Architecture: all
-Depends: anon-host-additions,
- whonix-host-firewall-simple | whonix-host-corridor-firewall,
- ${misc:Depends}
+Depends: anon-host-additions, whonix-host-firewall, ${misc:Depends}
 # whonix-host-packages-dependencies-pre,
 Description: Whonix Host Additions
  A metapackage, which installs packages Whonix Host Additions.
