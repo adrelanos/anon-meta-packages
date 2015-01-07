@@ -8,13 +8,13 @@ Do not remove.
 Package: anon-shared-packages-recommended
 Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
-iputils-ping, apparmor-profiles, apparmor-utils, apparmor-notify,
+iputils-ping, apparmor-utils, apparmor-notify,
 apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
 anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
 poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
 anon-banned-packages, shared-folder-help, swap-file-creator,
 swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn,
-spice-vdagent, kde-privacy, usability-misc, ${misc:Depends}
+kde-privacy, usability-misc, menu, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 # Recommended packages for both, Anon-Gateway and Anon-Workstation #
 
@@ -218,7 +218,8 @@ Architecture: all
 Depends: apparmor-profile-icedove, apparmor-profile-pidgin,
 apparmor-profile-sdwdate, apparmor-profile-timesync,
 apparmor-profile-torbrowser, apparmor-profile-virtualbox,
-apparmor-profile-whonixcheck, apparmor-profile-xchat, ${misc:Depends}
+apparmor-profile-whonixcheck, apparmor-profile-xchat,
+apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
 Description: Extra AppArmor profiles developed by the Whonix team
 # Extra AppArmor profiles developed by the Whonix team #
 
@@ -418,6 +419,86 @@ Description: Whonix-Default-Workstation
 A metapackage, which installs packages, for a Whonix-Default-Workstation.
 
 It will install build chroot scripts, but not run them.
+
+Feel free to remove, if you know what you are doing.
+
+Package: anon-host-additions
+Architecture: all
+Depends: anon-shared-build-upgrade-torsocks,
+anon-shared-build-log-build-version,
+anon-shared-build-remember-sources,
+anon-shared-build-ban-nonfree,
+anon-shared-build-sanity-checks,
+anon-shared-packages-dependencies,
+anon-shared-packages-recommended,
+whonix-shared-packages-dependencies,
+whonix-shared-packages-recommended,
+anon-shared-build-inst-tb,
+${misc:Depends}
+Description: Anon Host Additions
+# Anon Host Additions #
+
+A metapackage, which installs packages, for a Anon host operating system.
+
+Supposed to be installed on operating systems that host anonymity preserving
+software (such as whonix-host-virtualbox or whonix-host-qemu-kvm) for better
+anonymity, privacy, security and usability.
+
+It will install build chroot scripts, but not run them.
+
+Feel free to remove, if you know what you are doing.
+
+Package: whonix-host-additions
+Architecture: all
+Depends: anon-host-additions, whonix-host-firewall, ${misc:Depends}
+# whonix-host-packages-dependencies-pre,
+Description: Whonix Host Additions
+# Whonix Host Additions #
+
+A metapackage, which installs packages Whonix Host Additions.
+
+Supposed to be installed on hosts that run Whonix inside virtual machines,
+such as VirtualBox, QEMU or KVM. Installs anon-host-additions and Whonix Host
+Firewall. For better anonymity, privacy, security and usability.
+
+Feel free to remove, if you know what you are doing.
+
+Package: whonix-host-shared-dependencies
+Architecture: all
+Depends: whonix-host-additions, anon-shared-desktop, anon-shared-desktop-kde,
+anon-shared-kde-accessibility, ${misc:Depends}
+# whonix-host-packages-dependencies-pre
+Description: Whonix Host Shared
+# Whonix Host Shared #
+
+A metapackage, which installs packages, for a Whonix host operating system.
+
+Feel free to remove, if you know what you are doing.
+
+Package: whonix-host-virtualbox
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: whonix-host-shared, virtualbox, ${misc:Depends}
+Suggests: apparmor-profile-virtualbox
+Description: Whonix Host VirtualBox
+# Whonix Host VirtualBox #
+
+A metapackage, which installs packages, for a Whonix host operating system
+using VirtualBox.
+
+Feel free to remove, if you know what you are doing.
+
+Package: whonix-host-qemu-kvm
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: whonix-host-shared, qemu-kvm, libvirt-bin, virt-manager,
+whonix-libvirt, ${misc:Depends}
+Suggests: ksm
+Description: Whonix Host QEMU KVM
+# Whonix Host QEMU KVM #
+
+A metapackage, which installs packages, for a Whonix host operating system
+using KVM or QEMU.
 
 Feel free to remove, if you know what you are doing.
 
