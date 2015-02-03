@@ -443,6 +443,8 @@ Depends: whonix-host-additions, anon-shared-desktop, anon-shared-desktop-kde,
 Description: Whonix Host Shared
  A metapackage, which installs packages, for a Whonix host operating system.
  .
+ Supposed to be installed on systems that host Whonix or Whonix hosts.
+ .
  Feel free to remove, if you know what you are doing.
 
 Package: whonix-host-virtualbox
