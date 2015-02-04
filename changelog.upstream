@@ -1,0 +1,462 @@
+commit 378aa7f876f2a24bc52eaabbf852ffe81f0ece25
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:23 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit 5855c26073bab0d7e8ddcd4f5c770659c3a3fc13
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:29 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit c27eda396be21da54fc7b53cb1b8790e09aa0389
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 00:12:21 2015 +0000
+
+    description
+
+commit ea4fdfc78c6934909e2e717ee9f3b9d3953f24de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 17 22:51:33 2015 +0000
+
+    fixed changelog
+
+commit 0b130341b72da1513ecc231554f03732593464cc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:42:19 2015 +0000
+
+    updated readme
+
+commit 736f1e50eb0841498aea8bf6974a1112a3ed53a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:33:26 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 0fc2ec8c5a9848268ba4d3b4fe41088ef9305e4d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 4 23:06:22 2015 +0000
+
+    removed spice-vdagent from anon-shared-packages-recommended, because it became a weak recommended dependency in build-steps.d/1700_install-packages
+
+commit 9983f4a9d53e1588bac9c86718d16abe23124075
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 17:27:54 2014 +0000
+
+    work on whonix host
+
+commit 82ca3c10a8b145f23fa5bf6d9ed4421503da1162
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 11:23:48 2014 +0000
+
+    work on whonix host
+
+commit 5beecc1e2b825e68916e3083e9e6dbf41681f17d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 8 19:49:25 2014 +0000
+
+    added menu to anon-shared-packages-recommended because it contains su-to-root. ticket: https://phabricator.whonix.org/T23
+
+commit 44d852b804d13bc8559fac314b9f193f05d85a6a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:05 2014 +0000
+
+    updated generic makefile
+
+commit 14e76f29589393d1326d864105cd7834688a474e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 30 21:51:55 2014 +0000
+
+    added console-data to anon-shared-packages-dependencies to make sure all three packages console-setup, console-data and console-common are installed.
+
+commit 626ba2ef951f76bfd26f1dee9f28743698e5180a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 29 23:37:31 2014 +0000
+
+    added console-setup to anon-shared-packages-dependencies so users can use /etc/default/keyboard as alternative mechanism to change the keyboard layout
+
+commit f0f437a60476fb87f795ae4432724ff47cab58d4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 30 22:43:38 2014 +0000
+
+    Removed apparmor-profiles from anon-shared-packages-recommended as suggested ( https://www.whonix.org/forum/index.php/topic,97.msg5045.html#msg5045 ) by Whonix AppArmor Profile Maintainer troubadour because they generate a lot of noise while having no effect.
+
+commit 8ea8936f16e6fe2edbdc1a10401057aa13ec0ef2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:12 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit baff42df674c39db4015bffea8e3fdb721d757b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Oct 26 18:08:37 2014 +0000
+
+    fix
+
+commit 80b93b3cd6bd4ec94451064f1833fb6d380a1534
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Oct 26 01:06:20 2014 +0000
+
+    apparmor-profiles-whonix: added apparmor-profile-gwenview apparmor-profile-okular
+
+commit 5bcebb9ad2027b8b979c5c6eafe94a93e1bd259c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:48 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit a33bef01e25ed1497ac1d0e05ea2c60354593550
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:00 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit 93a57fd69c5fe4cc1930938c32f6ccc3140a27d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:48 2014 +0000
+
+    readme
+
+commit 1292d34113a71354be6c7e7da4f59aff1514cff6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 4 01:23:05 2014 +0000
+
+    make anon-workstation-default-applications depend on "pinentry-qt | pinentry-gtk | pinentry-curses | pinentry" rather than hardcoded "pinentry-qt"
+
+commit 728eb68b118380ab093d4f4a499cd3099756c4e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 22:12:22 2014 +0000
+
+    added usability-misc to anon-shared-packages-recommended
+
+commit d1273be67b79c9a4bec7a972de3e46b670b0b0a7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 21:59:27 2014 +0000
+
+    updated readme
+
+commit 0c1719690e84282ac338033699cdbe6ac51b056a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 00:10:43 2014 +0000
+
+    bumped version number
+
+commit 70dca9153bbc78e73a4cd24f99c3ac90add0c8a0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 25 00:06:16 2014 +0000
+
+    Removed grub-pc from anon-shared-packages-dependencies. This is a weird dependency. The grub-pc should be already get installed in build-steps.d/1300_create-raw-image build step by grml-debootstrap (./grml_packages) which is fine for VM builds. For --install-to-root users it's unnecessary, since they already have a booting system. As per https://github.com/Whonix/Whonix/issues/342.
+
+commit c9221c5e57f4c2f67e4a943fdab723ca324ec9f3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 22 15:13:39 2014 +0000
+
+    added kde-common-resolution to anon-shared-desktop-kde
+
+commit f57e8dfd2cd17915eb05ad3e9343ff88c80eddf2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 19 18:49:14 2014 +0000
+
+    added kde-privacy to anon-shared-packages-recommended
+
+commit c6670d767f595c93c2862dc4d38474ed13bdc0a8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 19 18:47:48 2014 +0000
+
+    refactoring
+
+commit df631011b35475ab7f73cc80c4dde747cab5f470
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 19 16:50:55 2014 +0000
+
+    added xserver-xorg-video-qxl to anon-shared-desktop to aid kvm users getting higher desktop resolutions as per https://www.whonix.org/forum/index.php/topic,493.15/topicseen.html (thanks to HulaHoop for suggesting this)
+
+commit 632554ddf715ac6e058f71b111556c108f4a9a9b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 18:52:27 2014 +0000
+
+    makefile: added new feature "make deb-chl-bumpup" - Bump upstream version number in debian/changelog.
+
+commit b615bbf6784c1a66056a333bf5abdd1d4f6bf9da
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 14:39:49 2014 +0000
+
+    updated debian/changelog
+
+commit 616987665d648389f49ad95e217470f683965cd9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 14:35:50 2014 +0000
+
+    fix, added "Pre-Depends: whonix-legacy" to whonix-gateway and whonix-workstation
+
+commit 0efded7ea7846b7ee5d61b0499c996aba3896aa0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:54:20 2014 +0000
+
+    Updated debian/changelog.
+
+commit c08821f78c67fe2755d81cdf29e517dda3b5c927
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:47:23 2014 +0000
+
+    Fixed changelog date.
+
+commit 494d9de13b83d7f342f92a95b89becb1770693f7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 18:03:21 2014 +0000
+
+    bump version number
+
+commit 70426e0acbead52d16593614a645e1dfbfe0fe3c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 16 22:49:04 2014 +0000
+
+    removed anon-shared-build-apt-sources-tpo from whonix-gateway and whonix-workstation because it would add the sources.list but not run the chroot scripts, so apt-get would complain about missing key
+
+commit c2d9a122feba42d9bfcd5a8baf1df6f5797fcf18
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 14:18:45 2014 +0000
+
+    package description
+
+commit 7876e3553231be3df80a8ddd0d019e30efec2235
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 14:17:52 2014 +0000
+
+    fix
+
+commit 6e7dfb26ea60fbd716cfc0ad6c5a8771e1dcc5e3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 14:15:57 2014 +0000
+
+    implemented meta packages whonix-gateway and whonix-workstation to ease upgrading
+
+commit 59873539e716c6e2742cf5ab562ec96347f76cc9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:35:11 2014 +0000
+
+    Implemented make deb-icup: Combination of make deb-pkg, make deb-pkg-install and make deb-pkg-cleanup.
+
+commit af3452a88bd3bd49492074dcfa8d4b4a7ed6cf34
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 12 19:45:29 2014 +0000
+
+    Removed ufw from anon-banned-packages conflicts. It will be added to whonix-[gw/ws]-firewall conflicts.
+
+commit c284403b75bb3c840ef81dc8fabf18112503dd7b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 12 19:44:08 2014 +0000
+
+    Removed resolvconf and openresolv from anon-banned-packages conflicts. Those will be added to anon-[gw/ws]-dns-conf conflicts.
+
+commit d9c96fcda6e8dd8ed147d57c71843e003d898d47
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 12 19:42:15 2014 +0000
+
+    Removed geoclue-ubuntu-geoip and geoclue from anon-banned-packages because those are not evil by definition, those are only providing an API. Not allowing them to be installed would not allow users installing gnome-desktop-environment.
+
+commit 14e373de99edaf2600a6f3949a6609efcf320232
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 9 21:04:51 2014 +0000
+
+    work on Whonix 8 -> 9 upgrades
+
+commit 76c338b6153760e76ffb1137a5122b4d605ad67d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 7 03:23:36 2014 +0000
+
+    work on Debian testing compatibility
+
+commit 21361b9fecf6a5f91558866e7080a7cfdbf81300
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 5 13:37:42 2014 +0000
+
+    updated package name network-manager-kde to plasma-widget-networkmanagement for jessie compatibility
+
+commit 9c5186fa52af02bf3d6d3ec133b68a853f47336d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 31 20:25:05 2014 +0000
+
+    added tcp-timestamps-disable to anon-shared-packages-dependencies
+
+commit 138817a197122d7b8b1ac017725cf508fd3765af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 28 23:25:39 2014 +0000
+
+    readme
+
+commit 0b91e6363897a17bcf8c6c5c7b56678c05f1ab50
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 13:17:59 2014 +0000
+
+    packaging
+
+commit 53c08461714b816e0b5cadf66ced81826d808eb6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 04:01:06 2014 +0000
+
+    packaging
+
+commit f5d1372e75e0896e4e7b48a967f1566869994361
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:26:32 2014 +0000
+
+    packaging
+
+commit 3f136325db6ac968129b691f064ea657030781ef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 25 14:13:31 2014 +0000
+
+    fixed lintian warnings
+
+commit 6b0d3a04997b9a08a908652e660d36045863efdf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 17:10:57 2014 +0000
+
+    packaging
+
+commit e5fc2f0a9bf239c3ab7242253bd7cee3c609300a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:35:59 2014 +0000
+
+    readme
+
+commit 96fbaf89cddda1f5c4d43ee5c6cd6fa65eb949a1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:34:12 2014 +0000
+
+    packaging
+
+commit 63c186b6ad90915882550e65fd8d62a2b4dfa58b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 10 17:00:24 2014 +0000
+
+    removed anon-gw-sdwdate-conf, since no longer required, thanks to sclockadj
+
+commit 8fe5f49ef41bdd83d14b9e1435fe82c99e20a1f7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 5 08:09:40 2014 +0000
+
+    Bumped debian revision number to avoid lintian warning "new-package-should-close-itp-bug" so we can use lintian --fail-on-warnings as sanity test.
+
+commit adb4eebc9b491290703f19991b41157fd929a403
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jul 1 11:51:56 2014 +0000
+
+    merged anon-banned-packages into anon-meta-packages
+
+commit 30e4f9e3865a87bedaa30fcdbd02400833c30e94
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 30 11:13:25 2014 +0000
+
+    readme
+
+commit c24a3b72a3b661087bf6c5915f05fb8a81b0cd2a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 28 01:26:55 2014 +0000
+
+    fix last commit
+
+commit e7070fe95d1629188fe2196da261600f21d5c9f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jun 27 14:25:03 2014 +0000
+
+    Moved anon-kde-streamiso package from anon-shared-packages-recommended to whonix-shared-packages-recommended, because it should better be not installed on a gateway. (Would enable connectivity for KDE applications on a gateway, which is unwanted.)
+
+commit 2e2b95fb7edcc9a76fa739043cc87d207292a076
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 15:45:08 2014 +0000
+
+    added debian epoch; added dotglob
+
+commit 35cca29b8581905d8a9a33ded127f5feedfff113
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 14:13:08 2014 +0000
+
+    added open-link-confirmation to anon-gateway-packages-recommended
+
+commit c0a4aa1abaa149e4ad8403e021920aab74fd8ebe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 22 22:09:52 2014 +0000
+
+    added spice-vdagent to anon-shared-packages-recommended for better kvm support
+
+commit b2b55b85b43f7c1ce8a95e395b2d5b945024e77d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 18 13:07:40 2014 +0000
+
+    fix
+
+commit 352afbc92041431423fa842fcfb95edddba86db7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 15 03:10:22 2014 +0000
+
+    fix, removed anon-gw-clearnet-user (was merged into whonix-gw-firewall)
+
+commit a9ce63f62d90c85f89ab4425ad8443e8c757da96
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 14 10:05:08 2014 +0000
+
+    packaging
+
+commit 2734123773606910b6b7620f763964f8f8aa3362
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jun 12 18:53:30 2014 +0000
+
+    no longer let anon-shared-packages-dependencies depend on anon-base-files, because those are difficult to install in chroot and need special treatment
+
+commit ffc55deaa32fab9328af08763a29a336572fa099
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 4 10:36:01 2014 +0000
+
+    added network-manager-kde to anon-shared-desktop-kde
+
+commit ec0007abf260320cca171eeb939e3d746110baf8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 4 10:29:54 2014 +0000
+
+    added openvpn to anon-shared-packages-recommended
+
+commit f2e2125358f45f1ba5d60ab62ba29fa920094880
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 3 18:27:21 2014 +0000
+
+    readme
+
+commit 0127c654856359255e731af2cb4d3e297aafe832
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 19:06:06 2014 +0000
+
+    added apt-transport-https to anon-shared-packages-dependencies
+
+commit a4f6f758a19ecc93a2ceeeb1217404816d94b419
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 18:13:12 2014 +0000
+
+    packaging
+
+commit bfbee98a65672969d2ccd99b8170559833e5883b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:35:23 2014 +0000
+
+    readme
+
+commit 8f3aded2793de5d1685a6e3e1cde3b366f936dcd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:02:57 2014 +0000
+
+    packaging
+
+commit 448e05094449e1e2ebaef223b2e5b7a586834e9c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 31 14:00:44 2014 +0000
+
+    initial import from https://github.com/Whonix/Whonix
