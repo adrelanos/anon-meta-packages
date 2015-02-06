@@ -278,7 +278,7 @@ Description: Dependencies for Whonix-Gateway and Whonix-Workstation
 
 Package: whonix-shared-packages-recommended
 Architecture: all
-Depends: anon-shared-packages-recommended, whonixcheck,
+Depends: anon-shared-packages-recommended, whonixcheck, whonix-setup-wizard,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation
  A metapackage, which includes recommended packages to ensure, Whonix
