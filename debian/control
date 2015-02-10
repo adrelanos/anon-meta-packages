@@ -61,7 +61,7 @@ Description: Dependencies for Anon-Gateway
 Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter,
+Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter-python,
  anon-gw-first-run-notice, anon-gw-leaktest, open-link-confirmation,
  ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
