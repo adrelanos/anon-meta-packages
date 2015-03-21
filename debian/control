@@ -314,7 +314,8 @@ Package: whonix-workstation-packages-recommended
 Architecture: all
 Depends: anon-ws-kde-startmenu,
  whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
- whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions, ${misc:Depends}
+ whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions,
+ whonix-welcome-page, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
  A metapackage, which installs packages, which are recommended for
