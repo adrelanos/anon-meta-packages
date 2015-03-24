@@ -1,3 +1,39 @@
+commit 30f5eab3c221e4ffe75bbf150a80d7580b15d15b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 17:26:16 2015 +0000
+
+    updated makefile generic to version 1.4
+
+commit b021942718dbf736032077b5f48e30209d61e8f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 21 18:08:23 2015 +0000
+
+    added whonix-welcome-page to whonix-workstation-packages-recommended
+
+commit 2e4738e0062202f95427761233fefe4c761d7f76
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Mar 11 21:19:30 2015 +0000
+
+    no longer install anon-gw-first-run-notice by default - https://phabricator.whonix.org/T228
+
+commit 0a5fb6df9424be73d6ef08b08000c9735151d83f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 10 01:00:21 2015 +0000
+
+    install control-port-filter-python https://github.com/Whonix/control-port-filter-python replacement that has been written by @troubadoour https://github.com/troubadoour rather than control-port-filter https://github.com/Whonix/control-port-filter (bash)
+
+commit 837e181dd627e7309a6034455afd91cb202a062e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 6 23:04:07 2015 +0000
+
+    added whonix-setup-wizard to whonix-shared-packages-recommended
+
+commit 3cfce0126a2951d2b84a9a777e1a9193df18265a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:55:59 2015 +0000
+
+    bumped changelog version
+
 commit 0924d0c012ffc2999d50e489aa6aafbaefadcefd
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Feb 4 00:44:38 2015 +0000
