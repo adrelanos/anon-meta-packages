@@ -41,8 +41,8 @@ Do not remove.
 Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter,
-anon-gw-first-run-notice, anon-gw-leaktest, open-link-confirmation,
+Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter-python,
+anon-gw-leaktest, open-link-confirmation,
 ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
@@ -288,7 +288,7 @@ Do not remove.
 
 Package: whonix-shared-packages-recommended
 Architecture: all
-Depends: anon-shared-packages-recommended, whonixcheck,
+Depends: anon-shared-packages-recommended, whonixcheck, whonix-setup-wizard,
 ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation
 # Recommended packages for Whonix-Gateway and Whonix-Workstation #
@@ -330,7 +330,8 @@ Package: whonix-workstation-packages-recommended
 Architecture: all
 Depends: anon-ws-kde-startmenu,
 whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
-whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions, ${misc:Depends}
+whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions,
+whonix-welcome-page, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
 # Recommended packages for Whonix-Workstation #
@@ -472,6 +473,8 @@ Description: Whonix Host Shared
 # Whonix Host Shared #
 
 A metapackage, which installs packages, for a Whonix host operating system.
+
+Supposed to be installed on systems that host Whonix or Whonix hosts.
 
 Feel free to remove, if you know what you are doing.
 
