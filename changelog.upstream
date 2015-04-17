@@ -1,3 +1,25 @@
+commit c3316255bdb1772080f5e8c8bb330ee2f993f01e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 17 17:10:30 2015 +0000
+
+    Revert "added console-setup to anon-shared-packages-dependencies so users can use /etc/default/keyboard as alternative mechanism to change the keyboard layout"
+    
+    This reverts commit 626ba2ef951f76bfd26f1dee9f28743698e5180a.
+
+commit 828ebdc945623b5f50b9e471223075e0da330d13
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 17 17:10:22 2015 +0000
+
+    Revert "added console-data to anon-shared-packages-dependencies to make sure all three packages console-setup, console-data and console-common are installed."
+    
+    This reverts commit 14e76f29589393d1326d864105cd7834688a474e.
+
+commit bb00b5cf249e65ef5e3f108c52004e1d05fa0118
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 17:41:05 2015 +0000
+
+    bumped changelog version
+
 commit acd7cd37c514391923b35004f5c7cdf34b4f72a6
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 2 18:40:56 2015 +0000
