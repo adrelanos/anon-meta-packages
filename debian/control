@@ -107,7 +107,7 @@ Description: Recommended packages for Anon-Workstation
 
 Package: anon-shared-desktop
 Architecture: all
-Depends: libgl1-mesa-dri, xserver-xorg, libupower-glib1 | upower,
+Depends: libgl1-mesa-dri, xserver-xorg, upower,
  xserver-xorg-video-qxl, ${misc:Depends}
 Suggests: anon-shared-desktop-kde (= ${source:Version})
 Replaces: whonix-shared-desktop
