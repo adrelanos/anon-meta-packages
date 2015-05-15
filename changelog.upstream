@@ -1,3 +1,21 @@
+commit f400f82ad493befede7a78356e026b297d2ec7ba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 10 20:27:57 2015 +0000
+
+    whonix-gateway and whonix-workstation package no longer depend on anon-shared-build-fix-grub because it has been made a weak dependency for better physical isolation and Qubes support
+
+commit 830bf83c4a194a6d84568397d6f864eb550b8026
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 10 19:42:07 2015 +0000
+
+    removed dependency on libupower-glib1 which is no longer available in Debian jessie (which has been replaced by upower, that already gets installed)
+
+commit 0c38b0402051e88ad62482c2c75543c7652a1ff4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 30 17:55:41 2015 +0000
+
+    bumped changelog version
+
 commit ee0acc9eebb323d2c458a441657ddda5dd7bd343
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Apr 28 16:20:20 2015 +0000
