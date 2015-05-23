@@ -1,3 +1,15 @@
+commit 62cf77e325ad05fb3b46d089d8a0f51dfec95e80
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 23 01:24:19 2015 +0000
+
+    added obfs4proxy to anon-gateway-packages-recommended - https://phabricator.whonix.org/T323
+
+commit 2feaad9a63297da2473ffe3e918aee5706d93322
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 15 20:22:10 2015 +0000
+
+    bumped changelog version
+
 commit f400f82ad493befede7a78356e026b297d2ec7ba
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun May 10 20:27:57 2015 +0000
