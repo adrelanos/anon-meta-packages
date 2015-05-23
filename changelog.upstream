@@ -1,3 +1,15 @@
+commit f4153f36cfbe8fec8a13839e775ae93152de48f7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 23 13:20:38 2015 +0000
+
+    added apt-transport-tor to anon-shared-packages-recommended - https://phabricator.whonix.org/T92
+
+commit 514d823a1502d021f1a79e011e01b80b9925b0f9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 23 01:25:06 2015 +0000
+
+    bumped changelog version
+
 commit 62cf77e325ad05fb3b46d089d8a0f51dfec95e80
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat May 23 01:24:19 2015 +0000
