@@ -1,3 +1,15 @@
+commit df6f00b3804e3d1b17fb69c0a3879be8d0d38ae8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 8 13:38:13 2015 +0000
+
+    added dependency on 'gir1.2-gtk-3.0' to 'anon-workstation-default-applications' because 'mat' misses it - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=788099 - https://www.whonix.org/forum/index.php/topic,1287.0.html
+
+commit 2f4ff8479dd2fd6db20b603e7134d41f1e1fc5fe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 3 14:59:03 2015 +0000
+
+    bumped changelog version
+
 commit 986c7ea3710875e8afb00b42495301fb18fb0ee2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat May 23 13:24:22 2015 +0000
