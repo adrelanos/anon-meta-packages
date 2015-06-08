@@ -149,7 +149,7 @@ Package: anon-workstation-default-applications
 Architecture: all
 Depends: xchat, vlc, mixmaster,
  kcalc, gwenview, kgpg, kmix, mat, python-hachoir-core, python-hachoir-parser,
- python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl,
+ python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-gtk | pinentry-curses | pinentry, fpm2, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version}),
