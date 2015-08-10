@@ -62,7 +62,7 @@ Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy,
- control-port-filter-python, anon-gw-leaktest, open-link-confirmation,
+ control-port-filter-python, open-link-confirmation,
  ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
@@ -93,7 +93,7 @@ Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: libasound2, alsa-base, alsa-utils, iceweasel,
  xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
- tb-starter, tb-updater, open-link-confirmation, anon-ws-leaktest,
+ tb-starter, tb-updater, open-link-confirmation,
  anon-kde-streamiso, icedove, enigmail, xul-ext-torbirdy, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
