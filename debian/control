@@ -36,7 +36,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
  apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
- anon-banned-packages, shared-folder-help, swap-file-creator,
+ shared-folder-help, swap-file-creator,
  swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn,
  kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
@@ -322,21 +322,6 @@ Description: Recommended packages for Whonix-Workstation
  Whonix-Workstation, because they are useful for a Tor Workstation.
  .
  Feel free to remove, if you know what you are doing.
-
-Package: anon-banned-packages
-Architecture: all
-Depends: ${misc:Depends}
-Conflicts: popularity-contest, canonical-census, unity-lens-shopping,
- unity-scope-video-remote, unity-scope-musicstores
-Description: Removes packages recommended against on Anonymity Linux Distributions
- A metapackage which conflicts with packages that are recommended against in
- context of Anonymity Linux Distributions.
- .
- No conflicting software should be installed, but just in case.
- .
- This might be useful for users creating custom builds for example based on
- Ubuntu and for physical isolation users who installed using a standard
- installation medium as well.
 
 Package: whonix-gateway
 Architecture: all
