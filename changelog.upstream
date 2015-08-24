@@ -1,3 +1,27 @@
+commit d4ddc3d532d156687dc26fda7c66577593fb47c2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 15 17:37:45 2015 +0000
+
+    deprecated anon-banned-packages because checking for those in now implemented in whonixcheck - https://phabricator.whonix.org/T390
+
+commit 92f79ad44744e0b3bb4be634b55fcbef9b96c4d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 10 18:13:12 2015 +0200
+
+    no longer install anon-gw-leaktest [and anon-ws-leaktest] by default to avoid tshark debconf question during upgrades
+
+commit 33c41008270345b8f780e0a4afaf35afde8ec56d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 27 20:50:21 2015 +0200
+
+    Install Icedove (Thunderbird) + TorBirdy + Enigmail, added icedove, enigmail and xul-ext-torbirdy to anon-workstation-packages-recommended - https://phabricator.whonix.org/T113
+
+commit 2391b7d3a39ae7f4c2c9cfe15411c392154d792d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 8 14:39:44 2015 +0000
+
+    bumped changelog version
+
 commit df6f00b3804e3d1b17fb69c0a3879be8d0d38ae8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jun 8 13:38:13 2015 +0000
