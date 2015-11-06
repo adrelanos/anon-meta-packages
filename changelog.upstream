@@ -1,3 +1,18 @@
+commit 4ceda4f9bf3841446e626e1b4a39b455b79446a5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 6 11:33:05 2015 +0000
+
+    added ntfs-3g to anon-shared-packages-recommended
+    
+    Prevents users from seeing error such as:
+    An error occurred while accessing 'USB-STICK', the system responded: The requested operation has failed: Error mounting /dev/xvdi1 at /media/user/USB-STICK: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/xvdi1" "/media/user/USB-STICK"' exited with non-zero exit status 32: mount: unknown filesystem type 'ntfs'
+
+commit 94da22db2a3324df53442ef5168bfc21d6464685
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 14:07:38 2015 +0000
+
+    bumped changelog version
+
 commit a416441ff50278bd23815f87dd4f314ad3cffdf1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 24 17:47:10 2015 +0000
