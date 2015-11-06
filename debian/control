@@ -37,7 +37,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
  shared-folder-help, swap-file-creator,
- swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn,
+ swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
  kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
