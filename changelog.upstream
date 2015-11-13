@@ -1,3 +1,21 @@
+commit 3f864c653c8fa751386ddd2aa39a7d265b1a89c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 12 17:48:31 2015 +0000
+
+    added gtk2-engines-pixbuf to anon-shared-desktop
+    
+    Fixes "whonix-ws testing template missing gtk2-engines-pixbuf package"
+    
+    https://github.com/QubesOS/qubes-issues/issues/1410
+    
+    Thanks to @qubesuser for the report!
+
+commit 8f5033d2b320c6bc423f66fb2bcc228b4e3741de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 6 11:54:44 2015 +0000
+
+    bumped changelog version
+
 commit 4ceda4f9bf3841446e626e1b4a39b455b79446a5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Nov 6 11:33:05 2015 +0000
