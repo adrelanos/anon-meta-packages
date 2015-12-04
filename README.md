@@ -363,7 +363,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-gateway-packages-dependencies-pre,
 anon-shared-build-upgrade-torsocks,
-anon-shared-build-fix-grub,
 anon-shared-build-log-build-version,
 anon-shared-build-remember-sources,
 anon-shared-build-ban-nonfree,
@@ -395,7 +394,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
 anon-shared-build-upgrade-torsocks,
-anon-shared-build-fix-grub,
 anon-shared-build-log-build-version,
 anon-shared-build-remember-sources,
 anon-shared-build-ban-nonfree,
