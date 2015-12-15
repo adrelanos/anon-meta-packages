@@ -36,7 +36,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
  apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
- shared-folder-help, swap-file-creator,
+ shared-folder-help, swap-file-creator, security-misc,
  swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
  kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
