@@ -12,9 +12,9 @@ iputils-ping, apparmor-utils, apparmor-notify,
 apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
 anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
 poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
-anon-banned-packages, shared-folder-help, swap-file-creator,
-swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn,
-kde-privacy, usability-misc, menu, ${misc:Depends}
+shared-folder-help, swap-file-creator, security-misc,
+swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
+kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 # Recommended packages for both, Anon-Gateway and Anon-Workstation #
 
@@ -41,8 +41,8 @@ Do not remove.
 Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: tor-geoipdb, tor-arm, obfsproxy, control-port-filter-python,
-anon-gw-leaktest, open-link-confirmation,
+Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy,
+control-port-filter-python, open-link-confirmation,
 ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
@@ -77,8 +77,8 @@ Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: libasound2, alsa-base, alsa-utils, iceweasel,
 xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
 pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
-tb-starter, tb-updater, open-link-confirmation, anon-ws-leaktest,
-anon-kde-streamiso, ${misc:Depends}
+tb-starter, tb-updater, open-link-confirmation,
+anon-kde-streamiso, icedove, enigmail, xul-ext-torbirdy, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
 anon-workstation-default-applications (= ${source:Version}),
 anon-workstation-extra-applications (= ${source:Version})
@@ -93,8 +93,8 @@ Feel free to remove, if you know what you are doing.
 
 Package: anon-shared-desktop
 Architecture: all
-Depends: libgl1-mesa-dri, xserver-xorg, libupower-glib1 | upower, upower,
-xserver-xorg-video-qxl, ${misc:Depends}
+Depends: libgl1-mesa-dri, xserver-xorg, upower,
+xserver-xorg-video-qxl, gtk2-engines-pixbuf, ${misc:Depends}
 Suggests: anon-shared-desktop-kde (= ${source:Version})
 Replaces: whonix-shared-desktop
 Description: Desktop Depends
@@ -127,7 +127,8 @@ Safe to remove.
 
 Package: anon-shared-kde-accessibility
 Architecture: all
-Depends: kdeaccessibility, kvkbd, kmousetool, kmag, kmouth, jovie, ${misc:Depends}
+Depends: kdeaccessibility, kvkbd, kmousetool, kmag, kmouth, jovie, gnome-orca,
+espeakup, ${misc:Depends}
 Replaces: whonix-shared-kde-accessibility
 Description: KDE accessibility tools
 # KDE accessibility tools #
@@ -141,7 +142,7 @@ Package: anon-workstation-default-applications
 Architecture: all
 Depends: xchat, vlc, mixmaster,
 kcalc, gwenview, kgpg, kmix, mat, python-hachoir-core, python-hachoir-parser,
-python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl,
+python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
 pinentry-qt | pinentry-gtk | pinentry-curses | pinentry, fpm2, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
 anon-workstation-extra-applications (= ${source:Version}),
@@ -341,23 +342,6 @@ Whonix-Workstation, because they are useful for a Tor Workstation.
 
 Feel free to remove, if you know what you are doing.
 
-Package: anon-banned-packages
-Architecture: all
-Depends: ${misc:Depends}
-Conflicts: popularity-contest, canonical-census, unity-lens-shopping,
-unity-scope-video-remote, unity-scope-musicstores
-Description: Removes packages recommended against on Anonymity Linux Distributions
-# Removes packages recommended against on Anonymity Linux Distributions #
-
-A metapackage which conflicts with packages that are recommended against in
-context of Anonymity Linux Distributions.
-
-No conflicting software should be installed, but just in case.
-
-This might be useful for users creating custom builds for example based on
-Ubuntu and for physical isolation users who installed using a standard
-installation medium as well.
-
 Package: whonix-gateway
 Architecture: all
 Pre-Depends: whonix-legacy
@@ -380,8 +364,8 @@ anon-gateway-packages-recommended,
 whonix-gateway-packages-dependencies,
 whonix-gateway-packages-recommended,
 ${misc:Depends}
-Description: Whonix-Default-Gateway
-# Whonix-Default-Gateway #
+Description: Whonix Default Gateway
+# Whonix Default Gateway #
 
 A metapackage, which installs packages, for a Whonix-Default-Gateway.
 
@@ -412,8 +396,8 @@ anon-workstation-default-applications,
 whonix-workstation-packages-dependencies,
 whonix-workstation-packages-recommended,
 ${misc:Depends}
-Description: Whonix-Default-Workstation
-# Whonix-Default-Workstation #
+Description: Whonix Default Workstation
+# Whonix Default Workstation #
 
 A metapackage, which installs packages, for a Whonix-Default-Workstation.
 
@@ -434,8 +418,8 @@ whonix-shared-packages-dependencies,
 whonix-shared-packages-recommended,
 anon-shared-build-inst-tb,
 ${misc:Depends}
-Description: Anon Host Additions
-# Anon Host Additions #
+Description: Host Additions for Anon Host Operating Systems
+# Host Additions for Anon Host Operating Systems #
 
 A metapackage, which installs packages, for a Anon host operating system.
 
@@ -451,8 +435,8 @@ Package: whonix-host-additions
 Architecture: all
 Depends: anon-host-additions, whonix-host-firewall, ${misc:Depends}
 # whonix-host-packages-dependencies-pre,
-Description: Whonix Host Additions
-# Whonix Host Additions #
+Description: Packages for Whonix Hosts
+# Packages for Whonix Hosts #
 
 A metapackage, which installs packages Whonix Host Additions.
 
@@ -481,8 +465,8 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-host-shared, virtualbox, ${misc:Depends}
 Suggests: apparmor-profile-virtualbox
-Description: Whonix Host VirtualBox
-# Whonix Host VirtualBox #
+Description: Whonix Host Packages for VirtualBox Hosts
+# Whonix Host Packages for VirtualBox Hosts #
 
 A metapackage, which installs packages, for a Whonix host operating system
 using VirtualBox.
@@ -495,8 +479,8 @@ Pre-Depends: whonix-legacy
 Depends: whonix-host-shared, qemu-kvm, libvirt-bin, virt-manager,
 whonix-libvirt, ${misc:Depends}
 Suggests: ksm
-Description: Whonix Host QEMU KVM
-# Whonix Host QEMU KVM #
+Description: Whonix Host Packages for QEMU or KVM hosts
+# Whonix Host Packages for QEMU or KVM hosts #
 
 A metapackage, which installs packages, for a Whonix host operating system
 using KVM or QEMU.
