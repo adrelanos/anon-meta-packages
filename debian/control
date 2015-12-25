@@ -33,7 +33,7 @@ Package: anon-shared-packages-recommended
 Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
  iputils-ping, apparmor-utils, apparmor-notify,
- apparmor-profile-anondist, udisks, secure-delete, sudo, net-tools,
+ apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
  shared-folder-help, swap-file-creator, security-misc,
