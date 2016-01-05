@@ -329,7 +329,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-build-upgrade-torsocks,
- anon-shared-build-log-build-version,
  anon-shared-build-remember-sources,
  anon-shared-build-ban-nonfree,
  anon-shared-build-sanity-checks,
@@ -358,7 +357,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-build-upgrade-torsocks,
- anon-shared-build-log-build-version,
  anon-shared-build-remember-sources,
  anon-shared-build-ban-nonfree,
  anon-shared-build-sanity-checks,
@@ -386,7 +384,6 @@ Description: Whonix Default Workstation
 Package: anon-host-additions
 Architecture: all
 Depends: anon-shared-build-upgrade-torsocks,
- anon-shared-build-log-build-version,
  anon-shared-build-remember-sources,
  anon-shared-build-ban-nonfree,
  anon-shared-build-sanity-checks,
