@@ -137,8 +137,9 @@ Description: Recommended packages for Gateway/Workstation base KDE desktop
 
 Package: anon-shared-kde-accessibility
 Architecture: all
-Depends: kdeaccessibility, kvkbd, kmousetool, kmag, kmouth, jovie, gnome-orca,
- espeakup, ${misc:Depends}
+Depends: gnome-orca, espeakup, brltty, brltty-speechd, brltty-x11,
+ console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
+ kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
 Replaces: whonix-shared-kde-accessibility
 Description: KDE accessibility tools
  A metapackage, which installs accessibility tools for the KDE desktop.
