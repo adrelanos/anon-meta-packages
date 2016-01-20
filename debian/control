@@ -218,9 +218,8 @@ Description: Extra language support for the KDE desktop
 Package: apparmor-profiles-whonix
 Architecture: all
 Depends: apparmor-profile-icedove, apparmor-profile-pidgin,
- apparmor-profile-sdwdate, apparmor-profile-timesync,
  apparmor-profile-torbrowser, apparmor-profile-virtualbox,
- apparmor-profile-whonixcheck, apparmor-profile-xchat,
+ apparmor-profile-xchat,
  apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
 Description: Extra AppArmor profiles developed by the Whonix team
  A metapackage, which installs apparmor profiles developed by the Whonix team.
