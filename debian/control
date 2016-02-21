@@ -17,8 +17,8 @@ Architecture: all
 Depends: console-common, initramfs-tools, os-prober, bzip2, file,
  lsof, most, pciutils, strace, sysfsutils, acpi-support,
  keyboard-configuration, less, kbd, haveged, locales, apt-transport-https,
- sdwdate, sdwdate-plugin-anon-shared-con-check,
- sdwdate-plugin-anon-shared-streamiso, bootclockrandomization, timesanitycheck,
+ sdwdate,
+ bootclockrandomization, timesanitycheck,
  timesync, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
  pkg-manager-no-autoupdate, kde-no-move-max-win, kde-apper-no-autoupdate,
  tcp-timestamps-disable, ${misc:Depends}
