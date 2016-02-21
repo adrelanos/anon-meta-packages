@@ -103,7 +103,7 @@ Description: Recommended packages for Anon-Workstation
  A metapackage, which installs packages, which are recommended for
  Anon-Workstation, because they are useful for a Tor Workstation.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: anon-shared-desktop
 Architecture: all
@@ -322,7 +322,7 @@ Description: Recommended packages for Whonix-Workstation
  A metapackage, which installs packages, which are recommended for
  Whonix-Workstation, because they are useful for a Tor Workstation.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-gateway
 Architecture: all
@@ -350,7 +350,7 @@ Description: Whonix Default Gateway
  .
  It will install build chroot scripts, but not run them.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-workstation
 Architecture: all
@@ -379,7 +379,7 @@ Description: Whonix Default Workstation
  .
  It will install build chroot scripts, but not run them.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: anon-host-additions
 Architecture: all
@@ -402,7 +402,7 @@ Description: Host Additions for Anon Host Operating Systems
  .
  It will install build chroot scripts, but not run them.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-host-additions
 Architecture: all
@@ -415,7 +415,7 @@ Description: Packages for Whonix Hosts
  such as VirtualBox, QEMU or KVM. Installs anon-host-additions and Whonix Host
  Firewall. For better anonymity, privacy, security and usability.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-host-shared-dependencies
 Architecture: all
@@ -427,7 +427,7 @@ Description: Whonix Host Shared
  .
  Supposed to be installed on systems that host Whonix or Whonix hosts.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-host-virtualbox
 Architecture: all
@@ -438,7 +438,7 @@ Description: Whonix Host Packages for VirtualBox Hosts
  A metapackage, which installs packages, for a Whonix host operating system
  using VirtualBox.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
 
 Package: whonix-host-qemu-kvm
 Architecture: all
@@ -450,4 +450,4 @@ Description: Whonix Host Packages for QEMU or KVM hosts
  A metapackage, which installs packages, for a Whonix host operating system
  using KVM or QEMU.
  .
- Feel free to remove, if you know what you are doing.
+ Feel free to remove if you know what you are doing.
