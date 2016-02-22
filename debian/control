@@ -117,18 +117,31 @@ Description: Desktop Depends
 
 Package: anon-shared-desktop-kde
 Architecture: all
-Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm, kdesudo, kdepasswd, kfind,
- ksysguard, plasma-widget-folderview, kde-baseapps-bin, polkit-kde-1, konsole, kwrite, dolphin, ark,
- p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
- kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
- kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
- plasma-nm, kde-common-resolution, ${misc:Depends}
+Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm,
+ plasma-widget-folderview, kde-baseapps-bin, polkit-kde-1,
+ ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE desktop. The Anon-Gateway desktop and the
  Anon-Workstation desktop depend on this package.
+ .
+ Safe to remove.
+
+Package: anon-shared-applications-kde
+Architecture: all
+Depends: kdesudo, kdepasswd, kfind,
+ ksysguard, polkit-kde-1, konsole, kwrite, dolphin, ark,
+ p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
+ kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
+ kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
+ kde-common-resolution, ${misc:Depends}
+Suggests: anon-shared-kde-accessibility (= ${source:Version}),
+ anon-shared-desktop-langpack-kde (= ${source:Version})
+Description: Recommended applications for Gateway/Workstation KDE desktop
+ A metapackage, which installs a minimal, yet complete enough
+ to contain the very basics, KDE applications.
  .
  Safe to remove.
 
@@ -332,6 +345,7 @@ Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-packages-recommended,
  anon-shared-desktop,
  anon-shared-desktop-kde,
+ anon-shared-applications-kde,
  anon-shared-kde-accessibility,
  whonix-shared-packages-dependencies,
  whonix-shared-packages-recommended,
@@ -360,6 +374,7 @@ Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-packages-recommended,
  anon-shared-desktop,
  anon-shared-desktop-kde,
+ anon-shared-applications-kde,
  anon-shared-kde-accessibility,
  whonix-shared-packages-dependencies,
  whonix-shared-packages-recommended,
