@@ -326,7 +326,7 @@ Description: Recommended packages for Whonix-Workstation
  .
  Feel free to remove if you know what you are doing.
 
-Package: whonix-gateway
+Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-gateway-packages-dependencies-pre,
@@ -336,7 +336,6 @@ Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
- anon-shared-desktop,
  anon-shared-desktop-kde,
  anon-shared-applications-kde,
  anon-shared-kde-accessibility,
@@ -348,14 +347,16 @@ Depends: whonix-gateway-packages-dependencies-pre,
  whonix-gateway-packages-dependencies,
  whonix-gateway-packages-recommended,
  ${misc:Depends}
-Description: Whonix Default Gateway
+Description: Whonix-Gateway Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Gateway.
+ .
+ It is shared between Qubes-Whonix and Non-Qubes-Whonix.
  .
  It will install build chroot scripts, but not run them.
  .
  Feel free to remove if you know what you are doing.
 
-Package: whonix-workstation
+Package: whonix-workstation-shared-meta-packages
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
@@ -365,7 +366,6 @@ Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
- anon-shared-desktop,
  anon-shared-desktop-kde,
  anon-shared-applications-kde,
  anon-shared-kde-accessibility,
@@ -378,9 +378,73 @@ Depends: whonix-workstation-packages-dependencies-pre,
  whonix-workstation-packages-dependencies,
  whonix-workstation-packages-recommended,
  ${misc:Depends}
-Description: Whonix Default Workstation
+Description: Whonix-Workstation Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
  .
+ It is shared between Qubes-Whonix and Non-Qubes-Whonix.
+ .
  It will install build chroot scripts, but not run them.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: qubes-whonix-gateway
+Architecture: all
+Depends: whonix-gateway-shared-packages-shared-meta,
+ ${misc:Depends}
+Replaces: whonix-gateway
+Description: Default packages for Qubes-Whonix-Gateway
+ A metapackage, which installs packages, for a
+ Qubes-Whonix-Default-Gateway.
+ .
+ Only depends on whonix-gateway-shared-packages-shared-meta,
+ because installing anon-shared-desktop is not required in
+ Qubes-Whonix.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: qubes-whonix-workstation
+Architecture: all
+Depends: whonix-workstation-shared-packages-shared-meta,
+ ${misc:Depends}
+Replaces: whonix-workstation
+Description: Default Packages for Qubes-Whonix-Workstation
+ A metapackage, which installs packages, for a
+ Qubes-Whonix-Default-Workstation.
+ .
+ Only depends on whonix-workstation-shared-packages-shared-meta,
+ because installing anon-shared-desktop is not required in
+ Qubes-Whonix.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: non-qubes-whonix-gateway
+Architecture: all
+Depends: whonix-gateway-shared-packages-shared-meta,
+ anon-shared-desktop,
+ ${misc:Depends}
+Replaces: whonix-gateway
+Description: Default Packages for Non-Qubes-Whonix-Gateway
+ A metapackage, which installs packages, for a
+ Non-Qubes-Whonix-Default-Gateway.
+ .
+ Depends on whonix-gateway-shared-packages-shared-meta,
+ and anon-shared-desktop because that is required in
+ Non-Qubes-Whonix in order to get graphical desktop environment.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: non-qubes-whonix-workstation
+Architecture: all
+Depends: whonix-workstation-shared-packages-shared-meta,
+ anon-shared-desktop,
+ ${misc:Depends}
+Replaces: whonix-workstation
+Description: Default Packages for Non-Qubes-Whonix-Workstation
+ A metapackage, which installs packages, for a
+ Non-Qubes-Whonix-Default-Workstation.
+ .
+ Depends on whonix-workstation-shared-packages-shared-meta,
+ and anon-shared-desktop because that is required in
+ Non-Qubes-Whonix in order to get graphical desktop environment.
  .
  Feel free to remove if you know what you are doing.
