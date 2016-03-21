@@ -335,7 +335,6 @@ Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
- anon-shared-desktop-kde,
  anon-shared-applications-kde,
  anon-shared-kde-accessibility,
  whonix-shared-packages-dependencies,
@@ -365,7 +364,6 @@ Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
- anon-shared-desktop-kde,
  anon-shared-applications-kde,
  anon-shared-kde-accessibility,
  whonix-shared-packages-dependencies,
@@ -419,7 +417,7 @@ Description: Default Packages for Qubes-Whonix-Workstation
 Package: non-qubes-whonix-gateway
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta,
- anon-shared-desktop,
+ anon-shared-desktop, anon-shared-desktop-kde,
  ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default Packages for Non-Qubes-Whonix-Gateway
@@ -435,7 +433,7 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway
 Package: non-qubes-whonix-workstation
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta,
- anon-shared-desktop,
+ anon-shared-desktop, anon-shared-desktop-kde,
  ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation
