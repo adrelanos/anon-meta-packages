@@ -103,9 +103,9 @@ Description: Recommended packages for Anon-Workstation
 
 Package: anon-shared-desktop
 Architecture: all
-Depends: libgl1-mesa-dri, xserver-xorg, upower,
- xserver-xorg-video-qxl, xserver-xorg-video-fbdev, xserver-xorg-video-vesa,
- gtk2-engines-pixbuf, ${misc:Depends}
+Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
+ xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
+ ${misc:Depends}
 Suggests: anon-shared-desktop-kde (= ${source:Version})
 Description: Desktop Depends
  A metapackage, which installs dependencies for desktop environments,
