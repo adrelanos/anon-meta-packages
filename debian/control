@@ -116,8 +116,7 @@ Description: Desktop Depends
 Package: anon-shared-desktop-kde
 Architecture: all
 Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm,
- plasma-widget-folderview, kde-baseapps-bin, polkit-kde-1,
- ${misc:Depends}
+ plasma-widget-folderview, kde-baseapps-bin, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
@@ -129,7 +128,7 @@ Description: Recommended packages for Gateway/Workstation base KDE desktop
 
 Package: anon-shared-applications-kde
 Architecture: all
-Depends: kdesudo, kdepasswd, kfind,
+Depends: kdesudo, polkit-kde-1, kdepasswd, kfind,
  ksysguard, polkit-kde-1, konsole, kwrite, dolphin, ark,
  p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
  kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
