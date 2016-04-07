@@ -200,6 +200,7 @@ Description: Fonts and language packages for better internationalization support
 
 Package: anon-shared-desktop-langpack-kde
 Architecture: all
+Depends: ${misc:Depends}
 Recommends: kde-l10n-ar, kde-l10n-bg, kde-l10n-bs,
  kde-l10n-ca, kde-l10n-cavalencia, kde-l10n-cs, kde-l10n-da, kde-l10n-de, kde-l10n-el, kde-l10n-engb,
  kde-l10n-es, kde-l10n-et, kde-l10n-eu, kde-l10n-fa, kde-l10n-fi, kde-l10n-fr, kde-l10n-ga,
