@@ -1,3 +1,274 @@
+commit c02e40248757aa77246d77b0da4c1d1f4c9c663e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:25:27 2016 +0000
+
+    fixed lintian warning
+    
+    anon-meta-packages source: debhelper-but-no-misc-depends anon-shared-desktop-langpack-kde
+
+commit f0c23f5604613349b52ea7cb2fad022b9eb4cc4e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:03:47 2016 +0000
+
+    fix, removed duplicate dependency
+
+commit 850788106bb13332d50e6fdc9913111eb5cff7ba
+Merge: 9bf7e57 b096962
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 31 15:28:16 2016 +0000
+
+    have anon-shared-packages-dependencies depend on security-misc
+    
+    rather then tcp-timestamps-disable.
+    
+    (tcp-timestamps-disable has been deprecated and merged inti security-misc.)
+    
+    https://phabricator.whonix.org/T486
+
+commit b09696279bf678c480ed900123cfe1696bb49fdf
+Merge: 9bf7e57 aef18e6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 31 15:25:01 2016 +0000
+
+    Merge pull request #1 from HulaHoopWhonix/patch-1
+    
+    Update control
+
+commit aef18e64ad1bb1f91592d0a9dcc306f23ec02c9e
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Thu Mar 31 14:58:07 2016 +0000
+
+    Update control
+
+commit 9bf7e5764d80bc449de285552acb2c33b839aa15
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 21 13:38:37 2016 +0100
+
+    added systemsettings to anon-shared-applications-kde
+    
+    https://phabricator.whonix.org/T429
+
+commit 2f67cb5530030715825ffe07af115a6b828dd4ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 21 13:01:58 2016 +0100
+
+    removed anon-shared-desktop-kde from whonix-[gateway|workstation]-shared-packages-shared-meta
+    
+    so it no longer gets installed by default in Qubes-Whonix.
+    And readded it to non-qubes-whonix-[gateway|workstation].
+    
+    This results in no longer installing kde-workspace, kdm,
+    plasma-widget-folderview, kde-baseapps-bin in Qubes by default.
+    
+    https://phabricator.whonix.org/T429
+
+commit c10485620cf8859bc6394b942fe17ff04f844274
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 21 12:52:02 2016 +0100
+
+    Removed polkit-kde-1 as dependency from anon-shared-desktop-kde and added it to anon-shared-applications-kde.
+    
+    polkit-kde-1 is important as long as Whonix is kde-ish, uses kdesudo, otherwise
+    leads to issues with kdesudo authentication.
+    
+    This is required for a clean separation so the anon-shared-desktop-kde package
+    is no longer required to be installed by default on Qubes.
+    
+    https://phabricator.whonix.org/T429
+
+commit 42c42535720b17a0a230546d538bd60cbbcca500
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 21 12:38:12 2016 +0100
+
+    refactoring
+
+commit f98bc4980fbb363c25cfb0d0679e1afd1a416521
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 21 12:33:26 2016 +0100
+
+    added xserver-xorg-video-fbdev and xserver-xorg-video-vesa to anon-shared-desktop
+    
+    so X also works without functional VirtualBox guest additions
+    
+    http://forums.whonix.org/t/virtualbox-guest-additions-uninstalled-no-more-kde-desktop
+
+commit b5c8d2d9a8706de3ce7fbf13a98b78b37d1a0d17
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 11 02:16:36 2016 +0000
+
+    fix, anon-shared-desktop-langpack-kde does not need to depend on anon-shared-desktop-kde
+
+commit fc23e40a181c182391be03a4cd1f9774592b379e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 23 10:40:24 2016 +0000
+
+    split whonix-(gateway|workstation) packages
+    
+    into:
+    - qubes-whonix-(gateway|workstation)
+    - non-qubes-whonix-(gateway|workstation)
+    
+    The Qubes-Whonix version does not depend on the anon-shared-desktop package,
+    while the Non-Qubes-Whonix package does. This is to spare Qubes-Whonix users
+    from installing packages that are only required to set up a desktop environment
+    for Non-Qubes-Whonix users. (Qubes dom0 hosts these packages such as kdm etc.)
+    
+    https://phabricator.whonix.org/T429
+
+commit bbf35dd494b08607b917ddd8bf16bccddb2f8cdd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 23 10:00:10 2016 +0000
+
+    removed no longer required 'Replaces:' entries
+
+commit fb707a683bec3f23ae393624130db09e654d68ac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 22 11:58:04 2016 +0000
+
+    split anon-shared-desktop-kde package
+    
+    into anon-shared-desktop-kde and anon-shared-applications-kde
+    
+    https://phabricator.whonix.org/T429
+
+commit a984760b00f1cc85eece227a222537335b10507b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 21 22:43:21 2016 +0100
+
+    refactoring
+
+commit c0d32d879738f1d796468ff610a0006e2921e1f2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 21 22:42:24 2016 +0100
+
+    removed no longer existing sdwdate plugin packagtes from dependencies
+    
+    since those were merged into sdwdate
+    
+    sdwdate-plugin-anon-shared-con-check and sdwdate-plugin-anon-shared-streamiso
+
+commit 63b82c372253a70e45c7c9c079bf35082f55fb0b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 21 22:39:44 2016 +0100
+
+    deprecated Whonix host packages as no Whonix host is on the horizon anyhow
+    
+    and since there is now Qubes as host for Whonix (Qubes-Whonix)
+
+commit 38c395cb7cd0e3845e0dd0ca653aad1c146653b9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 21 22:32:38 2016 +0100
+
+    cleanup, removed 'Replaces: whonix-shared-desktop(-kde)'
+
+commit f029bf51941088a2c60627f66b0391a7e1257f98
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 21 22:31:09 2016 +0100
+
+    typo
+
+commit d8827700b40d03e6545e4ba9fdcf188ede8a1fb0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 20 19:20:31 2016 +0100
+
+    removed AppArmor profiles from apparmor-profiles-whonix that were merged
+    
+        - apparmor-profile-sdwdate
+        - apparmor-profile-timesync
+        - apparmor-profile-whonixcheck
+    
+    https://phabricator.whonix.org/T201
+
+commit dc2b97efef5af2ae67a4134480d1eb32f50da809
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 8 17:40:13 2016 +0000
+
+    install more accessibility tools by default
+    
+    anon-shared-kde-accessibility
+    
+    gnome-orca espeakup brltty brltty-speechd brltty-x11 console-braille florence dasher kdeaccessibility kvkbd kmousetool kmag kmouth jovie xbrlapi festival qt-at-spi
+
+commit a8d9e666da27e04abf5e567cdcddd97eaee54339
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 5 00:17:33 2016 +0000
+
+    removed anon-shared-build-log-build-version
+    
+    Because that is now implemented in anon-base-files postinst.
+
+commit c3e851fb58370ee1aeb06428c00428d6f06097af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 22:10:04 2016 +0000
+
+    transition from xchat to hexchat
+    
+    have anon-workstation-default-applications depend on hexchat rather than xchat
+    
+    https://phabricator.whonix.org/T40
+
+commit 6a08e96030d5c15cacf4c174d40aab7f2305bf46
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 3 18:31:57 2016 +0000
+
+    added flashproxy-client to anon-gateway-packages-recommended
+
+commit c45ce48c5e471fbdc07626e6f1fea641a683ee69
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 25 10:39:52 2015 +0100
+
+    fix, pinentry-gtk -> pinentry-gtk2
+    
+    Thanks to @HulaHoopWhonix for the report!
+
+commit 3d725e5b0553fa0ad1e785c01244ba9c5f4acf41
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 25 10:11:28 2015 +0100
+
+    updated package name plasma-widget-networkmanagement -> plasma-nm
+    
+    for compatibility with Debian stretch based build
+
+commit 59e2dfd2cbe1c8fac55383d42e745b0e4860de8a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 25 10:09:10 2015 +0100
+
+    udisks -> udisks2 for compatibility with Debian stretch based builds
+
+commit c84cd769acdf1a6bd0c9ed858558911ec2c456aa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 15 21:02:01 2015 +0000
+
+    updated README.md
+
+commit 8fe50b009a90c991e936bcec41c3b53652b8c75e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 15 04:20:15 2015 +0000
+
+    added security-misc to anon-shared-packages-recommended
+    
+    https://phabricator.whonix.org/T418
+
+commit 29fe18d9e08c46915b680f84af7f9a28500449c8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 4 15:43:05 2015 +0000
+
+    minor
+
+commit 8b5f69e58d857c4d974bbe8b6664c03312ebbc0e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Dec 2 16:07:54 2015 +0000
+
+    added gnome-orca and espeakup to anon-shared-kde-accessibility
+    
+    for better support of visually impaired users
+
+commit 84e21ed0dc0e958c7b32b3e57e55b621fe84e700
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 13 15:49:34 2015 +0000
+
+    bumped changelog version
+
 commit 3f864c653c8fa751386ddd2aa39a7d265b1a89c1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 12 17:48:31 2015 +0000
