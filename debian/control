@@ -330,10 +330,6 @@ Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-gateway-packages-dependencies-pre,
- anon-shared-build-upgrade-torsocks,
- anon-shared-build-remember-sources,
- anon-shared-build-ban-nonfree,
- anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
  anon-shared-applications-kde,
@@ -359,17 +355,12 @@ Package: whonix-workstation-shared-meta-packages
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
- anon-shared-build-upgrade-torsocks,
- anon-shared-build-remember-sources,
- anon-shared-build-ban-nonfree,
- anon-shared-build-sanity-checks,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
  anon-shared-applications-kde,
  anon-shared-kde-accessibility,
  whonix-shared-packages-dependencies,
  whonix-shared-packages-recommended,
- anon-shared-build-inst-tb,
  anon-workstation-packages-dependencies,
  anon-workstation-packages-recommended,
  anon-workstation-default-applications,
