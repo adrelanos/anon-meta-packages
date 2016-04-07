@@ -129,7 +129,7 @@ Description: Recommended packages for Gateway/Workstation base KDE desktop
 Package: anon-shared-applications-kde
 Architecture: all
 Depends: kdesudo, polkit-kde-1, kdepasswd, kfind,
- ksysguard, polkit-kde-1, konsole, kwrite, dolphin, ark, systemsettings,
+ ksysguard, konsole, kwrite, dolphin, ark, systemsettings,
  p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
  kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
  kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
