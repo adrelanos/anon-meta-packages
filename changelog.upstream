@@ -1,3 +1,17 @@
+commit 7dc93f7872bbf2514ef59b54aa8a6f0aa55715d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 23:27:21 2016 +0000
+
+    removed dependency on packages with chroot scripts
+    
+    https://phabricator.whonix.org/T461
+
+commit b219f52f820369cbfb6345f37b0f3e27d8d15e9f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:54:25 2016 +0000
+
+    bumped changelog version
+
 commit c02e40248757aa77246d77b0da4c1d1f4c9c663e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 7 22:25:27 2016 +0000
