@@ -350,7 +350,7 @@ Description: Whonix-Gateway Shared Packages
  .
  Feel free to remove if you know what you are doing.
 
-Package: whonix-workstation-shared-meta-packages
+Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
