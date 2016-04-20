@@ -377,8 +377,9 @@ Description: Whonix-Workstation Shared Packages
 
 Package: qubes-whonix-gateway
 Architecture: all
-Depends: whonix-gateway-shared-packages-shared-meta,
- ${misc:Depends}
+Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
+ qubes-whonix-shared-packages-recommended,
+ qubes-whonix-gateway-packages-recommended, ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
  A metapackage, which installs packages, for a
@@ -392,8 +393,9 @@ Description: Default packages for Qubes-Whonix-Gateway
 
 Package: qubes-whonix-workstation
 Architecture: all
-Depends: whonix-workstation-shared-packages-shared-meta,
- ${misc:Depends}
+Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
+ qubes-whonix-shared-packages-recommended,
+ qubes-whonix-workstation-packages-recommended, ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default Packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
