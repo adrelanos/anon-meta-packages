@@ -1,3 +1,23 @@
+commit 33039e801c1df39b9c68940bb92b05f0ce018cd4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 20 03:20:07 2016 +0000
+
+    added missing Qubes-Whonix packages dependencies
+    
+    since we are no longer using Whonix build script to build Qubes-Whonix
+
+commit efccf51e7c638c2daad4284621768c9940dcc661
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 19 23:24:27 2016 +0000
+
+    fixed package name whonix-workstation-shared-packages-shared-meta
+
+commit fe32bac40faf49d88a8698fed9934177ba56ca9d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 19 19:44:39 2016 +0000
+
+    bumped changelog version
+
 commit 5a440f5552d83a05adf4e87530890c9680a14bac
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 15 00:36:01 2016 +0000
