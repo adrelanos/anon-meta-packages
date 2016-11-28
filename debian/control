@@ -18,7 +18,8 @@ Depends: poweroff-passwordless, power-savings-disable-in-vms, rads,
  shared-folder-help, swap-file-creator, swappiness-lowest, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages which are useful within
- virtual machines.
+ non-Qubes virtual machines. These are not useful in Qubes, since Qubes already
+ has native implementations for those.
  .
  Safe to remove, if you know what you are doing.
 
