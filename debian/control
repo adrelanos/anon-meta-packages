@@ -41,7 +41,7 @@ Description: Dependencies for both, Anon-Gateway and Anon-Workstation
 
 Package: anon-shared-packages-recommended
 Architecture: all
-Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
+Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
