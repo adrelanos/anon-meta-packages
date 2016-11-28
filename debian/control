@@ -12,6 +12,16 @@ Vcs-Browser: https://github.com/Whonix/anon-meta-packages
 Vcs-Git: https://github.com/Whonix/anon-meta-packages.git
 Standards-Version: 3.9.6
 
+Package: non-qubes-vm-enhancements
+Architecture: all
+Depends: poweroff-passwordless, power-savings-disable-in-vms, rads,
+ shared-folder-help, swap-file-creator, swappiness-lowest, ${misc:Depends}
+Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
+ A metapackage, which includes recommended packages which are useful within
+ virtual machines.
+ .
+ Safe to remove, if you know what you are doing.
+
 Package: anon-shared-packages-dependencies
 Architecture: all
 Depends: console-common, initramfs-tools, os-prober, bzip2, file,
@@ -33,9 +43,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
  iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
- poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
- shared-folder-help, swap-file-creator, security-misc,
- swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
+ scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
  kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
@@ -409,7 +417,7 @@ Description: Default Packages for Qubes-Whonix-Workstation
 Package: non-qubes-whonix-gateway
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta,
- anon-shared-desktop, anon-shared-desktop-kde,
+ anon-shared-desktop, anon-shared-desktop-kde, non-qubes-vm-enhancements,
  ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default Packages for Non-Qubes-Whonix-Gateway
@@ -425,7 +433,7 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway
 Package: non-qubes-whonix-workstation
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta,
- anon-shared-desktop, anon-shared-desktop-kde,
+ anon-shared-desktop, anon-shared-desktop-kde, non-qubes-vm-enhancements,
  ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation
