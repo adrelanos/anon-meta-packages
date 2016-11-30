@@ -1,3 +1,19 @@
+commit aab74d7586850e1b4dfbdea13a73e575edc73ff0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 27 21:35:44 2016 +0100
+
+    no longer install accessibility tools by default due to issues
+    
+    no longer depend on anon-shared-kde-accessibility
+    
+    https://phabricator.whonix.org/T457
+
+commit 4cb7c3be487650483dfb741f978ad1dfaf97b5f8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 25 23:27:52 2016 +0000
+
+    bumped changelog version
+
 commit 39771c222250ba6c93e030e8380413060eb0830b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 20 04:03:42 2016 +0000
