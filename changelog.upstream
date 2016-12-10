@@ -1,3 +1,207 @@
+commit fe98627947dfba0a9b4b47dff81b8e75bcc29a21
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 29 00:46:57 2016 +0100
+
+    move audio related packages from anon-workstation-packages-recommended to non-qubes-vm-enhancements
+    
+    libasound2
+    alsa-base
+    alsa-utils
+    pulseaudio
+    
+    Setting up audio in Qubes(-Whonix) is up to the Qubes Debian template / qubes-gui-agent, not Whonix.
+
+commit f1b7dfbf2dde1563006b00305ddff09ef9e07d2d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 29 00:07:40 2016 +0100
+
+    remove dbus from anon-shared-packages-recommended
+    
+    Packages that require it should depend on it anyhow.
+
+commit ac465f75ccf1810bf3a188236f859fcc59387b36
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 29 00:00:12 2016 +0100
+
+    move some packages from anon-shared-packages-dependencies to non-qubes-vm-enhancements
+    
+    keyboard-configuration
+    kbd
+    acpi-support,
+    console-common
+    initramfs-tools
+    os-prober
+
+commit 3f1cf031dabd57f6886c326c22b7113e48370234
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 28 23:46:39 2016 +0100
+
+    improved package description
+
+commit 07e956a9080aab563468d72ffcba47e6a85ea8ce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 28 23:45:21 2016 +0100
+
+    moved some packages from anon-shared-packages-recommended to non-qubes-vm-enhancements
+    
+    because we do not need them in Qubes
+    
+    poweroff-passwordless (Qubes has passwordless sudo by default https://www.qubes-os.org/doc/vm-sudo/)
+    power-savings-disable-in-vms (not required)
+    rads (Qubes uses seamless window by default, does not start VNs in text mode and then switches to graphical mode)
+    shared-folder-help (Qubes has a native superior implementation - https://www.qubes-os.org/doc/copying-files/)
+    swap-file-creator (Qubes / Xen has dynamic memory management)
+    swappiness-lowest
+
+commit 242f19d82e5eb84ba8fc0e67807edfc8ac7bea1d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 28 22:29:22 2016 +0100
+
+    add pulseaudio to anon-workstation-packages-recommended
+    
+    Thanks to entropy for the suggestion!
+    
+    https://forums.whonix.org/t/no-sound-in-workstation-virtualbox-on-linux-host
+
+commit cd23ef486c1f404f9903f2605fdc2b5972c3bd2e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 27 21:35:44 2016 +0100
+
+    no longer install accessibility tools by default due to issues
+    
+    no longer depend on anon-shared-kde-accessibility
+    
+    https://phabricator.whonix.org/T457
+
+commit f8127ffe22273907c59521f3c72ba8155979f0bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 21 17:38:55 2016 +0000
+
+    readme
+
+commit 4385dbdd54f68b0855cbc20574b9faa2d2f8a83e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 11 20:17:03 2016 +0200
+
+    no longer install apparmor-notify by default
+    
+    https://phabricator.whonix.org/T557
+
+commit 6bd004b9b145975cff79728d2fb7e74a62655adb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 11 20:14:35 2016 +0200
+
+    no longer install by default brltty, brltty-speechd, brltty-x11
+    
+    because it opens a local listener
+    
+    We should try to tame it at some later point.
+    
+    https://phabricator.whonix.org/T563
+    
+    https://phabricator.whonix.org/T457
+
+commit 90658cf9a9a5e3bf2843d5ac6fb767744d05bdce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Sep 21 17:54:24 2016 +0200
+
+    minor
+
+commit d44307531d13a8f9c16c21da5752b0b18150d4c9
+Merge: 80aab35 244d2d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Sep 21 17:53:59 2016 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 244d2d695eac6c811e05496f41ea210a4436571a
+Merge: 80aab35 eed9849
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Sep 21 17:53:19 2016 +0200
+
+    Merge pull request #3 from HulaHoopWhonix/patch-3
+    
+    added youtube-dl
+
+commit eed9849c872622c1d4e8d10fe1e2991a3f43edff
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Wed Sep 21 15:22:12 2016 +0000
+
+    youtube-dl
+
+commit 80aab3570328be2e60697d1586a4e79e66463411
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 17 11:53:51 2016 +0000
+
+    remove leading space of previous commit
+
+commit e010e09600883c4789d265a4ec52bc2be67563ad
+Merge: 24da5bf 5c1e278
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 17 11:53:28 2016 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 5c1e2782b7886aca9b6165714ebac3bf9e0cc589
+Merge: 24da5bf 9872e7c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 17 11:52:46 2016 +0000
+
+    Merge pull request #2 from HulaHoopWhonix/patch-2
+    
+    pwgen
+
+commit 9872e7c2cd0198aee4612f902141a915ff74b244
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Wed Aug 17 05:17:51 2016 +0000
+
+    pwgen
+
+commit 24da5bf9be49aa9b96ee0576478e58ae78aad3f2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 15 22:22:33 2016 +0000
+
+    no longer install iceweasel by default
+    
+    since we install Tor Browser by default
+    
+    and to fix issue
+    'iceweasel rather than Tor Browser is default browser bug / has higher mime priority / hexchat opens urls with iceweasel'
+    
+    https://phabricator.whonix.org/T517
+
+commit ec2e7930c3b0f8cc5c97211514a8f9796e242a4a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 29 23:21:47 2016 +0000
+
+    added baloo to anon-shared-applications-kde
+    
+    This fixes dolphin's search function.
+    
+    Thanks to @invalidprotocol for the report!
+    
+    http://forums.whonix.org/t/cant-search-files-getting-invalid-protocol-latest-whonix-v12
+    
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766426
+
+commit ff1f6c6a09d420d2bdc1f75e9c840e06ac3f6eb1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jun 2 14:34:34 2016 +0000
+
+    fix, added gtk2-engines-pixbuf to anon-shared-packages-recommended
+    
+    So it gets installed in Qubes-Whonix also. Makes dialogs look better.
+    
+    Thanks to entropy for the bug report!
+    
+    https://forums.whonix.org/t/qubes-whonix-13-0-0-0-7-testers-wanted/2432/11
+
+commit 4cb7c3be487650483dfb741f978ad1dfaf97b5f8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 25 23:27:52 2016 +0000
+
+    bumped changelog version
+
 commit 39771c222250ba6c93e030e8380413060eb0830b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 20 04:03:42 2016 +0000
