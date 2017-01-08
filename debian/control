@@ -126,8 +126,8 @@ Description: Desktop Depends
 
 Package: anon-shared-desktop-kde
 Architecture: all
-Depends: anon-shared-desktop (= ${source:Version}), kdm,
- plasma-widget-folderview, kde-baseapps-bin, ${misc:Depends}
+Depends: anon-shared-desktop (= ${source:Version}), sddm, kde-config-sddm,
+ ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
@@ -139,9 +139,9 @@ Description: Recommended packages for Gateway/Workstation base KDE desktop
 
 Package: anon-shared-applications-kde
 Architecture: all
-Depends: kdesudo, polkit-kde-1, kdepasswd, kfind,
- ksysguard, konsole, kwrite, dolphin, baloo, ark, systemsettings,
- p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen, kde-config-gtk-style,
+Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
+ ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
+ p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen, kde-config-gtk-style,
  kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
  kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
  kde-common-resolution, ${misc:Depends}
