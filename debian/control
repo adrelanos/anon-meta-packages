@@ -32,7 +32,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, locales, apt-transport-https,
  sdwdate, bootclockrandomization, timesanitycheck,
  sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
- pkg-manager-no-autoupdate, kde-no-move-max-win, kde-apper-no-autoupdate,
+ pkg-manager-no-autoupdate,
  security-misc, ${misc:Depends}
 Description: Dependencies for both, Anon-Gateway and Anon-Workstation
  A metapackage, which installs packages which both, Anon-Gateway
@@ -47,7 +47,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
- kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
+ usability-misc, menu, apt-transport-tor, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
@@ -100,7 +100,7 @@ Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, youtube-dl,
- anon-kde-streamiso, icedove, enigmail, xul-ext-torbirdy, pwgen,
+ icedove, enigmail, xul-ext-torbirdy, pwgen,
  ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
@@ -142,9 +142,7 @@ Architecture: all
 Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
  ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
  p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen, kde-config-gtk-style,
- kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
- kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
- kde-common-resolution, ${misc:Depends}
+ kde-kdm-autologin, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended applications for Gateway/Workstation KDE desktop
@@ -268,8 +266,7 @@ Description: Dependencies for Whonix-Gateway
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: anon-gw-kde-startmenu, whonix-gw-desktop-shortcuts,
- whonix-gw-kde-desktop-conf, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -326,9 +323,7 @@ Description: Dependencies for Whonix-Workstation
 
 Package: whonix-workstation-packages-recommended
 Architecture: all
-Depends: anon-ws-kde-startmenu,
- whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
- whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions,
+Depends: whonix-ws-irc-chat-support,
  whonix-welcome-page, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
