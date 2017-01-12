@@ -1,3 +1,17 @@
+commit 1545b0059b292effac17fc423a76a346b37ebac5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 09:19:35 2017 +0000
+
+    removed gtk3-engines-oxygen for now since not in stretch
+    
+    https://phabricator.whonix.org/T601
+
+commit 08873f448cd6235eab52595f830ad7ceaedad9d7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 03:02:47 2017 +0000
+
+    bumped changelog version
+
 commit 406ea5e25dd99779a9f2e37cbbb45638ca3b15fa
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 12 03:02:16 2017 +0000
