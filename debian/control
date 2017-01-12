@@ -141,7 +141,7 @@ Package: anon-shared-applications-kde
 Architecture: all
 Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
  ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
- p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen, kde-config-gtk-style,
+ p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen, kde-config-gtk-style,
  kde-kdm-autologin, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
