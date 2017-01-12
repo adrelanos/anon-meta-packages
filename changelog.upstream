@@ -1,3 +1,15 @@
+commit 406ea5e25dd99779a9f2e37cbbb45638ca3b15fa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 03:02:16 2017 +0000
+
+    fix package description
+
+commit 33d7cef50be834a6ca525f698e11a716450e31fc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 02:48:05 2017 +0000
+
+    bumped changelog version
+
 commit 57380df6f3dfe4911e6fa33acddcfb26180eda89
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 9 03:43:06 2017 +0000
