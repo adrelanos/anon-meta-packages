@@ -1,3 +1,62 @@
+commit 57380df6f3dfe4911e6fa33acddcfb26180eda89
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 9 03:43:06 2017 +0000
+
+    (temporarily?) remove broken desktop / kde config packages
+    
+    kde-no-move-max-win
+    kde-apper-no-autoupdate,
+    kde-privacy
+    kde-dolphin-menubar-enable
+    kde-kgpg-tweaks
+    kde-konsole-unlim-scrollback
+    kde-lowfat
+    kde-mouse-doubleclick
+    kde-sounds-off
+    kde-common-resolution
+    kmix-disable-autostart
+    whonix-gw-desktop-shortcuts
+    whonix-gw-kde-desktop-conf
+    whonix-ws-kde-desktop-conf
+    whonix-ws-start-menu-additions
+    whonix-ws-desktop-shortcuts
+    anon-gw-kde-startmenu
+    anon-ws-kde-startmenu
+    anon-kde-streamiso
+
+commit 40177b38c90b256b8c2eb3b443f4bbcf808ac0b6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 8 07:29:54 2017 +0000
+
+    add plasma-workspace (replacement for kde-workspace)
+
+commit 69db2014f1c5394f087167df9e79d3be42191505
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 8 06:31:56 2017 +0000
+
+    remove kde-baseapps-bin - not required in stretch
+    remove plasma-widget-folderview - no longer in stretch
+    remove kdm - removed from Debian
+    add new login manager sddm
+    add kde-config-sddm
+    remove polkit-kde-1 and replace with polkit-kde-agent-1
+    replace baloo with baloo-kf5
+    replace khelpcenter4 with khelpcenter
+
+commit e67c29aece4b130f03ef8c7de6a3f2b92fe5fbaa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 8 05:55:49 2017 +0000
+
+    remove kde-workspace - not in stretch
+    remove kde-worksapce-bin - not in stretch
+    add kde-config-gtk-style - same bucket as gtk2-engines-oxygen and gtk3-engines-oxygen - as per https://wiki.debian.org/KDE
+
+commit c1af90dcc4d5d824da6f9f9bf00d3474b2623e1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 10 00:08:42 2016 +0000
+
+    bumped changelog version
+
 commit fe98627947dfba0a9b4b47dff81b8e75bcc29a21
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 29 00:46:57 2016 +0100
