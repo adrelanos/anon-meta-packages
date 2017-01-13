@@ -127,7 +127,7 @@ Description: Desktop Depends
 Package: anon-shared-desktop-kde
 Architecture: all
 Depends: anon-shared-desktop (= ${source:Version}), sddm, kde-config-sddm,
- plasma-workspace, plasma-desktop-data, kwin-x11, ${misc:Depends}
+ plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
  anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
