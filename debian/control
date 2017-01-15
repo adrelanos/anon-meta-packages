@@ -142,6 +142,7 @@ Architecture: all
 Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
  ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
  p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen,
+ gtk3-engines-breeze,
  kde-config-gtk-style, kde-config-gtk-style-preview, kde-kdm-autologin,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit, ${misc:Depends}
