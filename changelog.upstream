@@ -1,3 +1,68 @@
+commit 460e829750f27c5e2eb15a8b76db6cad935eb130
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:35:25 2017 +0100
+
+    packaging, bumped Standards-Version from 3.9.6 to 3.9.8 for jessie support
+
+commit a2877bce968417cb1708e2fa1a3f546f332238ef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:28:43 2017 +0000
+
+    add plasma-pa to anon-shared-applications-kde (kmix replacement)
+
+commit 2a1243b4cb47b9ad6a32eabb8d266bd65d8a169e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:27:55 2017 +0000
+
+    remove kmix from anon-workstation-extra-applications
+
+commit 78b87004920b7677a474a7099644825fa5f5e801
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:25:59 2017 +0000
+
+    add gtk3-engines-breeze to anon-shared-applications-kde
+
+commit 98dd8adc4606b71cbbed33d526eb7312e499785e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:22:50 2017 +0000
+
+    add to anon-shared-applications-kde
+    - kde-config-gtk-style-preview
+    - kde-config-screenlocker
+    - kde-config-sddm
+    - kde-style-oxygen-qt5
+    - kmenuedit
+
+commit 914f7ad5ebcf6cbfcc2c6fe6ad7149f0a729f2b5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 13 10:32:06 2017 +0000
+
+    plasma-workspace -> plasma-desktop
+    
+    because plasma-workspace alone is not a functional desktop meta package
+
+commit b6cf81320b2cac8d979cab8a8cb21980df0dbf6b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 21:13:46 2017 +0000
+
+    add missing dependency kwin-x11
+    
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=824939
+
+commit db7227aca18f1782103e86f664b962fd656c3a6e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 18:01:57 2017 +0000
+
+    add missing dependency plasma-desktop-data to work around Debian bug
+    
+    http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=851175
+
+commit aa5cc2df118b78f153293c2dcdea730c7ffb9658
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 12 09:22:19 2017 +0000
+
+    bumped changelog version
+
 commit 1545b0059b292effac17fc423a76a346b37ebac5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 12 09:19:35 2017 +0000
