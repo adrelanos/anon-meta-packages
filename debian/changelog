@@ -1,3 +1,9 @@
+anon-meta-packages (3:4.0-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 16 Jan 2017 15:09:43 +0100
+
 anon-meta-packages (3:3.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
