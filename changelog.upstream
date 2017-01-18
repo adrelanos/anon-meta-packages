@@ -1,3 +1,35 @@
+commit 7cf8cf4e50b72a570de54fad10f912af73e3cf3d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 13:30:47 2017 +0000
+
+    move apt-transport-tor to anon-shared-packages-dependencies
+    
+    https://phabricator.whonix.org/T610
+
+commit 5e6779f10c8c615d818183f021a67f12c670034c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 13:28:06 2017 +0000
+
+    explicit depend on libkf5kipi31.0.0 libkf5kipi-data to work around gwenview
+    
+    dependency bug
+
+commit bad339b38a23a83f4d1373ac6bfd6e5c4a9799f3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 09:29:23 2017 +0000
+
+    install onionshare and ricochet by default
+    
+    add onionshare and ricochet to anon-workstation-packages-recommended
+    
+    https://phabricator.whonix.org/T595
+
+commit 5894a9bcafb1fc5bf7ef7de59a745c8bd555900f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 16 15:09:50 2017 +0100
+
+    bumped changelog version
+
 commit af6ef94b954248f939afdbad7fde8d5d3f9fef71
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 16 15:00:26 2017 +0100
