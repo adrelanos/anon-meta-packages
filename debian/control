@@ -29,7 +29,7 @@ Description: Recommended packages for VMs other than Qubes VMs
 Package: anon-shared-packages-dependencies
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
- less, haveged, locales, apt-transport-https,
+ less, haveged, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
  sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
  pkg-manager-no-autoupdate,
@@ -47,7 +47,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
- usability-misc, menu, apt-transport-tor, ${misc:Depends}
+ usability-misc, menu, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
