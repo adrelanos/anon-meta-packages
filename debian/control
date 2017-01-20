@@ -156,7 +156,7 @@ Description: Recommended applications for Gateway/Workstation KDE desktop
 
 Package: anon-shared-kde-accessibility
 Architecture: all
-Depends: gnome-orca, espeakup,
+Depends: gnome-orca,
  console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
  kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
 Description: KDE accessibility tools
