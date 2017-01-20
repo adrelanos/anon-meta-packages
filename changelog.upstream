@@ -1,3 +1,15 @@
+commit 730d4b196dd33131f840f5bcef7e8243747d5325
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 20 14:13:50 2017 +0100
+
+    remove anon-shared-kde-accessibility since broken in stretch
+
+commit 6c2bd649a1341c6eaf7925bf2f7c47e2f7a298be
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 14:30:46 2017 +0000
+
+    bumped changelog version
+
 commit 7cf8cf4e50b72a570de54fad10f912af73e3cf3d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 18 13:30:47 2017 +0000
