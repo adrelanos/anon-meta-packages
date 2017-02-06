@@ -1,3 +1,15 @@
+commit 95e385082de3437eb2dc7fc23016131bc4a7e3e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 2 19:14:10 2017 +0100
+
+    fix, ricochet -> ricochet-im
+
+commit 56f96ed59bd780976ae9e577630824b1b16051f8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 20 17:43:27 2017 +0100
+
+    bumped changelog version
+
 commit 730d4b196dd33131f840f5bcef7e8243747d5325
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 20 14:13:50 2017 +0100
