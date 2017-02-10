@@ -6,7 +6,7 @@ Source: anon-meta-packages
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
-Build-Depends: debhelper (>= 9), faketime, genmkfile
+Build-Depends: debhelper (>= 9), genmkfile
 Homepage: https://github.com/Whonix/anon-meta-packages
 Vcs-Browser: https://github.com/Whonix/anon-meta-packages
 Vcs-Git: https://github.com/Whonix/anon-meta-packages.git
