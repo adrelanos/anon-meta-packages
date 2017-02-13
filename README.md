@@ -1,3 +1,20 @@
+# Recommended packages for VMs other than Qubes VMs #
+
+A metapackage, which includes recommended packages which are useful within
+non-Qubes virtual machines. These are not useful in Qubes, since Qubes already
+has native implementations for those.
+
+Safe to remove, if you know what you are doing.
+
+Package: anon-shared-packages-dependencies
+Architecture: all
+Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
+less, haveged, locales, apt-transport-https, apt-transport-tor,
+sdwdate, bootclockrandomization, timesanitycheck,
+sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
+pkg-manager-no-autoupdate,
+security-misc, ${misc:Depends}
+Description: Dependencies for both, Anon-Gateway and Anon-Workstation
 # Dependencies for both, Anon-Gateway and Anon-Workstation #
 
 A metapackage, which installs packages which both, Anon-Gateway
@@ -7,14 +24,12 @@ Do not remove.
 
 Package: anon-shared-packages-recommended
 Architecture: all
-Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils, dbus,
+Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
 iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
 apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
 anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
-poweroff-passwordless, power-savings-disable-in-vms, rads, scurl,
-shared-folder-help, swap-file-creator, security-misc,
-swappiness-lowest, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
-kde-privacy, usability-misc, menu, apt-transport-tor, ${misc:Depends}
+scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
+usability-misc, menu, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 # Recommended packages for both, Anon-Gateway and Anon-Workstation #
 
@@ -41,7 +56,7 @@ Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
-control-port-filter-python, open-link-confirmation,
+fteproxy, control-port-filter-python, open-link-confirmation,
 ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
@@ -72,11 +87,10 @@ Do not remove.
 Package: anon-workstation-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
-Depends: libasound2, alsa-base, alsa-utils,
-xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
+Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
 pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
 tb-starter, tb-updater, open-link-confirmation, youtube-dl,
-anon-kde-streamiso, icedove, enigmail, xul-ext-torbirdy, pwgen,
+icedove, enigmail, xul-ext-torbirdy, pwgen, onionshare, ricochet-im,
 ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
 anon-workstation-default-applications (= ${source:Version}),
@@ -106,8 +120,8 @@ anon-shared-desktop-kde depends on this package.
 
 Package: anon-shared-desktop-kde
 Architecture: all
-Depends: anon-shared-desktop (= ${source:Version}), kde-workspace, kdm,
-plasma-widget-folderview, kde-baseapps-bin, ${misc:Depends}
+Depends: anon-shared-desktop (= ${source:Version}), sddm, kde-config-sddm,
+plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
 anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
@@ -121,12 +135,13 @@ Safe to remove.
 
 Package: anon-shared-applications-kde
 Architecture: all
-Depends: kdesudo, polkit-kde-1, kdepasswd, kfind,
-ksysguard, konsole, kwrite, dolphin, baloo, ark, systemsettings,
-p7zip-full, zip, unzip, okular, khelpcenter4, ksystemlog, gtk2-engines-oxygen, gtk3-engines-oxygen,
-kde-dolphin-menubar-enable, kde-kdm-autologin, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
-kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kmix-disable-autostart,
-kde-common-resolution, ${misc:Depends}
+Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
+ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
+p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen,
+gtk3-engines-breeze, plasma-pa,
+kde-config-gtk-style, kde-config-gtk-style-preview, kde-kdm-autologin,
+kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
+kmenuedit, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
 anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended applications for Gateway/Workstation KDE desktop
@@ -139,7 +154,7 @@ Safe to remove.
 
 Package: anon-shared-kde-accessibility
 Architecture: all
-Depends: gnome-orca, espeakup,
+Depends: gnome-orca,
 console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
 kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
 Description: KDE accessibility tools
@@ -152,10 +167,11 @@ anonymity, privacy or security.
 
 Package: anon-workstation-default-applications
 Architecture: all
-Depends: hexchat, vlc, mixmaster,
-kcalc, gwenview, kgpg, kmix, mat, python-hachoir-core, python-hachoir-parser,
+Depends: hexchat, vlc, mixmaster, kcalc,
+gwenview, libkf5kipi31.0.0, libkf5kipi-data,
+kgpg, mat, python-hachoir-core, python-hachoir-parser,
 python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
-pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry, fpm2, ${misc:Depends}
+pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
 anon-workstation-extra-applications (= ${source:Version}),
 anon-workstation-langpack-common (= ${source:Version})
@@ -268,8 +284,7 @@ Do not remove.
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: anon-gw-kde-startmenu, whonix-gw-desktop-shortcuts,
-whonix-gw-kde-desktop-conf, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -336,9 +351,7 @@ Do not remove.
 
 Package: whonix-workstation-packages-recommended
 Architecture: all
-Depends: anon-ws-kde-startmenu,
-whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
-whonix-ws-kde-desktop-conf, whonix-ws-start-menu-additions,
+Depends: whonix-ws-irc-chat-support,
 whonix-welcome-page, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
@@ -356,7 +369,6 @@ Depends: whonix-gateway-packages-dependencies-pre,
 anon-shared-packages-dependencies,
 anon-shared-packages-recommended,
 anon-shared-applications-kde,
-anon-shared-kde-accessibility,
 whonix-shared-packages-dependencies,
 whonix-shared-packages-recommended,
 anon-gateway-packages-dependencies,
@@ -382,7 +394,6 @@ Depends: whonix-workstation-packages-dependencies-pre,
 anon-shared-packages-dependencies,
 anon-shared-packages-recommended,
 anon-shared-applications-kde,
-anon-shared-kde-accessibility,
 whonix-shared-packages-dependencies,
 whonix-shared-packages-recommended,
 anon-workstation-packages-dependencies,
@@ -440,7 +451,7 @@ Feel free to remove if you know what you are doing.
 
 Package: non-qubes-whonix-gateway
 Architecture: all
-Depends: whonix-gateway-shared-packages-shared-meta,
+Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements,
 anon-shared-desktop, anon-shared-desktop-kde,
 ${misc:Depends}
 Replaces: whonix-gateway
@@ -458,7 +469,7 @@ Feel free to remove if you know what you are doing.
 
 Package: non-qubes-whonix-workstation
 Architecture: all
-Depends: whonix-workstation-shared-packages-shared-meta,
+Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements,
 anon-shared-desktop, anon-shared-desktop-kde,
 ${misc:Depends}
 Replaces: whonix-workstation
