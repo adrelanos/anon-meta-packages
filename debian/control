@@ -101,7 +101,7 @@ Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, youtube-dl,
  icedove, enigmail, xul-ext-torbirdy, pwgen, onionshare, ricochet-im,
- ${misc:Depends}
+ python-msgpack, ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
  anon-workstation-default-applications (= ${source:Version}),
  anon-workstation-extra-applications (= ${source:Version})
