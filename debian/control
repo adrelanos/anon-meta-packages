@@ -47,7 +47,12 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
- usability-misc, menu, ${misc:Depends}
+ usability-misc, menu,
+ kde-no-move-max-win, kde-apper-no-autoupdate, kde-privacy,
+ kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
+ kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kde-common-resolution,
+ kmix-disable-autostart, anon-kde-streamiso,
+ ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
@@ -270,7 +275,7 @@ Description: Dependencies for Whonix-Gateway
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: ${misc:Depends}
+Depends: anon-gw-kde-startmenu, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -328,7 +333,8 @@ Description: Dependencies for Whonix-Workstation
 Package: whonix-workstation-packages-recommended
 Architecture: all
 Depends: whonix-ws-irc-chat-support,
- whonix-welcome-page, ${misc:Depends}
+ whonix-welcome-page, whonix-ws-start-menu-additions,
+ anon-ws-kde-startmenu, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
  A metapackage, which installs packages, which are recommended for
