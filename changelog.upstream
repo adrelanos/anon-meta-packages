@@ -1,3 +1,15 @@
+commit 5bca5791f35cfdf8716eb0078fcdd17a5cabeea3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 15:22:27 2017 +0000
+
+    add bindp to anon-workstation-packages-recommended
+
+commit d536e1da3c9f7aea0d10bfa02db3e2944b68fc41
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 13:43:26 2017 +0000
+
+    bumped changelog version
+
 commit 173bac9f22b6bc0e63aecd774cfc3c776ce27497
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 17 14:33:15 2017 +0100
