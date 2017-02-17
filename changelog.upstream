@@ -1,3 +1,81 @@
+commit 173bac9f22b6bc0e63aecd774cfc3c776ce27497
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 14:33:15 2017 +0100
+
+    readd desktop configuration packages
+    
+    - kde-no-move-max-win, kde-apper-no-autoupdate, kde-privacy,
+    - kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
+    - kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kde-common-resolution,
+    - kmix-disable-autostart, anon-kde-streamiso
+    
+    - anon-gw-kde-startmenu
+    - anon-ws-kde-startmenu
+    
+    - whonix-ws-start-menu-additions,
+    
+    do not readd:
+    
+    - whonix-gw-kde-desktop-conf (broken since kde plasma 5?)
+    - whonix-ws-kde-desktop-conf (same as above)
+    
+    do not readd:
+    
+    - whonix-gw-desktop-shortcuts (broken in Debian stretch)
+    - whonix-ws-desktop-shortcuts (same as above)
+
+commit 751179b47ae1a78aeebbf6902f5f98c07f56bdb7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 16 22:06:06 2017 +0100
+
+    add python-msgpack to anon-workstation-packages-recommended
+    
+    to simplify installation of zeronet
+    
+    just 67.8 kB
+    
+    https://phabricator.whonix.org/T597
+
+commit 2a72c485153d8f12593890c505c6018b6a031dd7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 13 17:24:44 2017 +0000
+
+    readme
+
+commit a57853dd0f9263201f6b2fc6aa4c54e75ed926ac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Feb 11 06:57:14 2017 +0100
+
+    add fteproxy to anon-gateway-packages-recommended
+    
+    https://phabricator.whonix.org/T520
+
+commit d76e9e4f37ed2ee62c27794efaca2267f369cde0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 17:21:55 2017 +0000
+
+    refactoring
+
+commit c92f7833a458fab324f26b7e488b907721fdfe0c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:47:49 2017 +0000
+
+    remove faketime from Build-Depends:
+    
+    since no longer used for reproducible builds
+
+commit 616f44f9af1df53096f1ce0e43ff1e0421427169
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:35:21 2017 +0000
+
+    remove debian/gain-root-command workaround
+
+commit eabb15740244554c8e84281cb94b4372a57c0c0e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 6 02:05:49 2017 +0000
+
+    bumped changelog version
+
 commit 95e385082de3437eb2dc7fc23016131bc4a7e3e4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Feb 2 19:14:10 2017 +0100
