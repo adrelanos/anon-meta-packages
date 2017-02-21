@@ -50,7 +50,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  usability-misc, menu, man-db,
  kde-no-move-max-win, kde-apper-no-autoupdate, kde-privacy,
  kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
- kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kde-common-resolution,
+ kde-lowfat, kde-mouse-doubleclick, kde-sounds-off,
  kmix-disable-autostart, anon-kde-streamiso,
  ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
