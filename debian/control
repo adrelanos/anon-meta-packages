@@ -275,7 +275,7 @@ Description: Dependencies for Whonix-Gateway
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: whonix-gw-desktop-shortcuts, anon-gw-kde-startmenu, ${misc:Depends}
+Depends: whonix-gw-desktop-shortcuts, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -334,7 +334,7 @@ Package: whonix-workstation-packages-recommended
 Architecture: all
 Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions,
- anon-ws-kde-startmenu, ${misc:Depends}
+ ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
  A metapackage, which installs packages, which are recommended for
