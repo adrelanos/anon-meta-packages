@@ -14,7 +14,7 @@ Standards-Version: 3.9.8
 
 Package: non-qubes-vm-enhancements
 Architecture: all
-Depends: poweroff-passwordless, power-savings-disable-in-vms, rads,
+Depends: power-savings-disable-in-vms, rads,
  shared-folder-help, swap-file-creator, swappiness-lowest,
  keyboard-configuration, kbd, acpi-support,
  console-common, initramfs-tools, os-prober,
