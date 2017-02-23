@@ -103,7 +103,7 @@ Package: anon-workstation-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
- pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
+ anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, youtube-dl,
  icedove, enigmail, xul-ext-torbirdy, pwgen, onionshare, ricochet-im,
  python-msgpack, bindp, ${misc:Depends}
