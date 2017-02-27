@@ -1,3 +1,51 @@
+commit 5ca065477fd34ce7d773eca164734d44ade51e3f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 23 16:41:39 2017 +0000
+
+    remove pidgin-improved-privacy since deprecated
+
+commit c3bfb4885e39d76b9803020959a7003aaad0e4dc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 23 15:59:01 2017 +0000
+
+    remove apparmor-profile-pidgin since deprecated
+
+commit 4025610d9b3da05b3bec79bdafcb4f15ae0b817a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:46:29 2017 +0000
+
+    remove kde start menu packages since merged into desktop shortcut packages
+
+commit 7a0f7eb460247fe01d8a1a435d646e39ae843b9b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:45:34 2017 +0000
+
+    re-add desktop shortcuts packages
+
+commit 17ff5ae992af2e0a72b8c4a88c6000e509fd58fd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:33:22 2017 +0000
+
+    remove poweroff-passwordless since deprecated
+
+commit c5561027cc52d92fbf9a67ca5318be48be235f1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 21 23:42:57 2017 +0000
+
+    remove kde-common-resolution since deprecated
+
+commit b0a017adb3204350391936f8550cb288d4d9616b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 20 00:42:36 2017 +0000
+
+    add man-db to anon-shared-packages-recommended
+
+commit 7e6d8a6f6d2197726580a9abf29984a0080ab841
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 15:38:07 2017 +0000
+
+    bumped changelog version
+
 commit 5bca5791f35cfdf8716eb0078fcdd17a5cabeea3
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 17 15:22:27 2017 +0000
