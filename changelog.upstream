@@ -1,3 +1,21 @@
+commit f4f46102af58c186522c6291dadb6748f1d4cfbd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 6 14:19:44 2017 +0000
+
+    remove alsa-base since removed from Debian stretch
+
+commit 1f330f9944025be665953f1dd85b2c2d1214d66f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 6 05:14:28 2017 +0100
+
+    remove kde-apper-no-autoupdate since it was merged into pkg-manager-no-autoupdate
+
+commit 71ed7d01a0aee2927729801962f2a40017d5a02c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 27 01:37:11 2017 +0000
+
+    bumped changelog version
+
 commit 5ca065477fd34ce7d773eca164734d44ade51e3f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Feb 23 16:41:39 2017 +0000
