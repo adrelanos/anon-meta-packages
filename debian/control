@@ -17,7 +17,7 @@ Architecture: all
 Depends: power-savings-disable-in-vms, rads,
  shared-folder-help, swap-file-creator, swappiness-lowest,
  keyboard-configuration, kbd, acpi-support,
- console-common, initramfs-tools, os-prober,
+ console-common, console-setup, initramfs-tools, os-prober,
  libasound2, alsa-utils, pulseaudio, ${misc:Depends}
 Description: Recommended packages for VMs other than Qubes VMs
  A metapackage, which includes recommended packages which are useful within
