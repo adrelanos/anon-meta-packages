@@ -28,7 +28,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
 iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
 apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
 anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
-scurl, security-misc, tor-ctrl, uwt, knetattach-hide, openvpn, ntfs-3g,
+scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
 usability-misc, menu, ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 # Recommended packages for both, Anon-Gateway and Anon-Workstation #
