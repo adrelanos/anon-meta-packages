@@ -1,3 +1,17 @@
+commit a84936f34f1f70da37123d2789e3e61b2928e3c4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 31 11:16:11 2017 +0000
+
+    remove onionshare to unbreak build because it has been removed from stretch
+    
+    https://forums.whonix.org/t/feature-request-onionshare-support/300/11
+
+commit 260cd60aaecbab9aa57d399208600e1e9ffa9c6e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 26 14:24:12 2017 +0000
+
+    bumped changelog version
+
 commit c71047555035bff1bd27db0d39dac7503a1a3bd1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jul 26 14:09:35 2017 +0000
