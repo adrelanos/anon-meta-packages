@@ -105,7 +105,7 @@ Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, youtube-dl,
- icedove, enigmail, xul-ext-torbirdy, pwgen, onionshare, ricochet-im,
+ icedove, enigmail, xul-ext-torbirdy, pwgen, ricochet-im,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
