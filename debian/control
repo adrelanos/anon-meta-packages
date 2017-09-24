@@ -251,7 +251,7 @@ Description: Extra AppArmor profiles developed by the Whonix team
 
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
-Depends: whonix-gw-network-conf, anon-gw-dns-conf, anon-base-files,
+Depends: whonix-gw-network-conf, anon-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
  A metapackage, which installs packages which Whonix-Gateway
@@ -264,7 +264,7 @@ Package: whonix-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
- anon-gw-dhcp-conf, anon-gw-dns-conf, whonix-gw-firewall,
+ whonix-gw-firewall,
  whonix-gateway-packages-dependencies-pre, ${misc:Depends}
 Conflicts: whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Gateway
