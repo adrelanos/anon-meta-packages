@@ -1,3 +1,19 @@
+commit 8436127c6c2dcd58abc0c5f6394e41c16d87ffc7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 24 12:55:30 2017 +0200
+
+    no longer install anon-gw-dns-conf and anon-gw-dhcp-conf
+    
+    to make Whonix-Gateway DNS functional
+    
+    to make meek (meek-lite) functional
+
+commit 07253d96646f244d83df1e39df8e6723129c2c16
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 31 11:18:02 2017 +0000
+
+    bumped changelog version
+
 commit a84936f34f1f70da37123d2789e3e61b2928e3c4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 31 11:16:11 2017 +0000
