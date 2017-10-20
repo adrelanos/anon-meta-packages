@@ -51,7 +51,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  kde-no-move-max-win, kde-privacy,
  kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
  kde-lowfat, kde-mouse-doubleclick, kde-sounds-off,
- kmix-disable-autostart, anon-kde-streamiso,
+ anon-kde-streamiso,
  ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
