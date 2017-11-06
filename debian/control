@@ -47,11 +47,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
- usability-misc, menu, man-db,
- kde-no-move-max-win, kde-privacy,
- kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
- kde-lowfat, kde-mouse-doubleclick, kde-sounds-off,
- anon-kde-streamiso,
+ usability-misc, menu, man-db, anon-apps-config,
  ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
@@ -149,7 +145,7 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
  p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen,
  gtk3-engines-breeze, plasma-pa,
- kde-config-gtk-style, kde-config-gtk-style-preview, kde-kdm-autologin,
+ kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
