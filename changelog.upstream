@@ -1,3 +1,35 @@
+commit 27580a76256ed7d2c7ff59b9a730a6ceb40c3c3e
+Merge: a2214eb f906a37
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 6 23:52:44 2017 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f906a372cd39b9cc7a42e161ef286d786e523efc
+Author: Jason J. Ayala P <JasonJAyalaP+Github@Gmail.com>
+Date:   Mon Nov 6 13:52:57 2017 -0600
+
+    replaced kde-* with anon-apps-config
+
+commit a2214eb72b5a3318f1db319ac87cf8330fac53c2
+Merge: c226954 b16958f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Oct 20 14:47:05 2017 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit b16958fe77fd370ade22fb3e87354ce2483739b9
+Author: Jason J. Ayala P <JasonJAyalaP+Github@Gmail.com>
+Date:   Wed Oct 18 17:13:01 2017 -0500
+
+    removed kmix
+
+commit c22695490c651686f5c095f3a946994d47a0dc54
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Sep 27 12:46:12 2017 +0200
+
+    bumped changelog version
+
 commit 8436127c6c2dcd58abc0c5f6394e41c16d87ffc7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Sep 24 12:55:30 2017 +0200
