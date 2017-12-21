@@ -12,7 +12,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
 less, haveged, locales, apt-transport-https, apt-transport-tor,
 sdwdate, bootclockrandomization, timesanitycheck,
 sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
-pkg-manager-no-autoupdate,
+pkg-manager-no-autoupdate, busybox,
 security-misc, ${misc:Depends}
 Description: Dependencies for both, Anon-Gateway and Anon-Workstation
 # Dependencies for both, Anon-Gateway and Anon-Workstation #
@@ -29,7 +29,8 @@ iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
 apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
 anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
 scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
-usability-misc, menu, ${misc:Depends}
+usability-misc, menu, man-db, anon-apps-config,
+${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 # Recommended packages for both, Anon-Gateway and Anon-Workstation #
 
@@ -56,7 +57,7 @@ Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
-fteproxy, onion-grater, open-link-confirmation,
+fteproxy, onion-grater, open-link-confirmation, onioncircuits,
 ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
@@ -88,9 +89,10 @@ Package: anon-workstation-packages-recommended
 Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
-pidgin-improved-privacy, anon-ws-disable-stacked-tor, tb-default-browser,
+anon-ws-disable-stacked-tor, tb-default-browser,
 tb-starter, tb-updater, open-link-confirmation, youtube-dl,
-icedove, enigmail, xul-ext-torbirdy, pwgen, onionshare, ricochet-im,
+thunderbird, enigmail, xul-ext-torbirdy, pwgen, ricochet-im,
+python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
 ${misc:Depends}
 Suggests: anon-shared-desktop (= ${source:Version}),
 anon-workstation-default-applications (= ${source:Version}),
@@ -135,11 +137,11 @@ Safe to remove.
 
 Package: anon-shared-applications-kde
 Architecture: all
-Depends: kdesudo, polkit-kde-agent-1, kdepasswd, kfind,
+Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
 ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
-p7zip-full, zip, unzip, okular, khelpcenter, ksystemlog, gtk2-engines-oxygen,
+p7zip-full, zip, unzip, khelpcenter, ksystemlog, gtk2-engines-oxygen,
 gtk3-engines-breeze, plasma-pa,
-kde-config-gtk-style, kde-config-gtk-style-preview, kde-kdm-autologin,
+kde-config-gtk-style, kde-config-gtk-style-preview,
 kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
 kmenuedit, ${misc:Depends}
 Suggests: anon-shared-kde-accessibility (= ${source:Version}),
@@ -167,7 +169,7 @@ anonymity, privacy or security.
 
 Package: anon-workstation-default-applications
 Architecture: all
-Depends: hexchat, vlc, mixmaster, kcalc,
+Depends: hexchat, vlc, mixmaster, kcalc, okular,
 gwenview, libkf5kipi31.0.0, libkf5kipi-data,
 kgpg, mat, python-hachoir-core, python-hachoir-parser,
 python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
@@ -240,7 +242,7 @@ space and requires a better solution.
 
 Package: apparmor-profiles-whonix
 Architecture: all
-Depends: apparmor-profile-icedove, apparmor-profile-pidgin,
+Depends: apparmor-profile-icedove,
 apparmor-profile-torbrowser, apparmor-profile-virtualbox,
 apparmor-profile-xchat,
 apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
@@ -255,7 +257,7 @@ Safe to remove, if you know what you are doing.
 
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
-Depends: whonix-gw-network-conf, anon-gw-dns-conf, anon-base-files,
+Depends: whonix-gw-network-conf, anon-base-files,
 ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
 # Dependencies for Whonix-Gateway that changes network related files #
@@ -270,7 +272,7 @@ Package: whonix-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
-anon-gw-dhcp-conf, anon-gw-dns-conf, whonix-gw-firewall,
+whonix-gw-firewall,
 whonix-gateway-packages-dependencies-pre, ${misc:Depends}
 Conflicts: whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Gateway
@@ -284,7 +286,7 @@ Do not remove.
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: ${misc:Depends}
+Depends: whonix-gw-desktop-shortcuts, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -351,8 +353,9 @@ Do not remove.
 
 Package: whonix-workstation-packages-recommended
 Architecture: all
-Depends: whonix-ws-irc-chat-support,
-whonix-welcome-page, ${misc:Depends}
+Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
+whonix-welcome-page, whonix-ws-start-menu-additions,
+${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation
 # Recommended packages for Whonix-Workstation #
