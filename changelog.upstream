@@ -1,3 +1,15 @@
+commit 008c3e97116480dda6efb8f73c02fc26aa2dc1be
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 21:34:44 2017 +0000
+
+    whonix-gw-firewall / whonix-ws-firewall -> whonix-firewall
+
+commit 0ba2f78200132ebf8cc6ea36c3034d375087e699
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 20:29:28 2017 +0000
+
+    bumped changelog version
+
 commit 612dc32ebad54753145462c3b4b762efe0102f85
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Dec 21 20:26:26 2017 +0000
