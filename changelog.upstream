@@ -1,3 +1,23 @@
+commit a22b1807c79cb1d21447c83ed251c331cf6222f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 12:43:06 2017 +0100
+
+    move okular from anon-shared-applications-kde to anon-workstation-default-applications
+    
+    so it does not get installed on Whonix-Gateway
+    
+    so also phonon (dependency of okular) does not get installed on Whonix-Gateway
+    
+    thanks to @TNTBOMBOM for the bug report
+    
+    https://forums.whonix.org/t/whonix-virtualbox-14-0-0-5-5-testers-wanted/4642/2
+
+commit 8aa5b1fe18bf90363b7730d60f7a71338936fa6c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 21 22:40:22 2017 +0000
+
+    bumped changelog version
+
 commit 27580a76256ed7d2c7ff59b9a730a6ceb40c3c3e
 Merge: a2214eb f906a37
 Author: Patrick Schleizer <adrelanos@riseup.net>
