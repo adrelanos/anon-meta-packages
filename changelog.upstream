@@ -1,3 +1,15 @@
+commit d64085c1d892ff49e8407f70676b9203b51115fd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 21 13:36:17 2018 +0100
+
+    add anon-connection-wizard to anon-gateway-packages-recommended
+
+commit 417122af45b0d867d26bad479a9b65b3ec67c574
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 21 21:35:22 2017 +0000
+
+    bumped changelog version
+
 commit 008c3e97116480dda6efb8f73c02fc26aa2dc1be
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Dec 21 21:34:44 2017 +0000
