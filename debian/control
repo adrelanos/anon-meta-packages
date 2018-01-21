@@ -72,7 +72,7 @@ Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
  fteproxy, onion-grater, open-link-confirmation, onioncircuits,
- ${misc:Depends}
+ anon-connection-wizard, ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
  A metapackage, which installs packages, which are recommended for
