@@ -58,7 +58,7 @@ Architecture: all
 Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
 fteproxy, onion-grater, open-link-confirmation, onioncircuits,
-${misc:Depends}
+anon-connection-wizard, ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway
 # Recommended packages for Anon-Gateway #
@@ -272,7 +272,6 @@ Package: whonix-gateway-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
-whonix-gw-firewall,
 whonix-gateway-packages-dependencies-pre, ${misc:Depends}
 Conflicts: whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Gateway
@@ -286,7 +285,7 @@ Do not remove.
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: whonix-gw-desktop-shortcuts, ${misc:Depends}
+Depends: whonix-gw-desktop-shortcuts, whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -300,7 +299,7 @@ Safe to remove, if you know what you are doing.
 Package: whonix-shared-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-base-files, anon-apt-sources-list,
+Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
 whonix-initializer, whonixsetup, whonix-repository, grub-enable-apparmor,
 ${misc:Depends}
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation
@@ -313,7 +312,7 @@ Do not remove.
 
 Package: whonix-shared-packages-recommended
 Architecture: all
-Depends: anon-shared-packages-recommended, whonixcheck, whonix-setup-wizard,
+Depends: anon-shared-packages-recommended, whonixcheck,
 ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation
 # Recommended packages for Whonix-Gateway and Whonix-Workstation #
@@ -339,7 +338,7 @@ Do not remove.
 Package: whonix-workstation-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: whonix-ws-firewall, whonix-workstation-packages-dependencies-pre,
+Depends: whonix-workstation-packages-dependencies-pre,
 ${misc:Depends}
 Recommends: whonix-workstation-packages-recommended (= ${source:Version})
 Conflicts: whonix-gateway-packages-dependencies
