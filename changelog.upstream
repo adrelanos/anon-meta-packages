@@ -1,3 +1,57 @@
+commit 046e29da96bb07becf4695514c1b44f9b236b123
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:50:10 2018 +0000
+
+    readme
+
+commit 144cdbf5e8f7606f68485d65931038db13231d3c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:47:49 2018 +0000
+
+    readme
+
+commit 783ac1435ef78e3f11e7f9de71e98fc13c20a3a7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:38:42 2018 +0000
+
+    update copyright
+
+commit 0a704b207d4f1e035e41909e4fa48a0d27b0a5d5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:21:48 2018 +0000
+
+    update copyright
+
+commit d1e6e31e6805c1d57d43a804567bd0871f84c289
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:15:01 2018 +0000
+
+    update copyright
+
+commit 9ae903a57fec03ff83f4e96d9a59952d0fbbebbc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 29 15:09:26 2018 +0000
+
+    update copyright
+
+commit 1a617b3fc9293a676a62eae479375318f6728775
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 28 21:59:38 2018 +0000
+
+    no longer install whonix-setup-wiazrd on Whonix-Workstation by default
+    
+    not required there anymore
+    
+    move whonix-setup wizard from whonix-shared-packages-recommended to whonix-gateway-packages-recommended
+    
+    https://forums.whonix.org/t/graphical-gui-whonix-setup-wizard-anon-connection-wizard-technical-discussion/650/527
+
+commit 3f77940eacac603821e724a06f41cc524a095d88
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 21 13:34:19 2018 +0000
+
+    bumped changelog version
+
 commit d64085c1d892ff49e8407f70676b9203b51115fd
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 21 13:36:17 2018 +0100
