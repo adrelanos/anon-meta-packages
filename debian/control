@@ -270,7 +270,8 @@ Description: Dependencies for Whonix-Gateway
 Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: whonix-gw-desktop-shortcuts, whonix-setup-wizard, ${misc:Depends}
+Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
+ whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
