@@ -1,3 +1,15 @@
+commit 246a0346bb4ee8575677ddab3adfcb941625505e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Feb 3 16:09:20 2018 +0000
+
+    add whonix-gw-kde-desktop-conf to whonix-gateway-packages-recommended
+
+commit 311ae636c3e6b24e94f30d2869b9a11dcb56cb93
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 1 14:45:40 2018 +0000
+
+    bumped changelog version
+
 commit 046e29da96bb07becf4695514c1b44f9b236b123
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 29 15:50:10 2018 +0000
