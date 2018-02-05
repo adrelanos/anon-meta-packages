@@ -1,3 +1,15 @@
+commit fcf937012292cc7b6ff60e452a33727e5ee7af68
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 5 16:26:01 2018 +0000
+
+    move whonixsetup from whonix-shared-packages-dependencies to whonix-gateway-packages-recommended
+
+commit f29105dd429d7e0ed584da9b6945d7b69218be95
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 5 14:15:43 2018 +0000
+
+    bumped changelog version
+
 commit 246a0346bb4ee8575677ddab3adfcb941625505e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Feb 3 16:09:20 2018 +0000
