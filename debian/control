@@ -271,7 +271,7 @@ Package: whonix-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
 Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
- whonix-setup-wizard, ${misc:Depends}
+ whonixsetup, whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
 Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
@@ -284,7 +284,7 @@ Package: whonix-shared-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonix-initializer, whonixsetup, whonix-repository, grub-enable-apparmor,
+ whonix-initializer, whonix-repository, grub-enable-apparmor,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation
  A metapackage, which installs packages which both, Whonix-Gateway
