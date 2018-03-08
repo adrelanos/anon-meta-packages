@@ -1,3 +1,23 @@
+commit a4356455a4fbb65c1cc63dd982251837ccf05804
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 8 14:51:50 2018 +0000
+
+    remove pkg-manager-longer-timeouts and pkg-manager-no-autoupdate
+    
+    since merged into anon-apps-config
+
+commit a7ddcb9eab7e4aa179005005315310cc192e301b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 27 15:32:03 2018 +0100
+
+    remove swap-file-creator from non-qubes-whonix-enhancements
+
+commit 9f0dcc77cfd33b01343d192194725b0ccaf8bc19
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Feb 5 18:00:17 2018 +0000
+
+    bumped changelog version
+
 commit fcf937012292cc7b6ff60e452a33727e5ee7af68
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Feb 5 16:26:01 2018 +0000
