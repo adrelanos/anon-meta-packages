@@ -30,8 +30,7 @@ Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
- sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
- pkg-manager-no-autoupdate, busybox,
+ sdwdate-gui, timezone-utc, vbox-disable-timesync, busybox,
  security-misc, ${misc:Depends}
 Description: Dependencies for both, Anon-Gateway and Anon-Workstation
  A metapackage, which installs packages which both, Anon-Gateway
