@@ -233,7 +233,7 @@ Description: Extra language support for the KDE desktop
 Package: apparmor-profiles-whonix
 Architecture: all
 Depends: apparmor-profile-icedove,
- apparmor-profile-torbrowser, apparmor-profile-virtualbox,
+ apparmor-profile-torbrowser,
  apparmor-profile-xchat,
  apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
 Description: Extra AppArmor profiles developed by the Whonix team
