@@ -1,3 +1,23 @@
+commit 9bc15a07c4d3db52b384905419b41e6bd167acc1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 14 12:38:21 2018 +0200
+
+    remove khelpcenter
+
+commit 0934834a0238d04666e30c38cf2e07faa9e7aaa9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 12 14:36:40 2018 +0200
+
+    remove apparmor-profiles-virtualbox from apparmor-profiles-whonix
+    
+    http://forums.whonix.org/t/whonix-apparmor-profiles-development-discussion/108/671
+
+commit faeb630deb811fdae765d03beba4f0e39256e86b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 8 14:56:23 2018 +0000
+
+    bumped changelog version
+
 commit a4356455a4fbb65c1cc63dd982251837ccf05804
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 8 14:51:50 2018 +0000
