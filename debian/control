@@ -51,7 +51,24 @@ Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
  .
- Safe to remove, if you know what you are doing.
+Safe to remove, if you know what you are doing.
+
+Package: whonix-gateway-rpi
+Architecture: all
+Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
+ iputils-ping, apparmor-utils, apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
+ gpl-sources-download, scurl, tor-ctrl, uwt, openvpn, usability-misc, menu, man-db, keyboard-configuration, kbd,
+ console-common, console-setup, initramfs-tools, os-prober, bzip2, file, lsof, most, pciutils, strace, sysfsutils,
+ less, haveged, locales, apt-transport-https, apt-transport-tor, sdwdate, timesanitycheck,
+ timezone-utc, busybox, security-misc, tor, anon-gw-base-files, ipv4-forward-disable,
+ ipv6-disable, tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client, whonixsetup,
+ fteproxy, onion-grater, whonix-base-files, anon-apt-sources-list, whonix-firewall,
+ whonix-initializer, whonix-repository, anon-connection-wizard, whonix-gw-network-conf, anon-base-files, anon-gw-anonymizer-config, rpi-patches, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, fake-hwclock, ${misc:Depends}
+Description: Packages for whonix-gateway-rpi
+ A metapackage, which installs packages for a non-gui 
+ Raspberry Pi 3 Whonix Gateway.
+ .
+ Do not remove.
 
 Package: anon-gateway-packages-dependencies
 Architecture: all
