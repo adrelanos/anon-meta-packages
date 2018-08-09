@@ -124,6 +124,16 @@ Description: Desktop Depends
  .
  anon-shared-desktop-kde depends on this package.
 
+Package: anon-shared-desktop-recommended
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: anon-shared-desktop
+Description: Default
+ A metapackage, which installs desktop packages useful in desktop
+ environments on anonymity distributions.
+ .
+ Safe to remove.
+
 Package: anon-shared-desktop-kde
 Architecture: all
 Depends: anon-shared-desktop, sddm, kde-config-sddm,
