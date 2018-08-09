@@ -1,3 +1,50 @@
+commit 49e9e51202095f8e9700fee825ad159dafab644a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 18:04:21 2018 +0000
+
+    add anon-shared-default-applications
+    Recommended desktop packages for both, Anon-Gateway and Anon-Workstation
+    
+    add anon-gateway-default-applications
+    Recommended desktop packages for Anon-Gateway GUI
+    
+    remove anon-shared-desktop-recommended (never released)
+    (anon-shared-default-applications will replace it)
+    
+    install tor-control-panel by default
+
+commit 5302549ffe4142246fb3e93e24d821e178f660e9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 17:21:43 2018 +0000
+
+    move sdwdate-gui to anon-shared-desktop-recommended
+
+commit 181bae7ff09579ea270fec13f772017d71629812
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 17:20:32 2018 +0000
+
+    add anon-shared-desktop-recommended
+    
+    A metapackage, which installs desktop packages useful in desktop environments on anonymity distributions.
+
+commit df412af79da91a9140ca48a3641bc5e00103f9e9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 17:15:20 2018 +0000
+
+    fix Pre-Depends
+
+commit a0704d8eb5ed277690d50054a437b707e1cecabb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 17:09:35 2018 +0000
+
+    remove unneeded (= ${source:Version})
+
+commit 5e85726afcf585ba2874a1a4eb3ad59b38208f11
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 15:53:13 2018 +0000
+
+    bumped changelog version
+
 commit 8a753db3b17b809229257b8a1f2e4a4da45c546a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 9 03:48:14 2018 +0800
