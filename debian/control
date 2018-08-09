@@ -45,11 +45,22 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
- usability-misc, menu, man-db, anon-apps-config,
+ usability-misc, menu, man-db, anon-apps-config, open-link-confirmation,
  ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
  standard tools are available and other useful recommended packages.
+ .
+ Safe to remove, if you know what you are doing.
+
+Package: anon-shared-default-applications
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: sdwdate-gui, msgcollector-gui, ${misc:Depends}
+Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI
+ A metapackage, which installs recommended GUI default applications,
+ which are useful in a default installation of a graphical Tor Gateway or
+ Workstation desktop.
  .
  Safe to remove, if you know what you are doing.
 
@@ -69,12 +80,22 @@ Package: anon-gateway-packages-recommended
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
- fteproxy, onion-grater, open-link-confirmation, onioncircuits,
- anon-connection-wizard, ${misc:Depends}
+ fteproxy, onion-grater, ${misc:Depends}
 Conflicts: anon-workstation-packages-recommended
-Description: Recommended packages for Anon-Gateway
+Description: Recommended packages for Anon-Gateway CLI
  A metapackage, which installs packages, which are recommended for
- a Tor Gateway.
+ a command line interface (CLI) based Tor Gateway.
+ .
+ Safe to remove, if you know what you are doing.
+
+Package: anon-gateway-default-applications
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
+ ${misc:Depends}
+Description: Recommended desktop packages for Anon-Gateway GUI
+ A metapackage, which installs GUI packages, which are recommended for
+ a graphical Tor Gateway.
  .
  Safe to remove, if you know what you are doing.
 
@@ -97,9 +118,8 @@ Package: anon-workstation-packages-recommended
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
- anon-ws-disable-stacked-tor, tb-default-browser,
- tb-starter, tb-updater, open-link-confirmation, youtube-dl,
- thunderbird, enigmail, xul-ext-torbirdy, pwgen, ricochet-im,
+ anon-ws-disable-stacked-tor, youtube-dl,
+ thunderbird, enigmail, xul-ext-torbirdy, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
 Suggests: anon-shared-desktop,
@@ -123,16 +143,6 @@ Description: Desktop Depends
  such as KDE, GNOME, etc.
  .
  anon-shared-desktop-kde depends on this package.
-
-Package: anon-shared-desktop-recommended
-Architecture: all
-Depends: sdwdate-gui, ${misc:Depends}
-Suggests: anon-shared-desktop
-Description: Default
- A metapackage, which installs desktop packages useful in desktop
- environments on anonymity distributions.
- .
- Safe to remove.
 
 Package: anon-shared-desktop-kde
 Architecture: all
@@ -172,25 +182,27 @@ Depends: gnome-orca,
 Description: KDE accessibility tools
  A metapackage, which installs accessibility tools for the KDE desktop.
  .
- If not required, can be removed, because they are not crucial for
- anonymity, privacy or security.
+ Safe to remove, if you know what you are doing.
 
 Package: anon-workstation-default-applications
 Architecture: all
 Depends: hexchat, vlc, mixmaster, kcalc, okular,
  gwenview, libkf5kipi31.0.0, libkf5kipi-data,
  kgpg, mat, python-hachoir-core, python-hachoir-parser,
- python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
- pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry, ${misc:Depends}
+ python-pdfrw, python-cairo, python-poppler, python-mutagen,
+ libimage-exiftool-perl, gir1.2-gtk-3.0,
+ pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry,
+ tb-default-browser, tb-starter, tb-updater, youtube-dl,
+ thunderbird, enigmail, xul-ext-torbirdy, ricochet-im,
+ ${misc:Depends}
 Suggests: anon-shared-desktop,
  anon-workstation-extra-applications,
  anon-workstation-langpack-common
-Description: Recommended default applications for Anon-Workstation
- A metapackage, which installs recommended default applications,
- which are useful in a default installation of a Tor Workstation.
+Description: Recommended default applications for a graphical Anon-Workstation GUI
+ A metapackage, which installs recommended GUI default applications,
+ which are useful in a default installation of a graphical Tor Workstation.
  .
- Can be removed, if not in use, because they are not crucial for anonymity,
- privacy or security.
+ Safe to remove, if you know what you are doing.
 
 Package: anon-workstation-extra-applications
 Architecture: all
@@ -354,10 +366,12 @@ Depends: whonix-gateway-packages-dependencies-pre,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
  anon-shared-applications-kde,
+ anon-shared-default-applications,
  whonix-shared-packages-dependencies,
  whonix-shared-packages-recommended,
  anon-gateway-packages-dependencies,
  anon-gateway-packages-recommended,
+ anon-gateway-default-applications,
  whonix-gateway-packages-dependencies,
  whonix-gateway-packages-recommended,
  ${misc:Depends}
@@ -377,6 +391,7 @@ Depends: whonix-workstation-packages-dependencies-pre,
  anon-shared-packages-dependencies,
  anon-shared-packages-recommended,
  anon-shared-applications-kde,
+ anon-shared-default-applications,
  whonix-shared-packages-dependencies,
  whonix-shared-packages-recommended,
  anon-workstation-packages-dependencies,
