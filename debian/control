@@ -55,7 +55,7 @@ Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
 
 Package: anon-gateway-packages-dependencies
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
@@ -67,7 +67,7 @@ Description: Dependencies for Anon-Gateway
 
 Package: anon-gateway-packages-recommended
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
  fteproxy, onion-grater, open-link-confirmation, onioncircuits,
  anon-connection-wizard, ${misc:Depends}
@@ -80,7 +80,7 @@ Description: Recommended packages for Anon-Gateway
 
 Package: anon-workstation-packages-dependencies
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
 Suggests: anon-shared-desktop,
@@ -95,7 +95,7 @@ Description: Dependencies for Anon-Workstation
 
 Package: anon-workstation-packages-recommended
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  anon-ws-disable-stacked-tor, tb-default-browser,
  tb-starter, tb-updater, open-link-confirmation, youtube-dl,
@@ -256,7 +256,7 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 
 Package: whonix-gateway-packages-dependencies
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre, ${misc:Depends}
 Conflicts: whonix-workstation-packages-dependencies
@@ -268,7 +268,7 @@ Description: Dependencies for Whonix-Gateway
 
 Package: whonix-gateway-packages-recommended
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
  whonixsetup, whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
@@ -314,7 +314,7 @@ Description: Dependencies for Whonix-Workstation that changes network related fi
 
 Package: whonix-workstation-packages-dependencies
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies
+Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
  ${misc:Depends}
 Recommends: whonix-workstation-packages-recommended
