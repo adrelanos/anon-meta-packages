@@ -1,3 +1,58 @@
+commit 8a753db3b17b809229257b8a1f2e4a4da45c546a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 03:48:14 2018 +0800
+
+    move sdwdate-gui from anon-shared-packages-dependencies to anon-shared-packages-recommended
+    
+    for better cli-only support
+
+commit a9334ed19b9c2220bf9cf057515413380bf418d0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 22 12:54:04 2018 +0800
+
+    Revert "Move kde-l10n-{ar,ru,zhcn} to Depends"
+    
+    This reverts commit 900316fb5ae04ed9abe11b101e5f5544bef70c41.
+
+commit 525274ba27bfde2390f489c9dccfd11be987d84b
+Merge: 8a832bd f18c83b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 22 12:53:21 2018 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f18c83bbe5239315726c4610b316ce02e627a216
+Merge: 8a832bd 06733c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 22 04:48:20 2018 +0000
+
+    Merge pull request #9 from irykoon/master
+    
+     Move kde-l10n-{ar,ru,zhcn} to Depends
+
+commit 06733c120c111d1b318a626873ab293063a5d911
+Merge: 900316f 8a832bd
+Author: irykoon <irykoon@gmail.com>
+Date:   Sat Jul 21 16:01:23 2018 +0000
+
+    Merge branch 'master' of https://github.com/Whonix/anon-meta-packages into HEAD
+
+commit 900316fb5ae04ed9abe11b101e5f5544bef70c41
+Author: irykoon <irykoon@gmail.com>
+Date:   Sat Jul 21 15:41:47 2018 +0000
+
+    Move kde-l10n-{ar,ru,zhcn} to Depends
+    
+    Please correct me if I am wrong. My understanding is Whonix will
+    install packages with --no-recommends. Therefore, this changes should
+    be enough to get those packages installed by default.
+
+commit 8a832bde03fc5037dfd06c28b2c2043aaf297844
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed May 9 12:17:19 2018 +0000
+
+    bumped changelog version
+
 commit 9bc15a07c4d3db52b384905419b41e6bd167acc1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 14 12:38:21 2018 +0200
