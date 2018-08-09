@@ -45,7 +45,7 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
  scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
- usability-misc, menu, man-db, anon-apps-config, sdwdate-gui,
+ usability-misc, menu, man-db, anon-apps-config,
  ${misc:Depends}
 Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
@@ -126,7 +126,7 @@ Description: Desktop Depends
 
 Package: anon-shared-desktop-recommended
 Architecture: all
-Depends: ${misc:Depends}
+Depends: sdwdate-gui, ${misc:Depends}
 Suggests: anon-shared-desktop
 Description: Default
  A metapackage, which installs desktop packages useful in desktop
