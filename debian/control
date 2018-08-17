@@ -32,9 +32,9 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  sdwdate, bootclockrandomization, timesanitycheck,
  timezone-utc, vbox-disable-timesync, busybox,
  security-misc, ${misc:Depends}
-Description: Dependencies for both, Anon-Gateway and Anon-Workstation
- A metapackage, which installs packages which both, Anon-Gateway
- and Anon-Workstation, depend on.
+Description: Dependencies for both, Anon-Gateway and Anon-Workstation CLI
+ A metapackage, which installs command line interface (CLI) packages which
+ both, Anon-Gateway and Anon-Workstation, depend on.
  .
  Do not remove.
 
@@ -47,9 +47,10 @@ Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
  usability-misc, menu, man-db, anon-apps-config, open-link-confirmation,
  ${misc:Depends}
-Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
+Description: Recommended packages for both, Anon-Gateway and Anon-Workstation CLI
  A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
- standard tools are available and other useful recommended packages.
+ standard tools are available and other useful recommended packages for a
+ command line interface (CLI) based Anon-Gateway or Anon-Workstation.
  .
  Safe to remove, if you know what you are doing.
 
@@ -58,9 +59,9 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: sdwdate-gui, msgcollector-gui, ${misc:Depends}
 Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI
- A metapackage, which installs recommended GUI default applications,
- which are useful in a default installation of a graphical Tor Gateway or
- Workstation desktop.
+ A metapackage, which installs recommended graphical user interface (GUI)
+ default applications, which are useful in a default installation of a
+ Tor-Gateway or Tor-Workstation desktop.
  .
  Safe to remove, if you know what you are doing.
 
@@ -70,9 +71,9 @@ Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, ${misc:Depends}
 Conflicts: anon-workstation-packages-dependencies
-Description: Dependencies for Anon-Gateway
- A metapackage, which installs packages which Anon-Gateway
- depends on.
+Description: Dependencies for Anon-Gateway CLI
+ A metapackage, which installs command line interface (CLI) packages
+ which Anon-Gateway depends on.
  .
  Do not remove.
 
@@ -84,7 +85,7 @@ Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
 Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway CLI
  A metapackage, which installs packages, which are recommended for
- a command line interface (CLI) based Tor Gateway.
+ a command line interface (CLI) based Tor-Gateway.
  .
  Safe to remove, if you know what you are doing.
 
@@ -94,8 +95,8 @@ Pre-Depends: whonix-legacy
 Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
  ${misc:Depends}
 Description: Recommended desktop packages for Anon-Gateway GUI
- A metapackage, which installs GUI packages, which are recommended for
- a graphical Tor Gateway.
+ A metapackage, which installs graphical user interface (GUI) packages,
+ which are recommended for a graphical Tor-Gateway.
  .
  Safe to remove, if you know what you are doing.
 
@@ -108,9 +109,9 @@ Suggests: anon-shared-desktop,
  anon-workstation-default-applications,
  anon-workstation-extra-applications
 Conflicts: anon-gateway-packages-dependencies
-Description: Dependencies for Anon-Workstation
- A metapackage, which installs packages which Anon-Workstation
- depends on.
+Description: Dependencies for Anon-Workstation CLI
+ A metapackage, which installs command line interface (CLI) packages which
+ Anon-Workstation depends on.
  .
  Do not remove.
 
@@ -353,9 +354,10 @@ Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions,
  ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
-Description: Recommended packages for Whonix-Workstation
+Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
- Whonix-Workstation, because they are useful for a Tor Workstation.
+ command line interface (CLI) Whonix-Workstation, because they are
+ useful for a Tor Workstation.
  .
  Feel free to remove if you know what you are doing.
 
