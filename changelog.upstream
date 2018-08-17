@@ -1,3 +1,27 @@
+commit 943d7c6f7abec71e8770e099af8c5eeba5488120
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 18 01:53:47 2018 +0800
+
+    remove Conflicts: for simplification
+
+commit 5a389c4e2bffa1280473c43d5f439da57b85ed93
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 18 01:51:46 2018 +0800
+
+    remove Suggests: for simplification
+
+commit 65a94e760b0656c9f1f08905d6bbb59d444851fe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 18 01:50:40 2018 +0800
+
+    clarify GUI vs CLI packages
+
+commit 499da574a319a23989b3fba7049b8c749c649a59
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 9 20:24:05 2018 +0000
+
+    bumped changelog version
+
 commit 49e9e51202095f8e9700fee825ad159dafab644a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 9 18:04:21 2018 +0000
