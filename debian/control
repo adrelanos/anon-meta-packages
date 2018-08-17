@@ -70,7 +70,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, ${misc:Depends}
-Conflicts: anon-workstation-packages-dependencies
 Description: Dependencies for Anon-Gateway CLI
  A metapackage, which installs command line interface (CLI) packages
  which Anon-Gateway depends on.
@@ -82,7 +81,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
  fteproxy, onion-grater, ${misc:Depends}
-Conflicts: anon-workstation-packages-recommended
 Description: Recommended packages for Anon-Gateway CLI
  A metapackage, which installs packages, which are recommended for
  a command line interface (CLI) based Tor-Gateway.
@@ -105,7 +103,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
-Conflicts: anon-gateway-packages-dependencies
 Description: Dependencies for Anon-Workstation CLI
  A metapackage, which installs command line interface (CLI) packages which
  Anon-Workstation depends on.
@@ -120,7 +117,6 @@ Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  thunderbird, enigmail, xul-ext-torbirdy, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
-Conflicts: anon-gateway-packages-recommended
 Description: Recommended packages for Anon-Workstation
  A metapackage, which installs packages, which are recommended for
  Anon-Workstation, because they are useful for a Tor Workstation.
@@ -267,7 +263,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre, ${misc:Depends}
-Conflicts: whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Gateway
  A metapackage, which installs packages which Whonix-Gateway
  depends on.
@@ -280,7 +275,6 @@ Pre-Depends: whonix-legacy
 Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
  whonixsetup, whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
-Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
  A metapackage, which installs packages, which are recommended for
  Whonix-Gateway.
@@ -326,7 +320,6 @@ Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
  ${misc:Depends}
 Recommends: whonix-workstation-packages-recommended
-Conflicts: whonix-gateway-packages-dependencies
 Description: Dependencies for Whonix-Workstation
  A metapackage, which installs packages which Whonix-Workstation
  depends on.
