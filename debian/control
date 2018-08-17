@@ -177,7 +177,7 @@ Depends: hexchat, vlc, mixmaster, kcalc, okular,
  kgpg, mat, python-hachoir-core, python-hachoir-parser,
  python-pdfrw, python-cairo, python-poppler, python-mutagen,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
- pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry,
+ pinentry-qt | pinentry-x11,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
  thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
  ${misc:Depends}
