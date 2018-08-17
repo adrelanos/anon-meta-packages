@@ -105,9 +105,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
-Suggests: anon-shared-desktop,
- anon-workstation-default-applications,
- anon-workstation-extra-applications
 Conflicts: anon-gateway-packages-dependencies
 Description: Dependencies for Anon-Workstation CLI
  A metapackage, which installs command line interface (CLI) packages which
@@ -123,9 +120,6 @@ Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  thunderbird, enigmail, xul-ext-torbirdy, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
-Suggests: anon-shared-desktop,
- anon-workstation-default-applications,
- anon-workstation-extra-applications
 Conflicts: anon-gateway-packages-recommended
 Description: Recommended packages for Anon-Workstation
  A metapackage, which installs packages, which are recommended for
@@ -138,7 +132,6 @@ Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
  ${misc:Depends}
-Suggests: anon-shared-desktop-kde
 Description: Desktop Depends
  A metapackage, which installs dependencies for desktop environments,
  such as KDE, GNOME, etc.
@@ -149,8 +142,6 @@ Package: anon-shared-desktop-kde
 Architecture: all
 Depends: anon-shared-desktop, sddm, kde-config-sddm,
  plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
-Suggests: anon-shared-kde-accessibility,
- anon-shared-desktop-langpack-kde
 Description: Recommended packages for Gateway/Workstation base KDE desktop
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE desktop. The Anon-Gateway desktop and the
@@ -167,8 +158,6 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit, ${misc:Depends}
-Suggests: anon-shared-kde-accessibility,
- anon-shared-desktop-langpack-kde
 Description: Recommended applications for Gateway/Workstation KDE desktop
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE applications.
@@ -196,9 +185,6 @@ Depends: hexchat, vlc, mixmaster, kcalc, okular,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
  thunderbird, enigmail, xul-ext-torbirdy, ricochet-im,
  ${misc:Depends}
-Suggests: anon-shared-desktop,
- anon-workstation-extra-applications,
- anon-workstation-langpack-common
 Description: Recommended default applications for a graphical Anon-Workstation GUI
  A metapackage, which installs recommended GUI default applications,
  which are useful in a default installation of a graphical Tor Workstation.
@@ -211,7 +197,6 @@ Depends: ${misc:Depends}
 Recommends: anon-workstation-packages-recommended,
  anon-workstation-default-applications, shutter,
  gtk-recordmydesktop, libreoffice, kdenlive, kolourpaint4
-Suggests: anon-workstation-langpack-common
 Description: Complements anon-workstation-default-applications
  A metapackage, which installs extra applications, to complement the
  default applications.
