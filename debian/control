@@ -43,7 +43,7 @@ Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  iputils-ping, apparmor-utils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
- anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
+ gpl-sources-download,
  scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
  usability-misc, menu, man-db, anon-apps-config, open-link-confirmation,
  ${misc:Depends}
@@ -57,7 +57,8 @@ Description: Recommended packages for both, Anon-Gateway and Anon-Workstation CL
 Package: anon-shared-default-applications
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: sdwdate-gui, msgcollector-gui, ${misc:Depends}
+Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
+ ${misc:Depends}
 Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
  default applications, which are useful in a default installation of a
