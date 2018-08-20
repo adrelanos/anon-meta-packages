@@ -11,93 +11,108 @@ Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
 less, haveged, locales, apt-transport-https, apt-transport-tor,
 sdwdate, bootclockrandomization, timesanitycheck,
-sdwdate-gui, timezone-utc, vbox-disable-timesync, pkg-manager-longer-timeouts,
-pkg-manager-no-autoupdate, busybox,
+timezone-utc, vbox-disable-timesync, busybox,
 security-misc, ${misc:Depends}
-Description: Dependencies for both, Anon-Gateway and Anon-Workstation
-# Dependencies for both, Anon-Gateway and Anon-Workstation #
+Description: Dependencies for both, Anon-Gateway and Anon-Workstation CLI
+# Dependencies for both, Anon-Gateway and Anon-Workstation CLI #
 
-A metapackage, which installs packages which both, Anon-Gateway
-and Anon-Workstation, depend on.
+A metapackage, which installs command line interface (CLI) packages which
+both, Anon-Gateway and Anon-Workstation, depend on.
 
 Do not remove.
 
 Package: anon-shared-packages-recommended
 Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
-iputils-ping, apparmor-utils, gtk2-engines-pixbuf,
+iputils-ping, apparmor-utils,
 apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
-anon-icon-pack, gpl-sources-download, anon-iceweasel-warning,
+gpl-sources-download,
 scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
-usability-misc, menu, man-db, anon-apps-config,
+usability-misc, menu, man-db, anon-apps-config, open-link-confirmation,
 ${misc:Depends}
-Description: Recommended packages for both, Anon-Gateway and Anon-Workstation
-# Recommended packages for both, Anon-Gateway and Anon-Workstation #
+Description: Recommended packages for both, Anon-Gateway and Anon-Workstation CLI
+# Recommended packages for both, Anon-Gateway and Anon-Workstation CLI #
 
 A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
-standard tools are available and other useful recommended packages.
+standard tools are available and other useful recommended packages for a
+command line interface (CLI) based Anon-Gateway or Anon-Workstation.
+
+Safe to remove, if you know what you are doing.
+
+Package: anon-shared-default-applications
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
+${misc:Depends}
+Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI
+# Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI #
+
+A metapackage, which installs recommended graphical user interface (GUI)
+default applications, which are useful in a default installation of a
+Tor-Gateway or Tor-Workstation desktop.
 
 Safe to remove, if you know what you are doing.
 
 Package: anon-gateway-packages-dependencies
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
 ipv6-disable, ${misc:Depends}
-Conflicts: anon-workstation-packages-dependencies
-Description: Dependencies for Anon-Gateway
-# Dependencies for Anon-Gateway #
+Description: Dependencies for Anon-Gateway CLI
+# Dependencies for Anon-Gateway CLI #
 
-A metapackage, which installs packages which Anon-Gateway
-depends on.
+A metapackage, which installs command line interface (CLI) packages
+which Anon-Gateway depends on.
 
 Do not remove.
 
 Package: anon-gateway-packages-recommended
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
-fteproxy, onion-grater, open-link-confirmation, onioncircuits,
-anon-connection-wizard, ${misc:Depends}
-Conflicts: anon-workstation-packages-recommended
-Description: Recommended packages for Anon-Gateway
-# Recommended packages for Anon-Gateway #
+fteproxy, onion-grater, ${misc:Depends}
+Description: Recommended packages for Anon-Gateway CLI
+# Recommended packages for Anon-Gateway CLI #
 
 A metapackage, which installs packages, which are recommended for
-a Tor Gateway.
+a command line interface (CLI) based Tor-Gateway.
+
+Safe to remove, if you know what you are doing.
+
+Package: anon-gateway-default-applications
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
+${misc:Depends}
+Description: Recommended desktop packages for Anon-Gateway GUI
+# Recommended desktop packages for Anon-Gateway GUI #
+
+A metapackage, which installs graphical user interface (GUI) packages,
+which are recommended for a graphical Tor-Gateway.
 
 Safe to remove, if you know what you are doing.
 
 Package: anon-workstation-packages-dependencies
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, ${misc:Depends}
-Recommends: anon-workstation-packages-recommended (= ${source:Version})
-Suggests: anon-shared-desktop (= ${source:Version}),
-anon-workstation-default-applications (= ${source:Version}),
-anon-workstation-extra-applications (= ${source:Version})
-Conflicts: anon-gateway-packages-dependencies
-Description: Dependencies for Anon-Workstation
-# Dependencies for Anon-Workstation #
+Recommends: anon-workstation-packages-recommended
+Description: Dependencies for Anon-Workstation CLI
+# Dependencies for Anon-Workstation CLI #
 
-A metapackage, which installs packages which Anon-Workstation
-depends on.
+A metapackage, which installs command line interface (CLI) packages which
+Anon-Workstation depends on.
 
 Do not remove.
 
 Package: anon-workstation-packages-recommended
 Architecture: all
-Pre-Depends: anon-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
-anon-ws-disable-stacked-tor, tb-default-browser,
-tb-starter, tb-updater, open-link-confirmation, youtube-dl,
-thunderbird, enigmail, xul-ext-torbirdy, pwgen, ricochet-im,
+anon-ws-disable-stacked-tor, youtube-dl,
+thunderbird, enigmail, xul-ext-torbirdy, pwgen,
 python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
 ${misc:Depends}
-Suggests: anon-shared-desktop (= ${source:Version}),
-anon-workstation-default-applications (= ${source:Version}),
-anon-workstation-extra-applications (= ${source:Version})
-Conflicts: anon-gateway-packages-recommended
 Description: Recommended packages for Anon-Workstation
 # Recommended packages for Anon-Workstation #
 
@@ -111,7 +126,6 @@ Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
 xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
 ${misc:Depends}
-Suggests: anon-shared-desktop-kde (= ${source:Version})
 Description: Desktop Depends
 # Desktop Depends #
 
@@ -122,10 +136,8 @@ anon-shared-desktop-kde depends on this package.
 
 Package: anon-shared-desktop-kde
 Architecture: all
-Depends: anon-shared-desktop (= ${source:Version}), sddm, kde-config-sddm,
+Depends: anon-shared-desktop, sddm, kde-config-sddm,
 plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
-Suggests: anon-shared-kde-accessibility (= ${source:Version}),
-anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended packages for Gateway/Workstation base KDE desktop
 # Recommended packages for Gateway/Workstation base KDE desktop #
 
@@ -139,13 +151,11 @@ Package: anon-shared-applications-kde
 Architecture: all
 Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
 ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
-p7zip-full, zip, unzip, khelpcenter, ksystemlog, gtk2-engines-oxygen,
+p7zip-full, zip, unzip, ksystemlog, gtk2-engines-oxygen,
 gtk3-engines-breeze, plasma-pa,
 kde-config-gtk-style, kde-config-gtk-style-preview,
 kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
 kmenuedit, ${misc:Depends}
-Suggests: anon-shared-kde-accessibility (= ${source:Version}),
-anon-shared-desktop-langpack-kde (= ${source:Version})
 Description: Recommended applications for Gateway/Workstation KDE desktop
 # Recommended applications for Gateway/Workstation KDE desktop #
 
@@ -164,35 +174,33 @@ Description: KDE accessibility tools
 
 A metapackage, which installs accessibility tools for the KDE desktop.
 
-If not required, can be removed, because they are not crucial for
-anonymity, privacy or security.
+Safe to remove, if you know what you are doing.
 
 Package: anon-workstation-default-applications
 Architecture: all
 Depends: hexchat, vlc, mixmaster, kcalc, okular,
 gwenview, libkf5kipi31.0.0, libkf5kipi-data,
 kgpg, mat, python-hachoir-core, python-hachoir-parser,
-python-pdfrw, python-cairo, python-poppler, python-mutagen, libimage-exiftool-perl, gir1.2-gtk-3.0,
-pinentry-qt | pinentry-gtk2 | pinentry-curses | pinentry, ${misc:Depends}
-Suggests: anon-shared-desktop (= ${source:Version}),
-anon-workstation-extra-applications (= ${source:Version}),
-anon-workstation-langpack-common (= ${source:Version})
-Description: Recommended default applications for Anon-Workstation
-# Recommended default applications for Anon-Workstation #
+python-pdfrw, python-cairo, python-poppler, python-mutagen,
+libimage-exiftool-perl, gir1.2-gtk-3.0,
+pinentry-qt | pinentry-x11,
+tb-default-browser, tb-starter, tb-updater, youtube-dl,
+thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
+${misc:Depends}
+Description: Recommended default applications for a graphical Anon-Workstation GUI
+# Recommended default applications for a graphical Anon-Workstation GUI #
 
-A metapackage, which installs recommended default applications,
-which are useful in a default installation of a Tor Workstation.
+A metapackage, which installs recommended GUI default applications,
+which are useful in a default installation of a graphical Tor Workstation.
 
-Can be removed, if not in use, because they are not crucial for anonymity,
-privacy or security.
+Safe to remove, if you know what you are doing.
 
 Package: anon-workstation-extra-applications
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: anon-workstation-packages-recommended (= ${source:Version}),
-anon-workstation-default-applications (= ${source:Version}), shutter,
+Recommends: anon-workstation-packages-recommended,
+anon-workstation-default-applications, shutter,
 gtk-recordmydesktop, libreoffice, kdenlive, kolourpaint4
-Suggests: anon-workstation-langpack-common (= ${source:Version})
 Description: Complements anon-workstation-default-applications
 # Complements anon-workstation-default-applications #
 
@@ -230,7 +238,7 @@ kde-l10n-it, kde-l10n-ja, kde-l10n-kk, kde-l10n-km, kde-l10n-ko, kde-l10n-lt, kd
 kde-l10n-nb, kde-l10n-nds, kde-l10n-nl, kde-l10n-nn, kde-l10n-pa, kde-l10n-pl, kde-l10n-pt,
 kde-l10n-ptbr, kde-l10n-ro, kde-l10n-ru, kde-l10n-si, kde-l10n-sk, kde-l10n-sl, kde-l10n-sr,
 kde-l10n-sv, kde-l10n-tg, kde-l10n-th, kde-l10n-tr, kde-l10n-ug, kde-l10n-uk, kde-l10n-vi,
-kde-l10n-wa, kde-l10n-zhcn, kde-l10n-zhtw, anon-workstation-langpack-common (= ${source:Version})
+kde-l10n-wa, kde-l10n-zhcn, kde-l10n-zhtw, anon-workstation-langpack-common
 Description: Extra language support for the KDE desktop
 # Extra language support for the KDE desktop #
 
@@ -243,7 +251,7 @@ space and requires a better solution.
 Package: apparmor-profiles-whonix
 Architecture: all
 Depends: apparmor-profile-icedove,
-apparmor-profile-torbrowser, apparmor-profile-virtualbox,
+apparmor-profile-torbrowser,
 apparmor-profile-xchat,
 apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
 Description: Extra AppArmor profiles developed by the Whonix team
@@ -270,10 +278,9 @@ Do not remove.
 
 Package: whonix-gateway-packages-dependencies
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
 whonix-gateway-packages-dependencies-pre, ${misc:Depends}
-Conflicts: whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Gateway
 # Dependencies for Whonix-Gateway #
 
@@ -284,10 +291,10 @@ Do not remove.
 
 Package: whonix-gateway-packages-recommended
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
-Depends: whonix-gw-desktop-shortcuts, whonix-setup-wizard, ${misc:Depends}
+Pre-Depends: whonix-legacy
+Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
+whonixsetup, whonix-setup-wizard, ${misc:Depends}
 Recommends: anon-gateway-packages-recommended
-Conflicts: whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Gateway
 # Recommended packages for Whonix-Gateway #
 
@@ -300,7 +307,7 @@ Package: whonix-shared-packages-dependencies
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
-whonix-initializer, whonixsetup, whonix-repository, grub-enable-apparmor,
+whonix-initializer, whonix-repository, grub-enable-apparmor,
 ${misc:Depends}
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation
 # Dependencies for Whonix-Gateway and Whonix-Workstation #
@@ -337,11 +344,10 @@ Do not remove.
 
 Package: whonix-workstation-packages-dependencies
 Architecture: all
-Pre-Depends: whonix-shared-packages-dependencies (= ${source:Version})
+Pre-Depends: whonix-legacy
 Depends: whonix-workstation-packages-dependencies-pre,
 ${misc:Depends}
-Recommends: whonix-workstation-packages-recommended (= ${source:Version})
-Conflicts: whonix-gateway-packages-dependencies
+Recommends: whonix-workstation-packages-recommended
 Description: Dependencies for Whonix-Workstation
 # Dependencies for Whonix-Workstation #
 
@@ -356,11 +362,12 @@ Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
 whonix-welcome-page, whonix-ws-start-menu-additions,
 ${misc:Depends}
 Recommends: anon-workstation-packages-recommended
-Description: Recommended packages for Whonix-Workstation
-# Recommended packages for Whonix-Workstation #
+Description: Recommended packages for Whonix-Workstation CLI
+# Recommended packages for Whonix-Workstation CLI #
 
 A metapackage, which installs packages, which are recommended for
-Whonix-Workstation, because they are useful for a Tor Workstation.
+command line interface (CLI) Whonix-Workstation, because they are
+useful for a Tor Workstation.
 
 Feel free to remove if you know what you are doing.
 
@@ -371,10 +378,12 @@ Depends: whonix-gateway-packages-dependencies-pre,
 anon-shared-packages-dependencies,
 anon-shared-packages-recommended,
 anon-shared-applications-kde,
+anon-shared-default-applications,
 whonix-shared-packages-dependencies,
 whonix-shared-packages-recommended,
 anon-gateway-packages-dependencies,
 anon-gateway-packages-recommended,
+anon-gateway-default-applications,
 whonix-gateway-packages-dependencies,
 whonix-gateway-packages-recommended,
 ${misc:Depends}
@@ -396,6 +405,7 @@ Depends: whonix-workstation-packages-dependencies-pre,
 anon-shared-packages-dependencies,
 anon-shared-packages-recommended,
 anon-shared-applications-kde,
+anon-shared-default-applications,
 whonix-shared-packages-dependencies,
 whonix-shared-packages-recommended,
 anon-workstation-packages-dependencies,
@@ -486,55 +496,18 @@ and anon-shared-desktop because that is required in
 Non-Qubes-Whonix in order to get graphical desktop environment.
 
 Feel free to remove if you know what you are doing.
+## How to install `anon-meta-packages` using apt-get ##
 
-(This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
-
-# Generic Readme #
-## Readme Version ##
-
-[Generic Readme](https://github.com/Whonix/whonix-developer-meta-files/blob/master/README_generic.md) Version 0.3
-
-## Cooperating Anonymity Distributions ##
-
-[Generic Readme](https://github.com/Whonix/whonix-developer-meta-files/blob/master/README_generic.md) beings here. Have a look into the `man` sub folder (if available).
-
-The functionality of this package was once exclusively available in the [Whonix](https://www.whonix.org) ([github](https://github.com/Whonix/Whonix)) anonymity distribution.
-
-Because multiple projects and individuals stated interest in various of Whonix's functionality (examples: [Qubes OS](http://qubes-os.org/trac) ([discussion](https://groups.google.com/forum/#!topic/qubes-devel/jxr89--oGs0)); [piratelinux](https://github.com/piratelinux) ([discussion](https://github.com/adrelanos/VPN-Firewall/commit/6147f0e606377f5a801e98daf22e24ba2c750a21#commitcomment-6360713))), it's best to share as much source code as possible, it's best to share certain characteristics [(such as /etc/hostname etc.) among all anonymity distributions](https://mailman.boum.org/pipermail/tails-dev/2013-January/002457.html)) Whonix has been split into [multiple separate packages](https://github.com/Whonix).
-
-## Generic Packaging ##
-
-Files in `etc/...` in root source folder will be installed to `/etc/...`, files in `usr/...` will be installed to `/usr/...` and so forth. This should make renaming, moving files around, packaging, etc. very simple. Packaging of most packages looks very similar.
-
-## How to use outside of Debian or derivatives ##
-
-Although probably due to generic packaging not very hard. Still, this requires developer skills. [Ports](https://en.wikipedia.org/wiki/Porting) welcome!
-
-## How to Build deb Package ##
-
-See comments below and [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-torbrowser).
-
-* Replace `apparmor-profile-torbrowser` with the actual name of this package (equals the root source folder name of this package after you git cloned it).
-* You only need [config-package-dev](https://packages.debian.org/wheezy/config-package-dev), when it is listed in the `Build-Depends:` field in `debian/control`.
-* Many packages do not have signed git tags yet. You may request them if desired.
-* We might later use a [documentation template](https://www.whonix.org/wiki/Template:Build_Documentation_Build_Package).
-
-## How to install in Debian using apt-get ##
-
-Binary packages are available in Whonix's APT repository. By no means you are required to use the binary version of this package. This might be interesting for users of Debian and derivatives. **Note, that usage of this package outside of Whonix is untested and there is no maintainer that supports this use case.**
-
-1\. Get [Whonix's Signing Key](https://www.whonix.org/wiki/Whonix_Signing_Key).
-
-2\. Add Whonix's Signing Key to apt-key.
+1\. Add [Whonix's Signing Key](https://www.whonix.org/wiki/Whonix_Signing_Key).
 
 ```
-gpg --export 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA | sudo apt-key add -
+sudo apt-key --keyring /etc/apt/trusted.gpg.d/whonix.gpg adv --keyserver hkp://ipv4.pool.sks-keyservers.net:80 --recv-keys 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 ```
 
 3\. Add Whonix's APT repository.
 
 ```
-echo "deb http://deb.whonix.org stretch main" > /etc/apt/sources.list.d/whonix.list
+echo "deb http://deb.whonix.org stretch main" | sudo tee /etc/apt/sources.list.d/whonix.list
 ```
 
 4\. Update your package lists.
@@ -543,23 +516,21 @@ echo "deb http://deb.whonix.org stretch main" > /etc/apt/sources.list.d/whonix.l
 sudo apt-get update
 ```
 
-5\. Install this package. Replace `package-name` with the actual name of this package.
+5\. Install `anon-meta-packages`.
 
 ```
-sudo apt-get install package-name
+sudo apt-get install anon-meta-packages
 ```
 
-## Cooperation ##
+## How to Build deb Package ##
 
-Most welcome. [Ports](https://en.wikipedia.org/wiki/Porting), distribution maintainers, developers, patches, forks, testers, comments, etc. all welcome.
+Replace `apparmor-profile-torbrowser` with the actual name of this package with `anon-meta-packages` and see [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-torbrowser).
 
 ## Contact ##
 
-* Professional Support: https://www.whonix.org/wiki/Support#Professional_Support
-* Free Forum Support: https://www.whonix.org/forum
-* Github Issues
-* twitter: https://twitter.com/Whonix
+* [Free Forum Support](https://forums.whonix.org)
+* [Professional Support](https://www.whonix.org/wiki/Professional_Support)
 
-## Donate ##
+## Payments ##
 
-* [Donate](https://www.whonix.org/wiki/Donate)
+`anon-meta-packages` requires [payments](https://www.whonix.org/wiki/Payments) to stay alive!
