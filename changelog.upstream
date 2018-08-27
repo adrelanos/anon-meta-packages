@@ -1,3 +1,40 @@
+commit aef7950e2018dfbbf499d2619d20bd373f64c470
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 21 05:17:51 2018 +0800
+
+    readme
+
+commit 2d29c9ac0d380859cc03dc17309570a86cdbe7dc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 20 22:12:29 2018 +0800
+
+    move anon-iceweasel-warning from anon-shared-packages-recommended to anon-shared-default-applications (GUI)
+    
+    move anon-icon-pack from anon-shared-packages-recommended to anon-shared-default-applications (GUI)
+
+commit 53b9039bca53b55397a9ee363b3228b8ae9280c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 20 22:07:25 2018 +0800
+
+    removed gtk2-engines-pixbuf from anon-shared-packages-recommended
+    
+    since already part of anon-shared-desktop
+
+commit 1545d349c28181ffecadc702d2d095fa626e6cce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 17 20:02:17 2018 +0000
+
+    fix, install pinentry-qt by default
+    
+    remove "pinentry-curses | pinentry" from anon-workstation-default-applications
+    but keep "pinentry-qt | pinentry-x11" in anon-workstation-default-applications
+
+commit aac38790f67b41723e1cace3873a8095913fdb20
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 17 19:30:59 2018 +0000
+
+    bumped changelog version
+
 commit 0ce848aef26ce72b037e77a53831c07183a68185
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 17 19:25:24 2018 +0000
