@@ -208,53 +208,6 @@ Description: Recommended default applications for a graphical Anon-Workstation G
  .
  Safe to remove, if you know what you are doing.
 
-Package: anon-workstation-extra-applications
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: anon-workstation-packages-recommended,
- anon-workstation-default-applications, shutter,
- gtk-recordmydesktop, libreoffice, kdenlive, kolourpaint4
-Description: Complements anon-workstation-default-applications
- A metapackage, which installs extra applications, to complement the
- default applications.
- .
- Does not get installed by default, because extra applications
- take too much space and are not required for everyone.
-
-Package: anon-workstation-langpack-common
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: iceweasel-l10n-all | firefox-l10n-all, ttf-dejavu, ttf-liberation, locales-all,
- ttf-kacst, ttf-farsiweb, scim-pinyin, scim-tables-zh, scim-uim, ttf-arphic-ukai, ttf-arphic-uming,
- culmus, libfribidi0, ttf-indic-fonts, scim-anthy, ttf-khmeros, ttf-unfonts-core, ttf-lao,
- ttf-thai-tlwg, xfonts-intl-chinese, xfonts-wqy, xfonts-bolkhov-koi8r-75dpi,
- xfonts-bolkhov-koi8r-misc, xfonts-cronyx-koi8r-100dpi
-Description: Fonts and language packages for better internationalization support
- A metapackage which installs fonts and language packages for better
- internationalization support.
- .
- Does not get installed by default, because it is largely untested
- and needs more work.
-
-Package: anon-shared-desktop-langpack-kde
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: kde-l10n-ar, kde-l10n-bg, kde-l10n-bs,
- kde-l10n-ca, kde-l10n-cavalencia, kde-l10n-cs, kde-l10n-da, kde-l10n-de, kde-l10n-el, kde-l10n-engb,
- kde-l10n-es, kde-l10n-et, kde-l10n-eu, kde-l10n-fa, kde-l10n-fi, kde-l10n-fr, kde-l10n-ga,
- kde-l10n-gl, kde-l10n-he, kde-l10n-hr, kde-l10n-hu, kde-l10n-ia, kde-l10n-id, kde-l10n-is,
- kde-l10n-it, kde-l10n-ja, kde-l10n-kk, kde-l10n-km, kde-l10n-ko, kde-l10n-lt, kde-l10n-lv,
- kde-l10n-nb, kde-l10n-nds, kde-l10n-nl, kde-l10n-nn, kde-l10n-pa, kde-l10n-pl, kde-l10n-pt,
- kde-l10n-ptbr, kde-l10n-ro, kde-l10n-ru, kde-l10n-si, kde-l10n-sk, kde-l10n-sl, kde-l10n-sr,
- kde-l10n-sv, kde-l10n-tg, kde-l10n-th, kde-l10n-tr, kde-l10n-ug, kde-l10n-uk, kde-l10n-vi,
- kde-l10n-wa, kde-l10n-zhcn, kde-l10n-zhtw, anon-workstation-langpack-common
-Description: Extra language support for the KDE desktop
- A metapackage, which includes extra language support for the
- KDE desktop.
- .
- Does not get installed by default, because it takes a lot of
- space and requires a better solution.
-
 Package: apparmor-profiles-whonix
 Architecture: all
 Depends: apparmor-profile-icedove,
