@@ -138,7 +138,7 @@ Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
  thunderbird, enigmail, xul-ext-torbirdy, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
-Description: Recommended packages for Anon-Workstation
+Description: Recommended packages for Anon-Workstation CLI
  A metapackage, which installs packages, which are recommended for
  Anon-Workstation, because they are useful for a Tor Workstation.
  .
@@ -149,7 +149,7 @@ Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
  ${misc:Depends}
-Description: Desktop Depends
+Description: Desktop Depends GUI
  A metapackage, which installs dependencies for desktop environments,
  such as KDE, GNOME, etc.
  .
@@ -159,7 +159,7 @@ Package: anon-shared-desktop-kde
 Architecture: all
 Depends: anon-shared-desktop, sddm, kde-config-sddm,
  plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
-Description: Recommended packages for Gateway/Workstation base KDE desktop
+Description: Recommended packages for Gateway/Workstation base KDE desktop GUI
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE desktop. The Anon-Gateway desktop and the
  Anon-Workstation desktop depend on this package.
@@ -175,7 +175,7 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit, ${misc:Depends}
-Description: Recommended applications for Gateway/Workstation KDE desktop
+Description: Recommended applications for Gateway/Workstation KDE desktop GUI
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, KDE applications.
  .
@@ -186,7 +186,7 @@ Architecture: all
 Depends: gnome-orca,
  console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
  kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
-Description: KDE accessibility tools
+Description: KDE accessibility tools GUI
  A metapackage, which installs accessibility tools for the KDE desktop.
  .
  Safe to remove, if you know what you are doing.
