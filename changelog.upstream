@@ -1,3 +1,74 @@
+commit 277ef810842039dbea8d97617cca6f4d3886e3f4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:17:58 2018 +0000
+
+    move non-qubes-whonix-gateway-cli and whonix-gateway-rpi down
+    so these are closer to other meta packages which no other packages depend on
+
+commit 59d5a75a1bd58ac55396f40930cd07260f987492
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:15:45 2018 +0000
+
+    remove from anon-workstation-packages-recommended
+    since already in anon-workstation-default-applications
+    
+    - thunderbird
+    - xul-ext-torbirdy
+    - enigmail
+    - youtube-dl
+    
+    move from anon-workstation-packages-recommended
+    to anon-workstation-default-applications
+    
+    - xchat-improved-privacy
+    - anon-torchat
+
+commit 64db5cf89152d0114aaa331f8321fec061bea2c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:10:18 2018 +0000
+
+    deprecate anon-workstation-extra-applications, anon-workstation-langpack-common, anon-shared-desktop-langpack-kde
+
+commit c2125f39899eca744a5f1444e077f85d728827c7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:08:46 2018 +0000
+
+    description
+
+commit 4cbb45bfdb44e26338b503af1bf4d52b843c4f67
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:04:12 2018 +0000
+
+    description
+
+commit d6d0b9bb29bc534be898ae1ab0581c67efb89942
+Merge: d98e92a bba15ad
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 19:01:41 2018 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit bba15ad09bc9de658321fa2f5ede0c3e164d441c
+Merge: d98e92a a44642a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 28 00:33:59 2018 +0800
+
+    Merge pull request #11 from Algernon-01/master
+    
+     New version of non-qubes-whonix-gateway-cli and whonix-gateway-rpi.
+
+commit d98e92a05047f9e643fd454a970931c1f9e87222
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 15:49:51 2018 +0000
+
+    bumped changelog version
+
+commit a44642ad383ab8aef6bb5970fb18e693da521978
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sat Aug 25 19:13:52 2018 +0000
+
+    New version of non-qubes-whonix-gateway-cli and whonix-gateway-rpi.
+
 commit aef7950e2018dfbbf499d2619d20bd373f64c470
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 21 05:17:51 2018 +0800
@@ -127,6 +198,12 @@ Date:   Thu Aug 9 03:48:14 2018 +0800
     move sdwdate-gui from anon-shared-packages-dependencies to anon-shared-packages-recommended
     
     for better cli-only support
+
+commit d82306408b47e9a36d2746c4a2098bb610e256cc
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Aug 8 11:28:36 2018 +0000
+
+    Introduces whonix-gateway-rpi meta-package.
 
 commit a9334ed19b9c2220bf9cf057515413380bf418d0
 Author: Patrick Schleizer <adrelanos@riseup.net>
