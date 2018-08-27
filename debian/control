@@ -64,7 +64,7 @@ Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workst
  default applications, which are useful in a default installation of a
  Tor-Gateway or Tor-Workstation desktop.
  .
-Safe to remove, if you know what you are doing.
+ Safe to remove, if you know what you are doing.
 
 Package: anon-gateway-packages-dependencies
 Architecture: all
