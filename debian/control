@@ -70,9 +70,9 @@ Package: non-qubes-whonix-gateway-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-shared-packages-recommended, anon-shared-packages-dependencies, anon-gateway-packages-recommended, whonix-shared-packages-dependencies, anon-connection-wizard, whonix-gateway-packages-dependencies, whonixsetup, tor-control-panel, ${misc:Depends}
-Description: Packages for a minimal Whonix gateway
+Description: Packages for a minimal Whonix-Gateway CLI
  A metapackage, which installs packages for a cli
- Whonix Gateway.
+ Whonix-Gateway.
  .
  Do not remove.
 
@@ -80,9 +80,9 @@ Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-gateway-cli, rpi-patches, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, fake-hwclock, ${misc:Depends}
-Description: Packages for whonix-gateway-rpi
- A metapackage, which installs packages for a cli 
- Raspberry Pi 3 Whonix Gateway.
+Description: Default packages for whonix-gateway-rpi CLI
+ A metapackage, which installs packages for a CLI
+ Raspberry Pi 3 Whonix-Gateway.
  .
  Do not remove.
 
@@ -91,7 +91,7 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, ${misc:Depends}
-Description: Dependencies for Anon-Gateway CLI
+Description: Default Packages for Anon-Gateway CLI
  A metapackage, which installs command line interface (CLI) packages
  which Anon-Gateway depends on.
  .
@@ -432,7 +432,7 @@ Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended, ${misc:Depends}
 Replaces: whonix-workstation
-Description: Default Packages for Qubes-Whonix-Workstation
+Description: Default packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
  Qubes-Whonix-Default-Workstation.
  .
