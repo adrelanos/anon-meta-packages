@@ -133,9 +133,8 @@ Description: Dependencies for Anon-Workstation CLI
 Package: anon-workstation-packages-recommended
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
- anon-ws-disable-stacked-tor, youtube-dl,
- thunderbird, enigmail, xul-ext-torbirdy, pwgen,
+Depends: anon-mixmaster, anon-gpg-tweaks,
+ anon-ws-disable-stacked-tor, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  ${misc:Depends}
 Description: Recommended packages for Anon-Workstation CLI
@@ -201,6 +200,7 @@ Depends: hexchat, vlc, mixmaster, kcalc, okular,
  pinentry-qt | pinentry-x11,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
  thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
+ xchat-improved-privacy, anon-torchat,
  ${misc:Depends}
 Description: Recommended default applications for a graphical Anon-Workstation GUI
  A metapackage, which installs recommended GUI default applications,
