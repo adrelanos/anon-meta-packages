@@ -64,7 +64,27 @@ Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workst
  default applications, which are useful in a default installation of a
  Tor-Gateway or Tor-Workstation desktop.
  .
- Safe to remove, if you know what you are doing.
+Safe to remove, if you know what you are doing.
+
+Package: non-qubes-whonix-gateway-cli
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: anon-shared-packages-recommended, anon-shared-packages-dependencies, anon-gateway-packages-recommended, whonix-shared-packages-dependencies, anon-connection-wizard, whonix-gateway-packages-dependencies, whonixsetup, tor-control-panel, ${misc:Depends}
+Description: Packages for a minimal Whonix gateway
+ A metapackage, which installs packages for a cli
+ Whonix Gateway.
+ .
+ Do not remove.
+
+Package: whonix-gateway-rpi
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-gateway-cli, rpi-patches, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, fake-hwclock, ${misc:Depends}
+Description: Packages for whonix-gateway-rpi
+ A metapackage, which installs packages for a cli 
+ Raspberry Pi 3 Whonix Gateway.
+ .
+ Do not remove.
 
 Package: anon-gateway-packages-dependencies
 Architecture: all
