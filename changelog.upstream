@@ -1,3 +1,31 @@
+commit fe8648858e5052330427dba99e3b65b6b091b99a
+Merge: 637e26b 778e78b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 8 13:55:11 2018 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 778e78bd7ab820b310ee4ae9a2515b3413a90fcf
+Merge: 637e26b cf59b22
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 8 17:50:52 2018 +0000
+
+    Merge pull request #12 from Algernon-01/master
+    
+    Use official raspi3-firmware package from buster.
+
+commit cf59b22e92fb84d3dc1b385bacb73bf15be338f3
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sat Sep 8 17:36:11 2018 +0000
+
+    Use official raspi3-firmware package from buster.
+
+commit 637e26b4e14c6473087819212fb6e65cdb966626
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 21:24:44 2018 +0000
+
+    bumped changelog version
+
 commit 29978fddde9d86351c0a65b5433101eaa7625fda
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 27 21:21:12 2018 +0000
