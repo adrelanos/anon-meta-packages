@@ -333,7 +333,7 @@ Description: Packages for a minimal Whonix-Gateway CLI
 Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, fake-hwclock, ${misc:Depends}
+Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, fake-hwclock, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, linux-image-arm64 (>= 4.16), ${misc:Depends}
 Description: Default packages for Whonix-Gateway-RPi CLI
  A metapackage, which installs packages for a CLI
  Raspberry Pi 3 Whonix-Gateway.
