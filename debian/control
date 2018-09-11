@@ -153,7 +153,7 @@ Depends: hexchat, vlc, mixmaster, kcalc, okular,
  pinentry-qt | pinentry-x11,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
  thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
- xchat-improved-privacy, anon-torchat,
+ xchat-improved-privacy,
  ${misc:Depends}
 Replaces: anon-workstation-default-applications
 Description: Recommended default applications for a graphical Anon-Workstation GUI
