@@ -1,3 +1,106 @@
+commit 6fdc990250f3fbfea2b9750b1b368340f06176d7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 11 09:23:14 2018 +0000
+
+    deprecate anon-torchat
+
+commit e734dcfbb8058c4b475da1e2cf817f18243aa6c2
+Merge: 24a70c3 4f3cde0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 11 09:03:25 2018 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 24a70c377ad6944552bd8c223dd0918fd7ef5815
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 11 08:39:35 2018 +0000
+
+    - debian-vm-cli
+    - debian-vm-kde
+    - hardened-debian-cli
+    - hardened-debian-kde
+    
+    - tor-ctrl
+    - uwt
+    - anon-apps-config
+    
+    anon-shared-packages-dependencies -> hardened-packages-dependencies-cli
+    
+    anon-shared-packages-recommended -> hardened-packages-recommended-cli
+    
+    split non-qubes-vm-enhancements into non-qubes-vm-enhancements-cli and non-qubes-vm-enhancements-gui
+    
+    anon-shared-default-applications -> whonix-shared-default-applications-gui
+    
+    anon-gateway-default-applications -> whonix-gateway-default-applications-gui
+    whonix-gateway-default-applications -> whonix-gateway-default-applications-gui
+    
+    anon-shared-desktop -> hardened-desktop-environment-essential-gui
+    
+    anon-shared-desktop-kde -> hardened-desktop-environment-essential-kde
+    
+    apparmor-profiles-whonix -> apparmor-profiles-hardened-debian
+    
+    whonix-gateway-default-applications -> whonix-gateway-default-applications-gui
+    
+    whonix-shared-packages-dependencies -> whonix-shared-packages-dependencies-cli
+    
+    anon-shared-desktop -> hardened-desktop-environment-essential-gui
+    
+    anon-shared-desktop-kde -> hardened-desktop-environment-essential-kde
+    
+    anon-shared-applications-kde -> hardened-desktop-applications-kde
+    
+    anon-shared-kde-accessibility -> hardened-desktop-kde-accessibility-gui
+    
+    anon-workstation-default-applications -> whonix-workstation-default-applications-gui
+    
+    apparmor-profiles-whonix -> apparmor-profiles-hardened-debian
+    
+    whonix-gateway-packages-dependencies -> whonix-gateway-packages-dependencies-cli
+    
+    whonix-gateway-packages-recommended -> whonix-gateway-packages-recommended-cli
+    
+    whonix-shared-packages-dependencies -> whonix-shared-packages-dependencies-cli
+    
+    whonix-shared-packages-recommended -> whonix-shared-packages-recommended-cli
+    
+    whonix-workstation-packages-dependencies -> whonix-workstation-packages-dependencies-cli
+    
+    whonix-workstation-packages-recommended -> whonix-workstation-packages-recommended-cli
+    
+    non-qubes-whonix-gateway -> non-qubes-whonix-gateway-kde
+    
+    non-qubes-whonix-workstation -> non-qubes-whonix-workstation-kde
+
+commit 4f3cde092eb3b24f99b98e6897fc9014d3aa7d98
+Merge: 24a70c3 cc3c727
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 11 04:37:44 2018 -0400
+
+    Merge pull request #13 from Algernon-01/master
+    
+    Install kernel from backports for HDMI support.
+
+commit cc3c727255f56fdc0be2637fbe200db4aeff3a2c
+Merge: 155c938 24a70c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 11 04:37:21 2018 -0400
+
+    Merge branch 'master' into master
+
+commit 155c938dbd6522a6082b647ed012fb23dbe3fc59
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Mon Sep 10 17:15:42 2018 +0000
+
+    Install kernel from backports for HDMI support.
+
+commit 75a1d61e5579a028cfa21365c3986ad69f50bfd2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 10 07:35:20 2018 +0000
+
+    bumped changelog version
+
 commit fe8648858e5052330427dba99e3b65b6b091b99a
 Merge: 637e26b 778e78b
 Author: Patrick Schleizer <adrelanos@riseup.net>
