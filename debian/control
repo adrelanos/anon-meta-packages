@@ -54,7 +54,7 @@ Architecture: all
 Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  iputils-ping, apparmor-utils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
- gpl-sources-download,
+ gpl-sources-download, whonix-repository,
  scurl, security-misc, openvpn, ntfs-3g,
  usability-misc, menu, man-db, open-link-confirmation,
  ${misc:Depends}
@@ -218,7 +218,7 @@ Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonix-initializer, whonix-repository, grub-enable-apparmor,
+ whonix-initializer, grub-enable-apparmor,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
