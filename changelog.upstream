@@ -1,3 +1,17 @@
+commit 8c8dfc843ee69abee0187f4eee84a0d7ccaef8e2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 14 16:07:57 2018 -0400
+
+    fix
+    
+    https://forums.whonix.org/t/package-conflicts/5936
+
+commit c74e5d15ad4927ab98a01319057bea65ed7a2c96
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 14 13:18:53 2018 +0000
+
+    bumped changelog version
+
 commit b91272cc5941e7df47c6ffac3d30691441a48fba
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Sep 14 13:11:46 2018 +0000
