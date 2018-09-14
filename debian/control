@@ -343,7 +343,7 @@ Description: Default packages for Whonix-Gateway-RPi CLI
 Package: qubes-whonix-gateway
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
- qubes-whonix-shared-packages-recommended-cli,
+ qubes-whonix-shared-packages-recommended,
  qubes-whonix-gateway-packages-recommended, ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
@@ -359,7 +359,7 @@ Description: Default packages for Qubes-Whonix-Gateway
 Package: qubes-whonix-workstation
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
- qubes-whonix-shared-packages-recommended-cli,
+ qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended, ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
