@@ -1,3 +1,15 @@
+commit b91272cc5941e7df47c6ffac3d30691441a48fba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 14 13:11:46 2018 +0000
+
+    move whonix-repository to hardened-packages-recommended-cli
+
+commit babc7fbbf32a166b5b32bdc00c8efe0a6baefd31
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 13 19:44:07 2018 +0000
+
+    bumped changelog version
+
 commit 6fdc990250f3fbfea2b9750b1b368340f06176d7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Sep 11 09:23:14 2018 +0000
