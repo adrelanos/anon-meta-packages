@@ -318,6 +318,7 @@ Depends: hardened-packages-dependencies-cli,
  whonix-workstation-packages-dependencies-cli,
  whonix-workstation-default-applications-gui,
  whonix-workstation-packages-recommended-cli,
+ whonix-workstation-packages-recommended-gui,
  ${misc:Depends}
 Description: Whonix-Workstation Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
