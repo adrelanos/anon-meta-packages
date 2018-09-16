@@ -302,8 +302,6 @@ Description: Whonix-Gateway Shared Packages
  .
  It is shared between Qubes-Whonix and Non-Qubes-Whonix.
  .
- It will install build chroot scripts, but not run them.
- .
  Feel free to remove if you know what you are doing.
 
 Package: whonix-workstation-shared-packages-shared-meta
@@ -324,8 +322,6 @@ Description: Whonix-Workstation Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
  .
  It is shared between Qubes-Whonix and Non-Qubes-Whonix.
- .
- It will install build chroot scripts, but not run them.
  .
  Feel free to remove if you know what you are doing.
 
