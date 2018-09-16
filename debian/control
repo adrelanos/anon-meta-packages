@@ -263,15 +263,23 @@ Description: Dependencies for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-cli
 Architecture: all
-Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
- whonix-welcome-page, whonix-ws-start-menu-additions,
- anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
- python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
- ${misc:Depends}
-Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended
+Depends: anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
+ python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr, ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
  command line interface (CLI) Whonix-Workstation, because they are
+ useful for a Tor Workstation.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: whonix-workstation-packages-recommended-gui
+Architecture: all
+Depends: whonix-workstation-packages-recommended-cli, whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
+ whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
+Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended
+Description: Recommended packages for Whonix-Workstation GUI
+ A metapackage, which installs packages, which are recommended for
+ graphical user interface (GUI) Whonix-Workstation, because they are
  useful for a Tor Workstation.
  .
  Feel free to remove if you know what you are doing.
@@ -399,6 +407,16 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
  Depends on whonix-workstation-shared-packages-shared-meta,
  and hardened-desktop-environment-essential-kde because that is required in
  Non-Qubes-Whonix KDE in order to get graphical desktop environment.
+ .
+ Feel free to remove if you know what you are doing.
+
+Package: non-qubes-whonix-workstation-cli
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli, hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli, whonix-shared-packages-recommended-cli, whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli, ${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
+ A metapackage, which installs packages, for a
+ Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
  .
  Feel free to remove if you know what you are doing.
 
