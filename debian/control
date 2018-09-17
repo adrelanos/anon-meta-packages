@@ -152,7 +152,7 @@ Depends: hexchat, vlc, mixmaster, kcalc, okular,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
- thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
+ ricochet-im, coyim,
  xchat-improved-privacy,
  ${misc:Depends}
 Replaces: anon-workstation-default-applications
