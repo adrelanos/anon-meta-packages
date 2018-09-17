@@ -1,3 +1,15 @@
+commit 77ca93d819425cab53a25f08aa1a04dea9c61cac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 08:27:15 2018 +0000
+
+    Priority: required
+
+commit ffdef2426cff66bf9cefbc8a999a07ff732f5df7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 08:00:11 2018 +0000
+
+    bumped changelog version
+
 commit d12159d54d0ad3051b05eca13d16f07da51b3afa
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 17 03:55:23 2018 -0400
