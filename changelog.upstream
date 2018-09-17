@@ -1,3 +1,40 @@
+commit d12159d54d0ad3051b05eca13d16f07da51b3afa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 03:55:23 2018 -0400
+
+    remove thunderbird, enigmail, xul-ext-torbirdy (dependency issues)
+
+commit 4292a5b5bd0ffc61b7d326d1ebfaaf4334983fe0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 16 14:20:02 2018 -0400
+
+    description
+
+commit d429b12169e038bfb3e812e82d1aa07fe1b0816f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 16 14:12:03 2018 -0400
+
+    add whonix-workstation-packages-recommended-gui to whonix-workstation-shared-packages-shared-meta
+
+commit c800067174f0197209745b5517cca842baa6d73d
+Merge: 603beb2 53848a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 16 14:10:24 2018 -0400
+
+    Merge remote-tracking branch 'algernon/master'
+
+commit 53848a9b2d5b71f32467152e898dd082dc729172
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sun Sep 16 14:36:36 2018 +0000
+
+    Add non-qubes-whonix-workstation-cli meta package.
+
+commit 603beb27c44522a66b87ab124eee0f05211a5b15
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 14 20:12:02 2018 +0000
+
+    bumped changelog version
+
 commit 8c8dfc843ee69abee0187f4eee84a0d7ccaef8e2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Sep 14 16:07:57 2018 -0400
