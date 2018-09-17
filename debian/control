@@ -36,6 +36,7 @@ Description: Recommended packages for graphical VMs GUI
  Safe to remove, if you know what you are doing.
 
 Package: hardened-packages-dependencies-cli
+Priority: required
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, locales, apt-transport-https, apt-transport-tor,
@@ -178,6 +179,7 @@ Description: AppArmor profiles developed by the Hardened Debian Team
  Safe to remove, if you know what you are doing.
 
 Package: whonix-gateway-packages-dependencies-pre
+Priority: required
 Architecture: all
 Depends: whonix-gw-network-conf, anon-base-files,
  ${misc:Depends}
@@ -189,6 +191,7 @@ Description: Dependencies for Whonix-Gateway that changes network related files
  Do not remove.
 
 Package: whonix-gateway-packages-dependencies-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
@@ -239,6 +242,7 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  Safe to remove, if you know what you are doing.
 
 Package: whonix-workstation-packages-dependencies-pre
+Priority: required
 Architecture: all
 Depends: whonix-ws-network-conf, anon-ws-dns-conf, anon-base-files,
  ${misc:Depends}
@@ -250,6 +254,7 @@ Description: Dependencies for Whonix-Workstation that changes network related fi
  Do not remove.
 
 Package: whonix-workstation-packages-dependencies-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, whonix-workstation-packages-dependencies-pre,
@@ -326,6 +331,7 @@ Description: Whonix-Workstation Shared Packages
  Feel free to remove if you know what you are doing.
 
 Package: non-qubes-whonix-gateway-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-recommended-cli, hardened-packages-dependencies-cli, whonix-shared-packages-dependencies-cli, anon-connection-wizard, whonix-gateway-packages-dependencies-cli, whonixsetup, tor-control-panel, ${misc:Depends}
@@ -336,6 +342,7 @@ Description: Packages for a minimal Whonix-Gateway CLI
  Do not remove.
 
 Package: whonix-gateway-rpi
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, fake-hwclock, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, linux-image-arm64 (>= 4.16), ${misc:Depends}
@@ -346,6 +353,7 @@ Description: Default packages for Whonix-Gateway-RPi CLI
  Do not remove.
 
 Package: qubes-whonix-gateway
+Priority: required
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
@@ -359,9 +367,10 @@ Description: Default packages for Qubes-Whonix-Gateway
  because installing hardened-desktop-environment-essential-gui is not required
  in Qubes-Whonix.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: qubes-whonix-workstation
+Priority: required
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
@@ -375,9 +384,10 @@ Description: Default packages for Qubes-Whonix-Workstation
  because installing hardened-desktop-environment-essential-gui is not required
  in Qubes-Whonix.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: non-qubes-whonix-gateway-kde
+Priority: required
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
  hardened-desktop-environment-essential-kde, ${misc:Depends}
@@ -390,9 +400,10 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway
  and hardened-desktop-environment-essential-kde because that is required in
  Non-Qubes-Whonix KDE in order to get graphical desktop environment.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: non-qubes-whonix-workstation-kde
+Priority: required
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
  hardened-desktop-environment-essential-kde, ${misc:Depends}
@@ -405,9 +416,10 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
  and hardened-desktop-environment-essential-kde because that is required in
  Non-Qubes-Whonix KDE in order to get graphical desktop environment.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: non-qubes-whonix-workstation-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli, hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli, whonix-shared-packages-recommended-cli, whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli, ${misc:Depends}
@@ -415,38 +427,42 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: debian-vm-cli
+Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli, ${misc:Depends}
 Description: Default Packages for Debian VM CLI
  A metapackage, which installs packages, for a Debian CLI based VM.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: debian-vm-kde
+Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-gui,
  hardened-desktop-environment-essential-kde, ${misc:Depends}
 Description: Default Packages for Debian VM KDE GUI
  A metapackage, which installs packages, for a Debian KDE based VM.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: hardened-debian-cli
+Priority: required
 Architecture: all
 Depends: debian-vm-cli, hardened-packages-dependencies-cli,
  hardened-packages-recommended-cli, ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
 
 Package: hardened-debian-kde
+Priority: required
 Architecture: all
 Depends: hardened-debian-cli, ${misc:Depends}
 Description: Hardened Debian KDE GUI
  A metapackage, which installs packages, for Hardened Debian KDE.
  .
- Feel free to remove if you know what you are doing.
+ Do not remove.
