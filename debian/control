@@ -466,3 +466,27 @@ Description: Hardened Debian KDE GUI
  A metapackage, which installs packages, for Hardened Debian KDE.
  .
  Do not remove.
+
+Package: non-qubes-whonix-gateway
+Priority: optional
+Architecture: all
+Depends: non-qubes-whonix-gateway-kde, ${misc:Depends}
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. Legacy.
+ .
+ It can be removed by installing package non-qubes-whonix-gateway-kde.
+ .
+ sudo apt-get install non-qubes-whonix-gateway-kde
+
+Package: non-qubes-whonix-workstation
+Priority: optional
+Architecture: all
+Depends: non-qubes-whonix-workstation-kde, ${misc:Depends}
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. Legacy.
+ .
+ It can be removed by installing package non-qubes-whonix-workstation-kde.
+ .
+ sudo apt-get install non-qubes-whonix-workstation-kde
