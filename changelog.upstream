@@ -1,3 +1,15 @@
+commit c000291e8b3390b4eee24bda3e8d1b49b427a5bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 09:57:53 2018 +0000
+
+    Essential: yes
+
+commit 19b59d2fbadee110193f143768343f3ecc27b435
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 08:27:29 2018 +0000
+
+    bumped changelog version
+
 commit 77ca93d819425cab53a25f08aa1a04dea9c61cac
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 17 08:27:15 2018 +0000
