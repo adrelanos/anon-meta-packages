@@ -1,3 +1,15 @@
+commit 2b89529ab70618aa3f2de29e6aaf8d30973c5c3a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 13:51:22 2018 +0000
+
+    add legacy transitional package snon-qubes-whonix-gateway / non-qubes-whonix-workstation
+
+commit edd0188a3820813033affb1a81cb245942efc74c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 10:22:32 2018 +0000
+
+    bumped changelog version
+
 commit ed0d25c9dece45f1c967c93fa24b345b9ad58033
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 17 10:20:10 2018 +0000
