@@ -147,7 +147,6 @@ Description: KDE accessibility tools GUI
 Package: hardened-desktop-environment-essential-xfce
 Architecture: all
 Depends: hardened-desktop-environment-essential-gui, xfce4, ${misc:Depends}
-Replaces: 
 Description: Recommended packages for hardened desktop base Xfce4 desktop GUI
  A metapackage, which installs a minimal, yet complete enough
  to contain the very basics, Xfce desktop.
