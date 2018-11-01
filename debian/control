@@ -144,6 +144,26 @@ Description: KDE accessibility tools GUI
  .
  Safe to remove, if you know what you are doing.
 
+Package: hardened-desktop-environment-essential-xfce
+Architecture: all
+Depends: hardened-desktop-environment-essential-gui, xfce4, ${misc:Depends}
+Replaces: 
+Description: Recommended packages for hardened desktop base Xfce4 desktop GUI
+ A metapackage, which installs a minimal, yet complete enough
+ to contain the very basics, Xfce desktop.
+ .
+ Safe to remove.
+
+Package: hardened-desktop-applications-xfce
+Architecture: all
+Depends: hardened-desktop-environment-essential-xfce, xfce4-terminal, mousepad, policykit-1, lightdm, gnome-brave-icon-theme,
+ p7zip-full, zip, unzip, ristretto, pulseaudio, whonix-xfce-desktop-config, ${misc:Depends}
+Description: Recommended applications for hardened Xfce desktop GUI
+ A metapackage, which installs minimal, yet complete enough
+ to contain the very basics, Xfce applications.
+ .
+ Safe to remove.
+
 Package: whonix-workstation-default-applications-gui
 Architecture: all
 Depends: hexchat, vlc, mixmaster, kcalc, okular,
@@ -402,6 +422,20 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway
  .
  Do not remove.
 
+Package: non-qubes-whonix-gateway-xfce
+Priority: required
+Architecture: all
+Depends: non-qubes-whonix-gateway-cli, whonix-shared-default-applications-gui, whonix-shared-packages-recommended-cli,
+ whonix-gateway-default-applications-gui,  whonix-gateway-packages-recommended-cli, non-qubes-vm-enhancements-gui, hardened-desktop-applications-xfce, ${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
+ A metapackage, which installs packages, for a
+ Non-Qubes-Whonix-Default-Gateway with Xfce.
+ .
+ Depends on hardened-desktop-applications-xfce because that is required in
+ Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
+ .
+ Do not remove.
+
 Package: non-qubes-whonix-workstation-kde
 Priority: required
 Architecture: all
@@ -410,11 +444,24 @@ Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancemen
 Replaces: whonix-workstation, non-qubes-whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
  A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Workstation.
+ Non-Qubes-Whonix-Default-Workstation with KDE.
  .
  Depends on whonix-workstation-shared-packages-shared-meta,
  and hardened-desktop-environment-essential-kde because that is required in
  Non-Qubes-Whonix KDE in order to get graphical desktop environment.
+ .
+ Do not remove.
+
+Package: non-qubes-whonix-workstation-xfce
+Priority: required
+Architecture: all
+Depends: non-qubes-whonix-workstation-cli, hardened-desktop-applications-xfce, whonix-shared-default-applications-gui, whonix-workstation-default-applications-gui, whonix-workstation-packages-recommended-gui, non-qubes-vm-enhancements-gui, ${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
+ A metapackage, which installs packages, for a
+ Non-Qubes-Whonix-Default-Workstation with Xfce.
+ .
+ Depends on hardened-desktop-applications-xfce because that is required in
+ Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
  .
  Do not remove.
 
