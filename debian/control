@@ -411,9 +411,9 @@ Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
  hardened-desktop-environment-essential-kde, ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
-Description: Default Packages for Non-Qubes-Whonix-Gateway
+Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
  A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Gateway.
+ Non-Qubes-Whonix-Default-Gateway with KDE.
  .
  Depends on whonix-gateway-shared-packages-shared-meta,
  and hardened-desktop-environment-essential-kde because that is required in
