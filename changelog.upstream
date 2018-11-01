@@ -1,3 +1,43 @@
+commit f9c72531f7211d80c49c197cb1d284368adb00f9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 1 00:07:30 2018 -0400
+
+    Description
+
+commit ea86d1dd41d0570f2c45580ffc3e0cfa7aba3bec
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 1 00:05:10 2018 -0400
+
+    fix, remove unused Replaces:
+
+commit 28967b5c75d27b23267988bb8a9c511b07850ec2
+Merge: cd2dc89 507d8bc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 1 00:04:41 2018 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 507d8bc811648d635dccf12cce2f04f49ce6360b
+Merge: cd2dc89 b215d1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 1 00:02:44 2018 -0400
+
+    Merge pull request #15 from Algernon-01/master
+    
+    Added Xfce related meta-packages
+
+commit b215d1c6b1345c5a555cbb8c0cc50c3b7026b98b
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Oct 31 17:46:06 2018 +0000
+
+    Added Xfce related meta-packages
+
+commit cd2dc897832a1f406a0da7af47d1096c44ce8c5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 17 15:49:24 2018 +0000
+
+    bumped changelog version
+
 commit 07b8ccb63a36229a7b2000391470524267da5822
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 17 15:49:09 2018 +0000
