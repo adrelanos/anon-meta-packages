@@ -1,3 +1,31 @@
+commit 8843124ca16c3f8dac2373c60bf198f66b25e077
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 8 00:03:38 2018 -0500
+
+    install spellchecker by default (useful for thunderbird and hexchat)
+    
+    add hunspell-en-us to whonix-workstation-default-applications-gui
+    
+    https://forums.whonix.org/t/thunderbird-and-hexchat-english-dictionaries-spell-checker-enhancement/6241/3
+
+commit 2e8382036a09a85d396fea5e77c1e07bd727ab28
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 8 00:03:14 2018 -0500
+
+    refactoring
+
+commit 21c22a6d18c48a04df8271c5fea955820c8b7fd8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 8 00:01:48 2018 -0500
+
+    refactoring
+
+commit bc1d22e79132ad2ad6e5973185bffece5d31f3ce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 1 07:39:40 2018 +0000
+
+    bumped changelog version
+
 commit f9c72531f7211d80c49c197cb1d284368adb00f9
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 1 00:07:30 2018 -0400
