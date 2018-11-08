@@ -166,7 +166,7 @@ Description: Recommended applications for hardened Xfce desktop GUI
 
 Package: whonix-workstation-default-applications-gui
 Architecture: all
-Depends: hexchat, vlc, mixmaster, kcalc, okular,
+Depends: hexchat, vlc, mixmaster, kcalc, okular, hunspell-en-us,
  gwenview, libkf5kipi31.0.0, libkf5kipi-data,
  kgpg, mat, python-hachoir-core, python-hachoir-parser,
  python-pdfrw, python-cairo, python-poppler, python-mutagen,
