@@ -431,7 +431,6 @@ Architecture: all
 Depends: non-qubes-vm-enhancements-gui,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
- whonix-shared-packages-recommended-cli,
  whonix-gateway-default-applications-gui,
  whonix-gateway-packages-recommended-cli,
  non-qubes-whonix-gateway-cli,
