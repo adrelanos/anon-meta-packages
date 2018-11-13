@@ -352,10 +352,10 @@ Package: non-qubes-whonix-gateway-cli
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: hardened-packages-recommended-cli, hardened-packages-dependencies-cli,
- whonix-shared-packages-dependencies-cli, anon-connection-wizard,
- whonix-gateway-packages-dependencies-cli, whonixsetup, tor-control-panel,
- ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli, hardened-packages-recommended-cli,
+ hardened-packages-dependencies-cli, whonix-shared-packages-dependencies-cli,
+ anon-connection-wizard, whonix-gateway-packages-dependencies-cli, whonixsetup,
+ tor-control-panel, ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway without graphical user interface (GUI).
