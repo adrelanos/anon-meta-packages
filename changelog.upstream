@@ -1,3 +1,110 @@
+commit f074fd5c27511b672c1b1966cf63f100c763faa2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 12:08:43 2018 +0000
+
+    adding missing Pre-Depends: whonix-legacy
+
+commit 6778e7e26f430f8e565ea778afe71a070c882256
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:43:18 2018 +0000
+
+    add whonix-gateway-packages-recommended-gui to non-qubes-whonix-gateway-xfce,
+    to reduce the diff to non-qubes-whonix-workstation-xfce
+
+commit 6dbb36cb1851139692731a462ac8a5e997418c02
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:40:42 2018 +0000
+
+    drop whonix-gateway-packages-recommended-cli from non-qubes-whonix-gateway-xfce,
+    because non-qubes-whonix-gateway-cli already depends on
+
+commit 9967457c9e739d4b409d117d2e51ffb3512e0f4a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:37:49 2018 +0000
+
+    drop whonix-shared-packages-recommended-cli from non-qubes-whonix-gateway-xfce,
+    because non-qubes-whonix-gateway-cli already depends on whonix-shared-packages-recommended-cli
+
+commit f02d98364fd221256167508a3037702eda1bcc19
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:34:26 2018 +0000
+
+    shuffle
+
+commit 8441bb2beeab31a174068c9fee5217c407359fba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:28:07 2018 +0000
+
+    refactoring
+
+commit 4e20732dafa5356e7e4fa75307f8b7ff424444f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:21:35 2018 +0000
+
+    non-qubes-whonix-gateway-cli: drop dependency on whonixsetup since whonix-gateway-packages-recommended-cli depends on it
+
+commit 4b57c5b5236ce7d450b3f4df2991fb5172c2eedd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:15:01 2018 +0000
+
+    add whonix-gateway-packages-recommended-cli to non-qubes-whonix-gateway-cli
+
+commit 606e1938567faba3a6e30a866ca109bec1b13c00
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:10:51 2018 +0000
+
+    add whonix-shared-packages-recommended-cli to non-qubes-whonix-gateway-cli
+
+commit 0154bf021514309277801b3133536d3903c50970
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:09:15 2018 +0000
+
+    refactoring
+
+commit 61becf62722ae0b445e2fbf3039bcd3288fdff92
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:08:02 2018 +0000
+
+    shuffle
+
+commit e32022cce819902ba538e6b37adb66bbaf26cf20
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:05:50 2018 +0000
+
+    shuffle
+
+commit 91215a39168c6a70d2d9e0a6c68f3940f5319a3b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:04:11 2018 +0000
+
+    add non-qubes-vm-enhancements-cli to non-qubes-whonix-gateway-cli
+
+commit 0f8705b8f0a7f6a8370503963f5abc3a24566a77
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:02:55 2018 +0000
+
+    more similar description
+
+commit 8ff867705305f7e759efdcdd8dc4161d04bf6019
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 11:01:34 2018 +0000
+
+    refactoring
+
+commit 724bd733a47a6d220ef280c4c9b7e82bda3e2ce2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 04:22:32 2018 -0500
+
+    deprecate desktop shortcuts due to warning in XFCE
+    
+    https://forums.whonix.org/t/whonix-xfce-development/6213/36?u=patrick
+
+commit c2db1dcc28f33b0453fafa541d52f1e89f349671
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 8 06:18:47 2018 +0000
+
+    bumped changelog version
+
 commit 8843124ca16c3f8dac2373c60bf198f66b25e077
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 8 00:03:38 2018 -0500
