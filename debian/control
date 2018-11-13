@@ -84,7 +84,7 @@ Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
- whonix-setup-wizard, whonix-gw-desktop-shortcuts,
+ whonix-setup-wizard,
  whonix-gw-kde-desktop-conf,
  ${misc:Depends}
 Replaces: anon-gateway-default-applications, whonix-gateway-default-applications
@@ -297,7 +297,7 @@ Description: Recommended packages for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
-Depends: whonix-workstation-packages-recommended-cli, whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
+Depends: whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended
 Description: Recommended packages for Whonix-Workstation GUI
