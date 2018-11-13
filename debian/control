@@ -352,7 +352,10 @@ Package: non-qubes-whonix-gateway-cli
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: hardened-packages-recommended-cli, hardened-packages-dependencies-cli, whonix-shared-packages-dependencies-cli, anon-connection-wizard, whonix-gateway-packages-dependencies-cli, whonixsetup, tor-control-panel, ${misc:Depends}
+Depends: hardened-packages-recommended-cli, hardened-packages-dependencies-cli,
+ whonix-shared-packages-dependencies-cli, anon-connection-wizard,
+ whonix-gateway-packages-dependencies-cli, whonixsetup, tor-control-panel,
+ ${misc:Depends}
 Description: Packages for a minimal Whonix-Gateway CLI
  A metapackage, which installs packages for a cli
  Whonix-Gateway.
@@ -467,7 +470,11 @@ Package: non-qubes-whonix-workstation-cli
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli, hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli, whonix-shared-packages-recommended-cli, whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli, ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
+ hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-recommended-cli,
+ whonix-workstation-packages-dependencies-cli,
+ whonix-workstation-packages-recommended-cli, ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
