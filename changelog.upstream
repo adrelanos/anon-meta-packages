@@ -1,3 +1,19 @@
+commit b8a96029ea6f09194aa33b11413e0279901666d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 13:41:25 2018 +0000
+
+    remove dependency on non-existing package whonix-gateway-packages-recommended-gui
+    
+    thanks to @Algernon for the bug report
+    
+    https://forums.whonix.org/t/whonix-cli-development/6309/3?u=patrick
+
+commit 48b4c3c545df91dbc2a807fe040fccc83d6f4357
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 13 12:29:05 2018 +0000
+
+    bumped changelog version
+
 commit f074fd5c27511b672c1b1966cf63f100c763faa2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 13 12:08:43 2018 +0000
