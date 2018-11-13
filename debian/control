@@ -428,11 +428,14 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
 Package: non-qubes-whonix-gateway-xfce
 Priority: required
 Architecture: all
-Depends: non-qubes-whonix-gateway-cli, whonix-shared-default-applications-gui,
+Depends: non-qubes-vm-enhancements-gui,
+ hardened-desktop-applications-xfce,
+ whonix-shared-default-applications-gui,
  whonix-shared-packages-recommended-cli,
  whonix-gateway-default-applications-gui,
- whonix-gateway-packages-recommended-cli, non-qubes-vm-enhancements-gui,
- hardened-desktop-applications-xfce, ${misc:Depends}
+ whonix-gateway-packages-recommended-cli,
+ non-qubes-whonix-gateway-cli,
+ ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway with Xfce.
@@ -461,11 +464,13 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
 Package: non-qubes-whonix-workstation-xfce
 Priority: required
 Architecture: all
-Depends: non-qubes-whonix-workstation-cli, hardened-desktop-applications-xfce,
+Depends: non-qubes-vm-enhancements-gui,
+ hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
- non-qubes-vm-enhancements-gui, ${misc:Depends}
+ non-qubes-whonix-workstation-cli,
+ ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation with Xfce.
