@@ -432,6 +432,7 @@ Depends: non-qubes-vm-enhancements-gui,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
+ whonix-gateway-packages-recommended-gui,
  non-qubes-whonix-gateway-cli,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
