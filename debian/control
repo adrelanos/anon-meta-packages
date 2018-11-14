@@ -135,18 +135,10 @@ Description: Recommended applications for hardened KDE desktop GUI
  .
  Safe to remove.
 
-Package: hardened-desktop-environment-essential-xfce
-Architecture: all
-Depends: hardened-desktop-environment-essential-gui, xfce4, ${misc:Depends}
-Description: Recommended packages for hardened desktop base Xfce4 desktop GUI
- A metapackage, which installs a minimal, yet complete enough
- to contain the very basics, Xfce desktop.
- .
- Safe to remove.
-
 Package: hardened-desktop-applications-xfce
 Architecture: all
-Depends: hardened-desktop-environment-essential-xfce, xfce4-terminal, mousepad,
+Depends: hardened-desktop-environment-essential-gui,
+ xfce4, xfce4-terminal, mousepad,
  policykit-1, lightdm, gnome-brave-icon-theme, p7zip-full, zip, unzip,
  ristretto, pulseaudio, whonix-xfce-desktop-config, ${misc:Depends}
 Description: Recommended applications for hardened Xfce desktop GUI
