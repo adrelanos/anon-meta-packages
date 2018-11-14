@@ -125,7 +125,9 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  gtk3-engines-breeze, plasma-pa,
  kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
- kmenuedit, ${misc:Depends}
+ kmenuedit,
+ kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
+ ${misc:Depends}
 Replaces: anon-shared-applications-kde
 Description: Recommended applications for hardened KDE desktop GUI
  A metapackage, which installs a minimal, yet complete enough
@@ -155,9 +157,8 @@ Description: Recommended applications for hardened Xfce desktop GUI
 
 Package: whonix-workstation-default-applications-gui
 Architecture: all
-Depends: hexchat, vlc, mixmaster, kcalc, okular, hunspell-en-us,
- gwenview, libkf5kipi31.0.0, libkf5kipi-data,
- kgpg, mat, python-hachoir-core, python-hachoir-parser,
+Depends: hexchat, vlc, mixmaster, hunspell-en-us,
+ mat, python-hachoir-core, python-hachoir-parser,
  python-pdfrw, python-cairo, python-poppler, python-mutagen,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
