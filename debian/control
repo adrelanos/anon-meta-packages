@@ -133,17 +133,6 @@ Description: Recommended applications for hardened KDE desktop GUI
  .
  Safe to remove.
 
-Package: hardened-desktop-kde-accessibility-gui
-Architecture: all
-Depends: gnome-orca,
- console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
- kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
-Replaces: anon-shared-kde-accessibility
-Description: KDE accessibility tools GUI
- A metapackage, which installs accessibility tools for the KDE desktop.
- .
- Safe to remove, if you know what you are doing.
-
 Package: hardened-desktop-environment-essential-xfce
 Architecture: all
 Depends: hardened-desktop-environment-essential-gui, xfce4, ${misc:Depends}
