@@ -487,29 +487,10 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  .
  Do not remove.
 
-Package: debian-vm-cli
-Priority: required
-Architecture: all
-Depends: non-qubes-vm-enhancements-cli, ${misc:Depends}
-Description: Default Packages for Debian VM CLI
- A metapackage, which installs packages, for a Debian CLI based VM.
- .
- Do not remove.
-
-Package: debian-vm-kde
-Priority: required
-Architecture: all
-Depends: non-qubes-vm-enhancements-gui,
- hardened-desktop-environment-essential-kde, ${misc:Depends}
-Description: Default Packages for Debian VM KDE GUI
- A metapackage, which installs packages, for a Debian KDE based VM.
- .
- Do not remove.
-
 Package: hardened-debian-cli
 Priority: required
 Architecture: all
-Depends: debian-vm-cli, hardened-packages-dependencies-cli,
+Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
  hardened-packages-recommended-cli, ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
