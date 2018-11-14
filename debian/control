@@ -147,22 +147,6 @@ Description: Recommended applications for hardened Xfce desktop GUI
  .
  Safe to remove.
 
-Package: whonix-workstation-default-applications-gui
-Architecture: all
-Depends: hexchat, vlc, mixmaster, hunspell-en-us,
- mat, python-hachoir-core, python-hachoir-parser,
- python-pdfrw, python-cairo, python-poppler, python-mutagen,
- libimage-exiftool-perl, gir1.2-gtk-3.0,
- pinentry-qt | pinentry-x11,
- tb-default-browser, tb-starter, tb-updater, youtube-dl,
- ricochet-im, coyim, xchat-improved-privacy, ${misc:Depends}
-Replaces: anon-workstation-default-applications
-Description: Recommended default applications for a graphical Anon-Workstation GUI
- A metapackage, which installs recommended GUI default applications,
- which are useful in a default installation of a graphical Tor Workstation.
- .
- Safe to remove, if you know what you are doing.
-
 Package: apparmor-profiles-hardened-debian
 Architecture: all
 Depends: apparmor-profile-icedove,
@@ -279,9 +263,17 @@ Description: Recommended packages for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
-Depends: whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
+Depends: hexchat, vlc, mixmaster, hunspell-en-us,
+ mat, python-hachoir-core, python-hachoir-parser,
+ python-pdfrw, python-cairo, python-poppler, python-mutagen,
+ libimage-exiftool-perl, gir1.2-gtk-3.0,
+ pinentry-qt | pinentry-x11,
+ tb-default-browser, tb-starter, tb-updater, youtube-dl,
+ ricochet-im, coyim, xchat-improved-privacy,
+ whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
-Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended
+Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
+ anon-workstation-default-applications, whonix-workstation-default-applications-gui
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
  graphical user interface (GUI) Whonix-Workstation, because they are
@@ -319,7 +311,6 @@ Depends: hardened-packages-dependencies-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
- whonix-workstation-default-applications-gui,
  whonix-workstation-packages-recommended-cli,
  whonix-workstation-packages-recommended-gui,
  ${misc:Depends}
@@ -451,7 +442,6 @@ Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-gui,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
- whonix-workstation-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
  non-qubes-whonix-workstation-cli,
  ${misc:Depends}
