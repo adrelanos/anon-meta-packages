@@ -450,10 +450,10 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-whonix-workstation-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
- non-qubes-whonix-workstation-cli,
  rads, non-qubes-vm-audio,
  mupdf, ristretto,
  ${misc:Depends}
