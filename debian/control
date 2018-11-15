@@ -428,7 +428,8 @@ Package: non-qubes-whonix-workstation-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-workstation-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-whonix-workstation-cli,
  whonix-workstation-shared-packages-shared-meta,
  hardened-desktop-environment-essential-kde,
  rads, non-qubes-vm-audio,
@@ -449,7 +450,8 @@ Package: non-qubes-whonix-workstation-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-workstation-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-whonix-workstation-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
