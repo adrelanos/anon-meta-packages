@@ -446,6 +446,7 @@ Depends: non-qubes-vm-enhancements-gui,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
  non-qubes-whonix-workstation-cli,
+ mupdf, ristretto,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
