@@ -24,14 +24,15 @@ Description: Recommended packages for terminal based VMs CLI
  .
  Safe to remove, if you know what you are doing.
 
-Package: non-qubes-vm-enhancements-gui
+Package: non-qubes-vm-audio
 Architecture: all
-Depends: non-qubes-vm-enhancements-cli, rads, libasound2, alsa-utils,
- pulseaudio, ${misc:Depends}
-Description: Recommended packages for graphical VMs GUI
+Depends: libasound2, alsa-utils, pulseaudio, ${misc:Depends}
+Description: Recommended packages for Audio Support in non-Qubes
  A metapackage, which includes recommended packages which are useful within
- non-Qubes virtual machines GUI. These are not useful in Qubes, since Qubes
- already has native implementations for those.
+ non-Qubes virtual machines audio support.
+ .
+ These are not useful in Qubes, since Qubes
+ already has its own native audio implementation.
  .
  Safe to remove, if you know what you are doing.
 
@@ -386,8 +387,8 @@ Package: non-qubes-whonix-gateway-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
- hardened-desktop-environment-essential-kde, ${misc:Depends}
+Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-cli,
+ hardened-desktop-environment-essential-kde, rads, ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
 Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
  A metapackage, which installs packages, for a
@@ -403,11 +404,12 @@ Package: non-qubes-whonix-gateway-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-gui,
+Depends: non-qubes-vm-enhancements-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
  non-qubes-whonix-gateway-cli,
+ rads,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
@@ -422,8 +424,9 @@ Package: non-qubes-whonix-workstation-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
+Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-cli,
  hardened-desktop-environment-essential-kde,
+ rads, non-qubes-vm-audio,
  kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
  ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
@@ -441,11 +444,12 @@ Package: non-qubes-whonix-workstation-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-gui,
+Depends: non-qubes-vm-enhancements-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
  non-qubes-whonix-workstation-cli,
+ rads, non-qubes-vm-audio,
  mupdf, ristretto,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
