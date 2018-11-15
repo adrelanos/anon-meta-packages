@@ -369,7 +369,8 @@ Priority: required
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
- qubes-whonix-workstation-packages-recommended, ${misc:Depends}
+ qubes-whonix-workstation-packages-recommended,
+ ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
@@ -422,7 +423,8 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
- hardened-desktop-environment-essential-kde, ${misc:Depends}
+ hardened-desktop-environment-essential-kde,
+ ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
  A metapackage, which installs packages, for a
