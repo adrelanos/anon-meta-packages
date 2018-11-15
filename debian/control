@@ -428,7 +428,8 @@ Package: non-qubes-whonix-workstation-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ whonix-workstation-shared-packages-shared-meta,
  hardened-desktop-environment-essential-kde,
  rads, non-qubes-vm-audio,
  kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
