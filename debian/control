@@ -387,8 +387,11 @@ Package: non-qubes-whonix-gateway-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-cli,
- hardened-desktop-environment-essential-kde, rads, ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli,
+ whonix-gateway-shared-packages-shared-meta,
+ hardened-desktop-environment-essential-kde,
+ rads,
+ ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
 Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
  A metapackage, which installs packages, for a
