@@ -389,6 +389,7 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
  rads,
+ non-qubes-whonix-gateway-cli,
  whonix-gateway-shared-packages-shared-meta,
  hardened-desktop-environment-essential-kde,
  ${misc:Depends}
