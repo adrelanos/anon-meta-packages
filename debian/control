@@ -124,7 +124,6 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit,
- kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
  ${misc:Depends}
 Replaces: anon-shared-applications-kde
 Description: Recommended applications for hardened KDE desktop GUI
@@ -370,6 +369,7 @@ Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
+ kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
  ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
@@ -424,6 +424,7 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
  hardened-desktop-environment-essential-kde,
+ kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
  ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
