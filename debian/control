@@ -43,30 +43,20 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
  timezone-utc, vbox-disable-timesync, busybox,
- security-misc, ${misc:Depends}
-Replaces: anon-shared-packages-dependencies
-Description: Dependencies for hardened systems CLI
- A metapackage, which installs command line interface (CLI) packages which
- should be installed on hardened systems.
- .
- Do not remove.
-
-Package: hardened-packages-recommended-cli
-Architecture: all
-Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
+ security-misc,
+ bash-completion, command-not-found, zsh, nano, wget, dnsutils,
  iputils-ping, apparmor-utils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  gpl-sources-download, whonix-repository,
  scurl, security-misc, openvpn, ntfs-3g,
  usability-misc, menu, man-db, open-link-confirmation,
  ${misc:Depends}
-Replaces: anon-shared-packages-recommended
-Description: Recommended packages for hardened systems CLI
- A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
- standard tools are available and other useful recommended packages for a
- command line interface (CLI) based hardened system.
+Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
+Description: Dependencies for hardened systems CLI
+ A metapackage, which installs command line interface (CLI) packages which
+ should be installed on hardened systems.
  .
- Safe to remove, if you know what you are doing.
+ Do not remove.
 
 Package: whonix-shared-default-applications-gui
 Architecture: all
@@ -215,7 +205,7 @@ Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-shared-packages-recommended-cli
 Architecture: all
-Depends: hardened-packages-recommended-cli, whonixcheck, tor-ctrl, uwt,
+Depends: hardened-packages-dependencies-cli, whonixcheck, tor-ctrl, uwt,
  anon-apps-config, ${misc:Depends}
 Replaces: whonix-shared-packages-recommended
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
@@ -284,7 +274,6 @@ Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli,
  hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
@@ -304,7 +293,6 @@ Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli,
  hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
@@ -325,7 +313,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-gateway-packages-dependencies-cli,
  whonix-gateway-packages-recommended-cli,
@@ -472,7 +460,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
  whonix-workstation-packages-recommended-cli, ${misc:Depends}
@@ -486,7 +474,7 @@ Package: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, ${misc:Depends}
+ ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
  .
