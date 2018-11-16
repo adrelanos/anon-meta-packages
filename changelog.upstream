@@ -1,3 +1,14 @@
+commit 394481c7ab8317afa88f412f2b77d7aeb4384cf7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 16 09:47:13 2018 +0000
+
+    rebuild
+
+commit 61e4c2921d3c6582c9652389bd64abbedeeb3f3d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 16 09:42:53 2018 +0000
+
+    bumped changelog version
 
 commit 2b385356dd7f845d779558e8bd2b66f20d364600
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -34,7 +45,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 15 09:59:58 2018 +0000
 
     Revert "remove superfluous dependency"
-
+    
     This reverts commit b18504c184fc184b0cfc1a809ba390f5c33fb399.
 
 commit b18504c184fc184b0cfc1a809ba390f5c33fb399
@@ -125,7 +136,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Nov 14 07:47:05 2018 -0500
 
     remove ristretto from hardened-desktop-applications-xfce
-
+    
     so it won't be installed by default on Whonix-Gateway
 
 commit f63b1ddd7c30a5a95202ad80f7fd565b74b8fcfa
@@ -152,9 +163,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Nov 14 03:26:47 2018 -0500
 
     remove pulseaudio from hardened-desktop-applications-xfce
-
+    
     since non-qubes-vm-enhancements-gui already depends on pulseaudio
-
+    
     and non-qubes-whonix-(gateway|workstation)-xfce depends on non-qubes-vm-enhancements-gui
 
 commit 90ae1674084b89cf1ee02411e95f5ba04fdbf4da
@@ -196,9 +207,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 13 13:41:25 2018 +0000
 
     remove dependency on non-existing package whonix-gateway-packages-recommended-gui
-
+    
     thanks to @Algernon for the bug report
-
+    
     https://forums.whonix.org/t/whonix-cli-development/6309/3?u=patrick
 
 commit 48b4c3c545df91dbc2a807fe040fccc83d6f4357
@@ -305,7 +316,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 13 04:22:32 2018 -0500
 
     deprecate desktop shortcuts due to warning in XFCE
-
+    
     https://forums.whonix.org/t/whonix-xfce-development/6213/36?u=patrick
 
 commit c2db1dcc28f33b0453fafa541d52f1e89f349671
@@ -319,9 +330,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 8 00:03:38 2018 -0500
 
     install spellchecker by default (useful for thunderbird and hexchat)
-
+    
     add hunspell-en-us to whonix-workstation-default-applications-gui
-
+    
     https://forums.whonix.org/t/thunderbird-and-hexchat-english-dictionaries-spell-checker-enhancement/6241/3
 
 commit 2e8382036a09a85d396fea5e77c1e07bd727ab28
@@ -367,7 +378,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 1 00:02:44 2018 -0400
 
     Merge pull request #15 from Algernon-01/master
-
+    
     Added Xfce related meta-packages
 
 commit b215d1c6b1345c5a555cbb8c0cc50c3b7026b98b
@@ -423,9 +434,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 17 10:20:10 2018 +0000
 
     Revert "Essential: yes"
-
+    
     This reverts commit c000291e8b3390b4eee24bda3e8d1b49b427a5bb.
-
+    
     https://forums.whonix.org/t/protecting-bricking-whonix-whonix-meta-pacakges-from-removal-using-essential-yes/5969
 
 commit f368daae8c396a4287995b6695848f08ab29aabf
@@ -500,7 +511,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Sep 14 16:07:57 2018 -0400
 
     fix
-
+    
     https://forums.whonix.org/t/package-conflicts/5936
 
 commit c74e5d15ad4927ab98a01319057bea65ed7a2c96
@@ -542,58 +553,58 @@ Date:   Tue Sep 11 08:39:35 2018 +0000
     - debian-vm-kde
     - hardened-debian-cli
     - hardened-debian-kde
-
+    
     - tor-ctrl
     - uwt
     - anon-apps-config
-
+    
     anon-shared-packages-dependencies -> hardened-packages-dependencies-cli
-
+    
     anon-shared-packages-recommended -> hardened-packages-recommended-cli
-
+    
     split non-qubes-vm-enhancements into non-qubes-vm-enhancements-cli and non-qubes-vm-enhancements-gui
-
+    
     anon-shared-default-applications -> whonix-shared-default-applications-gui
-
+    
     anon-gateway-default-applications -> whonix-gateway-default-applications-gui
     whonix-gateway-default-applications -> whonix-gateway-default-applications-gui
-
+    
     anon-shared-desktop -> hardened-desktop-environment-essential-gui
-
+    
     anon-shared-desktop-kde -> hardened-desktop-environment-essential-kde
-
+    
     apparmor-profiles-whonix -> apparmor-profiles-hardened-debian
-
+    
     whonix-gateway-default-applications -> whonix-gateway-default-applications-gui
-
+    
     whonix-shared-packages-dependencies -> whonix-shared-packages-dependencies-cli
-
+    
     anon-shared-desktop -> hardened-desktop-environment-essential-gui
-
+    
     anon-shared-desktop-kde -> hardened-desktop-environment-essential-kde
-
+    
     anon-shared-applications-kde -> hardened-desktop-applications-kde
-
+    
     anon-shared-kde-accessibility -> hardened-desktop-kde-accessibility-gui
-
+    
     anon-workstation-default-applications -> whonix-workstation-default-applications-gui
-
+    
     apparmor-profiles-whonix -> apparmor-profiles-hardened-debian
-
+    
     whonix-gateway-packages-dependencies -> whonix-gateway-packages-dependencies-cli
-
+    
     whonix-gateway-packages-recommended -> whonix-gateway-packages-recommended-cli
-
+    
     whonix-shared-packages-dependencies -> whonix-shared-packages-dependencies-cli
-
+    
     whonix-shared-packages-recommended -> whonix-shared-packages-recommended-cli
-
+    
     whonix-workstation-packages-dependencies -> whonix-workstation-packages-dependencies-cli
-
+    
     whonix-workstation-packages-recommended -> whonix-workstation-packages-recommended-cli
-
+    
     non-qubes-whonix-gateway -> non-qubes-whonix-gateway-kde
-
+    
     non-qubes-whonix-workstation -> non-qubes-whonix-workstation-kde
 
 commit 4f3cde092eb3b24f99b98e6897fc9014d3aa7d98
@@ -602,7 +613,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Sep 11 04:37:44 2018 -0400
 
     Merge pull request #13 from Algernon-01/master
-
+    
     Install kernel from backports for HDMI support.
 
 commit cc3c727255f56fdc0be2637fbe200db4aeff3a2c
@@ -637,7 +648,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Sep 8 17:50:52 2018 +0000
 
     Merge pull request #12 from Algernon-01/master
-
+    
     Use official raspi3-firmware package from buster.
 
 commit cf59b22e92fb84d3dc1b385bacb73bf15be338f3
@@ -677,15 +688,15 @@ Date:   Mon Aug 27 19:15:45 2018 +0000
 
     remove from anon-workstation-packages-recommended
     since already in anon-workstation-default-applications
-
+    
     - thunderbird
     - xul-ext-torbirdy
     - enigmail
     - youtube-dl
-
+    
     move from anon-workstation-packages-recommended
     to anon-workstation-default-applications
-
+    
     - xchat-improved-privacy
     - anon-torchat
 
@@ -720,7 +731,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 28 00:33:59 2018 +0800
 
     Merge pull request #11 from Algernon-01/master
-
+    
      New version of non-qubes-whonix-gateway-cli and whonix-gateway-rpi.
 
 commit d98e92a05047f9e643fd454a970931c1f9e87222
@@ -746,7 +757,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 20 22:12:29 2018 +0800
 
     move anon-iceweasel-warning from anon-shared-packages-recommended to anon-shared-default-applications (GUI)
-
+    
     move anon-icon-pack from anon-shared-packages-recommended to anon-shared-default-applications (GUI)
 
 commit 53b9039bca53b55397a9ee363b3228b8ae9280c1
@@ -754,7 +765,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 20 22:07:25 2018 +0800
 
     removed gtk2-engines-pixbuf from anon-shared-packages-recommended
-
+    
     since already part of anon-shared-desktop
 
 commit 1545d349c28181ffecadc702d2d095fa626e6cce
@@ -762,7 +773,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 17 20:02:17 2018 +0000
 
     fix, install pinentry-qt by default
-
+    
     remove "pinentry-curses | pinentry" from anon-workstation-default-applications
     but keep "pinentry-qt | pinentry-x11" in anon-workstation-default-applications
 
@@ -777,7 +788,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 17 19:25:24 2018 +0000
 
     add coyim to anon-workstation-default-applications
-
+    
     https://phabricator.whonix.org/T803
 
 commit f083598a9dd8c9b7adc6978a1d6f23514a2d1bd5
@@ -816,13 +827,13 @@ Date:   Thu Aug 9 18:04:21 2018 +0000
 
     add anon-shared-default-applications
     Recommended desktop packages for both, Anon-Gateway and Anon-Workstation
-
+    
     add anon-gateway-default-applications
     Recommended desktop packages for Anon-Gateway GUI
-
+    
     remove anon-shared-desktop-recommended (never released)
     (anon-shared-default-applications will replace it)
-
+    
     install tor-control-panel by default
 
 commit 5302549ffe4142246fb3e93e24d821e178f660e9
@@ -836,7 +847,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 9 17:20:32 2018 +0000
 
     add anon-shared-desktop-recommended
-
+    
     A metapackage, which installs desktop packages useful in desktop environments on anonymity distributions.
 
 commit df412af79da91a9140ca48a3641bc5e00103f9e9
@@ -862,7 +873,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 9 03:48:14 2018 +0800
 
     move sdwdate-gui from anon-shared-packages-dependencies to anon-shared-packages-recommended
-
+    
     for better cli-only support
 
 commit d82306408b47e9a36d2746c4a2098bb610e256cc
@@ -876,7 +887,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jul 22 12:54:04 2018 +0800
 
     Revert "Move kde-l10n-{ar,ru,zhcn} to Depends"
-
+    
     This reverts commit 900316fb5ae04ed9abe11b101e5f5544bef70c41.
 
 commit 525274ba27bfde2390f489c9dccfd11be987d84b
@@ -892,7 +903,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jul 22 04:48:20 2018 +0000
 
     Merge pull request #9 from irykoon/master
-
+    
      Move kde-l10n-{ar,ru,zhcn} to Depends
 
 commit 06733c120c111d1b318a626873ab293063a5d911
@@ -907,7 +918,7 @@ Author: irykoon <irykoon@gmail.com>
 Date:   Sat Jul 21 15:41:47 2018 +0000
 
     Move kde-l10n-{ar,ru,zhcn} to Depends
-
+    
     Please correct me if I am wrong. My understanding is Whonix will
     install packages with --no-recommends. Therefore, this changes should
     be enough to get those packages installed by default.
@@ -929,7 +940,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 12 14:36:40 2018 +0200
 
     remove apparmor-profiles-virtualbox from apparmor-profiles-whonix
-
+    
     http://forums.whonix.org/t/whonix-apparmor-profiles-development-discussion/108/671
 
 commit faeb630deb811fdae765d03beba4f0e39256e86b
@@ -943,7 +954,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 8 14:51:50 2018 +0000
 
     remove pkg-manager-longer-timeouts and pkg-manager-no-autoupdate
-
+    
     since merged into anon-apps-config
 
 commit a7ddcb9eab7e4aa179005005315310cc192e301b
@@ -1023,11 +1034,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 28 21:59:38 2018 +0000
 
     no longer install whonix-setup-wiazrd on Whonix-Workstation by default
-
+    
     not required there anymore
-
+    
     move whonix-setup wizard from whonix-shared-packages-recommended to whonix-gateway-packages-recommended
-
+    
     https://forums.whonix.org/t/graphical-gui-whonix-setup-wizard-anon-connection-wizard-technical-discussion/650/527
 
 commit 3f77940eacac603821e724a06f41cc524a095d88
@@ -1089,13 +1100,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Dec 21 12:43:06 2017 +0100
 
     move okular from anon-shared-applications-kde to anon-workstation-default-applications
-
+    
     so it does not get installed on Whonix-Gateway
-
+    
     so also phonon (dependency of okular) does not get installed on Whonix-Gateway
-
+    
     thanks to @TNTBOMBOM for the bug report
-
+    
     https://forums.whonix.org/t/whonix-virtualbox-14-0-0-5-5-testers-wanted/4642/2
 
 commit 8aa5b1fe18bf90363b7730d60f7a71338936fa6c
@@ -1141,9 +1152,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Sep 24 12:55:30 2017 +0200
 
     no longer install anon-gw-dns-conf and anon-gw-dhcp-conf
-
+    
     to make Whonix-Gateway DNS functional
-
+    
     to make meek (meek-lite) functional
 
 commit 07253d96646f244d83df1e39df8e6723129c2c16
@@ -1157,7 +1168,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 31 11:16:11 2017 +0000
 
     remove onionshare to unbreak build because it has been removed from stretch
-
+    
     https://forums.whonix.org/t/feature-request-onionshare-support/300/11
 
 commit 260cd60aaecbab9aa57d399208600e1e9ffa9c6e
@@ -1210,7 +1221,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 13 17:21:21 2017 +0200
 
     Merge pull request #5 from irykoon/master
-
+    
     Added onioncircuits to anon-workstation-packages-recommended
 
 commit 7d3ff699f8010c833484abae5b108a3ec1348c00
@@ -1237,13 +1248,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Apr 9 17:41:39 2017 +0200
 
     install busybox by default
-
+    
     by adding it as dependency to anon-shared-packages-dependencies
-
+    
     required for grsecurity kernel support
-
+    
     Thanks to WillyPillow for the suggestion!
-
+    
     https://groups.google.com/d/msg/qubes-devel/lbeVnhxNIP8/MOoj4rqCDQAJ
 
 commit 4caf2f0174558db6cf80650dff83a2c8d6ef97a2
@@ -1251,7 +1262,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 30 15:05:16 2017 +0000
 
     anon-workstation-packages-recommended add depend on gnupg2 gnupg-agent dirmngr
-
+    
     https://phabricator.whonix.org/T652
 
 commit 2882c67461517c57ddae6d2a902b96636b3a5149
@@ -1273,7 +1284,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 16 13:05:18 2017 +0100
 
     Merge pull request #4 from HulaHoopWhonix/patch-4
-
+    
     added codecrypt
 
 commit d3234b989c0c6b72e9bae04e61e4cad5107e8b9e
@@ -1287,7 +1298,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 9 21:09:49 2017 +0000
 
     add console-setup to non-qubes-vm-enhancements
-
+    
     to persist tty keyboard settings
 
 commit 6f99a0b13339ec7b297d6ef51c8bcba1832cf45d
@@ -1379,24 +1390,24 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 17 14:33:15 2017 +0100
 
     readd desktop configuration packages
-
+    
     - kde-no-move-max-win, kde-apper-no-autoupdate, kde-privacy,
     - kde-dolphin-menubar-enable, kde-kgpg-tweaks, kde-konsole-unlim-scrollback,
     - kde-lowfat, kde-mouse-doubleclick, kde-sounds-off, kde-common-resolution,
     - kmix-disable-autostart, anon-kde-streamiso
-
+    
     - anon-gw-kde-startmenu
     - anon-ws-kde-startmenu
-
+    
     - whonix-ws-start-menu-additions,
-
+    
     do not readd:
-
+    
     - whonix-gw-kde-desktop-conf (broken since kde plasma 5?)
     - whonix-ws-kde-desktop-conf (same as above)
-
+    
     do not readd:
-
+    
     - whonix-gw-desktop-shortcuts (broken in Debian stretch)
     - whonix-ws-desktop-shortcuts (same as above)
 
@@ -1405,11 +1416,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Feb 16 22:06:06 2017 +0100
 
     add python-msgpack to anon-workstation-packages-recommended
-
+    
     to simplify installation of zeronet
-
+    
     just 67.8 kB
-
+    
     https://phabricator.whonix.org/T597
 
 commit 2a72c485153d8f12593890c505c6018b6a031dd7
@@ -1423,7 +1434,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Feb 11 06:57:14 2017 +0100
 
     add fteproxy to anon-gateway-packages-recommended
-
+    
     https://phabricator.whonix.org/T520
 
 commit d76e9e4f37ed2ee62c27794efaca2267f369cde0
@@ -1437,7 +1448,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:49 2017 +0000
 
     remove faketime from Build-Depends:
-
+    
     since no longer used for reproducible builds
 
 commit 616f44f9af1df53096f1ce0e43ff1e0421427169
@@ -1481,7 +1492,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 18 13:30:47 2017 +0000
 
     move apt-transport-tor to anon-shared-packages-dependencies
-
+    
     https://phabricator.whonix.org/T610
 
 commit 5e6779f10c8c615d818183f021a67f12c670034c
@@ -1489,7 +1500,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 18 13:28:06 2017 +0000
 
     explicit depend on libkf5kipi31.0.0 libkf5kipi-data to work around gwenview
-
+    
     dependency bug
 
 commit bad339b38a23a83f4d1373ac6bfd6e5c4a9799f3
@@ -1497,9 +1508,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 18 09:29:23 2017 +0000
 
     install onionshare and ricochet by default
-
+    
     add onionshare and ricochet to anon-workstation-packages-recommended
-
+    
     https://phabricator.whonix.org/T595
 
 commit 5894a9bcafb1fc5bf7ef7de59a745c8bd555900f
@@ -1513,7 +1524,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 16 15:00:26 2017 +0100
 
     remove password manager fpm2 because not in stretch
-
+    
     https://forums.whonix.org/t/add-password-manager-by-default
 
 commit 599deaa70f87e62414f41c56a9b27b901dfc4afd
@@ -1562,7 +1573,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 13 10:32:06 2017 +0000
 
     plasma-workspace -> plasma-desktop
-
+    
     because plasma-workspace alone is not a functional desktop meta package
 
 commit b6cf81320b2cac8d979cab8a8cb21980df0dbf6b
@@ -1570,7 +1581,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 12 21:13:46 2017 +0000
 
     add missing dependency kwin-x11
-
+    
     https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=824939
 
 commit db7227aca18f1782103e86f664b962fd656c3a6e
@@ -1578,7 +1589,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 12 18:01:57 2017 +0000
 
     add missing dependency plasma-desktop-data to work around Debian bug
-
+    
     http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=851175
 
 commit aa5cc2df118b78f153293c2dcdea730c7ffb9658
@@ -1592,7 +1603,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 12 09:19:35 2017 +0000
 
     removed gtk3-engines-oxygen for now since not in stretch
-
+    
     https://phabricator.whonix.org/T601
 
 commit 08873f448cd6235eab52595f830ad7ceaedad9d7
@@ -1618,7 +1629,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 9 03:43:06 2017 +0000
 
     (temporarily?) remove broken desktop / kde config packages
-
+    
     kde-no-move-max-win
     kde-apper-no-autoupdate,
     kde-privacy
@@ -1677,12 +1688,12 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 29 00:46:57 2016 +0100
 
     move audio related packages from anon-workstation-packages-recommended to non-qubes-vm-enhancements
-
+    
     libasound2
     alsa-base
     alsa-utils
     pulseaudio
-
+    
     Setting up audio in Qubes(-Whonix) is up to the Qubes Debian template / qubes-gui-agent, not Whonix.
 
 commit f1b7dfbf2dde1563006b00305ddff09ef9e07d2d
@@ -1690,7 +1701,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 29 00:07:40 2016 +0100
 
     remove dbus from anon-shared-packages-recommended
-
+    
     Packages that require it should depend on it anyhow.
 
 commit ac465f75ccf1810bf3a188236f859fcc59387b36
@@ -1698,7 +1709,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Nov 29 00:00:12 2016 +0100
 
     move some packages from anon-shared-packages-dependencies to non-qubes-vm-enhancements
-
+    
     keyboard-configuration
     kbd
     acpi-support,
@@ -1717,9 +1728,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 28 23:45:21 2016 +0100
 
     moved some packages from anon-shared-packages-recommended to non-qubes-vm-enhancements
-
+    
     because we do not need them in Qubes
-
+    
     poweroff-passwordless (Qubes has passwordless sudo by default https://www.qubes-os.org/doc/vm-sudo/)
     power-savings-disable-in-vms (not required)
     rads (Qubes uses seamless window by default, does not start VNs in text mode and then switches to graphical mode)
@@ -1732,9 +1743,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 28 22:29:22 2016 +0100
 
     add pulseaudio to anon-workstation-packages-recommended
-
+    
     Thanks to entropy for the suggestion!
-
+    
     https://forums.whonix.org/t/no-sound-in-workstation-virtualbox-on-linux-host
 
 commit cd23ef486c1f404f9903f2605fdc2b5972c3bd2e
@@ -1742,9 +1753,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Nov 27 21:35:44 2016 +0100
 
     no longer install accessibility tools by default due to issues
-
+    
     no longer depend on anon-shared-kde-accessibility
-
+    
     https://phabricator.whonix.org/T457
 
 commit f8127ffe22273907c59521f3c72ba8155979f0bb
@@ -1758,7 +1769,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Oct 11 20:17:03 2016 +0200
 
     no longer install apparmor-notify by default
-
+    
     https://phabricator.whonix.org/T557
 
 commit 6bd004b9b145975cff79728d2fb7e74a62655adb
@@ -1766,13 +1777,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Oct 11 20:14:35 2016 +0200
 
     no longer install by default brltty, brltty-speechd, brltty-x11
-
+    
     because it opens a local listener
-
+    
     We should try to tame it at some later point.
-
+    
     https://phabricator.whonix.org/T563
-
+    
     https://phabricator.whonix.org/T457
 
 commit 90658cf9a9a5e3bf2843d5ac6fb767744d05bdce
@@ -1794,7 +1805,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Sep 21 17:53:19 2016 +0200
 
     Merge pull request #3 from HulaHoopWhonix/patch-3
-
+    
     added youtube-dl
 
 commit eed9849c872622c1d4e8d10fe1e2991a3f43edff
@@ -1822,7 +1833,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Aug 17 11:52:46 2016 +0000
 
     Merge pull request #2 from HulaHoopWhonix/patch-2
-
+    
     pwgen
 
 commit 9872e7c2cd0198aee4612f902141a915ff74b244
@@ -1836,12 +1847,12 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 15 22:22:33 2016 +0000
 
     no longer install iceweasel by default
-
+    
     since we install Tor Browser by default
-
+    
     and to fix issue
     'iceweasel rather than Tor Browser is default browser bug / has higher mime priority / hexchat opens urls with iceweasel'
-
+    
     https://phabricator.whonix.org/T517
 
 commit ec2e7930c3b0f8cc5c97211514a8f9796e242a4a
@@ -1849,13 +1860,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jun 29 23:21:47 2016 +0000
 
     added baloo to anon-shared-applications-kde
-
+    
     This fixes dolphin's search function.
-
+    
     Thanks to @invalidprotocol for the report!
-
+    
     http://forums.whonix.org/t/cant-search-files-getting-invalid-protocol-latest-whonix-v12
-
+    
     https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766426
 
 commit ff1f6c6a09d420d2bdc1f75e9c840e06ac3f6eb1
@@ -1863,11 +1874,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jun 2 14:34:34 2016 +0000
 
     fix, added gtk2-engines-pixbuf to anon-shared-packages-recommended
-
+    
     So it gets installed in Qubes-Whonix also. Makes dialogs look better.
-
+    
     Thanks to entropy for the bug report!
-
+    
     https://forums.whonix.org/t/qubes-whonix-13-0-0-0-7-testers-wanted/2432/11
 
 commit 4cb7c3be487650483dfb741f978ad1dfaf97b5f8
@@ -1893,7 +1904,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 20 03:20:07 2016 +0000
 
     added missing Qubes-Whonix packages dependencies
-
+    
     since we are no longer using Whonix build script to build Qubes-Whonix
 
 commit efccf51e7c638c2daad4284621768c9940dcc661
@@ -1913,9 +1924,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 15 00:36:01 2016 +0000
 
     removed anon-gw-build-upgrade-tor from whonix-gateway-shared-packages-shared-meta
-
+    
     because no longer required / existing
-
+    
     https://phabricator.whonix.org/T472
 
 commit 08645156bb85fc9bfb1cce39ba64cf67a24fe1b8
@@ -1929,7 +1940,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 7 23:27:21 2016 +0000
 
     removed dependency on packages with chroot scripts
-
+    
     https://phabricator.whonix.org/T461
 
 commit b219f52f820369cbfb6345f37b0f3e27d8d15e9f
@@ -1943,7 +1954,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 7 22:25:27 2016 +0000
 
     fixed lintian warning
-
+    
     anon-meta-packages source: debhelper-but-no-misc-depends anon-shared-desktop-langpack-kde
 
 commit f0c23f5604613349b52ea7cb2fad022b9eb4cc4e
@@ -1958,11 +1969,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 31 15:28:16 2016 +0000
 
     have anon-shared-packages-dependencies depend on security-misc
-
+    
     rather then tcp-timestamps-disable.
-
+    
     (tcp-timestamps-disable has been deprecated and merged inti security-misc.)
-
+    
     https://phabricator.whonix.org/T486
 
 commit b09696279bf678c480ed900123cfe1696bb49fdf
@@ -1971,7 +1982,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 31 15:25:01 2016 +0000
 
     Merge pull request #1 from HulaHoopWhonix/patch-1
-
+    
     Update control
 
 commit aef18e64ad1bb1f91592d0a9dcc306f23ec02c9e
@@ -1985,7 +1996,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 21 13:38:37 2016 +0100
 
     added systemsettings to anon-shared-applications-kde
-
+    
     https://phabricator.whonix.org/T429
 
 commit 2f67cb5530030715825ffe07af115a6b828dd4ca
@@ -1993,13 +2004,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 21 13:01:58 2016 +0100
 
     removed anon-shared-desktop-kde from whonix-[gateway|workstation]-shared-packages-shared-meta
-
+    
     so it no longer gets installed by default in Qubes-Whonix.
     And readded it to non-qubes-whonix-[gateway|workstation].
-
+    
     This results in no longer installing kde-workspace, kdm,
     plasma-widget-folderview, kde-baseapps-bin in Qubes by default.
-
+    
     https://phabricator.whonix.org/T429
 
 commit c10485620cf8859bc6394b942fe17ff04f844274
@@ -2007,13 +2018,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 21 12:52:02 2016 +0100
 
     Removed polkit-kde-1 as dependency from anon-shared-desktop-kde and added it to anon-shared-applications-kde.
-
+    
     polkit-kde-1 is important as long as Whonix is kde-ish, uses kdesudo, otherwise
     leads to issues with kdesudo authentication.
-
+    
     This is required for a clean separation so the anon-shared-desktop-kde package
     is no longer required to be installed by default on Qubes.
-
+    
     https://phabricator.whonix.org/T429
 
 commit 42c42535720b17a0a230546d538bd60cbbcca500
@@ -2027,9 +2038,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 21 12:33:26 2016 +0100
 
     added xserver-xorg-video-fbdev and xserver-xorg-video-vesa to anon-shared-desktop
-
+    
     so X also works without functional VirtualBox guest additions
-
+    
     http://forums.whonix.org/t/virtualbox-guest-additions-uninstalled-no-more-kde-desktop
 
 commit b5c8d2d9a8706de3ce7fbf13a98b78b37d1a0d17
@@ -2043,16 +2054,16 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Feb 23 10:40:24 2016 +0000
 
     split whonix-(gateway|workstation) packages
-
+    
     into:
     - qubes-whonix-(gateway|workstation)
     - non-qubes-whonix-(gateway|workstation)
-
+    
     The Qubes-Whonix version does not depend on the anon-shared-desktop package,
     while the Non-Qubes-Whonix package does. This is to spare Qubes-Whonix users
     from installing packages that are only required to set up a desktop environment
     for Non-Qubes-Whonix users. (Qubes dom0 hosts these packages such as kdm etc.)
-
+    
     https://phabricator.whonix.org/T429
 
 commit bbf35dd494b08607b917ddd8bf16bccddb2f8cdd
@@ -2066,9 +2077,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Feb 22 11:58:04 2016 +0000
 
     split anon-shared-desktop-kde package
-
+    
     into anon-shared-desktop-kde and anon-shared-applications-kde
-
+    
     https://phabricator.whonix.org/T429
 
 commit a984760b00f1cc85eece227a222537335b10507b
@@ -2082,9 +2093,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Feb 21 22:42:24 2016 +0100
 
     removed no longer existing sdwdate plugin packagtes from dependencies
-
+    
     since those were merged into sdwdate
-
+    
     sdwdate-plugin-anon-shared-con-check and sdwdate-plugin-anon-shared-streamiso
 
 commit 63b82c372253a70e45c7c9c079bf35082f55fb0b
@@ -2092,7 +2103,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Feb 21 22:39:44 2016 +0100
 
     deprecated Whonix host packages as no Whonix host is on the horizon anyhow
-
+    
     and since there is now Qubes as host for Whonix (Qubes-Whonix)
 
 commit 38c395cb7cd0e3845e0dd0ca653aad1c146653b9
@@ -2112,11 +2123,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 20 19:20:31 2016 +0100
 
     removed AppArmor profiles from apparmor-profiles-whonix that were merged
-
+    
         - apparmor-profile-sdwdate
         - apparmor-profile-timesync
         - apparmor-profile-whonixcheck
-
+    
     https://phabricator.whonix.org/T201
 
 commit dc2b97efef5af2ae67a4134480d1eb32f50da809
@@ -2124,9 +2135,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 8 17:40:13 2016 +0000
 
     install more accessibility tools by default
-
+    
     anon-shared-kde-accessibility
-
+    
     gnome-orca espeakup brltty brltty-speechd brltty-x11 console-braille florence dasher kdeaccessibility kvkbd kmousetool kmag kmouth jovie xbrlapi festival qt-at-spi
 
 commit a8d9e666da27e04abf5e567cdcddd97eaee54339
@@ -2134,7 +2145,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jan 5 00:17:33 2016 +0000
 
     removed anon-shared-build-log-build-version
-
+    
     Because that is now implemented in anon-base-files postinst.
 
 commit c3e851fb58370ee1aeb06428c00428d6f06097af
@@ -2142,9 +2153,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 4 22:10:04 2016 +0000
 
     transition from xchat to hexchat
-
+    
     have anon-workstation-default-applications depend on hexchat rather than xchat
-
+    
     https://phabricator.whonix.org/T40
 
 commit 6a08e96030d5c15cacf4c174d40aab7f2305bf46
@@ -2158,7 +2169,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 25 10:39:52 2015 +0100
 
     fix, pinentry-gtk -> pinentry-gtk2
-
+    
     Thanks to @HulaHoopWhonix for the report!
 
 commit 3d725e5b0553fa0ad1e785c01244ba9c5f4acf41
@@ -2166,7 +2177,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 25 10:11:28 2015 +0100
 
     updated package name plasma-widget-networkmanagement -> plasma-nm
-
+    
     for compatibility with Debian stretch based build
 
 commit 59e2dfd2cbe1c8fac55383d42e745b0e4860de8a
@@ -2186,7 +2197,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Dec 15 04:20:15 2015 +0000
 
     added security-misc to anon-shared-packages-recommended
-
+    
     https://phabricator.whonix.org/T418
 
 commit 29fe18d9e08c46915b680f84af7f9a28500449c8
@@ -2200,7 +2211,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Dec 2 16:07:54 2015 +0000
 
     added gnome-orca and espeakup to anon-shared-kde-accessibility
-
+    
     for better support of visually impaired users
 
 commit 84e21ed0dc0e958c7b32b3e57e55b621fe84e700
@@ -2214,11 +2225,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 12 17:48:31 2015 +0000
 
     added gtk2-engines-pixbuf to anon-shared-desktop
-
+    
     Fixes "whonix-ws testing template missing gtk2-engines-pixbuf package"
-
+    
     https://github.com/QubesOS/qubes-issues/issues/1410
-
+    
     Thanks to @qubesuser for the report!
 
 commit 8f5033d2b320c6bc423f66fb2bcc228b4e3741de
@@ -2232,7 +2243,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Nov 6 11:33:05 2015 +0000
 
     added ntfs-3g to anon-shared-packages-recommended
-
+    
     Prevents users from seeing error such as:
     An error occurred while accessing 'USB-STICK', the system responded: The requested operation has failed: Error mounting /dev/xvdi1 at /media/user/USB-STICK: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/xvdi1" "/media/user/USB-STICK"' exited with non-zero exit status 32: mount: unknown filesystem type 'ntfs'
 
@@ -2373,7 +2384,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 17 17:10:30 2015 +0000
 
     Revert "added console-setup to anon-shared-packages-dependencies so users can use /etc/default/keyboard as alternative mechanism to change the keyboard layout"
-
+    
     This reverts commit 626ba2ef951f76bfd26f1dee9f28743698e5180a.
 
 commit 828ebdc945623b5f50b9e471223075e0da330d13
@@ -2381,7 +2392,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 17 17:10:22 2015 +0000
 
     Revert "added console-data to anon-shared-packages-dependencies to make sure all three packages console-setup, console-data and console-common are installed."
-
+    
     This reverts commit 14e76f29589393d1326d864105cd7834688a474e.
 
 commit bb00b5cf249e65ef5e3f108c52004e1d05fa0118
