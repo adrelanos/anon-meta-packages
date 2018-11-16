@@ -1,3 +1,21 @@
+commit eaac36060f9fea574c098967b85690d41f122562
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 16 06:45:42 2018 +0000
+
+    merge whonix-shared-packages-recommended-cli into whonix-shared-packages-dependencies-cli
+
+commit 28582d8272a38b9d0ce7cd234f94a7b983358a64
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 16 06:41:24 2018 +0000
+
+    merge hardened-packages-recommended-cli into hardened-packages-dependencies-cli
+
+commit b7e1e468381121b361788d551fc44ba6be636e33
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Nov 15 10:02:39 2018 +0000
+
+    bumped changelog version
+
 commit 2713dcd5457924d7f1b2796017c6689f7d224e6c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 15 09:59:58 2018 +0000
