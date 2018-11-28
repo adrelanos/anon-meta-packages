@@ -486,8 +486,8 @@ Depends: hardened-debian-cli,
  rads, non-qubes-vm-audio,
  mupdf, ristretto,
  ${misc:Depends}
-Description: Hardened Debian KDE XFCE
- A metapackage, which installs packages, for Hardened Debian XFCE.
+Description: Hardened Debian Xfce GUI
+ A metapackage, which installs packages, for Hardened Debian Xfce.
  .
  Do not remove.
 
