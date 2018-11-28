@@ -1,3 +1,21 @@
+commit e1f7d4ac1d2e08616053b6a89158409cf0ee2cf9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 06:28:27 2018 +0000
+
+    add xfce4-whiskermenu-plugin to hardened-desktop-applications-xfce
+
+commit 918492f953dd5b8734c06b54dfff651f8521ab8b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 06:26:06 2018 +0000
+
+    add gpa to whonix-workstation-packages-recommended-gui
+
+commit 2857730d85950d39b76cc3a60a340fee2021c5a8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 16 09:47:19 2018 +0000
+
+    bumped changelog version
+
 commit 394481c7ab8317afa88f412f2b77d7aeb4384cf7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Nov 16 09:47:13 2018 +0000
