@@ -478,6 +478,19 @@ Description: Hardened Debian KDE GUI
  .
  Do not remove.
 
+Package: hardened-debian-xfce
+Priority: required
+Architecture: all
+Depends: hardened-debian-cli,
+ hardened-desktop-applications-xfce,
+ rads, non-qubes-vm-audio,
+ mupdf, ristretto,
+ ${misc:Depends}
+Description: Hardened Debian KDE XFCE
+ A metapackage, which installs packages, for Hardened Debian XFCE.
+ .
+ Do not remove.
+
 Package: non-qubes-whonix-gateway
 Priority: extra
 Architecture: all
