@@ -1,3 +1,21 @@
+commit 9fc0435f4f448b498f8797af0669bacbc777f7de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 07:02:15 2018 +0000
+
+    fix lintian warnings about spelling
+
+commit 23f37f0aab552d975c4fe8500ee4fbc655e30ea1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 06:57:26 2018 +0000
+
+    add hardened-debian-xfce
+
+commit 6ef8718787d635478f1f0c23a7c291ed8b2e173e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 06:32:28 2018 +0000
+
+    bumped changelog version
+
 commit e1f7d4ac1d2e08616053b6a89158409cf0ee2cf9
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Nov 28 06:28:27 2018 +0000
