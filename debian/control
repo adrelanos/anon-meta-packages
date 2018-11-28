@@ -126,7 +126,7 @@ Description: Recommended applications for hardened KDE desktop GUI
 Package: hardened-desktop-applications-xfce
 Architecture: all
 Depends: hardened-desktop-environment-essential-gui,
- xfce4, xfce4-terminal, mousepad,
+ xfce4, xfce4-whiskermenu-plugin, xfce4-terminal, mousepad,
  policykit-1, lightdm, gnome-brave-icon-theme, p7zip-full, zip, unzip,
  whonix-xfce-desktop-config, ${misc:Depends}
 Replaces: hardened-desktop-environment-essential-xfce
