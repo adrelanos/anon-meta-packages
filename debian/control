@@ -24,14 +24,15 @@ Description: Recommended packages for terminal based VMs CLI
  .
  Safe to remove, if you know what you are doing.
 
-Package: non-qubes-vm-enhancements-gui
+Package: non-qubes-vm-audio
 Architecture: all
-Depends: non-qubes-vm-enhancements-cli, rads, libasound2, alsa-utils,
- pulseaudio, ${misc:Depends}
-Description: Recommended packages for graphical VMs GUI
+Depends: libasound2, alsa-utils, pulseaudio, ${misc:Depends}
+Description: Recommended packages for Audio Support in non-Qubes
  A metapackage, which includes recommended packages which are useful within
- non-Qubes virtual machines GUI. These are not useful in Qubes, since Qubes
- already has native implementations for those.
+ non-Qubes virtual machines audio support.
+ .
+ These are not useful in Qubes, since Qubes
+ already has its own native audio implementation.
  .
  Safe to remove, if you know what you are doing.
 
@@ -42,30 +43,20 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
  timezone-utc, vbox-disable-timesync, busybox,
- security-misc, ${misc:Depends}
-Replaces: anon-shared-packages-dependencies
+ security-misc,
+ bash-completion, command-not-found, zsh, nano, wget, dnsutils,
+ iputils-ping, apparmor-utils,
+ apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
+ gpl-sources-download, whonix-repository,
+ scurl, openvpn, ntfs-3g,
+ usability-misc, menu, man-db, open-link-confirmation,
+ ${misc:Depends}
+Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
 Description: Dependencies for hardened systems CLI
  A metapackage, which installs command line interface (CLI) packages which
  should be installed on hardened systems.
  .
  Do not remove.
-
-Package: hardened-packages-recommended-cli
-Architecture: all
-Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
- iputils-ping, apparmor-utils,
- apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
- gpl-sources-download, whonix-repository,
- scurl, security-misc, openvpn, ntfs-3g,
- usability-misc, menu, man-db, open-link-confirmation,
- ${misc:Depends}
-Replaces: anon-shared-packages-recommended
-Description: Recommended packages for hardened systems CLI
- A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
- standard tools are available and other useful recommended packages for a
- command line interface (CLI) based hardened system.
- .
- Safe to remove, if you know what you are doing.
 
 Package: whonix-shared-default-applications-gui
 Architecture: all
@@ -124,7 +115,6 @@ Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
  kde-config-gtk-style, kde-config-gtk-style-preview,
  kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
  kmenuedit,
- kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
  ${misc:Depends}
 Replaces: anon-shared-applications-kde
 Description: Recommended applications for hardened KDE desktop GUI
@@ -179,26 +169,17 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, anon-gw-anonymizer-config,
- whonix-gateway-packages-dependencies-pre, ${misc:Depends}
-Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies
+ whonix-gateway-packages-dependencies-pre,
+ tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
+ fteproxy, onion-grater, whonixsetup,
+ ${misc:Depends}
+Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
+ anon-gateway-packages-recommended, whonix-gateway-packages-recommended
 Description: Dependencies for Whonix-Gateway CLI
  A metapackage, which installs packages which Whonix-Gateway
  depends on.
  .
  Do not remove.
-
-Package: whonix-gateway-packages-recommended-cli
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
- fteproxy, onion-grater, whonixsetup,
- ${misc:Depends}
-Replaces: anon-gateway-packages-recommended, whonix-gateway-packages-recommended
-Description: Recommended packages for Whonix-Gateway CLI
- A metapackage, which installs packages, which are recommended for
- Whonix-Gateway.
- .
- Safe to remove, if you know what you are doing.
 
 Package: whonix-shared-packages-dependencies-cli
 Architecture: all
@@ -215,7 +196,7 @@ Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-shared-packages-recommended-cli
 Architecture: all
-Depends: hardened-packages-recommended-cli, whonixcheck, tor-ctrl, uwt,
+Depends: hardened-packages-dependencies-cli, whonixcheck, tor-ctrl, uwt,
  anon-apps-config, ${misc:Depends}
 Replaces: whonix-shared-packages-recommended
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
@@ -262,7 +243,7 @@ Description: Recommended packages for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
-Depends: hexchat, vlc, mixmaster, hunspell-en-us,
+Depends: hexchat, vlc, mixmaster, hunspell-en-us, gpa,
  mat, python-hachoir-core, python-hachoir-parser,
  python-pdfrw, python-cairo, python-poppler, python-mutagen,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
@@ -284,14 +265,12 @@ Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli,
  hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-gateway-default-applications-gui,
  whonix-gateway-packages-dependencies-cli,
- whonix-gateway-packages-recommended-cli,
  ${misc:Depends}
 Description: Whonix-Gateway Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Gateway.
@@ -304,7 +283,6 @@ Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli,
  hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
@@ -325,10 +303,9 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-gateway-packages-dependencies-cli,
- whonix-gateway-packages-recommended-cli,
  anon-connection-wizard, tor-control-panel, ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
  A metapackage, which installs packages, for a
@@ -369,7 +346,9 @@ Priority: required
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
- qubes-whonix-workstation-packages-recommended, ${misc:Depends}
+ qubes-whonix-workstation-packages-recommended,
+ kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
+ ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
@@ -385,8 +364,12 @@ Package: non-qubes-whonix-gateway-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
- hardened-desktop-environment-essential-kde, ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli,
+ rads,
+ non-qubes-whonix-gateway-cli,
+ whonix-gateway-shared-packages-shared-meta,
+ hardened-desktop-environment-essential-kde,
+ ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
 Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
  A metapackage, which installs packages, for a
@@ -402,11 +385,12 @@ Package: non-qubes-whonix-gateway-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-gui,
+Depends: non-qubes-vm-enhancements-cli,
+ rads,
+ non-qubes-whonix-gateway-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
- non-qubes-whonix-gateway-cli,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
@@ -421,8 +405,13 @@ Package: non-qubes-whonix-workstation-kde
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements-gui,
- hardened-desktop-environment-essential-kde, ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-whonix-workstation-cli,
+ whonix-workstation-shared-packages-shared-meta,
+ hardened-desktop-environment-essential-kde,
+ rads, non-qubes-vm-audio,
+ kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
+ ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
 Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
  A metapackage, which installs packages, for a
@@ -438,11 +427,13 @@ Package: non-qubes-whonix-workstation-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-gui,
+Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-whonix-workstation-cli,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
- non-qubes-whonix-workstation-cli,
+ rads, non-qubes-vm-audio,
+ mupdf, ristretto,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
@@ -458,7 +449,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
  whonix-workstation-packages-recommended-cli, ${misc:Depends}
@@ -472,7 +463,7 @@ Package: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
- hardened-packages-recommended-cli, ${misc:Depends}
+ ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
  .
@@ -484,6 +475,19 @@ Architecture: all
 Depends: hardened-debian-cli, ${misc:Depends}
 Description: Hardened Debian KDE GUI
  A metapackage, which installs packages, for Hardened Debian KDE.
+ .
+ Do not remove.
+
+Package: hardened-debian-xfce
+Priority: required
+Architecture: all
+Depends: hardened-debian-cli,
+ hardened-desktop-applications-xfce,
+ rads, non-qubes-vm-audio,
+ mupdf, ristretto,
+ ${misc:Depends}
+Description: Hardened Debian Xfce GUI
+ A metapackage, which installs packages, for Hardened Debian Xfce.
  .
  Do not remove.
 
