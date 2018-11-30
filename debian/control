@@ -26,7 +26,7 @@ Description: Recommended packages for terminal based VMs CLI
 
 Package: non-qubes-vm-audio
 Architecture: all
-Depends: libasound2, alsa-utils, pulseaudio, ${misc:Depends}
+Depends: libasound2, alsa-utils, pulseaudio, pavucontrol, ${misc:Depends}
 Description: Recommended packages for Audio Support in non-Qubes
  A metapackage, which includes recommended packages which are useful within
  non-Qubes virtual machines audio support.
