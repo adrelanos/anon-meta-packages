@@ -1,3 +1,44 @@
+commit e70a8d2575c28b61627aabf3d3b45cf6a081ac12
+Merge: 846e2cd a663216
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 30 06:47:08 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a663216d86f5f6f722167ff46c10226bae8547c9
+Merge: 846e2cd 8704ae9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 30 06:46:45 2018 -0500
+
+    Merge pull request #17 from Algernon-01/master
+    
+    Adds pavucontrol.
+
+commit 8704ae957af0d1e51499619e2d3d49bc4bda3586
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Nov 29 21:24:43 2018 +0000
+
+    Fix.
+
+commit 15d33898bfaca521df9b91ae3b7b6ab022d53618
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Nov 29 21:19:53 2018 +0000
+
+    Add pavucontrol.
+
+commit b78017339d46c4bf650e76ada9756042c90f56a8
+Merge: c2b51ee 846e2cd
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Nov 29 21:17:30 2018 +0000
+
+    Merge branch 'master' of https://github.com/whonix/anon-meta-packages
+
+commit 846e2cd582ca88a91ce2e0e8165babdab878a44f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 28 08:19:08 2018 +0000
+
+    bumped changelog version
+
 commit 1935bb7e59357bf2804be31939d2cf523ab13b8a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Nov 28 03:08:12 2018 -0500
@@ -176,6 +217,12 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Nov 15 06:20:40 2018 +0000
 
     refactoring
+
+commit c2b51ee8b514663bf0240531f704dcb56eff3a96
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Nov 14 18:13:22 2018 +0000
+
+    Add mupdf and ristretto.
 
 commit 737d3915677b041b0b6fe14c0657840a1125db44
 Author: Patrick Schleizer <adrelanos@riseup.net>
