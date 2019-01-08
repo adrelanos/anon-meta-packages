@@ -1,3 +1,56 @@
+commit 55c160037c6e9bc622de8e7d3d38ecabd14e4590
+Merge: 56ba485 01a067f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 2 21:31:15 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 01a067fbccdfec22a0157273819e8c32f4ec2c68
+Merge: 56ba485 f90b5fe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 2 21:30:44 2019 -0500
+
+    Merge pull request #19 from Algernon-01/archivers
+    
+    Archivers
+
+commit f90b5fe7d7e036f106bcb44f5f9cb33c60f79dd8
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Sun Dec 30 10:17:10 2018 +0000
+
+    remove unrar-free
+
+commit 3a6878677df8ab6e6c4c7b811a4f8da12fd3c729
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Fri Dec 28 20:08:10 2018 +0000
+
+    Remove rar.
+
+commit 8d4eee236768f658f9cde503e978b77ade6550a8
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Dec 27 12:38:04 2018 +0000
+
+    Added new branch for compression/decompression tools.
+    Removed grub-live.
+
+commit 0b12159656f82847838274ed7ab2445abf0d4749
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Dec 26 19:50:57 2018 +0000
+
+    Add compression/decompression tools.
+
+commit 53de16f690aa43c9cf835769180089d95954a123
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Dec 13 20:00:47 2018 +0000
+
+    Adds grub-live to default packages.
+
+commit 56ba4850b1a7e85afc9fb91265c05239c6cba8a1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 6 08:06:09 2018 +0000
+
+    bumped changelog version
+
 commit e70a8d2575c28b61627aabf3d3b45cf6a081ac12
 Merge: 846e2cd a663216
 Author: Patrick Schleizer <adrelanos@riseup.net>
