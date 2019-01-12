@@ -1,3 +1,17 @@
+commit 412acec56ade3ae05214d08f08df6dbdb1ceb057
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 12 01:24:44 2019 -0500
+
+    add magic-wormhole to whonix-workstation-packages-recommended-cli
+    
+    https://phabricator.whonix.org/T771
+
+commit 8a518cc2cb33864054204174e831527fdb90e2f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 8 05:10:07 2019 +0000
+
+    bumped changelog version
+
 commit 55c160037c6e9bc622de8e7d3d38ecabd14e4590
 Merge: 56ba485 01a067f
 Author: Patrick Schleizer <adrelanos@riseup.net>
