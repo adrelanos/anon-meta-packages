@@ -62,7 +62,7 @@ Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
- ${misc:Depends}
+ whonix-setup-wizard, ${misc:Depends}
 Replaces: anon-shared-default-applications
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
@@ -75,7 +75,7 @@ Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
- whonix-setup-wizard, whonix-gw-kde-desktop-conf, ${misc:Depends}
+ whonix-gw-kde-desktop-conf, ${misc:Depends}
 Replaces: anon-gateway-default-applications, whonix-gateway-default-applications
 Description: Recommended desktop packages for Whonix-Gateway GUI
  A metapackage, which installs graphical user interface (GUI) packages,
@@ -172,7 +172,7 @@ Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre,
  tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
- fteproxy, onion-grater, whonixsetup,
+ fteproxy, onion-grater,
  ${misc:Depends}
 Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
  anon-gateway-packages-recommended, whonix-gateway-packages-recommended
@@ -186,7 +186,7 @@ Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonix-initializer, grub-enable-apparmor,
+ whonix-initializer, grub-enable-apparmor, whonixsetup,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
