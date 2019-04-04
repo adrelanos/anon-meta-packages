@@ -494,7 +494,7 @@ Description: Hardened Debian Xfce GUI
  Do not remove.
 
 Package: non-qubes-whonix-gateway
-Priority: optional
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-gateway-kde, ${misc:Depends}
@@ -508,7 +508,7 @@ Description: transitional package Whonix-Gateway KDE
  sudo apt-get install non-qubes-whonix-gateway-kde
 
 Package: non-qubes-whonix-workstation
-Priority: optional
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-workstation-kde, ${misc:Depends}
