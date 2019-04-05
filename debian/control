@@ -74,8 +74,7 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
 Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
- whonix-gw-kde-desktop-conf, ${misc:Depends}
+Depends: onioncircuits, anon-connection-wizard, tor-control-panel, ${misc:Depends}
 Replaces: anon-gateway-default-applications, whonix-gateway-default-applications
 Description: Recommended desktop packages for Whonix-Gateway GUI
  A metapackage, which installs graphical user interface (GUI) packages,
