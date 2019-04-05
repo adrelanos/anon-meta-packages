@@ -515,3 +515,27 @@ Description: transitional package Whonix-Workstation KDE
  It can be removed by installing package non-qubes-whonix-workstation-kde.
  .
  sudo apt-get install non-qubes-whonix-workstation-kde
+
+Package: dummy-contrib
+Architecture: all
+Depends: ${misc:Depends}
+Section: non-free/metapackages
+Description: dummy contrib package
+ A metapackage, without contents to populate the contrib repository.
+ .
+ This package itself is not nonfree.
+ This package itself is Free, Open, Freedom, Libre Software.
+ .
+ Safe to remove.
+
+Package: dummy-nonfree
+Architecture: all
+Depends: ${misc:Depends}
+Section: non-free/metapackages
+Description: dummy nonfree package
+ A metapackage, without contents to populate the nonfree repository.
+ .
+ This package itself is not nonfree.
+ This package itself is Free, Open, Freedom, Libre Software.
+ .
+ Safe to remove.
