@@ -149,7 +149,7 @@ Safe to remove.
 
 Package: anon-shared-applications-kde
 Architecture: all
-Depends: kdesudo, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
+Depends: gksu, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
 ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
 p7zip-full, zip, unzip, ksystemlog, gtk2-engines-oxygen,
 gtk3-engines-breeze, plasma-pa,
