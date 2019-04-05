@@ -127,7 +127,7 @@ Architecture: all
 Depends: hardened-desktop-environment-essential-gui,
  xfce4, lightdm, xfce4-terminal, mousepad,
  policykit-1, gnome-brave-icon-theme,
- p7zip-full, zip, unzip, xarchiver, thunar-archive-plugin, xz-utils, unar,
+ p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
  whonix-xfce-desktop-config, ${misc:Depends}
 Replaces: hardened-desktop-environment-essential-xfce
 Description: Recommended applications for hardened Xfce desktop GUI
