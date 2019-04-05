@@ -266,7 +266,6 @@ Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
@@ -284,7 +283,6 @@ Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: hardened-packages-dependencies-cli,
- hardened-desktop-applications-kde,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
