@@ -19,7 +19,8 @@ Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
  A metapackage, which includes recommended packages which are useful within
- non-Qubes virtual machines. These are not useful in Qubes, since Qubes
+ CLI based non-Qubes virtual machines.
+ These are not useful in Qubes, since Qubes
  already has native implementations for those.
  .
  Safe to remove, if you know what you are doing.
@@ -29,7 +30,8 @@ Architecture: all
 Depends: ${misc:Depends}
 Description: Recommended packages for graphical VMs GUI
  A metapackage, which includes recommended packages which are useful within
- non-Qubes virtual machines. These are not useful in Qubes, since Qubes
+ GUI based non-Qubes virtual machines.
+ These are not useful in Qubes, since Qubes
  already has native implementations for those.
  .
  Safe to remove, if you know what you are doing.
@@ -361,8 +363,10 @@ Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
 Section: oldlibs
 Description: transitional package Whonix-Gateway KDE
- Use non-qubes-whonix-gateway-xfce instead.
- This is a transitional package. Legacy.
+ Whonix KDE is no longer supported.
+ .
+ Use package non-qubes-whonix-gateway-xfce instead.
+ Legacy. This is a transitional package.
  .
  It can be removed by installing package non-qubes-whonix-gateway-xfce.
  .
@@ -398,10 +402,10 @@ Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
 Section: oldlibs
 Description: transitional package Whonix-Workstation KDE
- Use non-qubes-whonix-workstation-xfce instead.
- This is a transitional package. Legacy.
+ Use the package non-qubes-whonix-workstation-xfce instead.
+ Legacy package. This is a transitional package.
  .
- It can be removed by installing package non-qubes-whonix-workstation-xfce.
+ Install non-qubes-whonix-workstation-xfce, remove this package.
  .
  sudo apt-get install non-qubes-whonix-workstation-xfce
 
@@ -422,8 +426,9 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation with Xfce.
  .
- Depends on hardened-desktop-environment-essential-xfce because that is required in
- Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
+ Depends on hardened-desktop-environment-essential-xfce because that is
+ required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+ environment.
  .
  Do not remove.
 
@@ -471,28 +476,30 @@ Description: Hardened Debian Xfce GUI
 Package: non-qubes-whonix-gateway
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-gateway-kde, ${misc:Depends}
+Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
 Section: oldlibs
-Description: transitional package Whonix-Gateway KDE
- Use non-qubes-whonix-gateway-kde instead.
+Description: transitional package Whonix-Gateway
+ KDE was deprecated in Whonix.
+ .
+ Use non-qubes-whonix-gateway-xfce instead.
  This is a transitional package. Legacy.
  .
- It can be removed by installing package non-qubes-whonix-gateway-kde.
+ Install non-qubes-whonix-gateway-xfce and remove this.
  .
- sudo apt-get install non-qubes-whonix-gateway-kde
+ sudo apt-get install non-qubes-whonix-gateway-xfce
 
 Package: non-qubes-whonix-workstation
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-workstation-kde, ${misc:Depends}
+Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
 Section: oldlibs
-Description: transitional package Whonix-Workstation KDE
- Use non-qubes-whonix-workstation-kde instead.
+Description: transitional package Whonix-Workstation
+ Use non-qubes-whonix-workstation-xfce instead.
  This is a transitional package. Legacy.
  .
- It can be removed by installing package non-qubes-whonix-workstation-kde.
+ It can be removed by installing package non-qubes-whonix-workstation-xfce.
  .
- sudo apt-get install non-qubes-whonix-workstation-kde
+ sudo apt-get install non-qubes-whonix-workstation-xfce
 
 Package: dummy-contrib
 Architecture: all
