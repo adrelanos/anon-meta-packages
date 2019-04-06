@@ -1,3 +1,115 @@
+commit 15e8fed8892ddc3cceefbdc987bcf3930fd66e4a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 15:29:15 2019 +0000
+
+    introduce non-qubes-vm-enhancements-gui; refactoring
+
+commit 002dd2db9f7bfdd10f502cb5a42b04cf8c503deb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:53:31 2019 +0000
+
+    remove mixmaster since not available in Debian buster
+
+commit 2d96e901c5be0438281ac2dc1d07aea38923b2b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:49:17 2019 +0000
+
+    add cryptsetup to non-qubes-vm-enhancements-cli
+    
+    https://forums.whonix.org/t/have-cryptsetup-installed-by-default-in-whonix/6684
+    
+    https://phabricator.whonix.org/T890
+
+commit 03d4c6de551f7df4c055aa2f7829176a4b7ec8d9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:42:00 2019 +0000
+
+    add qtox to whonix-workstation-packages-recommended-gui
+    
+    https://phabricator.whonix.org/T889
+
+commit 1d6e7372311995c881b4f556b51573df08d88c1e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:35:42 2019 +0000
+
+    add onionshare to whonix-workstation-packages-recommended-gui
+
+commit 060ea154879e4a953cc44751d705f3c686215ddc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:28:32 2019 +0000
+
+    add jitterentropy-rngd to hardened-packages-dependencies-cli
+    
+    https://phabricator.whonix.org/T817
+
+commit 682856655397f7e00728cecc4dda62f53771deca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:26:19 2019 +0000
+
+    remove mat and its dependencies and replace with with mat2 instead
+    
+    https://phabricator.whonix.org/T885
+
+commit fcf9d7de5176ed2721e846832afd6cc6b6d8c5fb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:24:54 2019 +0000
+
+    remove python-poppler since not in buster
+    
+    (related to mat)
+
+commit 55f6381e0170fee595a6aa5ff56272dc39741be7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:22:51 2019 +0000
+
+    move mupdf and ristretto to whonix-workstation-packages-recommended-gui
+
+commit 1f6a7c164856eeecfb04d03f4db9dc339bb3505d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:18:52 2019 +0000
+
+    add mupdf (pdf viewer) and ristretto (image viewer) to qubes-whonix-workstation
+    
+    remove from qubes-whonix-workstation:
+    - kcalc (depends on kde, no replacement yet)
+    - okular (depends on kde, use mupdf instead)
+    - gwenview (depends on kde, use ristretto instead)
+    - kgpg (depends on kde, use gpa instead)
+    - libkf5kipi31.0.0 (no longer available in buster)
+    - libkf5kipi-data (depends on kde, only useful for gwenview?)
+
+commit c58d25447212e2391e5f7884ed887df8aa8eba65
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 14:11:01 2019 +0000
+
+    add thunar to hardened-desktop-applications-xfce
+    
+    (so it gets installed in Qubes-Whonix)
+
+commit ef5ed025200ca832da54eb7042b3715c1886d2d9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 13:58:59 2019 +0000
+
+    KDE deprecation
+
+commit 637a9394df1aa2c70562a96d05f4650a7e87ae57
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 13:57:13 2019 +0000
+
+    KDE deprecation
+
+commit dc540a14e5dd9ff00de54d2cb20c09a02369bbf8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 13:50:41 2019 +0000
+
+    port Qubes-Whonix to XFCE applications
+
+commit c4788d57180f0cebb5b9f5eb89de820a69967f85
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 13:06:07 2019 +0000
+
+    bumped changelog version
+
 commit a46f35059e13bc17b0a8759912368f9b0f9f2c4d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 13:03:48 2019 +0000
