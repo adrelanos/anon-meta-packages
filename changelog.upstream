@@ -1,3 +1,103 @@
+commit e2e25ba6550c19201f97cdf8e8a4c30eb789e29b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 11:36:34 2019 +0000
+
+    remove gksu since not in Debian buster
+
+commit 926b7394d777b0a5bcca68299110feb7b7c50c15
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:38:03 2019 -0400
+
+    add grub-live to non-qubes-vm-enhancements-cli
+
+commit 5541a2dc7f887f7892b928f491a3b0ea2c9f5e55
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:37:08 2019 -0400
+
+    add kloak to non-qubes-vm-enhancements-cli
+
+commit 5465e286bbfc49c18f1568f74ebeed36c41f9723
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:34:35 2019 -0400
+
+    change to Section: metapackages
+
+commit 081ce9847f6d1e01b57cd72a8b1d94f4486114d0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:32:44 2019 -0400
+
+    add dummy-contrib and dummy-nonfree
+    
+    Dummy packages without any contents.
+    Packages itself are not nonfree.
+    Packages itself are Free, Open, Freedom, Libre Software.
+
+commit b2d7f91d824bed723397153661ef7d2909285381
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:03:40 2019 -0400
+
+    refactoring
+
+commit 7b14de383e76da41c028b1a288ccbaae41bb7b10
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 18:03:06 2019 -0400
+
+    refactoring
+
+commit 688dc2b8ac52d66a0411eb03e22231ebf4879d6c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 17:53:53 2019 -0400
+
+    remove dependency on hardened-desktop-applications-kde
+
+commit aabd6eff483f21b2409eeff7286475b1674be5d8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 17:48:40 2019 -0400
+
+    fix, remove whonix-gw-kde-desktop-conf
+
+commit 45bd5561bbfbee365ded62336c7f03de6b93de73
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 5 16:58:18 2019 -0400
+
+    gksu
+
+commit 816f6e6fe7285dd5913c62d888980765b85b426d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 4 06:13:28 2019 -0400
+
+    fix lintian warning
+
+commit 9df2eaa9943fd96e55f313bec703b09032d9f84c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 4 06:07:37 2019 -0400
+
+    use Priority: required consistently to fix lintian warning
+
+commit c553a87caa0368ba110ee9a5b4d245537b3efe0e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 4 06:00:04 2019 -0400
+
+    port to debian buster
+
+commit cf870661f2ca06426a78c1a2d3918c1810308eca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 4 05:50:32 2019 -0400
+
+    port to debian buster
+
+commit 8157bf773dbcbd82eac08de1e5671490870e410a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 3 18:04:47 2019 -0400
+
+    readme
+
+commit 0c0ad1f3af30307e980fa7335044ac14c5e92721
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 29 09:42:38 2019 +0000
+
+    bumped changelog version
+
 commit b4d2b1403266b38c341ae8ceeca9b20da61bc325
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 29 09:02:44 2019 +0000
