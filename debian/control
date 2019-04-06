@@ -48,7 +48,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  iputils-ping, apparmor-utils,
  apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
  gpl-sources-download, whonix-repository,
- scurl, openvpn, ntfs-3g,
+ scurl, openvpn,
  usability-misc, menu, man-db, open-link-confirmation,
  ${misc:Depends}
 Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
