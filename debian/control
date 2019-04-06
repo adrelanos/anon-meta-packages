@@ -92,7 +92,7 @@ Description: Desktop Depends GUI
  A metapackage, which installs dependencies for desktop environments,
  such as KDE, GNOME, etc.
  .
- hardened-desktop-environment-essential-kde depends on this package.
+ hardened-desktop-environment-essential-xfce depends on this package.
 
 Package: hardened-desktop-environment-essential-kde
 Architecture: all
@@ -373,25 +373,18 @@ Description: Default packages for Qubes-Whonix-Workstation
  Do not remove.
 
 Package: non-qubes-whonix-gateway-kde
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli,
- rads,
- non-qubes-whonix-gateway-cli,
- whonix-gateway-shared-packages-shared-meta,
- hardened-desktop-environment-essential-kde,
- ${misc:Depends}
+Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
 Replaces: whonix-gateway, non-qubes-whonix-gateway
-Description: Default Packages for Non-Qubes-Whonix-Gateway KDE GUI
- A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Gateway with KDE.
+Section: oldlibs
+Description: transitional package Whonix-Gateway KDE
+ Use non-qubes-whonix-gateway-xfce instead.
+ This is a transitional package. Legacy.
  .
- Depends on whonix-gateway-shared-packages-shared-meta,
- and hardened-desktop-environment-essential-kde because that is required in
- Non-Qubes-Whonix KDE in order to get graphical desktop environment.
+ It can be removed by installing package non-qubes-whonix-gateway-xfce.
  .
- Do not remove.
+ sudo apt-get install non-qubes-whonix-gateway-xfce
 
 Package: non-qubes-whonix-gateway-xfce
 Priority: required
@@ -415,26 +408,18 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  Do not remove.
 
 Package: non-qubes-whonix-workstation-kde
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli,
- non-qubes-whonix-workstation-cli,
- whonix-workstation-shared-packages-shared-meta,
- hardened-desktop-environment-essential-kde,
- rads, non-qubes-vm-audio,
- kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
- ${misc:Depends}
+Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
 Replaces: whonix-workstation, non-qubes-whonix-workstation
-Description: Default Packages for Non-Qubes-Whonix-Workstation KDE GUI
- A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Workstation with KDE.
+Section: oldlibs
+Description: transitional package Whonix-Workstation KDE
+ Use non-qubes-whonix-workstation-xfce instead.
+ This is a transitional package. Legacy.
  .
- Depends on whonix-workstation-shared-packages-shared-meta,
- and hardened-desktop-environment-essential-kde because that is required in
- Non-Qubes-Whonix KDE in order to get graphical desktop environment.
+ It can be removed by installing package non-qubes-whonix-workstation-xfce.
  .
- Do not remove.
+ sudo apt-get install non-qubes-whonix-workstation-xfce
 
 Package: non-qubes-whonix-workstation-xfce
 Priority: required
