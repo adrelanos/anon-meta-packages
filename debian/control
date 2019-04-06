@@ -330,7 +330,7 @@ Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
- kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
+ mupdf, ristretto,
  hardened-desktop-applications-xfce,
  ${misc:Depends}
 Replaces: whonix-workstation
