@@ -40,7 +40,7 @@ Package: hardened-packages-dependencies-cli
 Priority: required
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
- less, haveged, locales, apt-transport-https, apt-transport-tor,
+ less, haveged, jitterentropy-rngd, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
  timezone-utc, vbox-disable-timesync, busybox,
  security-misc,
