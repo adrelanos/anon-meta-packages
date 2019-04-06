@@ -108,7 +108,7 @@ Description: Recommended applications for hardened Xfce Desktop Environment
 
 Package: hardened-desktop-applications-xfce
 Architecture: all
-Depends: xfce4-terminal, mousepad,
+Depends: thunar, xfce4-terminal, mousepad,
  policykit-1,
  p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
  ${misc:Depends}
