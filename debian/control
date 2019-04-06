@@ -385,8 +385,9 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway with Xfce.
  .
- Depends on hardened-desktop-environment-essential-xfce because that is required in
- Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
+ Depends on hardened-desktop-environment-essential-xfce because that is
+ required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+ environment.
  .
  Do not remove.
 
