@@ -24,6 +24,16 @@ Description: Recommended packages for terminal based VMs CLI
  .
  Safe to remove, if you know what you are doing.
 
+Package: non-qubes-vm-enhancements-gui
+Architecture: all
+Depends: ${misc:Depends}
+Description: Recommended packages for graphical VMs GUI
+ A metapackage, which includes recommended packages which are useful within
+ non-Qubes virtual machines. These are not useful in Qubes, since Qubes
+ already has native implementations for those.
+ .
+ Safe to remove, if you know what you are doing.
+
 Package: non-qubes-vm-audio
 Architecture: all
 Depends: libasound2, alsa-utils, pulseaudio, pavucontrol, ${misc:Depends}
@@ -283,7 +293,8 @@ Package: non-qubes-whonix-gateway-cli
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ hardened-packages-dependencies-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-gateway-packages-dependencies-cli,
@@ -362,6 +373,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-vm-enhancements-gui,
  rads,
  non-qubes-whonix-gateway-cli,
  hardened-desktop-environment-essential-xfce,
@@ -397,6 +409,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
+ non-qubes-vm-enhancements-gui,
  non-qubes-whonix-workstation-cli,
  hardened-desktop-environment-essential-xfce,
  hardened-desktop-applications-xfce,
@@ -417,7 +430,8 @@ Package: non-qubes-whonix-workstation-cli
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ hardened-packages-dependencies-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
@@ -431,7 +445,8 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 Package: hardened-debian-cli
 Priority: required
 Architecture: all
-Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
+Depends: non-qubes-vm-enhancements-cli,
+ hardened-packages-dependencies-cli,
  ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
