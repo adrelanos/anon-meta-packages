@@ -228,7 +228,7 @@ Package: whonix-workstation-packages-recommended-gui
 Architecture: all
 Depends: hexchat, vlc, mixmaster, hunspell-en-us, gpa,
  mat, python-hachoir-core, python-hachoir-parser,
- python-pdfrw, python-cairo, python-poppler, python-mutagen,
+ python-pdfrw, python-cairo, python-mutagen,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
  mupdf, ristretto,
