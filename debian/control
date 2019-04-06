@@ -232,7 +232,7 @@ Depends: hexchat, vlc, mixmaster, hunspell-en-us, gpa,
  pinentry-qt | pinentry-x11,
  mupdf, ristretto,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
- ricochet-im, coyim, onionshare, xchat-improved-privacy,
+ ricochet-im, coyim, qtox, onionshare, xchat-improved-privacy,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
