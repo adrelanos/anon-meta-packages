@@ -1,3 +1,21 @@
+commit a46f35059e13bc17b0a8759912368f9b0f9f2c4d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 13:03:48 2019 +0000
+
+    hardened-packages-dependencies-cli no longer depend on ntfs-3g
+    
+    because ntfs-3g depends on fuse which results in a build error
+    
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=751015
+    
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774028
+
+commit 9cea286d8040289d680b4316f0b43a2acbb27520
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 11:52:44 2019 +0000
+
+    bumped changelog version
+
 commit e2e25ba6550c19201f97cdf8e8a4c30eb789e29b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 11:36:34 2019 +0000
