@@ -94,34 +94,6 @@ Description: Desktop Depends GUI
  .
  hardened-desktop-environment-essential-xfce depends on this package.
 
-Package: hardened-desktop-environment-essential-kde
-Architecture: all
-Depends: hardened-desktop-environment-essential-gui, sddm, kde-config-sddm,
- plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
-Replaces: anon-shared-desktop-kde
-Description: Recommended packages for hardened desktop base KDE desktop GUI
- A metapackage, which installs a minimal, yet complete enough
- to contain the very basics, KDE desktop.
- .
- Safe to remove.
-
-Package: hardened-desktop-applications-kde
-Architecture: all
-Depends: kscreen, polkit-kde-agent-1, kdepasswd, kfind,
- ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
- p7zip-full, zip, unzip, ksystemlog, gtk2-engines-oxygen,
- gtk3-engines-breeze, plasma-pa,
- kde-config-gtk-style, kde-config-gtk-style-preview,
- kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
- kmenuedit,
- ${misc:Depends}
-Replaces: anon-shared-applications-kde
-Description: Recommended applications for hardened KDE desktop GUI
- A metapackage, which installs a minimal, yet complete enough
- to contain the very basics, KDE applications.
- .
- Safe to remove.
-
 Package: hardened-desktop-environment-essential-xfce
 Architecture: all
 Depends: hardened-desktop-environment-essential-gui,
@@ -465,15 +437,6 @@ Depends: non-qubes-vm-enhancements-cli, hardened-packages-dependencies-cli,
  ${misc:Depends}
 Description: Hardened Debian command line interface CLI
  A metapackage, which installs packages, for Hardened Debian CLI.
- .
- Do not remove.
-
-Package: hardened-debian-kde
-Priority: required
-Architecture: all
-Depends: hardened-debian-cli, ${misc:Depends}
-Description: Hardened Debian KDE GUI
- A metapackage, which installs packages, for Hardened Debian KDE.
  .
  Do not remove.
 
