@@ -122,14 +122,24 @@ Description: Recommended applications for hardened KDE desktop GUI
  .
  Safe to remove.
 
-Package: hardened-desktop-applications-xfce
+Package: hardened-desktop-environment-essential-xfce
 Architecture: all
 Depends: hardened-desktop-environment-essential-gui,
- xfce4, lightdm, xfce4-terminal, mousepad,
- policykit-1, gnome-brave-icon-theme,
- p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
+ xfce4, lightdm,
+ gnome-brave-icon-theme,
  whonix-xfce-desktop-config, ${misc:Depends}
-Replaces: hardened-desktop-environment-essential-xfce
+Description: Recommended applications for hardened Xfce Desktop Environment
+ A metapackage, which installs minimal, yet complete enough
+ to contain a very basic Xfce Desktop Environment.
+ .
+ Safe to remove.
+
+Package: hardened-desktop-applications-xfce
+Architecture: all
+Depends: xfce4-terminal, mousepad,
+ policykit-1,
+ p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
+ ${misc:Depends}
 Description: Recommended applications for hardened Xfce desktop GUI
  A metapackage, which installs minimal, yet complete enough
  to contain the very basics, Xfce applications.
@@ -328,7 +338,9 @@ Priority: required
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
- qubes-whonix-gateway-packages-recommended, ${misc:Depends}
+ qubes-whonix-gateway-packages-recommended,
+ hardened-desktop-applications-xfce,
+ ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
  A metapackage, which installs packages, for a
@@ -347,6 +359,7 @@ Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
  kcalc, okular, gwenview, kgpg, libkf5kipi31.0.0, libkf5kipi-data,
+ hardened-desktop-applications-xfce,
  ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
@@ -387,6 +400,7 @@ Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
  rads,
  non-qubes-whonix-gateway-cli,
+ hardened-desktop-environment-essential-xfce,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
@@ -395,7 +409,7 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway with Xfce.
  .
- Depends on hardened-desktop-applications-xfce because that is required in
+ Depends on hardened-desktop-environment-essential-xfce because that is required in
  Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
  .
  Do not remove.
@@ -428,6 +442,7 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
  non-qubes-whonix-workstation-cli,
+ hardened-desktop-environment-essential-xfce,
  hardened-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
@@ -438,7 +453,7 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation with Xfce.
  .
- Depends on hardened-desktop-applications-xfce because that is required in
+ Depends on hardened-desktop-environment-essential-xfce because that is required in
  Non-Qubes-Whonix Xfce in order to get graphical desktop environment.
  .
  Do not remove.
@@ -481,6 +496,7 @@ Package: hardened-debian-xfce
 Priority: required
 Architecture: all
 Depends: hardened-debian-cli,
+ hardened-desktop-environment-essential-xfce,
  hardened-desktop-applications-xfce,
  rads, non-qubes-vm-audio,
  mupdf, ristretto,
