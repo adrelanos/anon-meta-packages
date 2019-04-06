@@ -231,6 +231,7 @@ Depends: hexchat, vlc, mixmaster, hunspell-en-us, gpa,
  python-pdfrw, python-cairo, python-poppler, python-mutagen,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
+ mupdf, ristretto,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
  ricochet-im, coyim, xchat-improved-privacy,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
@@ -330,7 +331,6 @@ Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
- mupdf, ristretto,
  hardened-desktop-applications-xfce,
  ${misc:Depends}
 Replaces: whonix-workstation
@@ -404,7 +404,6 @@ Depends: non-qubes-vm-enhancements-cli,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
  rads, non-qubes-vm-audio,
- mupdf, ristretto,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
