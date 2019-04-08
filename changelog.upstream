@@ -1,3 +1,27 @@
+commit 950297e303680cc98f2e6769a685374850b1b3f5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 8 13:00:18 2019 +0000
+
+    add lxqt-sudo to hardened-desktop-applications-xfce
+
+commit bd576a2e53bc1c4ebedcdc007bbece67778e1a88
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 8 06:12:21 2019 -0400
+
+    add "policykit-1-gnome | polkit-1-auth-agent" to hardened-desktop-applications-xfce
+    
+    policykit-1-gnome - specific package, default choice
+    
+    polkit-1-auth-agent - virtual package to allow installation of an alternative to policykit-1-gnome
+    
+    https://forums.whonix.org/t/kdesudo-deprecated-replacement-required-for-debian-buster-based-whonix-15/6315/12
+
+commit 0fa590487c57ba87c687419f988c9aadf2710fea
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 16:15:48 2019 +0000
+
+    bumped changelog version
+
 commit 3a096fb3750f716e125dedfac93de790e9eb2d9d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 16:15:38 2019 +0000
