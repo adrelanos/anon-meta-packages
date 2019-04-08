@@ -121,7 +121,7 @@ Description: Recommended applications for hardened Xfce Desktop Environment
 Package: hardened-desktop-applications-xfce
 Architecture: all
 Depends: thunar, xfce4-terminal, mousepad,
- policykit-1, policykit-1-gnome | polkit-1-auth-agent,
+ lxqt-sudo, policykit-1, policykit-1-gnome | polkit-1-auth-agent,
  p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
  ${misc:Depends}
 Description: Recommended applications for hardened Xfce desktop GUI
