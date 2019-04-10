@@ -511,6 +511,8 @@ Description: dummy contrib package
  This package itself is not nonfree.
  This package itself is Free, Open, Freedom, Libre Software.
  .
+ Useful for testing vrms without installation of an actual contrib package.
+ .
  Safe to remove.
 
 Package: dummy-nonfree
@@ -522,5 +524,7 @@ Description: dummy nonfree package
  .
  This package itself is not nonfree.
  This package itself is Free, Open, Freedom, Libre Software.
+ .
+ Useful for testing vrms without installation of an actual nonfree package.
  .
  Safe to remove.
