@@ -1,3 +1,21 @@
+commit bf31745d76e6e8a9fd8a1aa8322e6e4a97cead94
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 10 17:02:36 2019 -0400
+
+    remove obsolete lintian override
+
+commit f6bc783d91a77f613750c5f177f3ddcc43bbdb69
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 10 17:01:15 2019 -0400
+
+    fix
+
+commit 6cde180441e2777b78c4590ad8aff7ad6f97b97b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 10 16:21:58 2019 -0400
+
+    bumped changelog version
+
 commit 485d81699f000adec79ae1ae990906be2a225ee7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 10 15:44:32 2019 -0400
