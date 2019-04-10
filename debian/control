@@ -504,7 +504,7 @@ Description: transitional package Whonix-Workstation
 Package: dummy-contrib
 Architecture: all
 Depends: ${misc:Depends}
-Section: non-free/metapackages
+Section: contrib/metapackages
 Description: dummy contrib package
  A metapackage, without contents to populate the contrib repository.
  .
