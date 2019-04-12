@@ -1,3 +1,17 @@
+commit 8d5e892d3b603bb1390d3c152f70f8b8e8bfefef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 12 10:11:07 2019 -0400
+
+    add keepassxc to whonix-workstation-packages-recommended-gui
+    
+    https://forums.whonix.org/t/add-password-manager-by-default/189/64
+
+commit 08db7e73cb7d237804f3f1aeec156528d649fb9a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 10 17:03:43 2019 -0400
+
+    bumped changelog version
+
 commit bf31745d76e6e8a9fd8a1aa8322e6e4a97cead94
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 10 17:02:36 2019 -0400
