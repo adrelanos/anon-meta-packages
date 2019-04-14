@@ -58,6 +58,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  security-misc,
  bash-completion, command-not-found, zsh, nano, wget, dnsutils, iputils-ping,
  apparmor-utils, apparmor-profile-anondist,
+ firejail, firetools, firejail-profiles, iproute2, iptables,
  udisks2, secure-delete, sudo, net-tools,
  gpl-sources-download, whonix-repository,
  scurl, openvpn,
@@ -98,6 +99,7 @@ Package: hardened-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
+ xauth, xpra | xserver-xephyr | xvfb,
  ${misc:Depends}
 Replaces: anon-shared-desktop
 Description: Desktop Depends GUI
