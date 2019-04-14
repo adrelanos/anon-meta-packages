@@ -1,3 +1,30 @@
+commit 45ea369055d513c07e28ac81ef113e13b33f3a5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 14 16:17:59 2019 +0000
+
+    install firejail by default
+    
+    - firejail (does not use 'Recommends:'')
+    - firejail-profiles (does not use 'Recommends:')
+    - firetools (has 'Recommends:')
+    - and same 'Recommends:' packages as firetools
+    
+    add 'firejail, firetools, firejail-profiles, iproute2, iptables' to hardened-packages-dependencies-cli
+    
+    add 'xauth, xpra | xserver-xephyr | xvfb' to hardened-desktop-environment-essential-gui
+
+commit 6973c0f343027cd159b952667182ec0ddd706f01
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 14 16:08:53 2019 +0000
+
+    refactoring
+
+commit 9680e8c07d54ebe351f86b64f923faf5caf74bd3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 12 16:22:21 2019 +0000
+
+    bumped changelog version
+
 commit 8d5e892d3b603bb1390d3c152f70f8b8e8bfefef
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 12 10:11:07 2019 -0400
