@@ -15,7 +15,8 @@ Package: non-qubes-vm-enhancements-cli
 Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
  keyboard-configuration, kbd, acpi-support, console-common, console-setup,
- initramfs-tools, os-prober, grub-live, cryptsetup, ${misc:Depends}
+ initramfs-tools, os-prober, grub-live, cryptsetup, zulucrypt-cli, 
+ libzulucrypt-plugins, ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
  A metapackage, which includes recommended packages which are useful within
@@ -27,7 +28,7 @@ Description: Recommended packages for terminal based VMs CLI
 
 Package: non-qubes-vm-enhancements-gui
 Architecture: all
-Depends: ${misc:Depends}
+Depends: zulucrypt-gui, ${misc:Depends}
 Description: Recommended packages for graphical VMs GUI
  A metapackage, which includes recommended packages which are useful within
  GUI based non-Qubes virtual machines.
@@ -230,8 +231,7 @@ Package: whonix-workstation-packages-recommended-cli
 Architecture: all
 Depends: anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
- magic-wormhole, diceware, makepasswd, zulucrypt-cli, libzulucrypt-plugins, 
- ${misc:Depends}
+ magic-wormhole, diceware, makepasswd, ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
  command line interface (CLI) Whonix-Workstation, because they are
@@ -247,7 +247,7 @@ Depends: hexchat, vlc, hunspell-en-us, gpa,
  pinentry-qt | pinentry-x11,
  mupdf, ristretto,
  tb-default-browser, tb-starter, tb-updater, youtube-dl,
- ricochet-im, coyim, qtox, onionshare, xchat-improved-privacy, zulucrypt-gui,
+ ricochet-im, coyim, qtox, onionshare, xchat-improved-privacy,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
