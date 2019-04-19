@@ -1,3 +1,45 @@
+commit ebf5d8f17754de7764c13492e69d37f3be6f2d78
+Merge: d7601ff 276a2df
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 19 03:29:11 2019 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 276a2dfa6541bd254f968a206b97baa581fbba43
+Merge: d7601ff d4e50ba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 19 03:28:38 2019 -0400
+
+    Merge pull request #20 from HulaHoopWhonix/patch-8
+    
+    Added password gen and LUKS container tools
+
+commit d4e50ba4c2523aff91c0b2624b0df9eb07e58ded
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Thu Apr 18 16:47:45 2019 +0000
+
+    removed whitespace
+
+commit 0ab1a0aa4b5e22149286d6156a1816e3ca65626c
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Thu Apr 18 16:32:10 2019 +0000
+
+    Adjusted pkg zulucrypt placment
+
+commit cc38f9ccb557d6e558481f0d4593943dc388bc71
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Thu Apr 18 16:25:55 2019 +0000
+
+    Added password gen and LUKS container tools
+    
+    Added diceware, makepasswd, zulucrypt-cli/gui and plugins
+
+commit d7601ff6562dd4ab4a1e59c96360d6549e0416d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 14 16:19:55 2019 +0000
+
+    bumped changelog version
+
 commit 45ea369055d513c07e28ac81ef113e13b33f3a5a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Apr 14 16:17:59 2019 +0000
