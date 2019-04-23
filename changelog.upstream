@@ -1,3 +1,25 @@
+commit 1d0932309c74a261005413b0f141ea659459763f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 19 10:27:49 2019 +0000
+
+    depend on libexo-1-0
+    
+    implicit dependency of thunar?
+    
+    Thanks to @TNTBOMBOM for the bug report!
+    
+    https://github.com/QubesOS/qubes-issues/issues/4981
+    
+    Thanks to @unman for pointing out a missing package!
+    
+    https://github.com/QubesOS/qubes-issues/issues/4981#issuecomment-484736841
+
+commit 19bfdd2e8b828fd0d5fc91743674321d4af4ad73
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 19 07:38:00 2019 +0000
+
+    bumped changelog version
+
 commit ebf5d8f17754de7764c13492e69d37f3be6f2d78
 Merge: d7601ff 276a2df
 Author: Patrick Schleizer <adrelanos@riseup.net>
