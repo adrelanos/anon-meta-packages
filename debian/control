@@ -15,7 +15,7 @@ Package: non-qubes-vm-enhancements-cli
 Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
  keyboard-configuration, kbd, acpi-support, console-common, console-setup,
- initramfs-tools, os-prober, grub-live, cryptsetup, zulucrypt-cli,
+ initramfs-tools, os-prober, grub-live | grub-live-boot, cryptsetup, zulucrypt-cli,
  libzulucrypt-plugins, ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
