@@ -11,6 +11,33 @@ Vcs-Browser: https://github.com/Whonix/anon-meta-packages
 Vcs-Git: https://github.com/Whonix/anon-meta-packages.git
 Standards-Version: 4.3.0
 
+Package: firmware-nonfreedom
+Architecture: all
+Depends: ${misc:Depends},
+ firmware-amd-graphics
+ firmware-atheros
+ firmware-b43-installer
+ firmware-b43legacy-installer
+ firmware-brcm80211
+ firmware-intel-sound
+ firmware-ipw2x00
+ firmware-iwlwifi
+ firmware-libertas
+ firmware-linux
+ firmware-linux-free
+ firmware-linux-nonfree
+ firmware-misc-nonfree
+ firmware-realtek
+ firmware-ti-connectivity
+ firmware-zd1211
+Description: Recommended packages for hosts with nonfreedom hardware design
+ A metapackage, which includes nonfree firmware useful for hosts with
+ nonfreedom hardware design.
+ .
+ These are not useful in Qubes, since this would be up to Qubes.
+ .
+ Safe to remove, if you know what you are doing.
+
 Package: non-qubes-vm-enhancements-cli
 Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
