@@ -531,6 +531,26 @@ Description: transitional package Whonix-Workstation
  .
  sudo apt-get install non-qubes-whonix-workstation-xfce
 
+Package: whonix-host-xfce-kvm-freedom
+Architecture: all
+Depends: hardened-debian-xfce,
+ qemu-kvm, libvirt-daemon-system, libvirt-clients, virt-manager,
+ whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
+ calamares,
+ ${misc:Depends}
+Description: Whonix Host packages for Freedom Hardware Design
+ Designed to run on hardware with Freedom Hardware Design.
+ .
+ Do not remove.
+
+Package: whonix-host-xfce-kvm-nonfreedom
+Architecture: all
+Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
+Description: Whonix Host packages for nonfreedom hardware design
+ Designed to run on hardware with nonfreedom hardware design.
+ .
+ Do not remove.
+
 Package: dummy-contrib
 Architecture: all
 Depends: ${misc:Depends}
