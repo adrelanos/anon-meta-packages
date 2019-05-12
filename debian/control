@@ -535,12 +535,13 @@ Description: transitional package Whonix-Workstation
 Package: whonix-host-xfce-kvm-freedom
 Architecture: all
 ## TODO
+## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
 Depends: hardened-debian-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
  arc-theme,
  iw, network-manager-gnome, network-manager,
  firefox-esr, gnome-system-monitor, gparted,
  qemu-kvm, libvirt-daemon-system, libvirt-clients, virt-manager,
- whonix-libvirt, ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
+ whonix-libvirt,
  calamares, calamares-settings-debian, live-config, rsync,
  ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
