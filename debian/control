@@ -14,22 +14,22 @@ Standards-Version: 4.3.0
 Package: firmware-nonfreedom
 Architecture: all
 Depends: ${misc:Depends},
- firmware-amd-graphics
- firmware-atheros
- firmware-b43-installer
- firmware-b43legacy-installer
- firmware-brcm80211
- firmware-intel-sound
- firmware-ipw2x00
- firmware-iwlwifi
- firmware-libertas
- firmware-linux
- firmware-linux-free
- firmware-linux-nonfree
- firmware-misc-nonfree
- firmware-realtek
- firmware-ti-connectivity
- firmware-zd1211
+ firmware-amd-graphics,
+ firmware-atheros,
+ firmware-b43-installer,
+ firmware-b43legacy-installer,
+ firmware-brcm80211,
+ firmware-intel-sound,
+ firmware-ipw2x00,
+ firmware-iwlwifi,
+ firmware-libertas,
+ firmware-linux,
+ firmware-linux-free,
+ firmware-linux-nonfree,
+ firmware-misc-nonfree,
+ firmware-realtek,
+ firmware-ti-connectivity,
+ firmware-zd1211,
 Description: Recommended packages for hosts with nonfreedom hardware design
  A metapackage, which includes nonfree firmware useful for hosts with
  nonfreedom hardware design.
