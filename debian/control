@@ -534,6 +534,7 @@ Description: transitional package Whonix-Workstation
 
 Package: whonix-host-xfce-kvm-freedom
 Architecture: all
+Pre-Depends: whonix-legacy
 ## TODO
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
 Depends: hardened-debian-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
