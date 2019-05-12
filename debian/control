@@ -209,7 +209,7 @@ Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonix-initializer, grub-enable-apparmor, whonixsetup,
+ whonix-initializer, whonixsetup,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
