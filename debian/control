@@ -91,6 +91,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  gpl-sources-download, whonix-repository,
  scurl, openvpn,
  usability-misc, menu, man-db, open-link-confirmation,
+ whonix-initializer,
  ${misc:Depends}
 Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
 Description: Dependencies for hardened systems CLI
@@ -209,7 +210,7 @@ Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonix-initializer, whonixsetup,
+ whonixsetup,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
