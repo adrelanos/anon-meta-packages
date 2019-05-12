@@ -1,3 +1,95 @@
+commit 865abe71a6ea8d2159d6075fbc4acbadde5dcd02
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 10:17:28 2019 +0000
+
+    fix
+
+commit 763cd1266c1b5a13a5afd5e9dd0eaf2c17a3fc5f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 10:16:44 2019 +0000
+
+    fix
+
+commit c0b4ba5912f4a24998895842e73551aaa6cee1a2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 10:16:19 2019 +0000
+
+    comment
+
+commit 10dbceeb853c8f70b7580a03f700c500415a330b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 10:15:47 2019 +0000
+
+    comment out whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2 for now
+    
+    since not yet existing
+
+commit 60a721fc4ab7322ee28fa6c5b72aff85e48e521f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 09:58:33 2019 +0000
+
+    let whonix-host-xfce-kvm-freedom depend on whonix-libvirt
+    
+    so Whonix VM XML files get set up by default
+
+commit 5daaf63b10add261015559451bf161f4c69d584f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 09:47:39 2019 +0000
+
+    move whonix-initializer to hardened-packages-dependencies-cli
+    
+    (non-perfect solution)
+
+commit a5de1f6abccb30ebd73502597fa4d49ac2395a92
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 03:16:32 2019 -0400
+
+    remove grub-enable-apparmor since now Debian default
+    
+    https://www.debian.org/releases/buster/amd64/release-notes/ch-whats-new.en.html#apparmor
+
+commit 3b550f44ba2eddb83536b9a39d80ce9dd8eaa83e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 11 11:03:17 2019 +0000
+
+    add whonix-host-xfce-kvm-freedom dependencies as per
+    
+    https://github.com/onions-knight/whonix-stuff/blob/master/2900_configure_desktop_sketch#L42-L52
+
+commit 3611122f12c4ba2b73ddf982240063b31bb7a72f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 11 10:53:59 2019 +0000
+
+    implement whonix-host-xfce-kvm-freedom / whonix-host-xfce-kvm-nonfreedom
+    
+    https://forums.whonix.org/t/whonix-host-operating-system/3931/63
+
+commit 4818d683d1697c12e299be534a0eee1595bb39ee
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 11 06:43:46 2019 -0400
+
+    implement meta package firmware-nonfreedom
+    
+    https://forums.whonix.org/t/whonix-host-nonfree-blobs-firmware-linux-nonfree-technical-discussion-only/7356/2
+
+commit 429daafe265805bfb740ef43e42dcfafaea0d314
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu May 9 21:37:27 2019 -0400
+
+    make it easy to replace (remove) grub-live with grub-default-live
+    
+    depend on package grub-live or virtual package grub-live-boot
+    
+    virtual package grub-live-boot is provided by both,
+    - grub-live
+    - grub-default-live
+
+commit 184528df215535b169cb3558b9fe7c30083f9152
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 3 11:13:22 2019 +0000
+
+    bumped changelog version
+
 commit be39c73498fa8170db13c6cd8bd8bbe320328f2c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 3 10:56:50 2019 +0000
