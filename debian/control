@@ -542,7 +542,6 @@ Depends: hardened-debian-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
  arc-theme,
  iw, network-manager-gnome, network-manager,
  firefox-esr, gnome-system-monitor, gparted,
- qemu-kvm, libvirt-daemon-system, libvirt-clients, virt-manager,
  whonix-libvirt,
  calamares, calamares-settings-debian, live-config, rsync,
  ${misc:Depends}
