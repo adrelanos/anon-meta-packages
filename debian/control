@@ -13,6 +13,7 @@ Standards-Version: 4.3.0
 
 Package: firmware-nonfreedom
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: ${misc:Depends},
  firmware-amd-graphics,
  firmware-atheros,
