@@ -552,6 +552,7 @@ Description: Whonix Host packages for Freedom Hardware Design
 
 Package: whonix-host-xfce-kvm-nonfreedom
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
 Description: Whonix Host packages for nonfreedom hardware design
  Designed to run on hardware with nonfreedom hardware design.
