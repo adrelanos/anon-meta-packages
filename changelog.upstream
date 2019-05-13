@@ -1,3 +1,23 @@
+commit 734755c46f7fcb135fb99f17b9dfa408b2b247a4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 13 14:22:36 2019 +0000
+
+    remove calamares dependencies so calamares can remove them
+    
+    make them weak recommended packages instead
+
+commit 738bee328898f61379f7c9dc12120f293a3a7e9d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 13 14:20:16 2019 +0000
+
+    move Whonix KVM dependencies to whonix-libvirt
+
+commit 38034470619374e70c4824762b33e491780c32bd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 13 10:11:50 2019 +0000
+
+    bumped changelog version
+
 commit 7488e0c75c4314a1e0fccdc975b5761bf5dc66d0
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon May 13 10:11:38 2019 +0000
