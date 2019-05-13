@@ -1,3 +1,15 @@
+commit 7488e0c75c4314a1e0fccdc975b5761bf5dc66d0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 13 10:11:38 2019 +0000
+
+    Pre-Depends: whonix-legacy
+
+commit 3b6b1fa16ba54764173437bcc4a13d1edeb0b313
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 13 06:13:24 2019 +0000
+
+    bumped changelog version
+
 commit b684d9054e7e4d0f41d740174552a9c3e81f569f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon May 13 06:12:45 2019 +0000
