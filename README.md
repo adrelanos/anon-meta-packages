@@ -1,269 +1,172 @@
-# Recommended packages for VMs other than Qubes VMs #
+# Recommended packages for hosts with nonfreedom hardware design #
 
-A metapackage, which includes recommended packages which are useful within
-non-Qubes virtual machines. These are not useful in Qubes, since Qubes already
-has native implementations for those.
+A metapackage, which includes nonfree firmware useful for hosts with
+nonfreedom hardware design.
+
+These are not useful in Qubes, since this would be up to Qubes.
 
 Safe to remove, if you know what you are doing.
 
-Package: anon-shared-packages-dependencies
+Package: non-qubes-vm-enhancements-cli
+Architecture: all
+Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
+keyboard-configuration, kbd, acpi-support, console-common, console-setup,
+initramfs-tools, os-prober, grub-live | grub-live-boot, cryptsetup, zulucrypt-cli,
+libzulucrypt-plugins, ${misc:Depends}
+Replaces: non-qubes-vm-enhancements
+Description: Recommended packages for terminal based VMs CLI
+# Recommended packages for terminal based VMs CLI #
+
+A metapackage, which includes recommended packages which are useful within
+CLI based non-Qubes virtual machines.
+These are not useful in Qubes, since Qubes
+already has native implementations for those.
+
+Safe to remove, if you know what you are doing.
+
+Package: non-qubes-vm-enhancements-gui
+Architecture: all
+Depends: zulucrypt-gui, ${misc:Depends}
+Description: Recommended packages for graphical VMs GUI
+# Recommended packages for graphical VMs GUI #
+
+A metapackage, which includes recommended packages which are useful within
+GUI based non-Qubes virtual machines.
+These are not useful in Qubes, since Qubes
+already has native implementations for those.
+
+Safe to remove, if you know what you are doing.
+
+Package: non-qubes-vm-audio
+Architecture: all
+Depends: libasound2, alsa-utils, pulseaudio, pavucontrol, ${misc:Depends}
+Description: Recommended packages for Audio Support in non-Qubes
+# Recommended packages for Audio Support in non-Qubes #
+
+A metapackage, which includes recommended packages which are useful within
+non-Qubes virtual machines audio support.
+
+These are not useful in Qubes, since Qubes
+already has its own native audio implementation.
+
+Safe to remove, if you know what you are doing.
+
+Package: hardened-packages-dependencies-cli
+Priority: required
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
-less, haveged, locales, apt-transport-https, apt-transport-tor,
+less, haveged, jitterentropy-rngd, locales, apt-transport-https, apt-transport-tor,
 sdwdate, bootclockrandomization, timesanitycheck,
 timezone-utc, vbox-disable-timesync, busybox,
-security-misc, ${misc:Depends}
-Description: Dependencies for both, Anon-Gateway and Anon-Workstation CLI
-# Dependencies for both, Anon-Gateway and Anon-Workstation CLI #
+security-misc,
+bash-completion, command-not-found, zsh, nano, wget, dnsutils, iputils-ping,
+apparmor-utils, apparmor-profile-anondist,
+firejail, firetools, firejail-profiles, iproute2, iptables,
+udisks2, secure-delete, sudo, net-tools,
+gpl-sources-download, whonix-repository,
+scurl, openvpn,
+usability-misc, menu, man-db, open-link-confirmation,
+whonix-initializer,
+${misc:Depends}
+Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
+Description: Dependencies for hardened systems CLI
+# Dependencies for hardened systems CLI #
 
 A metapackage, which installs command line interface (CLI) packages which
-both, Anon-Gateway and Anon-Workstation, depend on.
+should be installed on hardened systems.
 
 Do not remove.
 
-Package: anon-shared-packages-recommended
-Architecture: all
-Depends: bash-completion, command-not-found, zsh, nano, wget, dnsutils,
-iputils-ping, apparmor-utils,
-apparmor-profile-anondist, udisks2, secure-delete, sudo, net-tools,
-gpl-sources-download,
-scurl, security-misc, tor-ctrl, uwt, openvpn, ntfs-3g,
-usability-misc, menu, man-db, anon-apps-config, open-link-confirmation,
-${misc:Depends}
-Description: Recommended packages for both, Anon-Gateway and Anon-Workstation CLI
-# Recommended packages for both, Anon-Gateway and Anon-Workstation CLI #
-
-A metapackage, which includes recommended packages to ensure, Debian GNU/Linux
-standard tools are available and other useful recommended packages for a
-command line interface (CLI) based Anon-Gateway or Anon-Workstation.
-
-Safe to remove, if you know what you are doing.
-
-Package: anon-shared-default-applications
+Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
-${misc:Depends}
-Description: Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI
-# Recommended desktop packages for both, Anon-Gateway and Anon-Workstation GUI #
+whonix-setup-wizard, ${misc:Depends}
+Replaces: anon-shared-default-applications
+Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
+# Recommended packages for Whonix-Gateway and Whonix-Workstation GUI #
 
 A metapackage, which installs recommended graphical user interface (GUI)
 default applications, which are useful in a default installation of a
-Tor-Gateway or Tor-Workstation desktop.
+Whonix-Gateway or Whonix-Workstation desktop.
 
 Safe to remove, if you know what you are doing.
 
-Package: anon-gateway-packages-dependencies
+Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: tor, anon-gw-base-files, ipv4-forward-disable,
-ipv6-disable, ${misc:Depends}
-Description: Dependencies for Anon-Gateway CLI
-# Dependencies for Anon-Gateway CLI #
-
-A metapackage, which installs command line interface (CLI) packages
-which Anon-Gateway depends on.
-
-Do not remove.
-
-Package: anon-gateway-packages-recommended
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: tor-geoipdb, tor-arm, obfsproxy, obfs4proxy, flashproxy-client,
-fteproxy, onion-grater, ${misc:Depends}
-Description: Recommended packages for Anon-Gateway CLI
-# Recommended packages for Anon-Gateway CLI #
-
-A metapackage, which installs packages, which are recommended for
-a command line interface (CLI) based Tor-Gateway.
-
-Safe to remove, if you know what you are doing.
-
-Package: anon-gateway-default-applications
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: onioncircuits, anon-connection-wizard, tor-control-panel,
-${misc:Depends}
-Description: Recommended desktop packages for Anon-Gateway GUI
-# Recommended desktop packages for Anon-Gateway GUI #
+Depends: onioncircuits, anon-connection-wizard, tor-control-panel, ${misc:Depends}
+Replaces: anon-gateway-default-applications, whonix-gateway-default-applications
+Description: Recommended desktop packages for Whonix-Gateway GUI
+# Recommended desktop packages for Whonix-Gateway GUI #
 
 A metapackage, which installs graphical user interface (GUI) packages,
-which are recommended for a graphical Tor-Gateway.
+which are recommended for a graphical Whonix-Gateway.
 
 Safe to remove, if you know what you are doing.
 
-Package: anon-workstation-packages-dependencies
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: anon-ws-base-files, ${misc:Depends}
-Recommends: anon-workstation-packages-recommended
-Description: Dependencies for Anon-Workstation CLI
-# Dependencies for Anon-Workstation CLI #
-
-A metapackage, which installs command line interface (CLI) packages which
-Anon-Workstation depends on.
-
-Do not remove.
-
-Package: anon-workstation-packages-recommended
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: xchat-improved-privacy, anon-mixmaster, anon-gpg-tweaks, anon-torchat,
-anon-ws-disable-stacked-tor, youtube-dl,
-thunderbird, enigmail, xul-ext-torbirdy, pwgen,
-python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
-${misc:Depends}
-Description: Recommended packages for Anon-Workstation
-# Recommended packages for Anon-Workstation #
-
-A metapackage, which installs packages, which are recommended for
-Anon-Workstation, because they are useful for a Tor Workstation.
-
-Feel free to remove if you know what you are doing.
-
-Package: anon-shared-desktop
+Package: hardened-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
 xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
+xauth, xpra | xserver-xephyr | xvfb,
 ${misc:Depends}
-Description: Desktop Depends
-# Desktop Depends #
+Replaces: anon-shared-desktop
+Description: Desktop Depends GUI
+# Desktop Depends GUI #
 
 A metapackage, which installs dependencies for desktop environments,
 such as KDE, GNOME, etc.
 
-anon-shared-desktop-kde depends on this package.
+hardened-desktop-environment-essential-xfce depends on this package.
 
-Package: anon-shared-desktop-kde
+Package: hardened-desktop-environment-essential-xfce
 Architecture: all
-Depends: anon-shared-desktop, sddm, kde-config-sddm,
-plasma-desktop, plasma-desktop-data, kwin-x11, ${misc:Depends}
-Description: Recommended packages for Gateway/Workstation base KDE desktop
-# Recommended packages for Gateway/Workstation base KDE desktop #
+Depends: hardened-desktop-environment-essential-gui,
+xfce4, lightdm,
+gnome-brave-icon-theme,
+whonix-xfce-desktop-config, ${misc:Depends}
+Description: Recommended applications for hardened Xfce Desktop Environment
+# Recommended applications for hardened Xfce Desktop Environment #
 
-A metapackage, which installs a minimal, yet complete enough
-to contain the very basics, KDE desktop. The Anon-Gateway desktop and the
-Anon-Workstation desktop depend on this package.
+A metapackage, which installs minimal, yet complete enough
+to contain a very basic Xfce Desktop Environment.
 
 Safe to remove.
 
-Package: anon-shared-applications-kde
+Package: hardened-desktop-applications-xfce
 Architecture: all
-Depends: gksu, kscreen, polkit-kde-agent-1, kdepasswd, kfind,
-ksysguard, konsole, kwrite, dolphin, baloo-kf5, ark, systemsettings,
-p7zip-full, zip, unzip, ksystemlog, gtk2-engines-oxygen,
-gtk3-engines-breeze, plasma-pa,
-kde-config-gtk-style, kde-config-gtk-style-preview,
-kde-config-screenlocker, kde-config-sddm, kde-style-oxygen-qt5,
-kmenuedit, ${misc:Depends}
-Description: Recommended applications for Gateway/Workstation KDE desktop
-# Recommended applications for Gateway/Workstation KDE desktop #
-
-A metapackage, which installs a minimal, yet complete enough
-to contain the very basics, KDE applications.
-
-Safe to remove.
-
-Package: anon-shared-kde-accessibility
-Architecture: all
-Depends: gnome-orca,
-console-braille, florence, dasher, kdeaccessibility, kvkbd, kmousetool, kmag,
-kmouth, jovie, xbrlapi, festival, qt-at-spi, ${misc:Depends}
-Description: KDE accessibility tools
-# KDE accessibility tools #
-
-A metapackage, which installs accessibility tools for the KDE desktop.
-
-Safe to remove, if you know what you are doing.
-
-Package: anon-workstation-default-applications
-Architecture: all
-Depends: hexchat, vlc, mixmaster, kcalc, okular,
-gwenview, libkf5kipi31.0.0, libkf5kipi-data,
-kgpg, mat, python-hachoir-core, python-hachoir-parser,
-python-pdfrw, python-cairo, python-poppler, python-mutagen,
-libimage-exiftool-perl, gir1.2-gtk-3.0,
-pinentry-qt | pinentry-x11,
-tb-default-browser, tb-starter, tb-updater, youtube-dl,
-thunderbird, enigmail, xul-ext-torbirdy, ricochet-im, coyim,
+Depends: thunar, libexo-1-0, xfce4-terminal, mousepad,
+lxqt-sudo, policykit-1, policykit-1-gnome | polkit-1-auth-agent,
+p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
 ${misc:Depends}
-Description: Recommended default applications for a graphical Anon-Workstation GUI
-# Recommended default applications for a graphical Anon-Workstation GUI #
+Description: Recommended applications for hardened Xfce desktop GUI
+# Recommended applications for hardened Xfce desktop GUI #
 
-A metapackage, which installs recommended GUI default applications,
-which are useful in a default installation of a graphical Tor Workstation.
+A metapackage, which installs minimal, yet complete enough
+to contain the very basics, Xfce applications.
 
-Safe to remove, if you know what you are doing.
+Safe to remove.
 
-Package: anon-workstation-extra-applications
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: anon-workstation-packages-recommended,
-anon-workstation-default-applications, shutter,
-gtk-recordmydesktop, libreoffice, kdenlive, kolourpaint4
-Description: Complements anon-workstation-default-applications
-# Complements anon-workstation-default-applications #
-
-A metapackage, which installs extra applications, to complement the
-default applications.
-
-Does not get installed by default, because extra applications
-take too much space and are not required for everyone.
-
-Package: anon-workstation-langpack-common
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: iceweasel-l10n-all | firefox-l10n-all, ttf-dejavu, ttf-liberation, locales-all,
-ttf-kacst, ttf-farsiweb, scim-pinyin, scim-tables-zh, scim-uim, ttf-arphic-ukai, ttf-arphic-uming,
-culmus, libfribidi0, ttf-indic-fonts, scim-anthy, ttf-khmeros, ttf-unfonts-core, ttf-lao,
-ttf-thai-tlwg, xfonts-intl-chinese, xfonts-wqy, xfonts-bolkhov-koi8r-75dpi,
-xfonts-bolkhov-koi8r-misc, xfonts-cronyx-koi8r-100dpi
-Description: Fonts and language packages for better internationalization support
-# Fonts and language packages for better internationalization support #
-
-A metapackage which installs fonts and language packages for better
-internationalization support.
-
-Does not get installed by default, because it is largely untested
-and needs more work.
-
-Package: anon-shared-desktop-langpack-kde
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: kde-l10n-ar, kde-l10n-bg, kde-l10n-bs,
-kde-l10n-ca, kde-l10n-cavalencia, kde-l10n-cs, kde-l10n-da, kde-l10n-de, kde-l10n-el, kde-l10n-engb,
-kde-l10n-es, kde-l10n-et, kde-l10n-eu, kde-l10n-fa, kde-l10n-fi, kde-l10n-fr, kde-l10n-ga,
-kde-l10n-gl, kde-l10n-he, kde-l10n-hr, kde-l10n-hu, kde-l10n-ia, kde-l10n-id, kde-l10n-is,
-kde-l10n-it, kde-l10n-ja, kde-l10n-kk, kde-l10n-km, kde-l10n-ko, kde-l10n-lt, kde-l10n-lv,
-kde-l10n-nb, kde-l10n-nds, kde-l10n-nl, kde-l10n-nn, kde-l10n-pa, kde-l10n-pl, kde-l10n-pt,
-kde-l10n-ptbr, kde-l10n-ro, kde-l10n-ru, kde-l10n-si, kde-l10n-sk, kde-l10n-sl, kde-l10n-sr,
-kde-l10n-sv, kde-l10n-tg, kde-l10n-th, kde-l10n-tr, kde-l10n-ug, kde-l10n-uk, kde-l10n-vi,
-kde-l10n-wa, kde-l10n-zhcn, kde-l10n-zhtw, anon-workstation-langpack-common
-Description: Extra language support for the KDE desktop
-# Extra language support for the KDE desktop #
-
-A metapackage, which includes extra language support for the
-KDE desktop.
-
-Does not get installed by default, because it takes a lot of
-space and requires a better solution.
-
-Package: apparmor-profiles-whonix
+Package: apparmor-profiles-hardened-debian
 Architecture: all
 Depends: apparmor-profile-icedove,
 apparmor-profile-torbrowser,
 apparmor-profile-xchat,
 apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
-Description: Extra AppArmor profiles developed by the Whonix team
-# Extra AppArmor profiles developed by the Whonix team #
+Replaces: apparmor-profiles-whonix
+Description: AppArmor profiles developed by the Hardened Debian Team
+# AppArmor profiles developed by the Hardened Debian Team #
 
-A metapackage, which installs apparmor profiles developed by the Whonix team.
+A metapackage, which installs apparmor profiles developed by the Hardened
+Debian team.
 
 Increases security.
 
 Safe to remove, if you know what you are doing.
 
 Package: whonix-gateway-packages-dependencies-pre
+Priority: required
 Architecture: all
 Depends: whonix-gw-network-conf, anon-base-files,
 ${misc:Depends}
@@ -276,53 +179,48 @@ conflicts with chroot build process.
 
 Do not remove.
 
-Package: whonix-gateway-packages-dependencies
+Package: whonix-gateway-packages-dependencies-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: anon-gateway-packages-dependencies, anon-gw-anonymizer-config,
-whonix-gateway-packages-dependencies-pre, ${misc:Depends}
-Description: Dependencies for Whonix-Gateway
-# Dependencies for Whonix-Gateway #
+Depends: tor, anon-gw-base-files, ipv4-forward-disable,
+ipv6-disable, anon-gw-anonymizer-config,
+whonix-gateway-packages-dependencies-pre,
+tor-geoipdb, nyx, obfsproxy, obfs4proxy, flashproxy-client,
+fteproxy, onion-grater,
+${misc:Depends}
+Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
+anon-gateway-packages-recommended, whonix-gateway-packages-recommended
+Description: Dependencies for Whonix-Gateway CLI
+# Dependencies for Whonix-Gateway CLI #
 
 A metapackage, which installs packages which Whonix-Gateway
 depends on.
 
 Do not remove.
 
-Package: whonix-gateway-packages-recommended
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: whonix-gw-desktop-shortcuts, whonix-gw-kde-desktop-conf,
-whonixsetup, whonix-setup-wizard, ${misc:Depends}
-Recommends: anon-gateway-packages-recommended
-Description: Recommended packages for Whonix-Gateway
-# Recommended packages for Whonix-Gateway #
-
-A metapackage, which installs packages, which are recommended for
-Whonix-Gateway.
-
-Safe to remove, if you know what you are doing.
-
-Package: whonix-shared-packages-dependencies
+Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
-whonix-initializer, whonix-repository, grub-enable-apparmor,
+whonixsetup,
 ${misc:Depends}
-Description: Dependencies for Whonix-Gateway and Whonix-Workstation
-# Dependencies for Whonix-Gateway and Whonix-Workstation #
+Replaces: whonix-shared-packages-dependencies
+Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
+# Dependencies for Whonix-Gateway and Whonix-Workstation CLI #
 
 A metapackage, which installs packages which both, Whonix-Gateway
 and Whonix-Workstation, depend on.
 
 Do not remove.
 
-Package: whonix-shared-packages-recommended
+Package: whonix-shared-packages-recommended-cli
 Architecture: all
-Depends: anon-shared-packages-recommended, whonixcheck,
-${misc:Depends}
-Description: Recommended packages for Whonix-Gateway and Whonix-Workstation
-# Recommended packages for Whonix-Gateway and Whonix-Workstation #
+Depends: hardened-packages-dependencies-cli, whonixcheck, tor-ctrl, uwt,
+anon-apps-config, ${misc:Depends}
+Replaces: whonix-shared-packages-recommended
+Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
+# Recommended packages for Whonix-Gateway and Whonix-Workstation CLI #
 
 A metapackage, which includes recommended packages to ensure, Whonix
 standard tools are available and other useful recommended packages.
@@ -330,6 +228,7 @@ standard tools are available and other useful recommended packages.
 Safe to remove, if you know what you are doing.
 
 Package: whonix-workstation-packages-dependencies-pre
+Priority: required
 Architecture: all
 Depends: whonix-ws-network-conf, anon-ws-dns-conf, anon-base-files,
 ${misc:Depends}
@@ -342,26 +241,26 @@ due to conflicts with chroot build process.
 
 Do not remove.
 
-Package: whonix-workstation-packages-dependencies
+Package: whonix-workstation-packages-dependencies-cli
+Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-workstation-packages-dependencies-pre,
+Depends: anon-ws-base-files, whonix-workstation-packages-dependencies-pre,
 ${misc:Depends}
-Recommends: whonix-workstation-packages-recommended
-Description: Dependencies for Whonix-Workstation
-# Dependencies for Whonix-Workstation #
+Replaces: anon-workstation-packages-dependencies, whonix-workstation-packages-dependencies
+Description: Dependencies for Whonix-Workstation CLI
+# Dependencies for Whonix-Workstation CLI #
 
 A metapackage, which installs packages which Whonix-Workstation
 depends on.
 
 Do not remove.
 
-Package: whonix-workstation-packages-recommended
+Package: whonix-workstation-packages-recommended-cli
 Architecture: all
-Depends: whonix-ws-desktop-shortcuts, whonix-ws-irc-chat-support,
-whonix-welcome-page, whonix-ws-start-menu-additions,
-${misc:Depends}
-Recommends: anon-workstation-packages-recommended
+Depends: anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
+python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
+magic-wormhole, diceware, makepasswd, ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
 # Recommended packages for Whonix-Workstation CLI #
 
@@ -371,21 +270,37 @@ useful for a Tor Workstation.
 
 Feel free to remove if you know what you are doing.
 
+Package: whonix-workstation-packages-recommended-gui
+Architecture: all
+Depends: hexchat, vlc, hunspell-en-us, gpa,
+mat2, keepassxc,
+libimage-exiftool-perl, gir1.2-gtk-3.0,
+pinentry-qt | pinentry-x11,
+mupdf, ristretto,
+tb-default-browser, tb-starter, tb-updater, youtube-dl,
+ricochet-im, coyim, qtox, onionshare, xchat-improved-privacy,
+whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
+whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
+Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
+anon-workstation-default-applications, whonix-workstation-default-applications-gui
+Description: Recommended packages for Whonix-Workstation GUI
+# Recommended packages for Whonix-Workstation GUI #
+
+A metapackage, which installs packages, which are recommended for
+graphical user interface (GUI) Whonix-Workstation, because they are
+useful for a Tor Workstation.
+
+Feel free to remove if you know what you are doing.
+
 Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-gateway-packages-dependencies-pre,
-anon-shared-packages-dependencies,
-anon-shared-packages-recommended,
-anon-shared-applications-kde,
-anon-shared-default-applications,
-whonix-shared-packages-dependencies,
-whonix-shared-packages-recommended,
-anon-gateway-packages-dependencies,
-anon-gateway-packages-recommended,
-anon-gateway-default-applications,
-whonix-gateway-packages-dependencies,
-whonix-gateway-packages-recommended,
+Depends: hardened-packages-dependencies-cli,
+whonix-shared-default-applications-gui,
+whonix-shared-packages-dependencies-cli,
+whonix-shared-packages-recommended-cli,
+whonix-gateway-default-applications-gui,
+whonix-gateway-packages-dependencies-cli,
 ${misc:Depends}
 Description: Whonix-Gateway Shared Packages
 # Whonix-Gateway Shared Packages #
@@ -394,25 +309,18 @@ A metapackage, which installs packages, for a Whonix-Default-Gateway.
 
 It is shared between Qubes-Whonix and Non-Qubes-Whonix.
 
-It will install build chroot scripts, but not run them.
-
 Feel free to remove if you know what you are doing.
 
 Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-workstation-packages-dependencies-pre,
-anon-shared-packages-dependencies,
-anon-shared-packages-recommended,
-anon-shared-applications-kde,
-anon-shared-default-applications,
-whonix-shared-packages-dependencies,
-whonix-shared-packages-recommended,
-anon-workstation-packages-dependencies,
-anon-workstation-packages-recommended,
-anon-workstation-default-applications,
-whonix-workstation-packages-dependencies,
-whonix-workstation-packages-recommended,
+Depends: hardened-packages-dependencies-cli,
+whonix-shared-default-applications-gui,
+whonix-shared-packages-dependencies-cli,
+whonix-shared-packages-recommended-cli,
+whonix-workstation-packages-dependencies-cli,
+whonix-workstation-packages-recommended-cli,
+whonix-workstation-packages-recommended-gui,
 ${misc:Depends}
 Description: Whonix-Workstation Shared Packages
 # Whonix-Workstation Shared Packages #
@@ -421,15 +329,47 @@ A metapackage, which installs packages, for a Whonix-Default-Workstation.
 
 It is shared between Qubes-Whonix and Non-Qubes-Whonix.
 
-It will install build chroot scripts, but not run them.
-
 Feel free to remove if you know what you are doing.
 
+Package: non-qubes-whonix-gateway-cli
+Priority: required
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-vm-enhancements-cli,
+hardened-packages-dependencies-cli,
+whonix-shared-packages-dependencies-cli,
+whonix-shared-packages-recommended-cli,
+whonix-gateway-packages-dependencies-cli,
+anon-connection-wizard, tor-control-panel, ${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
+# Default Packages for Non-Qubes-Whonix-Gateway CLI #
+
+A metapackage, which installs packages, for a
+Non-Qubes-Whonix-Default-Gateway without graphical user interface (GUI).
+
+Do not remove.
+
+Package: whonix-gateway-rpi
+Priority: required
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, fake-hwclock, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, linux-image-arm64 (>= 4.16), ${misc:Depends}
+Description: Default packages for Whonix-Gateway-RPi CLI
+# Default packages for Whonix-Gateway-RPi CLI #
+
+A metapackage, which installs packages for a CLI
+Raspberry Pi 3 Whonix-Gateway.
+
+Do not remove.
+
 Package: qubes-whonix-gateway
+Priority: required
 Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
 qubes-whonix-shared-packages-recommended,
-qubes-whonix-gateway-packages-recommended, ${misc:Depends}
+qubes-whonix-gateway-packages-recommended,
+hardened-desktop-applications-xfce,
+${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
 # Default packages for Qubes-Whonix-Gateway #
@@ -438,64 +378,255 @@ A metapackage, which installs packages, for a
 Qubes-Whonix-Default-Gateway.
 
 Only depends on whonix-gateway-shared-packages-shared-meta,
-because installing anon-shared-desktop is not required in
-Qubes-Whonix.
+because installing hardened-desktop-environment-essential-gui is not required
+in Qubes-Whonix.
 
-Feel free to remove if you know what you are doing.
+Do not remove.
 
 Package: qubes-whonix-workstation
+Priority: required
 Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
 qubes-whonix-shared-packages-recommended,
-qubes-whonix-workstation-packages-recommended, ${misc:Depends}
+qubes-whonix-workstation-packages-recommended,
+hardened-desktop-applications-xfce,
+${misc:Depends}
 Replaces: whonix-workstation
-Description: Default Packages for Qubes-Whonix-Workstation
-# Default Packages for Qubes-Whonix-Workstation #
+Description: Default packages for Qubes-Whonix-Workstation
+# Default packages for Qubes-Whonix-Workstation #
 
 A metapackage, which installs packages, for a
 Qubes-Whonix-Default-Workstation.
 
 Only depends on whonix-workstation-shared-packages-shared-meta,
-because installing anon-shared-desktop is not required in
-Qubes-Whonix.
+because installing hardened-desktop-environment-essential-gui is not required
+in Qubes-Whonix.
 
-Feel free to remove if you know what you are doing.
+Do not remove.
+
+Package: non-qubes-whonix-gateway-kde
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
+Replaces: whonix-gateway, non-qubes-whonix-gateway
+Section: oldlibs
+Description: transitional package Whonix-Gateway KDE
+# transitional package Whonix-Gateway KDE #
+
+Whonix KDE is no longer supported.
+
+Use package non-qubes-whonix-gateway-xfce instead.
+Legacy. This is a transitional package.
+
+It can be removed by installing package non-qubes-whonix-gateway-xfce.
+
+sudo apt-get install non-qubes-whonix-gateway-xfce
+
+Package: non-qubes-whonix-gateway-xfce
+Priority: required
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-vm-enhancements-cli,
+non-qubes-vm-enhancements-gui,
+rads,
+non-qubes-whonix-gateway-cli,
+hardened-desktop-environment-essential-xfce,
+hardened-desktop-applications-xfce,
+whonix-shared-default-applications-gui,
+whonix-gateway-default-applications-gui,
+${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
+# Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI #
+
+A metapackage, which installs packages, for a
+Non-Qubes-Whonix-Default-Gateway with Xfce.
+
+Depends on hardened-desktop-environment-essential-xfce because that is
+required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+environment.
+
+Do not remove.
+
+Package: non-qubes-whonix-workstation-kde
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
+Replaces: whonix-workstation, non-qubes-whonix-workstation
+Section: oldlibs
+Description: transitional package Whonix-Workstation KDE
+# transitional package Whonix-Workstation KDE #
+
+Use the package non-qubes-whonix-workstation-xfce instead.
+Legacy package. This is a transitional package.
+
+Install non-qubes-whonix-workstation-xfce, remove this package.
+
+sudo apt-get install non-qubes-whonix-workstation-xfce
+
+Package: non-qubes-whonix-workstation-xfce
+Priority: required
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-vm-enhancements-cli,
+non-qubes-vm-enhancements-gui,
+non-qubes-whonix-workstation-cli,
+hardened-desktop-environment-essential-xfce,
+hardened-desktop-applications-xfce,
+whonix-shared-default-applications-gui,
+whonix-workstation-packages-recommended-gui,
+rads, non-qubes-vm-audio,
+${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
+# Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI #
+
+A metapackage, which installs packages, for a
+Non-Qubes-Whonix-Default-Workstation with Xfce.
+
+Depends on hardened-desktop-environment-essential-xfce because that is
+required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+environment.
+
+Do not remove.
+
+Package: non-qubes-whonix-workstation-cli
+Priority: required
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: non-qubes-vm-enhancements-cli,
+hardened-packages-dependencies-cli,
+whonix-shared-packages-dependencies-cli,
+whonix-shared-packages-recommended-cli,
+whonix-workstation-packages-dependencies-cli,
+whonix-workstation-packages-recommended-cli, ${misc:Depends}
+Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
+# Default Packages for Non-Qubes-Whonix-Workstation CLI #
+
+A metapackage, which installs packages, for a
+Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
+
+Do not remove.
+
+Package: hardened-debian-cli
+Priority: required
+Architecture: all
+Depends: non-qubes-vm-enhancements-cli,
+hardened-packages-dependencies-cli,
+${misc:Depends}
+Description: Hardened Debian command line interface CLI
+# Hardened Debian command line interface CLI #
+
+A metapackage, which installs packages, for Hardened Debian CLI.
+
+Do not remove.
+
+Package: hardened-debian-xfce
+Priority: required
+Architecture: all
+Depends: hardened-debian-cli,
+hardened-desktop-environment-essential-xfce,
+hardened-desktop-applications-xfce,
+rads, non-qubes-vm-audio,
+mupdf, ristretto,
+${misc:Depends}
+Description: Hardened Debian Xfce GUI
+# Hardened Debian Xfce GUI #
+
+A metapackage, which installs packages, for Hardened Debian Xfce.
+
+Do not remove.
 
 Package: non-qubes-whonix-gateway
 Architecture: all
-Depends: whonix-gateway-shared-packages-shared-meta, non-qubes-vm-enhancements,
-anon-shared-desktop, anon-shared-desktop-kde,
-${misc:Depends}
-Replaces: whonix-gateway
-Description: Default Packages for Non-Qubes-Whonix-Gateway
-# Default Packages for Non-Qubes-Whonix-Gateway #
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
+Section: oldlibs
+Description: transitional package Whonix-Gateway
+# transitional package Whonix-Gateway #
 
-A metapackage, which installs packages, for a
-Non-Qubes-Whonix-Default-Gateway.
+KDE was deprecated in Whonix.
 
-Depends on whonix-gateway-shared-packages-shared-meta,
-and anon-shared-desktop because that is required in
-Non-Qubes-Whonix in order to get graphical desktop environment.
+Use non-qubes-whonix-gateway-xfce instead.
+This is a transitional package. Legacy.
 
-Feel free to remove if you know what you are doing.
+Install non-qubes-whonix-gateway-xfce and remove this.
+
+sudo apt-get install non-qubes-whonix-gateway-xfce
 
 Package: non-qubes-whonix-workstation
 Architecture: all
-Depends: whonix-workstation-shared-packages-shared-meta, non-qubes-vm-enhancements,
-anon-shared-desktop, anon-shared-desktop-kde,
+Pre-Depends: whonix-legacy
+Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
+Section: oldlibs
+Description: transitional package Whonix-Workstation
+# transitional package Whonix-Workstation #
+
+Use non-qubes-whonix-workstation-xfce instead.
+This is a transitional package. Legacy.
+
+It can be removed by installing package non-qubes-whonix-workstation-xfce.
+
+sudo apt-get install non-qubes-whonix-workstation-xfce
+
+Package: whonix-host-xfce-kvm-freedom
+Architecture: all
+Pre-Depends: whonix-legacy
+## TODO
+## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
+Depends: hardened-debian-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
+arc-theme,
+iw, network-manager-gnome, network-manager,
+firefox-esr, gnome-system-monitor, gparted,
+whonix-libvirt,
 ${misc:Depends}
-Replaces: whonix-workstation
-Description: Default Packages for Non-Qubes-Whonix-Workstation
-# Default Packages for Non-Qubes-Whonix-Workstation #
+Description: Whonix Host packages for Freedom Hardware Design
+# Whonix Host packages for Freedom Hardware Design #
 
-A metapackage, which installs packages, for a
-Non-Qubes-Whonix-Default-Workstation.
+Designed to run on hardware with Freedom Hardware Design.
 
-Depends on whonix-workstation-shared-packages-shared-meta,
-and anon-shared-desktop because that is required in
-Non-Qubes-Whonix in order to get graphical desktop environment.
+Do not remove.
 
-Feel free to remove if you know what you are doing.
+Package: whonix-host-xfce-kvm-nonfreedom
+Architecture: all
+Pre-Depends: whonix-legacy
+Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
+Description: Whonix Host packages for nonfreedom hardware design
+# Whonix Host packages for nonfreedom hardware design #
+
+Designed to run on hardware with nonfreedom hardware design.
+
+Do not remove.
+
+Package: dummy-contrib
+Architecture: all
+Depends: ${misc:Depends}
+Section: contrib/metapackages
+Description: dummy contrib package
+# dummy contrib package #
+
+A metapackage, without contents to populate the contrib repository.
+
+This package itself is not nonfree.
+This package itself is Free, Open, Freedom, Libre Software.
+
+Useful for testing vrms without installation of an actual contrib package.
+
+Safe to remove.
+
+Package: dummy-nonfree
+Architecture: all
+Depends: ${misc:Depends}
+Section: non-free/metapackages
+Description: dummy nonfree package
+# dummy nonfree package #
+
+A metapackage, without contents to populate the nonfree repository.
+
+This package itself is not nonfree.
+This package itself is Free, Open, Freedom, Libre Software.
+
+Useful for testing vrms without installation of an actual nonfree package.
+
+Safe to remove.
 ## How to install `anon-meta-packages` using apt-get ##
 
 1\. Add [Whonix's Signing Key](https://www.whonix.org/wiki/Whonix_Signing_Key).
@@ -507,7 +638,7 @@ sudo apt-key --keyring /etc/apt/trusted.gpg.d/whonix.gpg adv --keyserver hkp://i
 3\. Add Whonix's APT repository.
 
 ```
-echo "deb http://deb.whonix.org buster main" | sudo tee /etc/apt/sources.list.d/whonix.list
+echo "deb http://deb.whonix.org buster main contrib non-free" | sudo tee /etc/apt/sources.list.d/whonix.list
 ```
 
 4\. Update your package lists.
@@ -531,6 +662,6 @@ Replace `apparmor-profile-torbrowser` with the actual name of this package with 
 * [Free Forum Support](https://forums.whonix.org)
 * [Professional Support](https://www.whonix.org/wiki/Professional_Support)
 
-## Payments ##
+## Donate ##
 
-`anon-meta-packages` requires [payments](https://www.whonix.org/wiki/Payments) to stay alive!
+`anon-meta-packages` requires [donations](https://www.whonix.org/wiki/Donate) to stay alive!
