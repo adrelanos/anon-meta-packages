@@ -1,3 +1,15 @@
+commit 8e249e4248ae878075e8973f804c869c5eeadd21
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 27 18:15:53 2019 -0400
+
+    re-add kloak to non-qubes-vm-enhancements-cli
+
+commit 9f867904f5e2a3d01a3456d2c8a92c8236e00351
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 24 20:07:54 2019 +0000
+
+    bumped changelog version
+
 commit 425cbab5ea1c0d7b9a31471a4203c8fdf9010758
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 24 12:28:54 2019 -0400
