@@ -1,3 +1,25 @@
+commit fa9703d953aa61b50cca5d4fb359aa850f0228dd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 8 09:46:44 2019 +0000
+
+    remove ricochet-im, coyim since non-functional
+    
+    https://github.com/coyim/coyim/issues/527
+    
+    https://forums.whonix.org/t/ricochet-support/7174/46
+
+commit a817666dd9fd8ddecf41e0c30620c7a08f41cd63
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 8 00:05:29 2019 -0400
+
+    fix debian/watch lintian warning debian-watch-contains-dh_make-template
+
+commit 08051d1ef10c6c47f198c013b68e6e3b62d95667
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 1 08:22:38 2019 +0000
+
+    bumped changelog version
+
 commit 8e249e4248ae878075e8973f804c869c5eeadd21
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon May 27 18:15:53 2019 -0400
