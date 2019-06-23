@@ -12,7 +12,7 @@ Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
 keyboard-configuration, kbd, acpi-support, console-common, console-setup,
 initramfs-tools, os-prober, grub-live | grub-live-boot, cryptsetup, zulucrypt-cli,
-libzulucrypt-plugins, ${misc:Depends}
+libzulucrypt-plugins, kloak, ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
 # Recommended packages for terminal based VMs CLI #
@@ -278,7 +278,7 @@ libimage-exiftool-perl, gir1.2-gtk-3.0,
 pinentry-qt | pinentry-x11,
 mupdf, ristretto,
 tb-default-browser, tb-starter, tb-updater, youtube-dl,
-ricochet-im, coyim, qtox, onionshare, xchat-improved-privacy,
+qtox, onionshare, xchat-improved-privacy,
 whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
 whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
