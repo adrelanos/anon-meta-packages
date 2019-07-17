@@ -577,6 +577,7 @@ arc-theme,
 iw, network-manager-gnome, network-manager,
 firefox-esr, gnome-system-monitor, gparted,
 whonix-libvirt,
+anon-base-files,
 ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
 # Whonix Host packages for Freedom Hardware Design #
