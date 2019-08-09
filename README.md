@@ -278,7 +278,7 @@ libimage-exiftool-perl, gir1.2-gtk-3.0,
 pinentry-qt | pinentry-x11,
 mupdf, ristretto,
 tb-default-browser, tb-starter, tb-updater, youtube-dl,
-qtox, onionshare, xchat-improved-privacy,
+qtox, onionshare, xchat-improved-privacy, binaries-freedom,
 whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
 whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
