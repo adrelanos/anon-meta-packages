@@ -1,3 +1,25 @@
+commit 369e8e6b9efac1bee013f8c5bf3d11bcea09b73d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 9 09:48:06 2019 +0000
+
+    readme
+
+commit 71d40f5316ee7eb38eb04142d80d23c56a48407b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 9 09:45:56 2019 +0000
+
+    install electrum by default
+    
+    add package binaries-freedom to whonix-workstation-packages-recommended-gui
+    
+    https://phabricator.whonix.org/T215
+
+commit a4d025d39babfbf6a9d26127bde00b695b2d6ed9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 1 11:20:52 2019 +0000
+
+    bumped changelog version
+
 commit 05d8b8d5ff5510f54f6e0aedd1cb0e7969842d80
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 1 11:13:32 2019 +0000
