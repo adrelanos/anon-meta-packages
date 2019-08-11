@@ -148,15 +148,16 @@ to contain the very basics, Xfce applications.
 
 Safe to remove.
 
-Package: apparmor-profiles-hardened-debian
+Package: apparmor-profiles-kicksecure
+Replaces: apparmor-profiles-hardened-debian
 Architecture: all
 Depends: apparmor-profile-icedove,
 apparmor-profile-torbrowser,
 apparmor-profile-xchat,
 apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
 Replaces: apparmor-profiles-whonix
-Description: AppArmor profiles developed by the Hardened Debian Team
-# AppArmor profiles developed by the Hardened Debian Team #
+Description: AppArmor profiles developed by the Kicksecure Team
+# AppArmor profiles developed by the Kicksecure Team #
 
 A metapackage, which installs apparmor profiles developed by the Hardened
 Debian team.
@@ -506,32 +507,34 @@ Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
 
 Do not remove.
 
-Package: hardened-debian-cli
+Package: kicksecure-cli
+Replaces: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli,
 hardened-packages-dependencies-cli,
 ${misc:Depends}
-Description: Hardened Debian command line interface CLI
-# Hardened Debian command line interface CLI #
+Description: Kicksecure command line interface CLI
+# Kicksecure command line interface CLI #
 
-A metapackage, which installs packages, for Hardened Debian CLI.
+A metapackage, which installs packages, for Kicksecure CLI.
 
 Do not remove.
 
-Package: hardened-debian-xfce
+Package: kicksecure-xfce
+Replaces: hardened-debian-xfce
 Priority: required
 Architecture: all
-Depends: hardened-debian-cli,
+Depends: kicksecure-cli,
 hardened-desktop-environment-essential-xfce,
 hardened-desktop-applications-xfce,
 rads, non-qubes-vm-audio,
 mupdf, ristretto,
 ${misc:Depends}
-Description: Hardened Debian Xfce GUI
-# Hardened Debian Xfce GUI #
+Description: Kicksecure Xfce GUI
+# Kicksecure Xfce GUI #
 
-A metapackage, which installs packages, for Hardened Debian Xfce.
+A metapackage, which installs packages, for Kicksecure Xfce.
 
 Do not remove.
 
@@ -572,7 +575,7 @@ Architecture: all
 Pre-Depends: whonix-legacy
 ## TODO
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
-Depends: hardened-debian-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
+Depends: kicksecure-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
 arc-theme,
 iw, network-manager-gnome, network-manager,
 firefox-esr, gnome-system-monitor, gparted,
