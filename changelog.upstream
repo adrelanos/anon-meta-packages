@@ -1,3 +1,21 @@
+commit 7fe3657cb58b7553d9c34e9abec42eb90b14b5e7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 12:05:33 2019 +0000
+
+    readme
+
+commit c791b9ef384f8488eb7ca57ebed4ee9bcc533768
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 12:04:57 2019 +0000
+
+    fix duplicate Replaces: field
+
+commit 3f13701fa323c8f0f7bb300640df5b34dd7cea48
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 11:40:17 2019 +0000
+
+    bumped changelog version
+
 commit dacad489923d48e33b646346ea10e1659ceb6b3c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Aug 11 11:39:25 2019 +0000
