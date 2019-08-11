@@ -1,3 +1,21 @@
+commit dacad489923d48e33b646346ea10e1659ceb6b3c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 11:39:25 2019 +0000
+
+    readme
+
+commit dad01ad4076f9db828a61ce593add29dcfc949da
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 10:22:00 2019 +0000
+
+    rename Hardened Debian to Kicksecure
+
+commit f408588f17e0e17af7d6b3f62222b0911c8c904a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 9 09:48:20 2019 +0000
+
+    bumped changelog version
+
 commit 369e8e6b9efac1bee013f8c5bf3d11bcea09b73d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 9 09:48:06 2019 +0000
