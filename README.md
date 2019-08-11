@@ -149,13 +149,12 @@ to contain the very basics, Xfce applications.
 Safe to remove.
 
 Package: apparmor-profiles-kicksecure
-Replaces: apparmor-profiles-hardened-debian
+Replaces: apparmor-profiles-whonix, apparmor-profiles-hardened-debian
 Architecture: all
 Depends: apparmor-profile-icedove,
 apparmor-profile-torbrowser,
 apparmor-profile-xchat,
 apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
-Replaces: apparmor-profiles-whonix
 Description: AppArmor profiles developed by the Kicksecure Team
 # AppArmor profiles developed by the Kicksecure Team #
 
