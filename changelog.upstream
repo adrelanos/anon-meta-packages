@@ -1,3 +1,23 @@
+commit 90b1fa7dbead37ed502c3374226e96fabbb5c8d8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 15:05:04 2019 +0000
+
+    readme
+
+commit 07d12484ac0ef2c97fa9b8d3d02fc57771c186d5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 14:20:51 2019 +0000
+
+    kicksecure-cli depend on anon-base-files
+    
+    which creates user "user"
+
+commit 1d7fd3db995d872d0952727ba13a4da1c4ace9ac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 12:05:47 2019 +0000
+
+    bumped changelog version
+
 commit 7fe3657cb58b7553d9c34e9abec42eb90b14b5e7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Aug 11 12:05:33 2019 +0000
