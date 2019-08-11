@@ -512,6 +512,7 @@ Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli,
 hardened-packages-dependencies-cli,
+anon-base-files,
 ${misc:Depends}
 Description: Kicksecure command line interface CLI
 # Kicksecure command line interface CLI #
