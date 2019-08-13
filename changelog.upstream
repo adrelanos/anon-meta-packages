@@ -1,3 +1,21 @@
+commit 87cb1775c6935c9325f456b3f0f27bd27c120a53
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 13 12:27:52 2019 +0000
+
+    readme
+
+commit c9cb6f27fdbd61c7e45a9e12bd1b5d0606c04b5b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 13 08:26:55 2019 -0400
+
+    kicksecure-cli depend on kicksecure-base-files
+
+commit 63d1e83d0d5c334e942744d53c8673952e9f3c8e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 11 15:05:49 2019 +0000
+
+    bumped changelog version
+
 commit 90b1fa7dbead37ed502c3374226e96fabbb5c8d8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Aug 11 15:05:04 2019 +0000
