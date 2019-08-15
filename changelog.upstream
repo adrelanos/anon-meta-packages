@@ -1,3 +1,29 @@
+commit f2415f7a21f90e5030557b095b5c78a155dcda23
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 15 15:08:42 2019 +0000
+
+    readme
+
+commit d4899dd6af494e5a3752f66a742a9d8270e3e3cd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 15 14:08:55 2019 +0000
+
+    rename packages to kicksecure
+
+commit f205a8c01abdb4701865b9bb458e7800d9411337
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 15 13:53:39 2019 +0000
+
+    move kloak from non-qubes-vm-enhancements-cli to non-qubes-whonix-workstation-cli
+    
+    so it does not get installed on Whonix-Gateway
+
+commit a830542191c98749990fd1ece508cb33b42cfa5d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 13 12:28:06 2019 +0000
+
+    bumped changelog version
+
 commit 87cb1775c6935c9325f456b3f0f27bd27c120a53
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 13 12:27:52 2019 +0000
