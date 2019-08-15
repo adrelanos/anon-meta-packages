@@ -12,7 +12,7 @@ Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
 keyboard-configuration, kbd, acpi-support, console-common, console-setup,
 initramfs-tools, os-prober, grub-live | grub-live-boot, cryptsetup, zulucrypt-cli,
-libzulucrypt-plugins, kloak, ${misc:Depends}
+libzulucrypt-plugins, ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
 # Recommended packages for terminal based VMs CLI #
@@ -51,7 +51,7 @@ already has its own native audio implementation.
 
 Safe to remove, if you know what you are doing.
 
-Package: hardened-packages-dependencies-cli
+Package: kicksecure-dependencies-cli
 Priority: required
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
@@ -68,7 +68,8 @@ scurl, openvpn,
 usability-misc, menu, man-db, open-link-confirmation,
 whonix-initializer,
 ${misc:Depends}
-Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended
+Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended,
+hardened-packages-dependencies-cli
 Description: Dependencies for hardened systems CLI
 # Dependencies for hardened systems CLI #
 
@@ -105,27 +106,28 @@ which are recommended for a graphical Whonix-Gateway.
 
 Safe to remove, if you know what you are doing.
 
-Package: hardened-desktop-environment-essential-gui
+Package: kicksecure-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
 xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
 xauth, xpra | xserver-xephyr | xvfb,
 ${misc:Depends}
-Replaces: anon-shared-desktop
+Replaces: anon-shared-desktop, hardened-desktop-environment-essential-gui
 Description: Desktop Depends GUI
 # Desktop Depends GUI #
 
 A metapackage, which installs dependencies for desktop environments,
 such as KDE, GNOME, etc.
 
-hardened-desktop-environment-essential-xfce depends on this package.
+kicksecure-desktop-environment-essential-xfce depends on this package.
 
-Package: hardened-desktop-environment-essential-xfce
+Package: kicksecure-desktop-environment-essential-xfce
 Architecture: all
-Depends: hardened-desktop-environment-essential-gui,
+Depends: kicksecure-desktop-environment-essential-gui,
 xfce4, lightdm,
 gnome-brave-icon-theme,
 whonix-xfce-desktop-config, ${misc:Depends}
+Replaces: hardened-desktop-environment-essential-xfce
 Description: Recommended applications for hardened Xfce Desktop Environment
 # Recommended applications for hardened Xfce Desktop Environment #
 
@@ -134,12 +136,13 @@ to contain a very basic Xfce Desktop Environment.
 
 Safe to remove.
 
-Package: hardened-desktop-applications-xfce
+Package: kicksecure-desktop-applications-xfce
 Architecture: all
 Depends: thunar, libexo-1-0, xfce4-terminal, mousepad,
 lxqt-sudo, policykit-1, policykit-1-gnome | polkit-1-auth-agent,
 p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
 ${misc:Depends}
+Replaces: hardened-desktop-applications-xfce
 Description: Recommended applications for hardened Xfce desktop GUI
 # Recommended applications for hardened Xfce desktop GUI #
 
@@ -216,7 +219,7 @@ Do not remove.
 
 Package: whonix-shared-packages-recommended-cli
 Architecture: all
-Depends: hardened-packages-dependencies-cli, whonixcheck, tor-ctrl, uwt,
+Depends: kicksecure-dependencies-cli, whonixcheck, tor-ctrl, uwt,
 anon-apps-config, ${misc:Depends}
 Replaces: whonix-shared-packages-recommended
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
@@ -295,7 +298,7 @@ Feel free to remove if you know what you are doing.
 Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: hardened-packages-dependencies-cli,
+Depends: kicksecure-dependencies-cli,
 whonix-shared-default-applications-gui,
 whonix-shared-packages-dependencies-cli,
 whonix-shared-packages-recommended-cli,
@@ -314,7 +317,7 @@ Feel free to remove if you know what you are doing.
 Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: hardened-packages-dependencies-cli,
+Depends: kicksecure-dependencies-cli,
 whonix-shared-default-applications-gui,
 whonix-shared-packages-dependencies-cli,
 whonix-shared-packages-recommended-cli,
@@ -336,7 +339,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
-hardened-packages-dependencies-cli,
+kicksecure-dependencies-cli,
 whonix-shared-packages-dependencies-cli,
 whonix-shared-packages-recommended-cli,
 whonix-gateway-packages-dependencies-cli,
@@ -368,7 +371,7 @@ Architecture: all
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
 qubes-whonix-shared-packages-recommended,
 qubes-whonix-gateway-packages-recommended,
-hardened-desktop-applications-xfce,
+kicksecure-desktop-applications-xfce,
 ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
@@ -378,7 +381,7 @@ A metapackage, which installs packages, for a
 Qubes-Whonix-Default-Gateway.
 
 Only depends on whonix-gateway-shared-packages-shared-meta,
-because installing hardened-desktop-environment-essential-gui is not required
+because installing kicksecure-desktop-environment-essential-gui is not required
 in Qubes-Whonix.
 
 Do not remove.
@@ -389,7 +392,7 @@ Architecture: all
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
 qubes-whonix-shared-packages-recommended,
 qubes-whonix-workstation-packages-recommended,
-hardened-desktop-applications-xfce,
+kicksecure-desktop-applications-xfce,
 ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
@@ -399,7 +402,7 @@ A metapackage, which installs packages, for a
 Qubes-Whonix-Default-Workstation.
 
 Only depends on whonix-workstation-shared-packages-shared-meta,
-because installing hardened-desktop-environment-essential-gui is not required
+because installing kicksecure-desktop-environment-essential-gui is not required
 in Qubes-Whonix.
 
 Do not remove.
@@ -430,8 +433,8 @@ Depends: non-qubes-vm-enhancements-cli,
 non-qubes-vm-enhancements-gui,
 rads,
 non-qubes-whonix-gateway-cli,
-hardened-desktop-environment-essential-xfce,
-hardened-desktop-applications-xfce,
+kicksecure-desktop-environment-essential-xfce,
+kicksecure-desktop-applications-xfce,
 whonix-shared-default-applications-gui,
 whonix-gateway-default-applications-gui,
 ${misc:Depends}
@@ -441,7 +444,7 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
 A metapackage, which installs packages, for a
 Non-Qubes-Whonix-Default-Gateway with Xfce.
 
-Depends on hardened-desktop-environment-essential-xfce because that is
+Depends on kicksecure-desktop-environment-essential-xfce because that is
 required in Non-Qubes-Whonix Xfce in order to get graphical desktop
 environment.
 
@@ -470,8 +473,8 @@ Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
 non-qubes-vm-enhancements-gui,
 non-qubes-whonix-workstation-cli,
-hardened-desktop-environment-essential-xfce,
-hardened-desktop-applications-xfce,
+kicksecure-desktop-environment-essential-xfce,
+kicksecure-desktop-applications-xfce,
 whonix-shared-default-applications-gui,
 whonix-workstation-packages-recommended-gui,
 rads, non-qubes-vm-audio,
@@ -482,7 +485,7 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
 A metapackage, which installs packages, for a
 Non-Qubes-Whonix-Default-Workstation with Xfce.
 
-Depends on hardened-desktop-environment-essential-xfce because that is
+Depends on kicksecure-desktop-environment-essential-xfce because that is
 required in Non-Qubes-Whonix Xfce in order to get graphical desktop
 environment.
 
@@ -493,11 +496,13 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
-hardened-packages-dependencies-cli,
+kicksecure-dependencies-cli,
 whonix-shared-packages-dependencies-cli,
 whonix-shared-packages-recommended-cli,
 whonix-workstation-packages-dependencies-cli,
-whonix-workstation-packages-recommended-cli, ${misc:Depends}
+whonix-workstation-packages-recommended-cli,
+kloak,
+${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 # Default Packages for Non-Qubes-Whonix-Workstation CLI #
 
@@ -511,7 +516,7 @@ Replaces: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: non-qubes-vm-enhancements-cli,
-hardened-packages-dependencies-cli,
+kicksecure-dependencies-cli,
 anon-base-files, kicksecure-base-files,
 ${misc:Depends}
 Description: Kicksecure command line interface CLI
@@ -526,8 +531,8 @@ Replaces: hardened-debian-xfce
 Priority: required
 Architecture: all
 Depends: kicksecure-cli,
-hardened-desktop-environment-essential-xfce,
-hardened-desktop-applications-xfce,
+kicksecure-desktop-environment-essential-xfce,
+kicksecure-desktop-applications-xfce,
 rads, non-qubes-vm-audio,
 mupdf, ristretto,
 ${misc:Depends}
