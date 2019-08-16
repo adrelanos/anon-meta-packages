@@ -1,3 +1,33 @@
+commit ee4d9d99bea5fc87645789e3b017ead1f34729f0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 16 15:57:24 2019 +0000
+
+    readme
+
+commit 52c6eb8ba774250cb3dee606441e6b164e540358
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 16 10:57:06 2019 -0400
+
+    remove vbox-disable-timesync
+    
+    since broken
+    
+    shows BUSY in journal log and does not work
+    
+    VirtualBox VM settings on the host prevent timesync already
+    
+    which now fails inside VM, creating another error in log
+    
+    timesync Error: vgsvcTimeSyncWorker: VbglR3GetHostTime failed; rc2=VERR_NOT_SUPPORTED
+    
+    which is noisy but better than having this broken entirely
+
+commit ab4d2e01424150a21244f295a8c5b86ff1d11c79
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 15 15:08:56 2019 +0000
+
+    bumped changelog version
+
 commit f2415f7a21f90e5030557b095b5c78a155dcda23
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 15 15:08:42 2019 +0000
