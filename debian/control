@@ -83,7 +83,7 @@ Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, jitterentropy-rngd, locales, apt-transport-https, apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
- timezone-utc, vbox-disable-timesync, busybox,
+ timezone-utc, busybox,
  security-misc,
  bash-completion, command-not-found, zsh, nano, wget, dnsutils, iputils-ping,
  apparmor-utils, apparmor-profile-anondist,
