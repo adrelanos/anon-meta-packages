@@ -138,9 +138,10 @@ Safe to remove.
 
 Package: kicksecure-desktop-applications-xfce
 Architecture: all
-Depends: thunar, libexo-1-0, xfce4-terminal, mousepad,
+Depends: libexo-1-0, xfce4-terminal, mousepad,
 lxqt-sudo, policykit-1, policykit-1-gnome | polkit-1-auth-agent,
-p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
+p7zip-full, zip, unzip, xz-utils, unar, xarchiver,
+thunar, thunar-archive-plugin, thunar-volman,
 ${misc:Depends}
 Replaces: hardened-desktop-applications-xfce
 Description: Recommended applications for hardened Xfce desktop GUI
@@ -261,7 +262,7 @@ Do not remove.
 
 Package: whonix-workstation-packages-recommended-cli
 Architecture: all
-Depends: anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
+Depends: anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
 python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
 magic-wormhole, diceware, makepasswd, ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
@@ -535,6 +536,7 @@ kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
 rads, non-qubes-vm-audio,
 mupdf, ristretto,
+secbrowser,
 ${misc:Depends}
 Description: Kicksecure Xfce GUI
 # Kicksecure Xfce GUI #
