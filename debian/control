@@ -154,9 +154,10 @@ Description: Recommended applications for hardened Xfce Desktop Environment
 
 Package: kicksecure-desktop-applications-xfce
 Architecture: all
-Depends: thunar, libexo-1-0, xfce4-terminal, mousepad,
+Depends: libexo-1-0, xfce4-terminal, mousepad,
  lxqt-sudo, policykit-1, policykit-1-gnome | polkit-1-auth-agent,
- p7zip-full, zip, unzip, xz-utils, unar, xarchiver, thunar-archive-plugin,
+ p7zip-full, zip, unzip, xz-utils, unar, xarchiver,
+ thunar, thunar-archive-plugin,
  ${misc:Depends}
 Replaces: hardened-desktop-applications-xfce
 Description: Recommended applications for hardened Xfce desktop GUI
