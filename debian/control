@@ -508,6 +508,7 @@ Depends: kicksecure-cli,
  kicksecure-desktop-applications-xfce,
  rads, non-qubes-vm-audio,
  mupdf, ristretto,
+ secbrowser,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce.
