@@ -1,3 +1,47 @@
+commit e2a4924e65e0829ec9a7d01739b464fa187f342b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:56:22 2019 +0000
+
+    readme
+
+commit 90a60c432e943194a0f208e143ebf9ff00475194
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:15:05 2019 +0000
+
+    install SecBrowser by default in Kicksecure
+    
+    kicksecure-xfce depend on secbrowser
+
+commit 66690bd20a4b5b3e5ca201d1cf48e84fea22319b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:11:50 2019 +0000
+
+    remove anon-mixmaster from whonix-workstation-packages-recommended-cli
+    
+    since deprecated
+    
+    https://www.whonix.org/wiki/Mixmaster
+
+commit 79e6869430196a2fe2c0e10e9c6fdd76140aace6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:09:29 2019 +0000
+
+    install thunar-volman by default
+    
+    add thunar-volman to kicksecure-desktop-applications-xfce
+
+commit 1215431bd4ba33e44e4165c3ff651ac1cda6b8ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:08:31 2019 +0000
+
+    refactoring
+
+commit e73a8145db1327875384dc6f771a705b5a7963e3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 16 15:58:15 2019 +0000
+
+    bumped changelog version
+
 commit ee4d9d99bea5fc87645789e3b017ead1f34729f0
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 16 15:57:24 2019 +0000
