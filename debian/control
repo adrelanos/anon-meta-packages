@@ -262,7 +262,7 @@ Description: Dependencies for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-cli
 Architecture: all
-Depends: anon-mixmaster, anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
+Depends: anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
  python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
  magic-wormhole, diceware, makepasswd, ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
