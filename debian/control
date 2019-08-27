@@ -30,7 +30,7 @@ Depends: ${misc:Depends},
  firmware-misc-nonfree,
  firmware-realtek,
  firmware-ti-connectivity,
- firmware-zd1211,
+ firmware-zd1211
 Description: Recommended packages for hosts with nonfreedom hardware design
  A metapackage, which includes nonfree firmware useful for hosts with
  nonfreedom hardware design.
