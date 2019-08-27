@@ -31,6 +31,7 @@ Depends: ${misc:Depends},
  firmware-realtek,
  firmware-ti-connectivity,
  firmware-zd1211
+Section: non-free/metapackages
 Description: Recommended packages for hosts with nonfreedom hardware design
  A metapackage, which includes nonfree firmware useful for hosts with
  nonfreedom hardware design.
@@ -584,6 +585,7 @@ Package: whonix-host-xfce-kvm-nonfreedom
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
+Section: non-free/metapackages
 Description: Whonix Host packages for nonfreedom hardware design
  Designed to run on hardware with nonfreedom hardware design.
  .
