@@ -512,6 +512,18 @@ Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
 
 Do not remove.
 
+Package: kicksecure-packages-dependencies-pre
+Priority: required
+Architecture: all
+Depends: anon-base-files, ${misc:Depends}
+Description: Dependencies for Kicksecure that changes network related files
+# Dependencies for Kicksecure that changes network related files #
+
+A metapackage, which installs packages which Kicksecure depends on. Can not
+be merged into another package due to conflicts with chroot build process.
+
+Do not remove.
+
 Package: kicksecure-cli
 Replaces: hardened-debian-cli
 Priority: required
@@ -577,6 +589,18 @@ It can be removed by installing package non-qubes-whonix-workstation-xfce.
 
 sudo apt-get install non-qubes-whonix-workstation-xfce
 
+Package: whonix-host-packages-dependencies-pre
+Priority: required
+Architecture: all
+Depends: anon-base-files, ${misc:Depends}
+Description: Dependencies for Whonix Host that changes network related files
+# Dependencies for Whonix Host that changes network related files #
+
+A metapackage, which installs packages which Whonix Host depends on. Can not
+be merged into another package due to conflicts with chroot build process.
+
+Do not remove.
+
 Package: whonix-host-xfce-kvm-freedom
 Architecture: all
 Pre-Depends: whonix-legacy
@@ -600,6 +624,7 @@ Package: whonix-host-xfce-kvm-nonfreedom
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
+Section: non-free/metapackages
 Description: Whonix Host packages for nonfreedom hardware design
 # Whonix Host packages for nonfreedom hardware design #
 
