@@ -1,3 +1,33 @@
+commit d0a5b72d6debf8f9eb933d23f36c3ae6d97cdcee
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 27 05:19:33 2019 -0400
+
+    readme
+
+commit 54e8ecac2d0af87eac15c474c77a670cbc976699
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 27 05:18:12 2019 -0400
+
+    firmware-nonfreedom and whonix-host-xfce-kvm-nonfreedom to non-free repository
+
+commit ef80f3bda0feda86269d7abfc5f7946cc58f1b87
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 27 05:12:18 2019 -0400
+
+    minor
+
+commit 11ee8bf371cbe9778109b7de8de2fc9b01497539
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 27 05:11:06 2019 -0400
+
+    whonix-host-packages-dependencies-pre / kicksecure-packages-dependencies-pre
+
+commit 8d738eb6c366349a870df0ec55ec8dd4ba5f0d60
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 17 09:56:42 2019 +0000
+
+    bumped changelog version
+
 commit e2a4924e65e0829ec9a7d01739b464fa187f342b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Aug 17 09:56:22 2019 +0000
