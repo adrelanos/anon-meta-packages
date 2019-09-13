@@ -26,7 +26,8 @@ Safe to remove, if you know what you are doing.
 
 Package: non-qubes-vm-enhancements-gui
 Architecture: all
-Depends: zulucrypt-gui, ${misc:Depends}
+Depends: non-qubes-vm-enhancements-cli, zulucrypt-gui, rads, non-qubes-vm-audio,
+${misc:Depends}
 Description: Recommended packages for graphical VMs GUI
 # Recommended packages for graphical VMs GUI #
 
@@ -432,7 +433,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
 non-qubes-vm-enhancements-gui,
-rads,
 non-qubes-whonix-gateway-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
@@ -471,14 +471,12 @@ Package: non-qubes-whonix-workstation-xfce
 Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: non-qubes-vm-enhancements-cli,
-non-qubes-vm-enhancements-gui,
+Depends: non-qubes-vm-enhancements-gui,
 non-qubes-whonix-workstation-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
 whonix-shared-default-applications-gui,
 whonix-workstation-packages-recommended-gui,
-rads, non-qubes-vm-audio,
 ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
 # Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI #
@@ -528,14 +526,25 @@ Package: kicksecure-cli
 Replaces: hardened-debian-cli
 Priority: required
 Architecture: all
-Depends: non-qubes-vm-enhancements-cli,
-kicksecure-dependencies-cli,
+Depends: kicksecure-dependencies-cli,
 anon-base-files, kicksecure-base-files,
 ${misc:Depends}
 Description: Kicksecure command line interface CLI
 # Kicksecure command line interface CLI #
 
 A metapackage, which installs packages, for Kicksecure CLI.
+
+Do not remove.
+
+Package: kicksecure-cli-vm
+Priority: required
+Architecture: all
+Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
+kicksecure-network-conf, ${misc:Depends}
+Description: Kicksecure command line interface CLI VMs
+# Kicksecure command line interface CLI VMs #
+
+A metapackage, which installs packages, for Kicksecure CLI Virtual Machines.
 
 Do not remove.
 
@@ -546,14 +555,25 @@ Architecture: all
 Depends: kicksecure-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
-rads, non-qubes-vm-audio, sdwdate-gui,
 mupdf, ristretto,
-secbrowser,
+sdwdate-gui, secbrowser,
 ${misc:Depends}
 Description: Kicksecure Xfce GUI
 # Kicksecure Xfce GUI #
 
 A metapackage, which installs packages, for Kicksecure Xfce.
+
+Do not remove.
+
+Package: kicksecure-xfce-vm
+Priority: required
+Architecture: all
+Depends: kicksecure-xfce, non-qubes-vm-enhancements-gui, ${misc:Depends}
+Description: Kicksecure Xfce GUI for VMs
+# Kicksecure Xfce GUI for VMs #
+
+A metapackage, which installs packages, for Kicksecure Xfce in Virtual
+Machines.
 
 Do not remove.
 
