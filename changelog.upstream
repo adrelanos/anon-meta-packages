@@ -1,3 +1,21 @@
+commit 560317ebabcb6db20bd22e2b0033fdc1b6d5e83f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 13:34:24 2019 +0000
+
+    readme
+
+commit aa9bffa7dac22f91431d0e8bd4e2634c0df668ed
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 13:33:49 2019 +0000
+
+    add sdwdate-gui to kicksecure-xfce
+
+commit c0efb3a768f76330f4a2143b6a9204b3e5f4e730
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 27 06:51:33 2019 -0400
+
+    bumped changelog version
+
 commit 96a3dbf31627f92b4310900bb2f2306acb2377b8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 27 06:51:14 2019 -0400
