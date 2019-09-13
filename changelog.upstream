@@ -1,3 +1,40 @@
+commit 8b73b4dc4badcab1063f9bdf1618d74be4404900
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 14:44:34 2019 +0000
+
+    readme
+
+commit 38ad282e9476184c8475fc591264a3fa1a640e08
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 14:43:42 2019 +0000
+
+    description
+
+commit 1a0e03ad6b3b288356d6b5289d1d0653b5556564
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 14:42:38 2019 +0000
+
+    introduce kicksecure-cli-vm
+    
+    introduce kicksecure-xfce-vm
+    
+    add kicksecure-network-conf to kicksecure-cli-vm
+    
+    We don't want kicksecure-network-conf for non-VM builds since that could break
+    networking.
+    
+    add non-qubes-vm-audio to non-qubes-vm-enhancements-gui
+    
+    add non-qubes-vm-enhancements-cli to non-qubes-vm-enhancements-gui
+    
+    add rads to non-qubes-vm-enhancements-gui
+
+commit 821b29fdd165f533ac3a55137c82d8eb8ec72c76
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 13:34:38 2019 +0000
+
+    bumped changelog version
+
 commit 560317ebabcb6db20bd22e2b0033fdc1b6d5e83f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Sep 13 13:34:24 2019 +0000
