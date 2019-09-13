@@ -546,7 +546,7 @@ Architecture: all
 Depends: kicksecure-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
-rads, non-qubes-vm-audio,
+rads, non-qubes-vm-audio, sdwdate-gui,
 mupdf, ristretto,
 secbrowser,
 ${misc:Depends}
