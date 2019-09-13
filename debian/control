@@ -512,8 +512,8 @@ Priority: required
 Architecture: all
 Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
  kicksecure-network-conf, ${misc:Depends}
-Description: Kicksecure command line interface CLI
- A metapackage, which installs packages, for Kicksecure CLI.
+Description: Kicksecure command line interface CLI VMs
+ A metapackage, which installs packages, for Kicksecure CLI Virtual Machines.
  .
  Do not remove.
 
