@@ -500,7 +500,7 @@ Replaces: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: kicksecure-dependencies-cli,
- anon-base-files, kicksecure-base-files,
+ anon-base-files, kicksecure-base-files, anon-apt-sources-list,
  ${misc:Depends}
 Description: Kicksecure command line interface CLI
  A metapackage, which installs packages, for Kicksecure CLI.
