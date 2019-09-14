@@ -527,7 +527,7 @@ Replaces: hardened-debian-cli
 Priority: required
 Architecture: all
 Depends: kicksecure-dependencies-cli,
-anon-base-files, kicksecure-base-files,
+anon-base-files, kicksecure-base-files, anon-apt-sources-list,
 ${misc:Depends}
 Description: Kicksecure command line interface CLI
 # Kicksecure command line interface CLI #
@@ -556,7 +556,7 @@ Depends: kicksecure-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
 mupdf, ristretto,
-sdwdate-gui, secbrowser,
+sdwdate-gui, secbrowser, tb-default-browser,
 ${misc:Depends}
 Description: Kicksecure Xfce GUI
 # Kicksecure Xfce GUI #
@@ -568,7 +568,7 @@ Do not remove.
 Package: kicksecure-xfce-vm
 Priority: required
 Architecture: all
-Depends: kicksecure-xfce, non-qubes-vm-enhancements-gui, ${misc:Depends}
+Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
 # Kicksecure Xfce GUI for VMs #
 
