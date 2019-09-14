@@ -513,7 +513,7 @@ Do not remove.
 Package: kicksecure-packages-dependencies-pre
 Priority: required
 Architecture: all
-Depends: anon-base-files, ${misc:Depends}
+Depends: anon-base-files, kicksecure-network-conf, ${misc:Depends}
 Description: Dependencies for Kicksecure that changes network related files
 # Dependencies for Kicksecure that changes network related files #
 
