@@ -488,7 +488,7 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 Package: kicksecure-packages-dependencies-pre
 Priority: required
 Architecture: all
-Depends: anon-base-files, ${misc:Depends}
+Depends: anon-base-files, kicksecure-network-conf, ${misc:Depends}
 Description: Dependencies for Kicksecure that changes network related files
  A metapackage, which installs packages which Kicksecure depends on. Can not
  be merged into another package due to conflicts with chroot build process.
