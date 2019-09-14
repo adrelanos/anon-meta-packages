@@ -1,3 +1,35 @@
+commit 828293d96579e3f2779f17064ddb60ad562f76a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 14 13:17:59 2019 +0000
+
+    readme
+
+commit c64d414dec2817165c55a173ebb834513520fcaf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 14 13:16:08 2019 +0000
+
+    kicksecure-cli add Depends: anon-apt-sources-list
+
+commit 0fd63247a22f4b057b2d4cc8afcf5434b23507f8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 14 13:14:04 2019 +0000
+
+    kicksecure-xfce add Depends: tb-default-browser
+    
+    so SecBrowser will be default browser
+
+commit df6be087aeb32167773eb82902b1504ff089fa35
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 14 13:01:18 2019 +0000
+
+    fix, kicksecure-xfce-vm add Depends: kicksecure-cli-vm
+
+commit 92559af4faa37b586abbf7fec364d541f32f636f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 14:44:48 2019 +0000
+
+    bumped changelog version
+
 commit 8b73b4dc4badcab1063f9bdf1618d74be4404900
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Sep 13 14:44:34 2019 +0000
