@@ -525,7 +525,7 @@ Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
  mupdf, ristretto,
- sdwdate-gui, secbrowser,
+ sdwdate-gui, secbrowser, tb-default-browser,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce.
