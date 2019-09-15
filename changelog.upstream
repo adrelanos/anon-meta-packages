@@ -1,3 +1,21 @@
+commit b64bf72fd1713b50f20a00b1751adef17d4e7b56
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 13:11:11 2019 +0000
+
+    readme
+
+commit e9b71fb093853faff9e8d2a5f731bc7eae391780
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 13:10:29 2019 +0000
+
+    fix, add kicksecure-xfce-vm Depends: kicksecure-xfce
+
+commit f225981af22acb839b3ccabb9bb35b268a0db946
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 10:59:13 2019 +0000
+
+    bumped changelog version
+
 commit f48f9e55cdebd278c59a2f44139ee7c1095cb5a8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Sep 15 10:58:51 2019 +0000
