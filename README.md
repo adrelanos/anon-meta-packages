@@ -568,7 +568,8 @@ Do not remove.
 Package: kicksecure-xfce-vm
 Priority: required
 Architecture: all
-Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, ${misc:Depends}
+Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui,
+kicksecure-xfce, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
 # Kicksecure Xfce GUI for VMs #
 
