@@ -535,7 +535,8 @@ Description: Kicksecure Xfce GUI
 Package: kicksecure-xfce-vm
 Priority: required
 Architecture: all
-Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, ${misc:Depends}
+Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui,
+ kicksecure-xfce, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
  Machines.
