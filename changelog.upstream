@@ -1,3 +1,25 @@
+commit f48f9e55cdebd278c59a2f44139ee7c1095cb5a8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 10:58:51 2019 +0000
+
+    readme
+
+commit 89a8f58f65f16d4f07691b20a0cf8500abedd1af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 10:54:10 2019 +0000
+
+    remove apt-transport-https
+    
+    dummy transitional package
+    
+    was merged into APT
+
+commit c022805bf5294ac3926c47f8164628fee8125625
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 14 14:15:43 2019 +0000
+
+    bumped changelog version
+
 commit 773f9f806c9615332c792bd03dab20c797937b12
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Sep 14 14:15:29 2019 +0000
