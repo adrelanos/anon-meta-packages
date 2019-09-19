@@ -1,3 +1,21 @@
+commit 52495ed3b7791259a487e4055bc4048f455b0bda
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 19 13:01:08 2019 +0000
+
+    readme
+
+commit 53177021beb898d5dec8353b9fd0fee5f0c132eb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 19 07:47:13 2019 -0400
+
+    add keepassxc and binaries-freedom (electrum) to kicksecure-xfce
+
+commit 59d15c13dd3d60ed50327a8935fd53650b2c4ddc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 15 13:11:25 2019 +0000
+
+    bumped changelog version
+
 commit b64bf72fd1713b50f20a00b1751adef17d4e7b56
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Sep 15 13:11:11 2019 +0000
