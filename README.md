@@ -555,7 +555,7 @@ Architecture: all
 Depends: kicksecure-cli,
 kicksecure-desktop-environment-essential-xfce,
 kicksecure-desktop-applications-xfce,
-mupdf, ristretto,
+mupdf, ristretto, keepassxc, binaries-freedom,
 sdwdate-gui, secbrowser, tb-default-browser,
 ${misc:Depends}
 Description: Kicksecure Xfce GUI
