@@ -1,3 +1,23 @@
+commit 67d2354e6e09f770b34da874715edcf593d1aa69
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 21 10:20:37 2019 +0000
+
+    readme
+
+commit 7359cf38b3c28031b4ed3f7fc2748b06ea565bc4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 21 10:12:48 2019 +0000
+
+    add swap-file-creator to non-qubes-vm-enhancements-cli
+    
+    https://forums.whonix.org/t/swap-swap-file-whonix-gateway-freezing-during-apt-get-dist-upgrade-encrypted-swap-file-creator/8317
+
+commit 2d59a11366b4434a9f1c69b88e47c2bbdce5b461
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 19 13:02:16 2019 +0000
+
+    bumped changelog version
+
 commit 52495ed3b7791259a487e4055bc4048f455b0bda
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 19 13:01:08 2019 +0000
