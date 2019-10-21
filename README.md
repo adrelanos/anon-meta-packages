@@ -12,7 +12,7 @@ Architecture: all
 Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
 keyboard-configuration, kbd, acpi-support, console-common, console-setup,
 initramfs-tools, os-prober, grub-live | grub-live-boot, cryptsetup, zulucrypt-cli,
-libzulucrypt-plugins, ${misc:Depends}
+libzulucrypt-plugins, swap-file-creator, ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
 # Recommended packages for terminal based VMs CLI #
