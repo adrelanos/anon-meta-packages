@@ -1,3 +1,27 @@
+commit 5f50df8e6357e9cfdfc1976b7117fe4048d1f693
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 24 12:32:35 2019 +0000
+
+    readme
+
+commit 4809724a99eacabaebd9d2979123a5f197db0dea
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 24 07:30:12 2019 -0400
+
+    remove mupdf
+    
+    due to unfixed security issues in Debian buster
+    
+    https://security-tracker.debian.org/tracker/CVE-2019-13290
+    
+    https://forums.whonix.org/t/remove-mupdf-and-switch-xpdf-for-better-security/7884
+
+commit a1ccb1197cdb58a46de2387ed9d72e4a17f07f46
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 21 10:20:51 2019 +0000
+
+    bumped changelog version
+
 commit 67d2354e6e09f770b34da874715edcf593d1aa69
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 21 10:20:37 2019 +0000
