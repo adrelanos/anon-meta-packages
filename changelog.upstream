@@ -1,3 +1,23 @@
+commit dccebb81330b4462a004c156778a24b062581d6e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Oct 25 12:48:01 2019 +0000
+
+    readme
+
+commit 0ce26d0f86517087d986bfca1d5086ebe5aa4e62
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Oct 25 08:37:59 2019 -0400
+
+    add xpdf to whonix-workstation-packages-recommended-gui
+    
+    https://forums.whonix.org/t/remove-mupdf-and-switch-xpdf-for-better-security/7884
+
+commit 565b44b4ecf2f47599664024c5372c33cd4a65da
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 24 12:32:49 2019 +0000
+
+    bumped changelog version
+
 commit 5f50df8e6357e9cfdfc1976b7117fe4048d1f693
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Oct 24 12:32:35 2019 +0000
