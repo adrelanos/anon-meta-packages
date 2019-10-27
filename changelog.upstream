@@ -1,3 +1,29 @@
+commit b83b759868839f0651a413f8ab537bb2dbaf9c83
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Oct 27 09:16:24 2019 +0000
+
+    readme
+
+commit ef62c24b673583a6a1682ecc49df88db7e02adaa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 26 08:51:12 2019 -0400
+
+    add serial-console-enable to non-qubes-vm-enhancements-cli
+    
+    https://www.whonix.org/wiki/Recovery#Serial_Console
+    
+    https://forums.whonix.org/t/serial-console-in-virtualbox/8021
+    
+    https://forums.whonix.org/t/grub-serial-menu-in-virsh-console/8097
+    
+    https://forums.whonix.org/t/how-do-i-enter-the-whonix-shell-from-cli/7271
+
+commit f44f3df5cbff4b7566f5aa446bfec525440f3172
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Oct 25 12:48:15 2019 +0000
+
+    bumped changelog version
+
 commit dccebb81330b4462a004c156778a24b062581d6e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Oct 25 12:48:01 2019 +0000
