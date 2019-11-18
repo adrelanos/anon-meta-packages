@@ -1,11 +1,3 @@
-# Recommended packages for hosts with nonfreedom hardware design #
-
-A metapackage, which includes nonfree firmware useful for hosts with
-nonfreedom hardware design.
-
-These are not useful in Qubes, since this would be up to Qubes.
-
-Safe to remove, if you know what you are doing.
 ## How to install `anon-meta-packages` using apt-get ##
 
 1\. Download [Whonix's Signing Key]().
