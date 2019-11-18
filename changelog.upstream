@@ -1,3 +1,15 @@
+commit f5c97f4dd54094fefd48c8f7537f47b164040e6d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 18 19:18:10 2019 +0000
+
+    do not install non-qubes-vm-audio (pulseaudio) on Whonix-Gateway XFCE
+
+commit 2594120f23207a9d0c0405884dfbf56d5f1496eb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 18 10:09:53 2019 +0000
+
+    bumped changelog version
+
 commit 856a2b61544f0d31a4784feff361a2968ff49ce7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 18 09:33:03 2019 +0000
