@@ -57,7 +57,7 @@ Description: Recommended packages for terminal based VMs CLI
 
 Package: non-qubes-vm-enhancements-gui
 Architecture: all
-Depends: non-qubes-vm-enhancements-cli, zulucrypt-gui, rads, non-qubes-vm-audio,
+Depends: non-qubes-vm-enhancements-cli, zulucrypt-gui, rads,
  ${misc:Depends}
 Description: Recommended packages for graphical VMs GUI
  A metapackage, which includes recommended packages which are useful within
@@ -451,6 +451,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-gui,
+ non-qubes-vm-audio,
  non-qubes-whonix-workstation-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
@@ -535,7 +536,7 @@ Description: Kicksecure Xfce GUI
 Package: kicksecure-xfce-vm
 Priority: required
 Architecture: all
-Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui,
+Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-vm-audio,
  kicksecure-xfce, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
