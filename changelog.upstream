@@ -1,3 +1,27 @@
+commit 57b5a32acecb6f4a02e3936ac1241cf85c924e19
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 25 01:54:44 2019 -0500
+
+    no longer install firejail by default
+    
+    reasons:
+    https://forums.whonix.org/t/tor-browser-hardening-hardened-malloc-firejail-apparmor-vs-web-fingerprint/7851/54
+    
+    this reverts:
+    https://github.com/Whonix/anon-meta-packages/commit/45ea369055d513c07e28ac81ef113e13b33f3a5a#diff-d837a1c17de0268bcea321239ddbed47
+
+commit d27ec9d8bfe347a75d3b3970364e50fbedd956ff
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 25 01:53:18 2019 -0500
+
+    refactoring
+
+commit ecc939bbe97352e7371b1bc234251aaa4314df98
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 18 19:37:47 2019 +0000
+
+    bumped changelog version
+
 commit f5c97f4dd54094fefd48c8f7537f47b164040e6d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 18 19:18:10 2019 +0000
