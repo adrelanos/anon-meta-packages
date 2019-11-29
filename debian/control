@@ -642,3 +642,26 @@ Description: dummy nonfree package
  Useful for testing vrms without installation of an actual nonfree package.
  .
  Safe to remove.
+
+Package: dummy-dependency
+Architecture: all
+Depends: ${misc:Depends}
+Provides: bindp, lkrg, kloak, hardened-malloc,
+ tb-updater, tb-starter, tb-default-browser, secbrowser,
+ tirdad, binaries-freedom
+Description: dummy package to satisfy architecture specific dependencies
+ A metapackage, which satisfies the dependency on:
+ .
+  - bindp
+  - lkrg
+  - kloak
+  - hardened-malloc
+  - tb-updater
+  - tb-starter
+  - tb-default-browser
+  - secbrowser
+  - tirdad
+  - binaries-freedom
+ .
+ Safe to remove if its removal does not remove another metapackage, which is
+ not safe to remove.
