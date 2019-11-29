@@ -283,10 +283,11 @@ Depends: hexchat, vlc, hunspell-en-us, gpa,
  pinentry-qt | pinentry-x11,
  xpdf, ristretto,
  youtube-dl,
- qtox, onionshare, xchat-improved-privacy, binaries-freedom,
+ qtox, onionshare, xchat-improved-privacy,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions,
  tb-default-browser, tb-starter, tb-updater,
+ binaries-freedom,
  ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
  anon-workstation-default-applications, whonix-workstation-default-applications-gui
@@ -529,7 +530,8 @@ Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
  mupdf, ristretto, keepassxc,
- sdwdate-gui, secbrowser, tb-default-browser,
+ sdwdate-gui,
+ secbrowser, tb-default-browser,
  binaries-freedom,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
