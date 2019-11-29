@@ -94,7 +94,7 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  scurl, openvpn,
  usability-misc, menu, man-db, open-link-confirmation,
  whonix-initializer,
- hardened-malloc,
+ hardened-malloc | dummy-dependency,
  ${misc:Depends}
 Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended,
  hardened-packages-dependencies-cli
@@ -266,7 +266,7 @@ Architecture: all
 Depends: anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
  python-msgpack, codecrypt, gnupg2, gnupg-agent, dirmngr,
  magic-wormhole, diceware, makepasswd,
- bindp,
+ bindp | dummy-dependency,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
@@ -286,8 +286,8 @@ Depends: hexchat, vlc, hunspell-en-us, gpa,
  qtox, onionshare, xchat-improved-privacy,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
  whonix-welcome-page, whonix-ws-start-menu-additions,
- tb-default-browser, tb-starter, tb-updater,
- binaries-freedom,
+ tb-default-browser | dummy-dependency, tb-starter | dummy-dependency, tb-updater | dummy-dependency,
+ binaries-freedom | dummy-dependency,
  ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
  anon-workstation-default-applications, whonix-workstation-default-applications-gui
@@ -482,7 +482,7 @@ Depends: non-qubes-vm-enhancements-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
  whonix-workstation-packages-recommended-cli,
- kloak,
+ kloak | dummy-dependency,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
@@ -531,8 +531,8 @@ Depends: kicksecure-cli,
  kicksecure-desktop-applications-xfce,
  mupdf, ristretto, keepassxc,
  sdwdate-gui,
- secbrowser, tb-default-browser,
- binaries-freedom,
+ secbrowser | dummy-dependency, tb-default-browser | dummy-dependency,
+ binaries-freedom | dummy-dependency,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce.
