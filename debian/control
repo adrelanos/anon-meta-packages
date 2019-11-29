@@ -89,12 +89,12 @@ Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  security-misc,
  bash-completion, command-not-found, zsh, nano, wget, dnsutils, iputils-ping,
  apparmor-utils, apparmor-profile-anondist,
- hardened-malloc,
  udisks2, secure-delete, sudo, net-tools,
  gpl-sources-download, whonix-repository,
  scurl, openvpn,
  usability-misc, menu, man-db, open-link-confirmation,
  whonix-initializer,
+ hardened-malloc,
  ${misc:Depends}
 Replaces: anon-shared-packages-dependencies, anon-shared-packages-recommended,
  hardened-packages-dependencies-cli
@@ -264,8 +264,10 @@ Description: Dependencies for Whonix-Workstation CLI
 Package: whonix-workstation-packages-recommended-cli
 Architecture: all
 Depends: anon-gpg-tweaks, anon-ws-disable-stacked-tor, pwgen,
- python-msgpack, bindp, codecrypt, gnupg2, gnupg-agent, dirmngr,
- magic-wormhole, diceware, makepasswd, ${misc:Depends}
+ python-msgpack, codecrypt, gnupg2, gnupg-agent, dirmngr,
+ magic-wormhole, diceware, makepasswd,
+ bindp,
+ ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
  command line interface (CLI) Whonix-Workstation, because they are
@@ -280,10 +282,12 @@ Depends: hexchat, vlc, hunspell-en-us, gpa,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
  xpdf, ristretto,
- tb-default-browser, tb-starter, tb-updater, youtube-dl,
+ youtube-dl,
  qtox, onionshare, xchat-improved-privacy, binaries-freedom,
  whonix-workstation-packages-recommended-cli, whonix-ws-irc-chat-support,
- whonix-welcome-page, whonix-ws-start-menu-additions, ${misc:Depends}
+ whonix-welcome-page, whonix-ws-start-menu-additions,
+ tb-default-browser, tb-starter, tb-updater,
+ ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
  anon-workstation-default-applications, whonix-workstation-default-applications-gui
 Description: Recommended packages for Whonix-Workstation GUI
@@ -524,8 +528,9 @@ Architecture: all
 Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
- mupdf, ristretto, keepassxc, binaries-freedom,
+ mupdf, ristretto, keepassxc,
  sdwdate-gui, secbrowser, tb-default-browser,
+ binaries-freedom,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce.
