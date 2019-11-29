@@ -1,3 +1,50 @@
+commit 4c440cbda3a8f54710811c70295566ed96d73815
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 29 08:01:37 2019 -0500
+
+    make architecture specific dependencies fall back to depend on dummy-dependency
+    
+    https://forums.whonix.org/t/whonix-for-arm64-raspberry-pi-rpi/1788/141
+
+commit 1d46ddaa83788b160bc92c8252578d02a0eefb8b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 29 07:57:53 2019 -0500
+
+    add dummy-dependency, a package to satisfy architecture specific dependencies:
+    
+      - bindp
+      - lkrg
+      - kloak
+      - hardened-malloc
+      - tb-updater
+      - tb-starter
+      - tb-default-browser
+      - secbrowser
+      - tirdad
+      - binaries-freedom
+
+commit 8d4b55e0e835989e4f6ccf15edc638e9c1189145
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 29 07:48:59 2019 -0500
+
+    refactoring, move architecture specific packages to the bottom of Depends:
+    
+    in preparation of properly marking them as architecture specific
+
+commit 14561c5daa34c4d95fb1ba49ef6b0c0c6d9c5dec
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 29 07:37:30 2019 -0500
+
+    refactoring, move architecture specific packages to the bottom of Depends:
+    
+    in preparation of properly marking them as architecture specific
+
+commit b4a89d220637c4642ddc10f5ce85796688309aea
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 25 08:41:54 2019 +0000
+
+    bumped changelog version
+
 commit 57b5a32acecb6f4a02e3936ac1241cf85c924e19
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 25 01:54:44 2019 -0500
