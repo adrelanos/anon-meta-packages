@@ -665,5 +665,8 @@ Description: dummy package to satisfy architecture specific dependencies
   - tirdad
   - binaries-freedom
  .
+ This package cannot provide a real implementation of that package. It is only
+ a dummy to satisfy the dependency.
+ .
  Safe to remove if its removal does not remove another metapackage, which is
  not safe to remove.
