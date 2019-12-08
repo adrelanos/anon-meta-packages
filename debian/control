@@ -363,6 +363,7 @@ Description: Default packages for Whonix-Gateway-RPi CLI
 Package: qubes-whonix-gateway
 Priority: required
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-gateway-packages-recommended,
@@ -382,6 +383,7 @@ Description: Default packages for Qubes-Whonix-Gateway
 Package: qubes-whonix-workstation
 Priority: required
 Architecture: all
+Pre-Depends: whonix-legacy
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
