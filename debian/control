@@ -202,7 +202,7 @@ Depends: tor, anon-gw-base-files, ipv4-forward-disable,
  ipv6-disable, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre,
  tor-geoipdb, nyx, obfsproxy, obfs4proxy, flashproxy-client,
- fteproxy, onion-grater,
+ fteproxy, onion-grater, basez,
  ${misc:Depends}
 Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
  anon-gateway-packages-recommended, whonix-gateway-packages-recommended
