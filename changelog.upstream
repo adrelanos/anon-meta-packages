@@ -1,3 +1,19 @@
+commit 71ac570dcdf488177b667c708c04f223e02a741c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 16 04:20:41 2019 -0500
+
+    add basez to whonix-gateway-packages-dependencies-cli
+    
+    actually not a dependency but useful for Onion Services Authentication
+    
+    https://www.whonix.org/wiki/Onion_Services#Step_3:_Configure_Onion_Services_Authentication
+
+commit 995d719d00f5e4b261740ef68181edda207b8145
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 12 08:15:38 2019 -0500
+
+    bumped changelog version
+
 commit e66be3a2e115dd83f102a008eb7a72cbc09ae1e8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Dec 12 08:14:28 2019 -0500
