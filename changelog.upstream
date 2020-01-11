@@ -1,3 +1,46 @@
+commit 125210c4d144d462368143f3d259397972a758c0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 11 08:34:42 2020 -0500
+
+    fix
+    
+    udisksd[572]: failed to load module crypto: libbd_crypto.so.2: cannot open shared object file: No such file or directory
+    udisksd[572]: Failed to load the 'crypto' libblockdev plugin
+    
+    kicksecure-dependencies-cli Depends: libblockdev-crypto2
+
+commit 7dac429106db352cbd8c24ff3fd84eb643fce4d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 11 08:32:43 2020 -0500
+
+    fix
+    
+    udisksd[572]: failed to load module crypto: libbd_crypto.so.2: cannot open shared object file: No such file or directory
+    udisksd[572]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+    udisksd[572]: Failed to load the 'mdraid' libblockdev plugin
+    udisksd[572]: Failed to load the 'crypto' libblockdev plugin
+    
+    kicksecure-dependencies-cli Depends: libblockdev-crypto2, libblockdev-mdraid2
+
+commit 714c007c6695210075ba9556e03af949387d4091
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 11 08:22:59 2020 -0500
+
+    refactoring
+
+commit eb5ee6c05d168ba03372914d91a203a9194e65c6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 11 08:05:15 2020 -0500
+
+    no longer install serial-console-enable by default due to issues:
+    https://forums.whonix.org/t/serial-console-in-virtualbox/8021/13
+
+commit 00b6e43268e538919d0f45b40fe08c280efd8a1b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 16 06:25:02 2019 -0500
+
+    bumped changelog version
+
 commit 71ac570dcdf488177b667c708c04f223e02a741c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Dec 16 04:20:41 2019 -0500
