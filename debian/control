@@ -523,6 +523,9 @@ Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
 Description: Kicksecure command line interface CLI VMs
  A metapackage, which installs packages, for Kicksecure CLI Virtual Machines.
  .
+ Not suitable for Qubes since it depends on packages not yet compatible
+ with Qubes.
+ .
  Do not remove.
 
 Package: kicksecure-xfce
@@ -550,6 +553,9 @@ Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-vm-audio,
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
  Machines.
+ .
+ Not suitable for Qubes since it depends on packages not yet compatible
+ with Qubes.
  .
  Do not remove.
 
