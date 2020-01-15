@@ -1,3 +1,21 @@
+commit f61b4d7385f890bb86c98523fa2fbdc98a9df3b2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 09:59:06 2020 -0500
+
+    description
+
+commit 2a32795a9d8a30a7d8d7c47cea4a4189ff38ce0f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 09:52:08 2020 -0500
+
+    install tirdad by default in Non-Qubes-Whonix and Kicksecure VM
+
+commit a69156fc964e0410443b89430b48c255cefc652d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 11 15:17:16 2020 -0500
+
+    bumped changelog version
+
 commit 125210c4d144d462368143f3d259397972a758c0
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jan 11 08:34:42 2020 -0500
