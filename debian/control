@@ -46,7 +46,7 @@ Depends: power-savings-disable-in-vms, shared-folder-help, swappiness-lowest,
  keyboard-configuration, kbd, acpi-support, console-common, console-setup,
  initramfs-tools, os-prober, cryptsetup, zulucrypt-cli, libzulucrypt-plugins,
  swap-file-creator, tirdad,
- grub-live | grub-live-boot,
+ grub-live | grub-live-boot | boot-live,
  ${misc:Depends}
 Replaces: non-qubes-vm-enhancements
 Description: Recommended packages for terminal based VMs CLI
