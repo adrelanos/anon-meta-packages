@@ -1,3 +1,25 @@
+commit 160a08b4f5591c983b7c96f6ee711f34b5cfca81
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 13 07:02:28 2020 -0500
+
+    install i2p by default on Whonix-Workstation
+    
+    https://forums.whonix.org/t/installation-and-fix-of-i2p-inside-whonix-workstation-by-default/8610
+
+commit 89520f385e9a483c9a6161cac47e62435409f6b6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 13 06:55:25 2020 -0500
+
+    install i2p-router, privoxy by default
+    
+    https://forums.whonix.org/t/installation-and-fix-of-i2p-inside-whonix-workstation-by-default/8610
+
+commit 7ae0f0e054f9cac9496978658fcb97b035f48ee0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 03:05:32 2020 -0500
+
+    bumped changelog version
+
 commit e0a396ee24f4466b5c1045783fa78e9f1048dd9a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jan 21 02:53:42 2020 -0500
