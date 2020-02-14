@@ -232,7 +232,7 @@ Package: whonix-shared-packages-recommended-cli
 Architecture: all
 Pre-Depends: anon-apps-config
 Depends: kicksecure-dependencies-cli, whonixcheck, tor-ctrl, uwt,
- anon-apps-config, ${misc:Depends}
+ ${misc:Depends}
 Replaces: whonix-shared-packages-recommended
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which includes recommended packages to ensure, Whonix
