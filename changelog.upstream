@@ -1,3 +1,19 @@
+commit bed2cba13c137c053219387cba37b9eab7c4a9d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 04:32:08 2020 -0500
+
+    do not install i2p by default
+    
+    as autostart cannot be prevented for stable upgrade
+    
+    https://forums.whonix.org/t/installation-and-fix-of-i2p-inside-whonix-workstation-by-default/8610/106
+
+commit 4f17b756a8b856fad24c6cb4ec7e11ba12cbbd0c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 02:57:41 2020 -0500
+
+    bumped changelog version
+
 commit 79a960871359f9f7aac41b9091ee02627001242b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 14 02:56:35 2020 -0500
