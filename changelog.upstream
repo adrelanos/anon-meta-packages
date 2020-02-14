@@ -1,3 +1,17 @@
+commit 79a960871359f9f7aac41b9091ee02627001242b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 02:56:35 2020 -0500
+
+    remove anon-apps-config from Depends: since already a Pre-Depends:
+    
+    to fix lintian warning
+
+commit 591c6e33b73b6adcfff2aa2c18c06002a71f95ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 02:54:30 2020 -0500
+
+    bumped changelog version
+
 commit 1d946a96fe91766b51d0997732e27f48f938066d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 14 02:53:43 2020 -0500
