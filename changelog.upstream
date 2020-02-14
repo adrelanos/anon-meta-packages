@@ -1,3 +1,19 @@
+commit 1d946a96fe91766b51d0997732e27f48f938066d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 02:53:43 2020 -0500
+
+    whonix-shared-packages-recommended-cli add Pre-Depends: anon-apps-config
+    
+    to install it earlier during upgrades
+    
+    to make sure i2p isn't autostarted
+
+commit 7a93c6e1ffd8a99a54b79524becd4dd4437bc48b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 13 14:10:20 2020 +0000
+
+    bumped changelog version
+
 commit 160a08b4f5591c983b7c96f6ee711f34b5cfca81
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Feb 13 07:02:28 2020 -0500
