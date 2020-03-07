@@ -69,15 +69,13 @@ Description: Recommended packages for graphical VMs GUI
  .
  Safe to remove, if you know what you are doing.
 
-Package: non-qubes-vm-audio
+Package: non-qubes-audio
 Architecture: all
 Depends: libasound2, alsa-utils, pulseaudio, pavucontrol, ${misc:Depends}
+Replaces: non-qubes-vm-audio
 Description: Recommended packages for Audio Support in non-Qubes
  A metapackage, which includes recommended packages which are useful to provide
  audio support.
- .
- Package name includes "vm" but that is a non-perfection. The package is useful
- for Whonix hosts and Kicksecure hosts too.
  .
  These are not useful in Qubes, since Qubes
  already has its own native audio implementation.
@@ -464,7 +462,7 @@ Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-gui,
- non-qubes-vm-audio,
+ non-qubes-audio,
  non-qubes-whonix-workstation-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
@@ -541,6 +539,7 @@ Architecture: all
 Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
+ non-qubes-audio,
  mupdf, ristretto, keepassxc,
  sdwdate-gui,
  secbrowser | dummy-dependency, tb-default-browser | dummy-dependency,
@@ -554,7 +553,7 @@ Description: Kicksecure Xfce GUI
 Package: kicksecure-xfce-vm
 Priority: required
 Architecture: all
-Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-vm-audio,
+Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-audio,
  kicksecure-xfce, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
