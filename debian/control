@@ -135,7 +135,7 @@ Package: kicksecure-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
- ${misc:Depends}
+ x11-xserver-utils, ${misc:Depends}
 Replaces: anon-shared-desktop, hardened-desktop-environment-essential-gui
 Description: Desktop Depends GUI
  A metapackage, which installs dependencies for desktop environments,
