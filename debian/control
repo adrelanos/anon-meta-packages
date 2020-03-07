@@ -76,6 +76,9 @@ Description: Recommended packages for Audio Support in non-Qubes
  A metapackage, which includes recommended packages which are useful to provide
  audio support.
  .
+ Package name includes "vm" but that is a non-perfection. The package is useful
+ for Whonix hosts and Kicksecure hosts too.
+ .
  These are not useful in Qubes, since Qubes
  already has its own native audio implementation.
  .
