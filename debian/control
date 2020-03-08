@@ -135,7 +135,7 @@ Description: Recommended desktop packages for Whonix-Gateway GUI
 Package: kicksecure-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
- xserver-xorg-video-vesa,
+ xserver-xorg-video-vesa, xserver-xorg-video-vmware,
  libgl1-mesa-dri, upower, gtk2-engines-pixbuf, x11-xserver-utils,
  ${misc:Depends}
 Replaces: anon-shared-desktop, hardened-desktop-environment-essential-gui
