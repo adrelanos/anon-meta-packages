@@ -1,3 +1,86 @@
+commit 3019264bb57f1b9838cbcf2484d071561f0fbb09
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 8 09:16:03 2020 -0400
+
+    add xserver-xorg-video-vmware to kicksecure-desktop-environment-essential-gui
+    
+    because it is required by VirtualBox Graphics Controller VMSVGA for auto resize
+    and resize through VirtualBox settings menu
+
+commit a44ae3335455fd00df45ddebacf05d8292bcc44e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 8 09:15:46 2020 -0400
+
+    refactoring
+
+commit 9223dfb8c49711a87d3ef86f0afbf2ccb60d7777
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 07:23:55 2020 -0500
+
+    add non-qubes-audio to kicksecure-xfce
+    
+    (This results in installation of libasound2, alsa-utils, pulseaudio
+    and pavucontrol in Kicksecure XFCE since these are the current dependencies
+    of non-qubes-audio. This also install these packages on Whonix Host since
+    Whonix Host (whonix-host-xfce-kvm-freedom) currently depends on
+    kicksecure-xfce.)
+    
+    rename non-qubes-vm-audio to non-qubes-audio
+    
+    http://forums.whonix.org/t/whonix-host-operating-system/3931/115
+    
+    Thanks to @onion-knight for the bug report!
+
+commit d897c143f0f552ae89ce2371e8ce34eb9c19b101
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 07:21:01 2020 -0500
+
+    description
+
+commit d263f049e1e75e94dd6f3cb3ac09a7124aad4db2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 07:20:02 2020 -0500
+
+    description
+
+commit dcbb0df3002701a5b6336d5eeaeac3fa155cfd82
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 07:13:00 2020 -0500
+
+    install gvfs by default / fix access LUKS encrypted USB drive with Thunar
+    
+    add gvfs to kicksecure-desktop-applications-xfce
+    
+    https://phabricator.whonix.org/T965
+    
+    https://forums.whonix.org/t/cannot-access-encrypted-usb-drive-with-thunar-in-whonix-15/8131/10
+    
+    http://forums.whonix.org/t/whonix-host-operating-system/3931/109
+    
+    https://forums.whonix.org/t/whonix-xfce-development/6213/99
+    
+    https://forums.whonix.org/t/use-sudoedit-in-whonix-documentation-and-whonix-software/7599/22
+    
+    Thanks to @onion-knight and @helper for the suggestion!
+
+commit 6eb50ff8040bed20c68e45ddc8d0930bd180d4df
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 07:08:35 2020 -0500
+
+    add x11-xserver-utils to kicksecure-desktop-environment-essential-gui
+    
+    to fix XFCE logout button
+    
+    http://forums.whonix.org/t/whonix-host-operating-system/3931/109
+    
+    Thanks to @onion-knight for the suggestion!
+
+commit 65da988fbb5d312464b8661a467ee39dd15fb114
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 14 04:43:05 2020 -0500
+
+    bumped changelog version
+
 commit bed2cba13c137c053219387cba37b9eab7c4a9d1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 14 04:32:08 2020 -0500
