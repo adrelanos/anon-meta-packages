@@ -1,3 +1,19 @@
+commit 9550d47959e37cb8cca508e169c121dc65cde342
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 12 04:32:37 2020 -0400
+
+    add xfce4-power-manager to whonix-host-xfce-kvm-freedom and kicksecure-xfce
+    
+    https://phabricator.whonix.org/T928
+    
+    Thanks to @onions-knight for the suggestion!
+
+commit 7f2bccb3cf5befd018182d803e64fa86a6463225
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 8 09:41:27 2020 -0400
+
+    bumped changelog version
+
 commit 3019264bb57f1b9838cbcf2484d071561f0fbb09
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Mar 8 09:16:03 2020 -0400
