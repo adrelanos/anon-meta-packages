@@ -1,3 +1,19 @@
+commit 71caac9dab0c4d05c5bd6530b489cd81c70a06f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 12 10:12:12 2020 -0400
+
+    add whonix-base-files to whonix-host-xfce-kvm-freedom
+    
+    Thanks to @onions-knight for the report!
+    
+    https://forums.whonix.org/t/whonix-host-operating-system/3931/163
+
+commit ac4c7baa5308beb3594b0be11f46a53679610122
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 12 04:41:19 2020 -0400
+
+    bumped changelog version
+
 commit 9550d47959e37cb8cca508e169c121dc65cde342
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 12 04:32:37 2020 -0400
