@@ -514,6 +514,7 @@ Priority: required
 Architecture: all
 Depends: kicksecure-dependencies-cli,
  anon-base-files, kicksecure-base-files, anon-apt-sources-list,
+ lvm2,
  ${misc:Depends}
 Description: Kicksecure command line interface CLI
  A metapackage, which installs packages, for Kicksecure CLI.
