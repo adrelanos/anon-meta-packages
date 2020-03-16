@@ -1,3 +1,17 @@
+commit 7ea7c77ab8e6ecbf0bec6fc896ada0444a451335
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 16 03:08:39 2020 -0400
+
+    add lvm2 to kicksecure-cli
+    
+    https://forums.whonix.org/t/whonix-host-operating-system/3931/179
+
+commit bf475bbf03356764126eba6d345266933134589b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 13 12:11:20 2020 -0400
+
+    bumped changelog version
+
 commit 71caac9dab0c4d05c5bd6530b489cd81c70a06f1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 12 10:12:12 2020 -0400
