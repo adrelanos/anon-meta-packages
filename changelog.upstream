@@ -1,3 +1,15 @@
+commit ed52a35aa3d2141840f1443208b49693d4ac6e0c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 17 13:27:52 2020 -0400
+
+    update package name
+
+commit 54e443a94ec052130153a1655a2ca21492673494
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 16 09:32:06 2020 -0400
+
+    bumped changelog version
+
 commit 7ea7c77ab8e6ecbf0bec6fc896ada0444a451335
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 16 03:08:39 2020 -0400
