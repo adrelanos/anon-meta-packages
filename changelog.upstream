@@ -1,3 +1,15 @@
+commit a6cc95090c3d97eb986137394559a008dd4028aa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 26 04:19:59 2020 -0400
+
+    add kicksecure-network-conf-gui to kicksecure-xfce
+
+commit 81fd2eb01c06b4b048cf1df5ff1369d954d5ea7f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Mar 18 09:03:37 2020 -0400
+
+    bumped changelog version
+
 commit ed52a35aa3d2141840f1443208b49693d4ac6e0c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Mar 17 13:27:52 2020 -0400
