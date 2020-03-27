@@ -1,3 +1,45 @@
+commit 2eef11e73d5892fd8e7262de1ef57d1cb703d37b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 04:20:49 2020 -0400
+
+    add 'grub-live | grub-live-boot | boot-live' to kicksecure-xfce
+
+commit 65b6a643675bfb46cfd0016b837e4a137ee90370
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 04:16:07 2020 -0400
+
+    missing ,
+
+commit 11a635c9557adff2cc03b5f5c3127897cf9777b7
+Merge: 4253a0d a8624ec
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 04:15:37 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a8624ec069b66b70d48f41bfe6378d67515733e6
+Merge: 4253a0d 2f50efe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 08:15:13 2020 +0000
+
+    Merge pull request #22 from onions-knight/patch-1
+    
+    Update control
+
+commit 2f50efe61bda1a1038b4ea67ed4576707cf50871
+Author: onions-knight <38859709+onions-knight@users.noreply.github.com>
+Date:   Thu Mar 26 20:51:21 2020 +0000
+
+    Update control
+    
+    Adding package ntfs-3g and dosfstools to whonix-host-xfce-kvm-freedom dependencies. See https://forums.whonix.org/t/whonix-host-operating-system/3931/202
+
+commit 4253a0d823338de2ba0e47a54df605da16c65e6e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 26 08:12:15 2020 -0400
+
+    bumped changelog version
+
 commit a6cc95090c3d97eb986137394559a008dd4028aa
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Mar 26 04:19:59 2020 -0400
