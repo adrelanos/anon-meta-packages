@@ -546,6 +546,7 @@ Depends: kicksecure-cli,
  xfce4-power-manager,
  mupdf, ristretto, keepassxc,
  sdwdate-gui,
+ grub-live | grub-live-boot | boot-live,
  secbrowser | dummy-dependency, tb-default-browser | dummy-dependency,
  binaries-freedom | dummy-dependency,
  ${misc:Depends}
