@@ -617,6 +617,7 @@ Depends: kicksecure-xfce, xfce4-xkb-plugin, xfce4-screenshooter,
  firefox-esr, gnome-system-monitor, gparted,
  whonix-libvirt,
  whonix-base-files, anon-base-files,
+ ntfs-3g, dosfstools
  ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
  Designed to run on hardware with Freedom Hardware Design.
