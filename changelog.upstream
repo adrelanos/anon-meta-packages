@@ -1,3 +1,23 @@
+commit 6b904d0aa165263fb2b3e530d5411972142a2559
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 30 18:28:55 2020 -0400
+
+    add ca-certificates to kicksecure-dependencies-cli
+    
+    for chroot support
+
+commit 96a6a7ddd75b7c75e402176deaf7355cfcc428e1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 30 18:27:16 2020 -0400
+
+    refactoring
+
+commit ce64aec7a78e4add417314e6943230eac7f6b20d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 30 17:58:15 2020 -0400
+
+    bumped changelog version
+
 commit 70a477a1fc66ee739841d62582ec161ee3fa8ef4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 30 17:56:46 2020 -0400
