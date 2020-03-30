@@ -83,7 +83,6 @@ Description: Recommended packages for Audio Support in non-Qubes
  Safe to remove, if you know what you are doing.
 
 Package: kicksecure-dependencies-cli
-Priority: required
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
  less, haveged, jitterentropy-rngd, locales, apt-transport-tor,
@@ -188,7 +187,6 @@ Description: AppArmor profiles developed by the Kicksecure Team
  Safe to remove, if you know what you are doing.
 
 Package: whonix-gateway-packages-dependencies-pre
-Priority: required
 Architecture: all
 Depends: whonix-gw-network-conf, anon-base-files,
  ${misc:Depends}
@@ -200,7 +198,6 @@ Description: Dependencies for Whonix-Gateway that changes network related files
  Do not remove.
 
 Package: whonix-gateway-packages-dependencies-cli
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, ipv4-forward-disable,
@@ -243,7 +240,6 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  Safe to remove, if you know what you are doing.
 
 Package: whonix-workstation-packages-dependencies-pre
-Priority: required
 Architecture: all
 Depends: whonix-ws-network-conf, anon-ws-dns-conf, anon-base-files,
  ${misc:Depends}
@@ -255,7 +251,6 @@ Description: Dependencies for Whonix-Workstation that changes network related fi
  Do not remove.
 
 Package: whonix-workstation-packages-dependencies-cli
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, whonix-workstation-packages-dependencies-pre,
@@ -340,7 +335,6 @@ Description: Whonix-Workstation Shared Packages
  Feel free to remove if you know what you are doing.
 
 Package: non-qubes-whonix-gateway-cli
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
@@ -356,7 +350,6 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
  Do not remove.
 
 Package: whonix-gateway-rpi
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, fake-hwclock, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, linux-image-arm64 (>= 4.16), ${misc:Depends}
@@ -367,7 +360,6 @@ Description: Default packages for Whonix-Gateway-RPi CLI
  Do not remove.
 
 Package: qubes-whonix-gateway
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
@@ -387,7 +379,6 @@ Description: Default packages for Qubes-Whonix-Gateway
  Do not remove.
 
 Package: qubes-whonix-workstation
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
@@ -423,7 +414,6 @@ Description: transitional package Whonix-Gateway KDE
  sudo apt-get install non-qubes-whonix-gateway-xfce
 
 Package: non-qubes-whonix-gateway-xfce
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
@@ -459,7 +449,6 @@ Description: transitional package Whonix-Workstation KDE
  sudo apt-get install non-qubes-whonix-workstation-xfce
 
 Package: non-qubes-whonix-workstation-xfce
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-gui,
@@ -481,7 +470,6 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  Do not remove.
 
 Package: non-qubes-whonix-workstation-cli
-Priority: required
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
@@ -499,7 +487,6 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  Do not remove.
 
 Package: kicksecure-packages-dependencies-pre
-Priority: required
 Architecture: all
 Depends: anon-base-files, kicksecure-network-conf, ${misc:Depends}
 Description: Dependencies for Kicksecure that changes network related files
@@ -510,7 +497,6 @@ Description: Dependencies for Kicksecure that changes network related files
 
 Package: kicksecure-cli
 Replaces: hardened-debian-cli
-Priority: required
 Architecture: all
 Depends: kicksecure-dependencies-cli,
  anon-base-files, kicksecure-base-files, anon-apt-sources-list,
@@ -522,7 +508,6 @@ Description: Kicksecure command line interface CLI
  Do not remove.
 
 Package: kicksecure-cli-vm
-Priority: required
 Architecture: all
 Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
  kicksecure-network-conf, ${misc:Depends}
@@ -536,7 +521,6 @@ Description: Kicksecure command line interface CLI VMs
 
 Package: kicksecure-xfce
 Replaces: hardened-debian-xfce
-Priority: required
 Architecture: all
 Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
@@ -556,7 +540,6 @@ Description: Kicksecure Xfce GUI
  Do not remove.
 
 Package: kicksecure-xfce-vm
-Priority: required
 Architecture: all
 Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-audio,
  kicksecure-xfce, ${misc:Depends}
@@ -598,7 +581,6 @@ Description: transitional package Whonix-Workstation
  sudo apt-get install non-qubes-whonix-workstation-xfce
 
 Package: whonix-host-packages-dependencies-pre
-Priority: required
 Architecture: all
 Depends: anon-base-files, ${misc:Depends}
 Description: Dependencies for Whonix Host that changes network related files
