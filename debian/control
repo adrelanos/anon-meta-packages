@@ -85,7 +85,8 @@ Description: Recommended packages for Audio Support in non-Qubes
 Package: kicksecure-dependencies-cli
 Architecture: all
 Depends: bzip2, file, lsof, most, pciutils, strace, sysfsutils,
- less, haveged, jitterentropy-rngd, locales, apt-transport-tor,
+ less, haveged, jitterentropy-rngd, locales,
+ apt-transport-tor,
  sdwdate, bootclockrandomization, timesanitycheck,
  timezone-utc, busybox,
  security-misc,
