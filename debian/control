@@ -535,12 +535,7 @@ Architecture: all
 Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
- non-qubes-audio,
- kicksecure-network-conf-gui,
- xfce4-power-manager,
  mupdf, ristretto, keepassxc,
- sdwdate-gui,
- grub-live | grub-live-boot | boot-live,
  secbrowser | dummy-dependency, tb-default-browser | dummy-dependency,
  binaries-freedom | dummy-dependency,
  ${misc:Depends}
@@ -552,6 +547,11 @@ Description: Kicksecure Xfce GUI
 Package: kicksecure-xfce-host
 Architecture: all
 Depends: kicksecure-cli-host, kicksecure-xfce,
+ kicksecure-network-conf, kicksecure-network-conf-gui,
+ non-qubes-audio,
+ xfce4-power-manager,
+ sdwdate-gui,
+ grub-live | grub-live-boot | boot-live,
  ${misc:Depends}
 Description: Kicksecure Host Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce Host.
