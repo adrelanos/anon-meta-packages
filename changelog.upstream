@@ -1,3 +1,15 @@
+commit dcd8793c6cfdec995039cc4c7d0a940a451abf1e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 31 09:41:28 2020 -0400
+
+    add apt-transport-https to kicksecure-dependencies-cli for chroot support
+
+commit 771e289b3009ffa08db1dc9abdc49da2e2206518
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Mar 30 18:40:56 2020 -0400
+
+    bumped changelog version
+
 commit 6b904d0aa165263fb2b3e530d5411972142a2559
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 30 18:28:55 2020 -0400
