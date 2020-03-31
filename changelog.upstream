@@ -1,3 +1,27 @@
+commit 5c568e104561f5c4d45ad7222878f4c559554b73
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 31 16:23:55 2020 -0400
+
+    split kicksecure-xfce and kicksecure-xfce-host
+
+commit be0822744aeb112e0476c5768cedbee845248182
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 31 16:20:54 2020 -0400
+
+    kicksecure
+
+commit a4c43552c1e099fd2dea8b3e14745361ad73d254
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 31 16:17:59 2020 -0400
+
+    introduce explicit kicksecure-cli-host kicksecure-xfce-host
+
+commit 3c51673599f6d6d9099afa2a13d1595c94458d09
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 31 09:42:12 2020 -0400
+
+    bumped changelog version
+
 commit dcd8793c6cfdec995039cc4c7d0a940a451abf1e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Mar 31 09:41:28 2020 -0400
