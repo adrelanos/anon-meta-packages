@@ -508,6 +508,15 @@ Description: Kicksecure command line interface CLI
  .
  Do not remove.
 
+Package: kicksecure-cli-host
+Architecture: all
+Depends: kicksecure-cli,
+ ${misc:Depends}
+Description: Kicksecure Host command line interface CLI
+ A metapackage, which installs packages, for Kicksecure CLI Host.
+ .
+ Do not remove.
+
 Package: kicksecure-cli-vm
 Architecture: all
 Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
@@ -537,6 +546,15 @@ Depends: kicksecure-cli,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce.
+ .
+ Do not remove.
+
+Package: kicksecure-xfce-host
+Architecture: all
+Depends: kicksecure-xfce,
+ ${misc:Depends}
+Description: Kicksecure Host Xfce GUI
+ A metapackage, which installs packages, for Kicksecure Xfce Host.
  .
  Do not remove.
 
