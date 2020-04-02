@@ -1,3 +1,17 @@
+commit 99e5db62bd09eea77ba19a58b0a649099d2a10de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 16:01:46 2020 -0400
+
+    remove mupdf from kicksecure-xfce
+    
+    https://forums.whonix.org/t/remove-mupdf-and-switch-xpdf-for-better-security/7884
+
+commit 4f8cfeb89258c5bc284b55ca0266c59edb370dbf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 07:29:53 2020 -0400
+
+    bumped changelog version
+
 commit ff0a576ae83a8c9fd428c51fcfa9722dd7355180
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 1 16:57:26 2020 -0400
