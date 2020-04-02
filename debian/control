@@ -535,7 +535,7 @@ Architecture: all
 Depends: kicksecure-cli,
  kicksecure-desktop-environment-essential-xfce,
  kicksecure-desktop-applications-xfce,
- mupdf, ristretto, keepassxc,
+ ristretto, keepassxc,
  secbrowser | dummy-dependency, tb-default-browser | dummy-dependency,
  binaries-freedom | dummy-dependency,
  ${misc:Depends}
