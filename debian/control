@@ -110,7 +110,7 @@ Description: Dependencies for hardened systems CLI
 Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
+Depends: sdwdate-gui, msgcollector-gui, anon-icon-pack,
  whonix-setup-wizard, ${misc:Depends}
 Replaces: anon-shared-default-applications
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
