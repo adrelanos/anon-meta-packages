@@ -1,3 +1,31 @@
+commit 5db54e2697e5b696b94cce184a614355d862a3b2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 16:29:38 2020 -0400
+
+    remove firmware-b43legacy-installer due to issues
+    
+    https://api.travis-ci.org/v3/job/670229709/log.txt
+    
+        Setting up firmware-b43legacy-installer (1:019-4) ...
+        A chroot environment has been detected.
+        Remember this firmware needs kernel >= 2.6.25.
+        --2020-04-02 17:08:45--  http://downloads.openwrt.org/sources/wl_apsta-3.130.20.0.o
+        Connecting to 127.0.0.1:3142... connected.
+        Proxy request sent, awaiting response... 403 Forbidden file type or location
+        2020-04-02 17:08:45 ERROR 403: Forbidden file type or location.
+    
+        /var/lib/dpkg/info/firmware-b43legacy-installer.postinst: Some problem occurred during the firmware download. Please check your internet connection.
+        dpkg: error processing package firmware-b43legacy-installer (--configure):
+         installed firmware-b43legacy-installer package post-installation script subprocess returned error exit status 1
+    
+    https://forums.whonix.org/t/whonix-host-nonfree-blobs-firmware-linux-nonfree-technical-discussion-only/7356/14
+
+commit 760fef205a8c62faf2981a56e5c3f2201df516ae
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 16:15:03 2020 -0400
+
+    bumped changelog version
+
 commit 99e5db62bd09eea77ba19a58b0a649099d2a10de
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 2 16:01:46 2020 -0400
