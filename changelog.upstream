@@ -1,3 +1,35 @@
+commit a5c430e3f4507f05f146c45ebb40313688cd5f14
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 17:51:23 2020 -0400
+
+    remove anon-iceweasel-warning since outdated, broken
+    
+    if re-invented should be added to anon-apps-config
+
+commit 5fd54f5420967c6ba77cd87fbafceda1d13dbb49
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 17:32:15 2020 -0400
+
+    remove gpl-sources-download
+    
+    since merged into usability-misc
+
+commit b5f4952f5b31845e6be35e07692d4025a7f20b10
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 17:31:41 2020 -0400
+
+    remove tor-ctrl
+    
+    since deprecated
+    
+    https://forums.whonix.org/t/tor-ctrl-tor-control-port-command-line-tool/8074
+
+commit 05ecbc4312a52d9cd4f97c04b61ca6eb99b74f94
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 16:31:24 2020 -0400
+
+    bumped changelog version
+
 commit 5db54e2697e5b696b94cce184a614355d862a3b2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 2 16:29:38 2020 -0400
