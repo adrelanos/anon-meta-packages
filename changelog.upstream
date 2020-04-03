@@ -1,3 +1,43 @@
+commit 526a9f3115a929524523732d9c794e0b3772cc6d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 12:55:33 2020 -0400
+
+    add init to kicksecure-dependencies-cli
+
+commit 8e6d7f2b000cabae4c9f84a11efaa66e9196664c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 12:47:20 2020 -0400
+
+    add sensible-utils to kicksecure-dependencies-cli
+
+commit 8c7662e77ae4dea61b5b37cec4859932aba04326
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 12:18:57 2020 -0400
+
+    add e2fsprogs to kicksecure-dependencies-cli
+    
+    because contains `fsck.ext4`
+
+commit 1c70dea27c6372d58367194b0bb0d084c3f26f5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 12:13:32 2020 -0400
+
+    add procps to kicksecure-dependencies-cli
+    
+    because contains ps, kill, free and more
+
+commit 9f9549de87f7b032d5470c74757c94f49629c91d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 10:19:43 2020 -0400
+
+    gnupg2 (dummy transitional package) -> gpg
+
+commit 2a511f56dc023d07061e03af9e4e2d4a7b9463d0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 3 10:00:51 2020 -0400
+
+    bumped changelog version
+
 commit 18ecc2f3dc2ee02b6120f50e1cce03f24940176b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 3 06:40:03 2020 -0400
