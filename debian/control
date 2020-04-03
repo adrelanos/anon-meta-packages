@@ -200,8 +200,7 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 Package: whonix-gateway-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: tor, anon-gw-base-files, ipv4-forward-disable,
- ipv6-disable, anon-gw-anonymizer-config,
+Depends: tor, anon-gw-base-files, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre,
  tor-geoipdb, nyx, obfsproxy, obfs4proxy, flashproxy-client,
  fteproxy, onion-grater, basez,
