@@ -1,3 +1,15 @@
+commit 8816b6446e4215125be63596e2a346bc98910ba2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 5 14:20:59 2020 -0400
+
+    gnupg-agent (dummy transitional package) -> gpg-agent
+
+commit 8a781959f4540fbf7f08062c302c06e7524192eb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 5 13:39:57 2020 -0400
+
+    bumped changelog version
+
 commit 746b4729016ffcb8539c4903b0920460e05c8fef
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Apr 5 13:37:36 2020 -0400
