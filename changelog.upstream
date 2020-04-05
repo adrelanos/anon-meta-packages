@@ -1,3 +1,19 @@
+commit 746b4729016ffcb8539c4903b0920460e05c8fef
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 5 13:37:36 2020 -0400
+
+    add apt-utils to kicksecure-dependencies-cli
+    
+    actually not a strict dependency but no more "perfectly suited package exists"
+    
+    https://forums.whonix.org/t/whonix-default-packages-review-mmdebstrap-varriant-related-risk-of-regressions/9254/5
+
+commit ad953b1a804a2d0291dc54466100317c625bb6a0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 4 16:39:54 2020 -0400
+
+    bumped changelog version
+
 commit 0294536cee78b38bc9f1abd423b1b664a7111e9f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 4 12:51:20 2020 -0400
