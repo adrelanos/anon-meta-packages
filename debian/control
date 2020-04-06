@@ -178,9 +178,9 @@ Description: Recommended applications for hardened Xfce desktop GUI
 Package: apparmor-profiles-kicksecure
 Replaces: apparmor-profiles-whonix, apparmor-profiles-hardened-debian
 Architecture: all
-Depends: apparmor-profile-icedove,
+Depends: apparmor-profile-thunderbird,
  apparmor-profile-torbrowser,
- apparmor-profile-xchat,
+ apparmor-profile-hexchat,
  ${misc:Depends}
 Description: AppArmor profiles developed by the Kicksecure Team
  A metapackage, which installs apparmor profiles developed by the Hardened
