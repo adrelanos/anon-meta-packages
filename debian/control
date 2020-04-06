@@ -181,7 +181,7 @@ Architecture: all
 Depends: apparmor-profile-icedove,
  apparmor-profile-torbrowser,
  apparmor-profile-xchat,
- apparmor-profile-gwenview, apparmor-profile-okular, ${misc:Depends}
+ ${misc:Depends}
 Description: AppArmor profiles developed by the Kicksecure Team
  A metapackage, which installs apparmor profiles developed by the Hardened
  Debian team.
