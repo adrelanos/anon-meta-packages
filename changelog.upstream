@@ -1,3 +1,29 @@
+commit 98064ed70a15986b4f2e19f65caedefe80ee864a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 10:34:09 2020 -0400
+
+    remove xchat-improved-privacy since merged into anon-apps-config
+
+commit 08d64e190ff3300d3a9c0b376d0ec1820067efdf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 09:30:43 2020 -0400
+
+    remove apparmor-profile-gwenview, apparmor-profile-okular since deprecated
+    
+    https://forums.whonix.org/t/whonix-apparmor-profiles-development-discussion/108/704
+
+commit 598a94ffd703cae81d46f859759808868b3f5da1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 09:27:13 2020 -0400
+
+    remove anon-gpg-tweaks since merged into security-misc / anon-apps-config
+
+commit bdc11a1f7c1a654c84f3ae9067fd00e87fd60c9b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 5 14:30:56 2020 -0400
+
+    bumped changelog version
+
 commit 8816b6446e4215125be63596e2a346bc98910ba2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Apr 5 14:20:59 2020 -0400
