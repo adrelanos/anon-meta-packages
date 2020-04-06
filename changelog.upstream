@@ -1,3 +1,21 @@
+commit 94965c4b9842344c37d54189b71a6e55fd615f50
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 14:01:36 2020 -0400
+
+    update package names
+
+commit 944e3d0d398ddb03e8ee2979bda7d852d6889e6d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 13:54:26 2020 -0400
+
+    remove whonix-ws-irc-chat-support since deprecated
+
+commit c95045638ee38d76309cea5424e191480d4ab9e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 13:23:28 2020 -0400
+
+    bumped changelog version
+
 commit 98064ed70a15986b4f2e19f65caedefe80ee864a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Apr 6 10:34:09 2020 -0400
