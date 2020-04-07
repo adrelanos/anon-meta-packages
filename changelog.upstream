@@ -1,3 +1,15 @@
+commit c3e68ba4b089f3d524bcfc8088bd4d480f36e351
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 13:07:37 2020 +0000
+
+    anon-ws-dns-conf was merged into whonix-ws-network-conf
+
+commit 6888cfbafab5d0ad99cf78eca558cb0bc7633c87
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 10:35:32 2020 +0000
+
+    bumped changelog version
+
 commit 173bb05b449ea4554bfaeed08065970fd4b5ea14
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Apr 6 20:04:36 2020 +0000
