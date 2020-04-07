@@ -1,3 +1,21 @@
+commit 173bb05b449ea4554bfaeed08065970fd4b5ea14
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 20:04:36 2020 +0000
+
+    remove timezone-utc since merged into anon-apps-config
+
+commit e02ab71fc7a959da16eed908492948b3a033829f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 15:50:53 2020 -0400
+
+    remove whonix-ws-start-menu-additions since merged into anon-ws-base-files
+
+commit fb0e99e113978b31fa941a4174cc2091456dc159
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 6 14:11:31 2020 -0400
+
+    bumped changelog version
+
 commit 94965c4b9842344c37d54189b71a6e55fd615f50
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Apr 6 14:01:36 2020 -0400
