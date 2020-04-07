@@ -244,7 +244,7 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-dependencies-pre
 Architecture: all
-Depends: whonix-ws-network-conf, anon-ws-dns-conf, anon-base-files,
+Depends: whonix-ws-network-conf, anon-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Workstation that changes network related files
  A metapackage, which installs packages which Whonix-Workstation
