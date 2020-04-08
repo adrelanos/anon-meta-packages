@@ -1,3 +1,21 @@
+commit 48771757d33d4dc921a5ade33a1bf3bb1413b8c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 16:41:35 2020 +0000
+
+    apparmor-profile-anondist -> apparmor-profile-dist
+
+commit 79c8402a25408e7c67c2a40916e6d971f5ff999f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 16:38:47 2020 +0000
+
+    shared-folder-help -> vm-config-dist
+
+commit 833b61679a171dc704d4c302b3f3daf5199b32ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:38:50 2020 +0000
+
+    bumped changelog version
+
 commit 525fa31e13b1e5ed09b46f3e7b86de71d5b67660
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 12:02:59 2020 +0000
