@@ -192,7 +192,7 @@ Description: AppArmor profiles developed by the Kicksecure Team
 
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
-Depends: whonix-gw-network-conf, anon-base-files,
+Depends: whonix-gw-network-conf, dist-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
  A metapackage, which installs packages which Whonix-Gateway
@@ -244,7 +244,7 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-dependencies-pre
 Architecture: all
-Depends: whonix-ws-network-conf, anon-base-files,
+Depends: whonix-ws-network-conf, dist-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Workstation that changes network related files
  A metapackage, which installs packages which Whonix-Workstation
@@ -491,7 +491,7 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 
 Package: kicksecure-packages-dependencies-pre
 Architecture: all
-Depends: anon-base-files, kicksecure-network-conf, ${misc:Depends}
+Depends: dist-base-files, kicksecure-network-conf, ${misc:Depends}
 Description: Dependencies for Kicksecure that changes network related files
  A metapackage, which installs packages which Kicksecure depends on. Can not
  be merged into another package due to conflicts with chroot build process.
@@ -502,7 +502,7 @@ Package: kicksecure-cli
 Replaces: hardened-debian-cli
 Architecture: all
 Depends: kicksecure-dependencies-cli,
- anon-base-files, kicksecure-base-files, anon-apt-sources-list,
+ dist-base-files, kicksecure-base-files, anon-apt-sources-list,
  lvm2,
  ${misc:Depends}
 Description: Kicksecure command line interface CLI
@@ -603,7 +603,7 @@ Description: transitional package Whonix-Workstation
 
 Package: whonix-host-packages-dependencies-pre
 Architecture: all
-Depends: anon-base-files, ${misc:Depends}
+Depends: dist-base-files, ${misc:Depends}
 Description: Dependencies for Whonix Host that changes network related files
  A metapackage, which installs packages which Whonix Host depends on. Can not
  be merged into another package due to conflicts with chroot build process.
@@ -620,7 +620,7 @@ Depends: kicksecure-xfce-host, xfce4-xkb-plugin, xfce4-screenshooter,
  xfce4-power-manager, iw, network-manager-gnome, network-manager,
  firefox-esr, gnome-system-monitor, gparted,
  whonix-libvirt,
- whonix-base-files, anon-base-files,
+ whonix-base-files, dist-base-files,
  ntfs-3g, dosfstools,
  ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
