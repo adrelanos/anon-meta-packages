@@ -1,3 +1,23 @@
+commit d0b3b3029bdba08c34e21b4f27889f9f2cfcfaa5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 08:42:14 2020 +0000
+
+    remove command-not-found
+    
+    since not working out of the box
+    causing confusing error messages
+    
+    not compatible with apt speedup
+    https://forums.whonix.org/t/speeding-up-apt-update-with-acquire-languages-none-and-contents-deb-defaultenabled-false-its-so-much-faster/8894/1
+    
+    https://www.whonix.org/wiki/Command-not-found
+
+commit a19485e1a5c059716e6a53b449a82da894f8c0f4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 13:14:23 2020 +0000
+
+    bumped changelog version
+
 commit c3e68ba4b089f3d524bcfc8088bd4d480f36e351
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Apr 7 13:07:37 2020 +0000
