@@ -1,3 +1,15 @@
+commit 525fa31e13b1e5ed09b46f3e7b86de71d5b67660
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:02:59 2020 +0000
+
+    anon-base-files -> dist-base-files
+
+commit 868921cecda3b1e87faa324d64aff465cf822e05
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 09:46:02 2020 +0000
+
+    bumped changelog version
+
 commit d0b3b3029bdba08c34e21b4f27889f9f2cfcfaa5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 08:42:14 2020 +0000
