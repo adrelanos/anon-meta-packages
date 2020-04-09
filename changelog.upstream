@@ -1,3 +1,15 @@
+commit 0e2ace115e4e3c26f02fbae9727be7c32a7d530b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 21:06:39 2020 +0000
+
+    swappiness-lowest -> security-misc
+
+commit 1444ddac0ac274a8c6e16e54f12c678a804a9e5d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 17:10:37 2020 +0000
+
+    bumped changelog version
+
 commit 48771757d33d4dc921a5ade33a1bf3bb1413b8c3
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 16:41:35 2020 +0000
