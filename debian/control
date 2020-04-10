@@ -29,7 +29,9 @@ Depends: ${misc:Depends},
  firmware-misc-nonfree,
  firmware-realtek,
  firmware-ti-connectivity,
- firmware-zd1211
+ firmware-zd1211,
+ intel-microcode,
+ amd64-microcode
 Section: non-free/metapackages
 Description: Recommended packages for hosts with nonfreedom hardware design
  A metapackage, which includes nonfree firmware useful for hosts with
