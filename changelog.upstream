@@ -1,3 +1,19 @@
+commit f39a1f8c9e6f509bb2f12d88cf95e6c2b12b4399
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Apr 20 08:48:54 2020 -0400
+
+    add qemu-utils to whonix-host-xfce-kvm-freedom
+    
+    Thanks to @tempest for the suggestion!
+    
+    https://forums.whonix.org/t/whonix-host-operating-system/3931/264
+
+commit 983c7b3e2151e2e13d3f25ccdf59101057beb50a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 10 14:13:59 2020 +0000
+
+    bumped changelog version
+
 commit cb42762c351e261e3abfe4489aa17311b3b91462
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 10 14:08:18 2020 +0000
