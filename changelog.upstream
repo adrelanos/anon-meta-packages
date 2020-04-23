@@ -1,3 +1,33 @@
+commit 11daabdb26bc6ee0b0de9859edc8ad07c47cbca2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 10:03:33 2020 -0400
+
+    refactoring
+
+commit e884fe9c5fc7dbcc953d89b5deb81798d91d9a34
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 09:59:30 2020 -0400
+
+    refactoring
+
+commit 62761489fc5c9da1e4f6f53d4c3fa0f087a6f719
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 09:58:09 2020 -0400
+
+    kicksecure-desktop-applications-recommended
+
+commit 5d4f4b05249c20d5120497f9311758cf7c565f0a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 09:48:53 2020 -0400
+
+    kicksecure-xfce-vm add sdwdate-gui, grub-live | grub-live-boot | boot-live
+
+commit 696283136447c07ab0343cf64b059b31a6bea0e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 09:24:06 2020 -0400
+
+    bumped changelog version
+
 commit 3c7e020071385e628be05eec5b1279844a4ca349
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 23 09:23:58 2020 -0400
