@@ -297,11 +297,12 @@ Description: Recommended packages for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
-Depends: hexchat, vlc, hunspell-en-us, gpa,
- mat2, keepassxc,
+Depends: ristretto, keepassxc,
+ hexchat, vlc, hunspell-en-us, gpa,
+ mat2,
  libimage-exiftool-perl, gir1.2-gtk-3.0,
  pinentry-qt | pinentry-x11,
- xpdf, ristretto,
+ xpdf,
  youtube-dl,
  qtox, onionshare,
  whonix-workstation-packages-recommended-cli,
