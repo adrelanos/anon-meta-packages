@@ -1,3 +1,15 @@
+commit 3c7e020071385e628be05eec5b1279844a4ca349
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 09:23:58 2020 -0400
+
+    Whonix-Host: unwanted packages: ristretto, binaries-freedom, keepassxc, secbrowser
+
+commit c221455387836a5f16d8bdb3dcfd9650cae10f7e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 23 08:12:53 2020 -0400
+
+    bumped changelog version
+
 commit 7af040f74082198ecf00fcac1a2819a8e7200571
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 23 08:09:27 2020 -0400
