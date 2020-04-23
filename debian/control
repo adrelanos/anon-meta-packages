@@ -567,7 +567,7 @@ Package: kicksecure-shared-host-xfce
 Architecture: all
 Depends: non-qubes-audio,
  xfce4-power-manager, xfce4-xkb-plugin, xfce4-screenshooter,
- gnome-system-monitor, gparted, firefox-esr,
+ gnome-system-monitor, gparted,
  sdwdate-gui,
  grub-live | grub-live-boot | boot-live,
  ${misc:Depends}
