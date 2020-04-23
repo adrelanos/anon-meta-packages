@@ -564,7 +564,8 @@ Description: Kicksecure Host Xfce GUI
 
 Package: kicksecure-xfce-vm
 Architecture: all
-Depends: kicksecure-cli-vm, non-qubes-vm-enhancements-gui, non-qubes-audio,
+Depends: kicksecure-cli-vm,
+ non-qubes-vm-enhancements-gui, non-qubes-audio,
  kicksecure-xfce, ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
