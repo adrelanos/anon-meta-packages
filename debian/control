@@ -583,6 +583,8 @@ Depends: kicksecure-cli-vm,
  kicksecure-network-conf-gui,
  non-qubes-audio,
  non-qubes-vm-enhancements-gui,
+ sdwdate-gui,
+ grub-live | grub-live-boot | boot-live,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
