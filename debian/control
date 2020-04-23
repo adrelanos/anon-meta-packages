@@ -630,7 +630,6 @@ Depends: kicksecure-xfce-host,
  firefox-esr,
  whonix-base-files, whonix-libvirt,
  qemu-utils,
- dist-base-files,
  ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
  Designed to run on hardware with Freedom Hardware Design.
