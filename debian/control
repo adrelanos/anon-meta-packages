@@ -505,7 +505,7 @@ Replaces: hardened-debian-cli
 Architecture: all
 Depends: kicksecure-dependencies-cli,
  dist-base-files, kicksecure-base-files, anon-apt-sources-list,
- lvm2,
+ iw, ntfs-3g, dosfstools, lvm2,
  ${misc:Depends}
 Description: Kicksecure command line interface CLI
  A metapackage, which installs packages, for Kicksecure CLI.
@@ -626,7 +626,6 @@ Depends: kicksecure-xfce-host,
  arc-theme,
  xfce4-xkb-plugin,
  xfce4-screenshooter,
- iw, ntfs-3g, dosfstools,
  gnome-system-monitor, gparted, firefox-esr,
  whonix-base-files, whonix-libvirt,
  qemu-utils,
