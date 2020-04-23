@@ -555,6 +555,7 @@ Depends: kicksecure-cli-host,
  kicksecure-network-conf, kicksecure-network-conf-gui,
  non-qubes-audio,
  xfce4-power-manager, xfce4-xkb-plugin, xfce4-screenshooter,
+ gnome-system-monitor, gparted, firefox-esr,
  sdwdate-gui,
  grub-live | grub-live-boot | boot-live,
  ${misc:Depends}
@@ -624,7 +625,6 @@ Pre-Depends: whonix-legacy
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
 Depends: kicksecure-xfce-host,
  arc-theme,
- gnome-system-monitor, gparted, firefox-esr,
  whonix-base-files, whonix-libvirt,
  qemu-utils,
  ${misc:Depends}
