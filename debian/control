@@ -177,6 +177,20 @@ Description: Recommended applications for hardened Xfce desktop GUI
  .
  Safe to remove.
 
+Package: kicksecure-desktop-applications-recommended
+Architecture: all
+Depends: ristretto, keepassxc,
+ secbrowser | dummy-dependency,
+ tb-default-browser | dummy-dependency,
+ binaries-freedom | dummy-dependency,
+ sdwdate-gui,
+ ${misc:Depends}
+Description: Kicksecure Recommended Desktop Applications
+ A metapackage, which installs recommended packages, for graphical user
+ interface (GUI) Kicksecure.
+ .
+ Do not remove.
+
 Package: apparmor-profiles-kicksecure
 Replaces: apparmor-profiles-whonix, apparmor-profiles-hardened-debian
 Architecture: all
@@ -524,7 +538,8 @@ Description: Kicksecure Host command line interface CLI
 Package: kicksecure-cli-vm
 Architecture: all
 Depends: kicksecure-cli, non-qubes-vm-enhancements-cli,
- kicksecure-network-conf, ${misc:Depends}
+ kicksecure-network-conf,
+ ${misc:Depends}
 Description: Kicksecure command line interface CLI VMs
  A metapackage, which installs packages, for Kicksecure CLI Virtual Machines.
  .
@@ -566,10 +581,7 @@ Depends: kicksecure-cli-host,
  kicksecure-xfce,
  kicksecure-network-conf, kicksecure-network-conf-gui,
  kicksecure-shared-host-xfce,
- ristretto, keepassxc,
- secbrowser | dummy-dependency,
- tb-default-browser | dummy-dependency,
- binaries-freedom | dummy-dependency,
+ kicksecure-desktop-applications-recommended,
  ${misc:Depends}
 Description: Kicksecure Host Xfce GUI
  A metapackage, which installs packages, for Kicksecure Xfce Host.
@@ -583,8 +595,7 @@ Depends: kicksecure-cli-vm,
  kicksecure-network-conf-gui,
  non-qubes-audio,
  non-qubes-vm-enhancements-gui,
- sdwdate-gui,
- grub-live | grub-live-boot | boot-live,
+ kicksecure-desktop-applications-recommended,
  ${misc:Depends}
 Description: Kicksecure Xfce GUI for VMs
  A metapackage, which installs packages, for Kicksecure Xfce in Virtual
