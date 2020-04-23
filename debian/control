@@ -623,9 +623,9 @@ Pre-Depends: whonix-legacy
 ## TODO
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
 Depends: kicksecure-xfce-host,
+ arc-theme,
  xfce4-xkb-plugin,
  xfce4-screenshooter,
- arc-theme,
  iw, ntfs-3g, dosfstools, gnome-system-monitor, gparted,
  firefox-esr,
  whonix-base-files, whonix-libvirt,
