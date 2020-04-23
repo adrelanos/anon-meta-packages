@@ -567,6 +567,7 @@ Package: kicksecure-xfce-vm
 Architecture: all
 Depends: kicksecure-cli-vm,
  kicksecure-xfce,
+ kicksecure-network-conf-gui,
  non-qubes-audio,
  non-qubes-vm-enhancements-gui,
  ${misc:Depends}
