@@ -183,6 +183,7 @@ Depends: ristretto, keepassxc,
  secbrowser | dummy-dependency,
  tb-default-browser | dummy-dependency,
  binaries-freedom | dummy-dependency,
+ monero-gui | dummy-dependency,
  sdwdate-gui,
  ${misc:Depends}
 Description: Kicksecure Recommended Desktop Applications
@@ -311,6 +312,7 @@ Depends: ristretto, keepassxc,
  tb-starter | dummy-dependency,
  tb-updater | dummy-dependency,
  binaries-freedom | dummy-dependency,
+ monero-gui | dummy-dependency,
  ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
  anon-workstation-default-applications, whonix-workstation-default-applications-gui
@@ -713,7 +715,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Provides: bindp, lkrg, kloak, hardened-malloc,
  tb-updater, tb-starter, tb-default-browser, secbrowser,
- tirdad, binaries-freedom
+ tirdad, binaries-freedom, monero-gui
 Description: dummy package to satisfy architecture specific dependencies
  A metapackage, which satisfies the dependency on:
  .
@@ -727,6 +729,7 @@ Description: dummy package to satisfy architecture specific dependencies
   - secbrowser
   - tirdad
   - binaries-freedom
+  - monero-gui
  .
  This package cannot provide a real implementation of that package. It is only
  a dummy to satisfy the dependency.
