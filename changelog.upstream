@@ -1,3 +1,17 @@
+commit 18b5838510a172908602af06a89145b102411f44
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 2 17:52:40 2020 -0400
+
+    install monero-gui by default
+    
+    https://forums.whonix.org/t/monero-and-whonix-sitting-in-a-tree/5949
+
+commit 7ceea12d0b312953be34ce89857ee67b107820bf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 26 08:05:21 2020 -0400
+
+    bumped changelog version
+
 commit 331017800d2eefabfe54a4f4fbb879065f78942e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 23 15:08:46 2020 -0400
