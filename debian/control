@@ -143,7 +143,7 @@ Depends: xserver-xorg,
  xserver-xorg-video-qxl,
  xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa,
- xserver-xorg-video-vmware,
+ xserver-xorg-video-vmware | dummy-dependency,
  libgl1-mesa-dri,
  upower,
  gtk2-engines-pixbuf,
@@ -721,7 +721,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Provides: bindp, lkrg, kloak, hardened-malloc,
  tb-updater, tb-starter, tb-default-browser, secbrowser,
- tirdad, binaries-freedom, monero-gui
+ tirdad, binaries-freedom, monero-gui, xserver-xorg-video-vmware
 Description: dummy package to satisfy architecture specific dependencies
  A metapackage, which satisfies the dependency on:
  .
@@ -736,6 +736,7 @@ Description: dummy package to satisfy architecture specific dependencies
   - tirdad
   - binaries-freedom
   - monero-gui
+  - xserver-xorg-video-vmware
  .
  This package cannot provide a real implementation of that package. It is only
  a dummy to satisfy the dependency.
