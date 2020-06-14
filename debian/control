@@ -137,6 +137,12 @@ Description: Recommended desktop packages for Whonix-Gateway GUI
  .
  Safe to remove, if you know what you are doing.
 
+## XXX: adding xserver-xorg-video-vmware (used by VirtualBox, yes VirtualBox)
+##      and xserver-xorg-video-qxl (used by KVM) here is non-ideal as this
+##      installs these packages on the host and in all virtualizers too.
+##
+## xserver-xorg-video-vmware is required by VirtualBox which uses VMWare's
+## VMSVGA graphic device.
 Package: kicksecure-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg,
