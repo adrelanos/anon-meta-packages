@@ -1,3 +1,33 @@
+commit 8cc1c278be00994ed26ad1d32495b92f9860fbb7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 13:29:30 2020 -0400
+
+    comment
+
+commit c7ce9cb796502a06beecbdeae801b9ee422259dd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 13:22:48 2020 -0400
+
+    allow dummy-dependency to satisfy xserver-xorg-video-vmware dependency
+    
+    since it is i386/amd64 only
+    
+    this is to fix distro morphing on non-amd64 platforms
+    
+    Thanks to @JeremyRand for the bug report!
+
+commit b0261936dbb0f88fde31e97f7eeba8a9e738db97
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 13:15:31 2020 -0400
+
+    refactoring
+
+commit c1a134f71bda3ade8b6fd28e7fd6e6d0a3ed7ded
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 2 17:57:08 2020 -0400
+
+    bumped changelog version
+
 commit 18b5838510a172908602af06a89145b102411f44
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat May 2 17:52:40 2020 -0400
