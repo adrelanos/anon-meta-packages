@@ -1,3 +1,21 @@
+commit 57072ac0b9f973ccf4ec2e5827ce2037819832c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jul 21 12:51:20 2020 -0400
+
+    allow `dummy-dependency` to fullfill dependency of `qubes-core-agent-passwordless-root`
+    
+    in preparation of
+    - removal of dependency on `qubes-core-agent-passwordless-root`
+    - support of VM sudo
+    
+    https://www.qubes-os.org/doc/vm-sudo/
+
+commit 0cf0282711e8161fe1751a1f0a91dd4d17863069
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 13:30:34 2020 -0400
+
+    bumped changelog version
+
 commit 8cc1c278be00994ed26ad1d32495b92f9860fbb7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jun 14 13:29:30 2020 -0400
