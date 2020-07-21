@@ -727,7 +727,8 @@ Architecture: all
 Depends: ${misc:Depends}
 Provides: bindp, lkrg, kloak, hardened-malloc,
  tb-updater, tb-starter, tb-default-browser, secbrowser,
- tirdad, binaries-freedom, monero-gui, xserver-xorg-video-vmware
+ tirdad, binaries-freedom, monero-gui, xserver-xorg-video-vmware,
+ qubes-core-agent-passwordless-root
 Description: dummy package to satisfy architecture specific dependencies
  A metapackage, which satisfies the dependency on:
  .
@@ -743,6 +744,7 @@ Description: dummy package to satisfy architecture specific dependencies
   - binaries-freedom
   - monero-gui
   - xserver-xorg-video-vmware
+  - qubes-core-agent-passwordless-root
  .
  This package cannot provide a real implementation of that package. It is only
  a dummy to satisfy the dependency.
