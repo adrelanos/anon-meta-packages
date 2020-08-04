@@ -1,3 +1,15 @@
+commit 863f20568da30107517a7f429252ea24d46f8d0e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 4 06:36:32 2020 -0400
+
+    fix pre dependencies
+
+commit a091afda2a9d70d18309f18780afa4bfc939294d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jul 21 13:03:52 2020 -0400
+
+    bumped changelog version
+
 commit 57072ac0b9f973ccf4ec2e5827ce2037819832c1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jul 21 12:51:20 2020 -0400
