@@ -92,6 +92,7 @@ Depends: init,
  apt-transport-tor, apt-transport-https, ca-certificates,
  sdwdate, bootclockrandomization, timesanitycheck,
  busybox,
+ dist-base-files,
  security-misc,
  bash-completion, zsh, nano, wget, dnsutils, iputils-ping,
  apt-utils,
@@ -221,7 +222,7 @@ Description: AppArmor profiles developed by the Kicksecure Team
 
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
-Depends: whonix-gw-network-conf, dist-base-files,
+Depends: whonix-gw-network-conf, whonix-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
  A metapackage, which installs packages which Whonix-Gateway
@@ -249,8 +250,8 @@ Description: Dependencies for Whonix-Gateway CLI
 Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: whonix-base-files, anon-apt-sources-list, whonix-firewall,
- whonixsetup,
+Depends: dist-base-files,
+ whonix-base-files, anon-apt-sources-list, whonix-firewall, whonixsetup,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
@@ -273,7 +274,7 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-dependencies-pre
 Architecture: all
-Depends: whonix-ws-network-conf, dist-base-files,
+Depends: whonix-ws-network-conf, whonix-base-files,
  ${misc:Depends}
 Description: Dependencies for Whonix-Workstation that changes network related files
  A metapackage, which installs packages which Whonix-Workstation
@@ -524,7 +525,7 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 
 Package: kicksecure-packages-dependencies-pre
 Architecture: all
-Depends: dist-base-files, kicksecure-network-conf, ${misc:Depends}
+Depends: kicksecure-network-conf, ${misc:Depends}
 Description: Dependencies for Kicksecure that changes network related files
  A metapackage, which installs packages which Kicksecure depends on. Can not
  be merged into another package due to conflicts with chroot build process.
@@ -535,7 +536,7 @@ Package: kicksecure-cli
 Replaces: hardened-debian-cli
 Architecture: all
 Depends: kicksecure-dependencies-cli,
- dist-base-files, kicksecure-base-files, anon-apt-sources-list,
+ kicksecure-base-files, anon-apt-sources-list,
  ntfs-3g, dosfstools, lvm2,
  ${misc:Depends}
 Description: Kicksecure command line interface CLI
@@ -653,7 +654,7 @@ Description: transitional package Whonix-Workstation
 
 Package: whonix-host-packages-dependencies-pre
 Architecture: all
-Depends: dist-base-files, ${misc:Depends}
+Depends: whonix-base-files, ${misc:Depends}
 Description: Dependencies for Whonix Host that changes network related files
  A metapackage, which installs packages which Whonix Host depends on. Can not
  be merged into another package due to conflicts with chroot build process.
