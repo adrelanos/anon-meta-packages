@@ -1,3 +1,20 @@
+commit 98b5be0e10b7e91eca5e8b66d3d71ca0573d906e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 6 13:28:31 2020 -0400
+
+    add `dialog to kicksecure-dependencies-cli` to fix `dpkg` warning
+    
+    > debconf: unable to initialize frontend: Dialog
+    > debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+    > debconf: falling back to frontend: Readline
+    > debconf: unable to initialize frontend: Readline
+
+commit 0209fad9e8e0e80b796033a3d2df6cac21274042
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 4 07:12:32 2020 -0400
+
+    bumped changelog version
+
 commit 89c175f5346e754ca36cf28e82dd48e7ec7348f4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 4 07:11:57 2020 -0400
