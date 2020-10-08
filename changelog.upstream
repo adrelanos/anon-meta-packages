@@ -1,3 +1,17 @@
+commit 65f67bfa20db47dc5256eacbfa5fb2a3798803de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 8 05:03:36 2020 -0400
+
+    dummy-dependency: add support for hardened-malloc-kicksecure-enable
+    
+    https://forums.whonix.org/t/hardened-malloc-hardened-memory-allocator/7474/82
+
+commit 045924c305001f0026aa655dcb8558a5c8788fbc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 6 15:21:55 2020 -0400
+
+    bumped changelog version
+
 commit 98b5be0e10b7e91eca5e8b66d3d71ca0573d906e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 6 13:28:31 2020 -0400
