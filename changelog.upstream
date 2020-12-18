@@ -1,3 +1,19 @@
+commit b9de67e4a295cba8a223432e80fe88b41b3a1062
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 18 06:52:52 2020 -0500
+
+    no longer install qtox by default
+    
+    Thanks to @madaidan for the suggestion!
+    
+    https://forums.whonix.org/t/tox-qtox-whonix-integration/1219/18
+
+commit 9272c95fe6b798e1aeaf5557d1f8e9f8ee574a3a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 8 05:38:57 2020 -0400
+
+    bumped changelog version
+
 commit 65f67bfa20db47dc5256eacbfa5fb2a3798803de
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Oct 8 05:03:36 2020 -0400
