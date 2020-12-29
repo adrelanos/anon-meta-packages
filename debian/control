@@ -193,8 +193,6 @@ Description: Recommended applications for hardened Xfce desktop GUI
 Package: kicksecure-desktop-applications-recommended
 Architecture: all
 Depends: ristretto, keepassxc,
- secbrowser | dummy-dependency,
- tb-default-browser | dummy-dependency,
  binaries-freedom | dummy-dependency,
  monero-gui | dummy-dependency,
  sdwdate-gui,
@@ -668,7 +666,7 @@ Pre-Depends: whonix-legacy
 ## - kicksecure-xfce-host should not "Depends: kicksecure-xfce-host" because
 ## - kicksecure-xfce-host is standalone, non-Whonix
 ## - Also not Depends: on kicksecure-xfce since that would install
-##   binaries-freedom, secbrowser and other unwanted packages for Whonix-Host.
+##   binaries-freedom and other unwanted packages for Whonix-Host.
 ##
 ## TODO:
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
