@@ -1,3 +1,19 @@
+commit e8fd8ff60112aa2c50abec823f7e340fa1202228
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 29 10:55:14 2020 -0500
+
+    no longer install SecBrowser by default in Kicksecure
+    
+    https://www.whonix.org/wiki/Dev/Kicksecure_Default_Browser
+    
+    https://forums.whonix.org/t/chromium-browser-for-kicksecure-discussions-not-whonix/10388
+
+commit 114a853097e11650a591c62f14ba43e4f52423b9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 18 06:53:54 2020 -0500
+
+    bumped changelog version
+
 commit b9de67e4a295cba8a223432e80fe88b41b3a1062
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 18 06:52:52 2020 -0500
