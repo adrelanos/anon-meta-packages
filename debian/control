@@ -401,6 +401,7 @@ Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-gateway-packages-recommended,
  kicksecure-desktop-applications-xfce,
+ vm-config-dist,
  ${misc:Depends}
 Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
@@ -420,6 +421,7 @@ Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  qubes-whonix-shared-packages-recommended,
  qubes-whonix-workstation-packages-recommended,
  kicksecure-desktop-applications-xfce,
+ vm-config-dist,
  ${misc:Depends}
 Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
