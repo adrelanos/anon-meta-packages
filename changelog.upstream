@@ -1,3 +1,15 @@
+commit e3c10d095f60c71d834db6c950a4b0435fd2866f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jan 30 01:44:39 2021 -0500
+
+    missing dependencies for orca-screen-reader-support
+
+commit 0c305ed5f3323a331c496a68b878c11eb1c3b36c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 29 22:54:38 2021 -0500
+
+    bumped changelog version
+
 commit 077858e9f63fe4d5beaffb9f5f905407823241d2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 29 22:53:41 2021 -0500
