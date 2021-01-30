@@ -1,3 +1,21 @@
+commit 077858e9f63fe4d5beaffb9f5f905407823241d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 29 22:53:41 2021 -0500
+
+    install orca by default in Non-Qubes-Whonix
+
+commit 17f24289efc189bead87c8611e3bf1db906906b6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 29 22:51:18 2021 -0500
+
+    new meta package orca-screen-reader-support
+
+commit 10cf72c62cd0e4d66b6f197dd502ece2f09d8123
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 29 06:16:58 2021 -0500
+
+    bumped changelog version
+
 commit 4e6db57c3fba6329dd1f23818523e43fa4e1e98d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 29 06:16:21 2021 -0500
