@@ -754,3 +754,14 @@ Description: dummy package to satisfy architecture specific dependencies
  .
  Safe to remove if its removal does not remove another metapackage, which is
  not safe to remove.
+
+Package: orca-screen-reader-support
+Architecture: all
+Depends: non-qubes-audio,
+ orca, gstreamer1.0-plugins-good, libatk-adaptor, libgail-common,
+ ${misc:Depends}
+Description: dependencies for the orca screen reader
+ A metapackage, which includes depencency packages for the orca screen reader.
+ .
+ Safe to remove if its removal does not remove another metapackage, which is
+ not safe to remove.
