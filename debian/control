@@ -460,6 +460,7 @@ Depends: non-qubes-vm-enhancements-cli,
  kicksecure-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
+ orca-screen-reader-support | dummy-dependency,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
@@ -495,6 +496,7 @@ Depends: non-qubes-vm-enhancements-gui,
  kicksecure-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
+ orca-screen-reader-support | dummy-dependency,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
@@ -748,6 +750,7 @@ Description: dummy package to satisfy architecture specific dependencies
   - monero-gui
   - xserver-xorg-video-vmware
   - qubes-core-agent-passwordless-root
+  - orca-screen-reader-support
  .
  This package cannot provide a real implementation of that package. It is only
  a dummy to satisfy the dependency.
