@@ -762,6 +762,7 @@ Package: orca-screen-reader-support
 Architecture: all
 Depends: non-qubes-audio,
  orca, gstreamer1.0-plugins-good, libatk-adaptor, libgail-common,
+ xbrlapi, python3-gst-1.0, speech-dispatcher-espeak-ng, sound-icons,
  ${misc:Depends}
 Description: dependencies for the orca screen reader
  A metapackage, which includes depencency packages for the orca screen reader.
