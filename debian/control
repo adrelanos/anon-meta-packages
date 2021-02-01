@@ -249,7 +249,7 @@ Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: dist-base-files,
- whonix-base-files, anon-apt-sources-list, whonix-firewall, whonixsetup,
+ whonix-base-files, anon-apt-sources-list, whonix-firewall, setup-dist,
  ${misc:Depends}
 Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
