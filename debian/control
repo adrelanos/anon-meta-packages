@@ -99,7 +99,7 @@ Depends: init,
  apparmor-utils, apparmor-profile-dist,
  udisks2, libblockdev-crypto2,
  secure-delete, sudo, net-tools,
- whonix-repository,
+ repository-dist,
  openvpn,
  sensible-utils,
  usability-misc, menu, man-db, open-link-confirmation,
@@ -118,7 +118,7 @@ Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: sdwdate-gui, msgcollector-gui, anon-icon-pack,
- whonix-setup-wizard, ${misc:Depends}
+ setup-wizard-dist, ${misc:Depends}
 Replaces: anon-shared-default-applications
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
