@@ -460,7 +460,6 @@ Depends: non-qubes-vm-enhancements-cli,
  kicksecure-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-gateway-default-applications-gui,
- orca-screen-reader-support | dummy-dependency,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
@@ -496,7 +495,6 @@ Depends: non-qubes-vm-enhancements-gui,
  kicksecure-desktop-applications-xfce,
  whonix-shared-default-applications-gui,
  whonix-workstation-packages-recommended-gui,
- orca-screen-reader-support | dummy-dependency,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
