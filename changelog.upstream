@@ -1,3 +1,21 @@
+commit 71272dc08ffc3853ade06bda01b2e4d76b85ab50
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Feb 21 06:28:01 2021 -0500
+
+    actually not install orca by default
+    
+    due to extra services running (speech-dispatcher)
+    
+    needs more work
+    
+    https://www.whonix.org/wiki/Orca
+
+commit d838f76e2249e7d2fc7a70d87ac9252ebf896e35
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 3 11:48:35 2021 -0500
+
+    bumped changelog version
+
 commit 8e2bc76fb98aef1a5e7d57b67783c3a4d1e9f593
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Feb 3 11:25:15 2021 -0500
