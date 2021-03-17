@@ -1,3 +1,15 @@
+commit 551799237b71586c24ae287abbc616c99506943d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 17 08:33:12 2021 -0400
+
+    move Kicksecure specific packages to https://gitlab.com/whonix/kicksecure-meta-packages
+
+commit 4b342064afe9f9803e59adf9c0e2e57991aed1d3
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Feb 21 06:30:03 2021 -0500
+
+    bumped changelog version
+
 commit 71272dc08ffc3853ade06bda01b2e4d76b85ab50
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Feb 21 06:28:01 2021 -0500
