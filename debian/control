@@ -126,7 +126,7 @@ Description: Recommended packages for Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
-Depends: ristretto,
+Depends: ristretto, tumbler,
  keepassxc,
  hexchat, vlc, hunspell-en-us, gpa,
  mat2,
