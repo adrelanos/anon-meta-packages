@@ -1,3 +1,48 @@
+commit 0ad99f40b5496bf4ddb38aa5aa8ec42e6d923075
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Apr 12 14:14:14 2021 -0400
+
+    fix ristretto missing thumbnails and popup by installing tumbler by default
+    
+    add "Depends: tumbler" to whonix-workstation-packages-recommended-gui
+    
+    (tumbler is a "Recommends:" of ristretto)
+    
+    Thanks to @TNT for the bug report!
+    
+    https://forums.whonix.org/t/which-image-viewer-to-install-by-default/9268/3
+
+commit 4c7450441b046f0b6d7b1696cb4c3b5dc9f87b5f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Apr 12 14:13:38 2021 -0400
+
+    refactoring
+
+commit 3e0d2bdceea7046e1120e289e0077d3127057ee5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Apr 12 07:34:41 2021 -0400
+
+    No longer install OnionShare by default.
+    
+    Debian buster (which Whonix 15 is based on) ships only
+    onionshare 1.3.2 which only supports legacy onion v2 which are being
+    phased out and deprecated on July 15th, 2021.
+    
+    https://blog.torproject.org/v2-deprecation-timeline
+    
+    https://lists.torproject.org/pipermail/tor-dev/2020-May/014322.html
+    
+    https://forums.whonix.org/t/onionshare-whonix-integration-development-discussion/300
+    
+    Flatpak installation method recommended, see:
+    https://www.whonix.org/wiki/OnionShare
+
+commit b841d5ade97bce2a59509277b1db496d5bbeb20c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Apr 5 11:57:51 2021 -0400
+
+    bumped changelog version
+
 commit c1a3659a5874fbad2c60175d97808c6139901a9a
 Merge: 359d3b2 f1d4a57
 Author: Patrick Schleizer <adrelanos@whonix.org>
