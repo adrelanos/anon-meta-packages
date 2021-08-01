@@ -51,8 +51,8 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: tor, anon-gw-base-files, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre,
- tor-geoipdb, nyx, obfs4proxy, flashproxy-client,
- fteproxy, onion-grater, basez,
+ tor-geoipdb, nyx, obfs4proxy,
+ onion-grater, basez,
  ${misc:Depends}
 Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
  anon-gateway-packages-recommended, whonix-gateway-packages-recommended
