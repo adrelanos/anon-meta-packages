@@ -1,3 +1,39 @@
+commit ca58852a8eb9c78553b04572363509c27148ffad
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Aug 3 05:48:15 2021 -0400
+
+    bullseye
+
+commit 828c37f8338b3440934bd0b9284fec606cebbb6d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 1 16:30:24 2021 -0400
+
+    bullseye
+
+commit 7488c0bdea6a1c2a415d514ba1dc4d4b60fa2709
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 1 16:00:15 2021 -0400
+
+    remove flashproxy-client and fteproxy from Whonix-Gateway
+    
+    since deprecated in Debian bullseye
+
+commit 6054e957db7b86249905e1108e30211236434b05
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 1 15:57:56 2021 -0400
+
+    remove obfsproxy (deprecated obfsproxy version 3) but keep obfs4proxy
+    
+    from Whonix-Gateway
+    
+    obfs4proxy package is deprecated in Debian bullseye
+
+commit a37486cc51dca5d1ab8a905434b194686164316d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri May 7 05:38:36 2021 -0400
+
+    bumped changelog version
+
 commit 7fa7f26037976fea5b48bb1852d7caa5809e3ee2
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri May 7 05:37:01 2021 -0400
