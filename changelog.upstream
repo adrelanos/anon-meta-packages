@@ -1,3 +1,15 @@
+commit 8096d3d57d85298c56e7f05a4d06f555e257148f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Aug 17 13:04:10 2021 -0400
+
+    whonix-shared-packages-recommended-cli: add kicksecure-recommended-cli
+
+commit 7f0d024bf15f6a8c0cc18730524c154b48219ecd
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Aug 5 16:29:18 2021 -0400
+
+    bumped changelog version
+
 commit ca58852a8eb9c78553b04572363509c27148ffad
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Aug 3 05:48:15 2021 -0400
