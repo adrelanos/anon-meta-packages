@@ -1,3 +1,15 @@
+commit b62db95a20df69f8e75fcc4e9dece8f5c9017525
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Aug 21 16:49:45 2021 -0400
+
+    binaries-freedom -> electrum
+
+commit b6378633bb32bdef7d14f2383950325845becc4a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Aug 17 13:04:45 2021 -0400
+
+    bumped changelog version
+
 commit 8096d3d57d85298c56e7f05a4d06f555e257148f
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Aug 17 13:04:10 2021 -0400
