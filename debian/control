@@ -141,7 +141,7 @@ Depends: ristretto, tumbler,
  tb-default-browser | dummy-dependency,
  tb-starter | dummy-dependency,
  tb-updater | dummy-dependency,
- binaries-freedom | dummy-dependency,
+ electrum | dummy-dependency,
  monero-gui | dummy-dependency,
  ${misc:Depends}
 Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
