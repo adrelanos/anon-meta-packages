@@ -192,6 +192,7 @@ Package: non-qubes-whonix-gateway-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
+ kicksecure-dependencies-system,
  kicksecure-dependencies-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
@@ -329,6 +330,7 @@ Package: non-qubes-whonix-workstation-cli
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
+ kicksecure-dependencies-system,
  kicksecure-dependencies-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
