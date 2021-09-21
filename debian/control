@@ -243,21 +243,6 @@ Description: Default packages for Qubes-Whonix-Workstation
  .
  Do not remove.
 
-Package: non-qubes-whonix-gateway-kde
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
-Section: oldlibs
-Description: transitional package Whonix-Gateway KDE
- Whonix KDE is no longer supported.
- .
- Use package non-qubes-whonix-gateway-xfce instead.
- Legacy. This is a transitional package.
- .
- It can be removed by installing package non-qubes-whonix-gateway-xfce.
- .
- sudo apt-get install non-qubes-whonix-gateway-xfce
-
 Package: non-qubes-whonix-gateway-xfce
 Architecture: all
 Pre-Depends: whonix-legacy
@@ -278,19 +263,6 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  environment.
  .
  Do not remove.
-
-Package: non-qubes-whonix-workstation-kde
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
-Section: oldlibs
-Description: transitional package Whonix-Workstation KDE
- Use the package non-qubes-whonix-workstation-xfce instead.
- Legacy package. This is a transitional package.
- .
- Install non-qubes-whonix-workstation-xfce, remove this package.
- .
- sudo apt-get install non-qubes-whonix-workstation-xfce
 
 Package: non-qubes-whonix-workstation-xfce
 Architecture: all
@@ -328,43 +300,6 @@ Depends: non-qubes-vm-enhancements-cli,
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
- .
- Do not remove.
-
-Package: non-qubes-whonix-gateway
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
-Section: oldlibs
-Description: transitional package Whonix-Gateway
- KDE was deprecated in Whonix.
- .
- Use non-qubes-whonix-gateway-xfce instead.
- This is a transitional package. Legacy.
- .
- Install non-qubes-whonix-gateway-xfce and remove this.
- .
- sudo apt-get install non-qubes-whonix-gateway-xfce
-
-Package: non-qubes-whonix-workstation
-Architecture: all
-Pre-Depends: whonix-legacy
-Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
-Section: oldlibs
-Description: transitional package Whonix-Workstation
- Use non-qubes-whonix-workstation-xfce instead.
- This is a transitional package. Legacy.
- .
- It can be removed by installing package non-qubes-whonix-workstation-xfce.
- .
- sudo apt-get install non-qubes-whonix-workstation-xfce
-
-Package: whonix-host-packages-dependencies-pre
-Architecture: all
-Depends: whonix-base-files, dist-base-files, ${misc:Depends}
-Description: Dependencies for Whonix Host that changes network related files
- A metapackage, which installs packages which Whonix Host depends on. Can not
- be merged into another package due to conflicts with chroot build process.
  .
  Do not remove.
 
