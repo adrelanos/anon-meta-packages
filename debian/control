@@ -17,7 +17,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: repository-dist-wizard, sdwdate-gui, msgcollector-gui, anon-icon-pack,
  setup-wizard-dist, ${misc:Depends}
-Replaces: anon-shared-default-applications
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
  default applications, which are useful in a default installation of a
@@ -29,7 +28,6 @@ Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: onioncircuits, anon-connection-wizard, tor-control-panel, ${misc:Depends}
-Replaces: anon-gateway-default-applications, whonix-gateway-default-applications
 Description: Recommended desktop packages for Whonix-Gateway GUI
  A metapackage, which installs graphical user interface (GUI) packages,
  which are recommended for a graphical Whonix-Gateway.
@@ -55,8 +53,6 @@ Depends: tor, anon-gw-base-files, anon-gw-anonymizer-config,
  tor-geoipdb, nyx, obfs4proxy,
  onion-grater, basez,
  ${misc:Depends}
-Replaces: anon-gateway-packages-dependencies, whonix-gateway-packages-dependencies,
- anon-gateway-packages-recommended, whonix-gateway-packages-recommended
 Description: Dependencies for Whonix-Gateway CLI
  A metapackage, which installs packages which Whonix-Gateway
  depends on.
@@ -69,7 +65,6 @@ Pre-Depends: whonix-legacy
 Depends: dist-base-files,
  whonix-base-files, anon-apt-sources-list, whonix-firewall, setup-dist,
  ${misc:Depends}
-Replaces: whonix-shared-packages-dependencies
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which installs packages which both, Whonix-Gateway
  and Whonix-Workstation, depend on.
@@ -82,7 +77,6 @@ Pre-Depends: anon-apps-config
 Depends: kicksecure-dependencies-cli, kicksecure-recommended-cli,
  systemcheck, uwt,
  ${misc:Depends}
-Replaces: whonix-shared-packages-recommended
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which includes recommended packages to ensure, Whonix
  standard tools are available and other useful recommended packages.
@@ -105,7 +99,6 @@ Architecture: all
 Pre-Depends: whonix-legacy
 Depends: anon-ws-base-files, whonix-workstation-packages-dependencies-pre,
  ${misc:Depends}
-Replaces: anon-workstation-packages-dependencies, whonix-workstation-packages-dependencies
 Description: Dependencies for Whonix-Workstation CLI
  A metapackage, which installs packages which Whonix-Workstation
  depends on.
@@ -144,8 +137,6 @@ Depends: ristretto, tumbler,
  electrum | dummy-dependency,
  monero-gui | dummy-dependency,
  ${misc:Depends}
-Replaces: anon-workstation-packages-recommended, whonix-workstation-packages-recommended,
- anon-workstation-default-applications, whonix-workstation-default-applications-gui
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
  graphical user interface (GUI) Whonix-Workstation, because they are
@@ -223,7 +214,6 @@ Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
  kicksecure-desktop-applications-xfce,
  vm-config-dist,
  ${misc:Depends}
-Replaces: whonix-gateway
 Description: Default packages for Qubes-Whonix-Gateway
  A metapackage, which installs packages, for a
  Qubes-Whonix-Default-Gateway.
@@ -243,7 +233,6 @@ Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
  kicksecure-desktop-applications-xfce,
  vm-config-dist,
  ${misc:Depends}
-Replaces: whonix-workstation
 Description: Default packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
  Qubes-Whonix-Default-Workstation.
@@ -258,7 +247,6 @@ Package: non-qubes-whonix-gateway-kde
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-gateway-xfce, ${misc:Depends}
-Replaces: whonix-gateway, non-qubes-whonix-gateway
 Section: oldlibs
 Description: transitional package Whonix-Gateway KDE
  Whonix KDE is no longer supported.
@@ -295,7 +283,6 @@ Package: non-qubes-whonix-workstation-kde
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: non-qubes-whonix-workstation-xfce, ${misc:Depends}
-Replaces: whonix-workstation, non-qubes-whonix-workstation
 Section: oldlibs
 Description: transitional package Whonix-Workstation KDE
  Use the package non-qubes-whonix-workstation-xfce instead.
