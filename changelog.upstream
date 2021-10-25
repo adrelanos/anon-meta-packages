@@ -1,3 +1,37 @@
+commit 8906fcb5dc9e886c40d9e9c371ae3caa92d77608
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 25 12:17:43 2021 -0400
+
+    refactoring
+
+commit eca63bd00415f7f2365aff736bd5a76d9fb0968b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 25 12:15:10 2021 -0400
+
+    move kicksecure-recommended-cli from whonix-shared-packages-recommended-cli to kicksecure-recommended-cli
+
+commit ad8163d84b826f18bf3cfe50c98dabe8c9b41d59
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 25 12:11:03 2021 -0400
+
+    remove packages pwgen, codecrypt, gpg, gpg-agent, dirmngr, magic-wormhole, diceware, makepasswd from whonix-workstation-packages-recommended-cli
+    
+    since these will be moved to kicksecure-meta-packages
+
+commit fd008df8d2a0f9bcebdaef7c9281837c2827f628
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 25 12:09:40 2021 -0400
+
+    no longer install python3-msgpack by default since no longer needed
+    
+    remove python3-msgpack from whonix-workstation-packages-recommended-cli
+
+commit c290a54419372c520bbe0dcdeebf65101e3a7d4f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Sep 21 05:13:37 2021 -0400
+
+    bumped changelog version
+
 commit e9ea226efe8ad88735383bdb5b43e701604f3604
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Sep 21 04:50:33 2021 -0400
