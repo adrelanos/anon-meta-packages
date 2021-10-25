@@ -74,7 +74,7 @@ Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
 Package: whonix-shared-packages-recommended-cli
 Architecture: all
 Pre-Depends: anon-apps-config
-Depends: kicksecure-dependencies-cli, kicksecure-recommended-cli,
+Depends: kicksecure-dependencies-cli,
  systemcheck, uwt,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
@@ -109,6 +109,7 @@ Package: whonix-workstation-packages-recommended-cli
 Architecture: all
 Depends: anon-ws-disable-stacked-tor,
  bindp | dummy-dependency,
+ kicksecure-recommended-cli,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
