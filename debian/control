@@ -48,10 +48,10 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 Package: whonix-gateway-packages-dependencies-cli
 Architecture: all
 Pre-Depends: whonix-legacy
-Depends: tor, anon-gw-base-files, anon-gw-anonymizer-config,
- whonix-gateway-packages-dependencies-pre,
- tor-geoipdb, nyx, obfs4proxy,
+Depends: tor, tor-geoipdb, obfs4proxy, nyx,
  onion-grater, basez,
+ anon-gw-base-files, anon-gw-anonymizer-config,
+ whonix-gateway-packages-dependencies-pre,
  ${misc:Depends}
 Description: Dependencies for Whonix-Gateway CLI
  A metapackage, which installs packages which Whonix-Gateway
