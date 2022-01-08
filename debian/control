@@ -108,7 +108,7 @@ Description: Dependencies for Whonix-Workstation CLI
 Package: whonix-workstation-packages-recommended-cli
 Architecture: all
 Depends: anon-ws-disable-stacked-tor,
- bindp | dummy-dependency,
+ bindp | dummy-dependency-bindp,
  kicksecure-recommended-cli,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
@@ -133,8 +133,8 @@ Depends: ristretto, tumbler,
  tb-default-browser | dummy-dependency,
  tb-starter | dummy-dependency,
  tb-updater | dummy-dependency,
- electrum | dummy-dependency,
- monero-gui | dummy-dependency,
+ electrum | dummy-dependency-electrum,
+ monero-gui | dummy-dependency-monero-gui,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
@@ -294,7 +294,7 @@ Depends: non-qubes-vm-enhancements-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
  whonix-workstation-packages-recommended-cli,
- kloak | dummy-dependency,
+ kloak | dummy-dependency-kloak,
  ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
