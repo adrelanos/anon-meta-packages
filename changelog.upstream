@@ -1,3 +1,21 @@
+commit b52179af6e0db1dfc6e65802b836addb14f13974
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jan 8 05:42:12 2022 -0500
+
+    improve multiple architecture support / split dummy-dependency package into multiple packages
+
+commit 9ef3b8f6ecd9d58af81a5de7724ab4b9eee461d7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 14:37:59 2021 -0500
+
+    readme
+
+commit 4ab29ec3fc6018dea411670e7ed5f924dabc1443
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 25 13:41:54 2021 -0400
+
+    bumped changelog version
+
 commit 8906fcb5dc9e886c40d9e9c371ae3caa92d77608
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Oct 25 12:17:43 2021 -0400
