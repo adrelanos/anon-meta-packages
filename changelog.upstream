@@ -1,3 +1,33 @@
+commit ae6cb1ce8027606782e4202377c2926fc227276a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 16 19:16:35 2022 -0500
+
+    install kicksecure-default-applications-cli per default on the workstation
+    
+    due to recent kicksecure-meta-packages refactoring
+
+commit 9c160f1492fd634e0e4baf0a9c498a68476ba571
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 16 19:06:55 2022 -0500
+
+    install kicksecure-recommended-cli by default on gateway and workstation
+    
+    due to refactoring of kicksecure-meta-packages
+
+commit bb5ae8c8580e522406ebd4c255b0c9cf1df237be
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 16 18:46:42 2022 -0500
+
+    remove setup-dist from whonix-shared-packages-dependencies-cli
+    
+    because now part of kicksecure-dependencies-cli
+
+commit b9cbdb62c06f04263424e405b2ae7dead29b0c6a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jan 8 05:42:33 2022 -0500
+
+    bumped changelog version
+
 commit b52179af6e0db1dfc6e65802b836addb14f13974
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Jan 8 05:42:12 2022 -0500
