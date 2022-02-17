@@ -164,6 +164,7 @@ Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: kicksecure-dependencies-cli,
+ kicksecure-default-applications-cli,
  whonix-shared-default-applications-gui,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
@@ -290,6 +291,7 @@ Pre-Depends: whonix-legacy
 Depends: non-qubes-vm-enhancements-cli,
  kicksecure-dependencies-system,
  kicksecure-dependencies-cli,
+ kicksecure-default-applications-cli,
  whonix-shared-packages-dependencies-cli,
  whonix-shared-packages-recommended-cli,
  whonix-workstation-packages-dependencies-cli,
