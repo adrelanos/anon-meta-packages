@@ -1,3 +1,15 @@
+commit 70773aef3432fb380c5e8aeb302d1d7ada65628c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Feb 20 13:51:29 2022 -0500
+
+    add `tor-ctrl` to `whonix-shared-packages-recommended-cli`
+
+commit 9a33272b5177d0abf04698ed736416f321657ec8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 16 19:20:38 2022 -0500
+
+    bumped changelog version
+
 commit ae6cb1ce8027606782e4202377c2926fc227276a
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Feb 16 19:16:35 2022 -0500
