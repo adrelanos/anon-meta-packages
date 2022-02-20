@@ -76,7 +76,7 @@ Architecture: all
 Pre-Depends: anon-apps-config
 Depends: kicksecure-dependencies-cli,
  kicksecure-recommended-cli,
- systemcheck, uwt,
+ systemcheck, uwt, tor-ctrl,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which includes recommended packages to ensure, Whonix
