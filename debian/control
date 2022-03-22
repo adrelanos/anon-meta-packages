@@ -15,7 +15,7 @@ Rules-Requires-Root: no
 Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: repository-dist-wizard, sdwdate-gui, msgcollector-gui, anon-icon-pack,
+Depends: repository-dist-wizard, sdwdate-gui, msgcollector-gui, icon-pack-dist,
  setup-wizard-dist, ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
