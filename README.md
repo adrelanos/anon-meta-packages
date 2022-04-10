@@ -1,3 +1,11 @@
+# Recommended packages for Whonix-Gateway and Whonix-Workstation GUI #
+
+A metapackage, which installs recommended graphical user interface (GUI)
+default applications, which are useful in a default installation of a
+Whonix-Gateway or Whonix-Workstation desktop.
+
+Safe to remove, if you know what you are doing.
+
 ## How to install `anon-meta-packages` using apt-get ##
 
 1\. Download the APT Signing Key.
@@ -6,7 +14,7 @@
 wget https://www.whonix.org/derivative.asc
 ```
 
-Users can [check Whonix Signing Key](https://www.whonix.org/wiki/Whonix_Signing_Key) for better security.
+Users can [check Whonix Signing Key](https://www.whonix.org/wiki/Signing_Key) for better security.
 
 2\. Add the APT Signing Key..
 
@@ -40,7 +48,9 @@ Can be build using standard Debian package build tools such as:
 dpkg-buildpackage -b
 ```
 
-See instructions. (Replace `generic-package` with the actual name of this package `anon-meta-packages`.)
+See instructions.
+
+NOTE: Replace `generic-package` with the actual name of this package `anon-meta-packages`.
 
 * **A)** [easy](https://www.whonix.org/wiki/Dev/Build_Documentation/generic-package/easy), _OR_
 * **B)** [including verifying software signatures](https://www.whonix.org/wiki/Dev/Build_Documentation/generic-package)
