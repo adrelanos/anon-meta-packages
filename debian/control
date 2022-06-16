@@ -123,7 +123,7 @@ Architecture: all
 Depends: ristretto, tumbler,
  keepassxc,
  hexchat, vlc, hunspell-en-us, gpa,
- mat2,
+ mat2, ffmpeg,
  pinentry-qt | pinentry-x11,
  xpdf,
  youtube-dl,
