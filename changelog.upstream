@@ -1,3 +1,37 @@
+commit 246572c224434380315a4a9a64cfa3c0d68519c3
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jun 16 04:38:42 2022 -0400
+
+    add `ffmpeg` to `whonix-workstation-packages-recommended-gui`
+    
+    Thanks to @TNT_BOM_BOM for the suggestion!
+    
+    https://forums.whonix.org/t/install-ffmpeg-by-default-needed-by-mat2-for-videos/13794
+
+commit acb3b7a3b868983bf8be3f927e1d714c27c3cd09
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jun 16 03:26:15 2022 -0400
+
+    `whonix-workstation-packages-recommended-gui`: remove `Depends:` `gir1.2-gtk-3.0`
+    
+    Since no longer required. Mat no longer `Depends:` on it.
+    
+    Revert "added dependency on 'gir1.2-gtk-3.0' to 'anon-workstation-default-applications' because 'mat' misses it - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=788099 - https://www.whonix.org/forum/index.php/topic,1287.0.html"
+    
+    This reverts commit df6f00b3804e3d1b17fb69c0a3879be8d0d38ae8.
+
+commit 7bc5699442280e1aa7daac185df69bd8ceb926d9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jun 16 03:22:31 2022 -0400
+
+    `whonix-workstation-packages-recommended-gui`: remove dependency on `libimage-exiftool-perl` since `mat2` `Depends:` on it nowadays anyhow
+
+commit 9859b28e8ec75ebb79a76d293889c721872b2ac7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 25 06:07:37 2022 -0400
+
+    bumped changelog version
+
 commit e73c5d4a6f8589131a128cc6d5e5686cf20bf955
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri May 20 15:27:13 2022 -0400
