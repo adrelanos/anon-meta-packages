@@ -1,3 +1,17 @@
+commit d7a64ffa81fa03c431382a00d55b0cb6c8161eb1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 3 13:36:40 2022 -0400
+
+    install Thunderbird by default
+    
+    https://forums.whonix.org/t/thunderbird-no-longer-installed-by-default/6505/12
+
+commit e000e279235630a2a5f5ff17b057c92cdd01416e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jun 18 04:53:19 2022 -0400
+
+    bumped changelog version
+
 commit 246572c224434380315a4a9a64cfa3c0d68519c3
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jun 16 04:38:42 2022 -0400
