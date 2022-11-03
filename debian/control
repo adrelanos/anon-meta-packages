@@ -122,7 +122,7 @@ Package: whonix-workstation-packages-recommended-gui
 Architecture: all
 Depends: ristretto, tumbler,
  keepassxc,
- hexchat, vlc, hunspell-en-us, gpa,
+ hexchat, vlc, hunspell-en-us, gpa, thunderbird,
  mat2, ffmpeg,
  pinentry-qt | pinentry-x11,
  xpdf,
