@@ -1,3 +1,21 @@
+commit 1359a55c6190acf01a0b071f52df6da1d696b136
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Nov 30 13:54:19 2022 -0500
+
+    install metadata-cleaner by default
+    
+    https://forums.whonix.org/t/metadata-cleaner-gui-for-mat2/12919
+    
+    add `metadata-cleaner` to `whonix-workstation-packages-recommended-gui`
+    
+    Thanks to @mfc for the suggestion!
+
+commit c5bf7821c6b16132ceb48cada7882e7a3e9d2132
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 3 13:41:40 2022 -0400
+
+    bumped changelog version
+
 commit d7a64ffa81fa03c431382a00d55b0cb6c8161eb1
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Nov 3 13:36:40 2022 -0400
