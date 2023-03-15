@@ -135,7 +135,6 @@ Depends: ristretto, tumbler,
  tb-starter | dummy-dependency,
  tb-updater | dummy-dependency,
  electrum | dummy-dependency-electrum,
- monero-gui | dummy-dependency-monero-gui,
  ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
