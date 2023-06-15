@@ -1,3 +1,9 @@
+anon-meta-packages (3:23.4-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 15 Jun 2023 17:08:05 +0000
+
 anon-meta-packages (3:23.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
