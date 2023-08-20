@@ -1,3 +1,17 @@
+commit 8704fba06559c61301353ca95c33b8311bdf79b2
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 20 06:21:08 2023 -0400
+
+    install snowflake-client by default
+    
+    https://forums.whonix.org/t/replacing-meek-snowflake/5190
+
+commit 0d78feff4797e4b26d979af70c9ccae9015bb1c1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Jul 9 06:16:31 2023 -0400
+
+    bumped changelog version
+
 commit 938dd4dcfd11b8d03b5de49dcd2dcc5aab602467
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Jul 9 06:15:11 2023 -0400
