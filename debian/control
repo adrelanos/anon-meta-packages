@@ -48,7 +48,7 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 Package: whonix-gateway-packages-dependencies-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: tor, tor-geoipdb, obfs4proxy, nyx,
+Depends: tor, tor-geoipdb, obfs4proxy, snowflake-client, nyx,
  onion-grater, basez,
  anon-gw-base-files, anon-gw-anonymizer-config,
  whonix-gateway-packages-dependencies-pre,
