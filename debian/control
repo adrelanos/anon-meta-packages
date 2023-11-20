@@ -15,8 +15,12 @@ Rules-Requires-Root: no
 Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: repository-dist-wizard, sdwdate-gui, msgcollector-gui, icon-pack-dist,
- setup-wizard-dist, ${misc:Depends}
+Depends: icon-pack-dist,
+         msgcollector-gui,
+         repository-dist-wizard,
+         sdwdate-gui,
+         setup-wizard-dist,
+         ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
  default applications, which are useful in a default installation of a
@@ -27,7 +31,10 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
 Package: whonix-gateway-default-applications-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: onioncircuits, anon-connection-wizard, tor-control-panel, ${misc:Depends}
+Depends: anon-connection-wizard,
+         onioncircuits,
+         tor-control-panel,
+         ${misc:Depends}
 Description: Recommended desktop packages for Whonix-Gateway GUI
  A metapackage, which installs graphical user interface (GUI) packages,
  which are recommended for a graphical Whonix-Gateway.
@@ -36,8 +43,10 @@ Description: Recommended desktop packages for Whonix-Gateway GUI
 
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
-Depends: whonix-gw-network-conf, whonix-base-files, dist-base-files,
- ${misc:Depends}
+Depends: dist-base-files,
+         whonix-base-files,
+         whonix-gw-network-conf,
+         ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
  A metapackage, which installs packages which Whonix-Gateway
  depends on. Can not be merged into whonix-gateway-packages-dependencies due to
@@ -48,11 +57,17 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 Package: whonix-gateway-packages-dependencies-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: tor, tor-geoipdb, obfs4proxy, snowflake-client, nyx,
- onion-grater, basez,
- anon-gw-base-files, anon-gw-anonymizer-config,
- whonix-gateway-packages-dependencies-pre,
- ${misc:Depends}
+Depends: anon-gw-anonymizer-config,
+         anon-gw-base-files,
+         basez,
+         nyx,
+         obfs4proxy,
+         onion-grater,
+         snowflake-client,
+         tor,
+         tor-geoipdb,
+         whonix-gateway-packages-dependencies-pre,
+         ${misc:Depends}
 Description: Dependencies for Whonix-Gateway CLI
  A metapackage, which installs packages which Whonix-Gateway
  depends on.
@@ -62,9 +77,11 @@ Description: Dependencies for Whonix-Gateway CLI
 Package: whonix-shared-packages-dependencies-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: dist-base-files,
- whonix-base-files, anon-apt-sources-list, whonix-firewall,
- ${misc:Depends}
+Depends: anon-apt-sources-list,
+         dist-base-files,
+         whonix-base-files,
+         whonix-firewall,
+         ${misc:Depends}
 Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which installs packages which both, Whonix-Gateway
  and Whonix-Workstation, depend on.
@@ -73,11 +90,13 @@ Description: Dependencies for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-shared-packages-recommended-cli
 Architecture: all
-Pre-Depends: legacy-dist, anon-apps-config
+Pre-Depends: anon-apps-config, legacy-dist
 Depends: kicksecure-dependencies-cli,
- kicksecure-recommended-cli,
- systemcheck, uwt, tor-ctrl,
- ${misc:Depends}
+         kicksecure-recommended-cli,
+         systemcheck,
+         tor-ctrl,
+         uwt,
+         ${misc:Depends}
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
  A metapackage, which includes recommended packages to ensure, Whonix
  standard tools are available and other useful recommended packages.
@@ -86,8 +105,10 @@ Description: Recommended packages for Whonix-Gateway and Whonix-Workstation CLI
 
 Package: whonix-workstation-packages-dependencies-pre
 Architecture: all
-Depends: whonix-ws-network-conf, whonix-base-files, dist-base-files,
- ${misc:Depends}
+Depends: dist-base-files,
+         whonix-base-files,
+         whonix-ws-network-conf,
+         ${misc:Depends}
 Description: Dependencies for Whonix-Workstation that changes network related files
  A metapackage, which installs packages which Whonix-Workstation
  depends on. Can not be merged into whonix-workstation-packages-dependencies
@@ -98,8 +119,9 @@ Description: Dependencies for Whonix-Workstation that changes network related fi
 Package: whonix-workstation-packages-dependencies-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: anon-ws-base-files, whonix-workstation-packages-dependencies-pre,
- ${misc:Depends}
+Depends: anon-ws-base-files,
+         whonix-workstation-packages-dependencies-pre,
+         ${misc:Depends}
 Description: Dependencies for Whonix-Workstation CLI
  A metapackage, which installs packages which Whonix-Workstation
  depends on.
@@ -110,8 +132,8 @@ Package: whonix-workstation-packages-recommended-cli
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: anon-ws-disable-stacked-tor,
- bindp | dummy-dependency-bindp,
- ${misc:Depends}
+         bindp | dummy-dependency-bindp,
+         ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation CLI
  A metapackage, which installs packages, which are recommended for
  command line interface (CLI) Whonix-Workstation, because they are
@@ -122,20 +144,27 @@ Description: Recommended packages for Whonix-Workstation CLI
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: ristretto, tumbler,
- keepassxc,
- hexchat, vlc, hunspell-en-us, gpa, thunderbird,
- mat2, metadata-cleaner, ffmpeg,
- pinentry-qt | pinentry-x11,
- xpdf,
- youtube-dl,
- whonix-workstation-packages-recommended-cli,
- whonix-welcome-page,
- tb-default-browser | dummy-dependency,
- tb-starter | dummy-dependency,
- tb-updater | dummy-dependency,
- electrum | dummy-dependency-electrum,
- ${misc:Depends}
+Depends: electrum | dummy-dependency-electrum,
+         ffmpeg,
+         gpa,
+         hexchat,
+         hunspell-en-us,
+         keepassxc,
+         mat2,
+         metadata-cleaner,
+         pinentry-qt | pinentry-x11,
+         ristretto,
+         tb-default-browser | dummy-dependency,
+         tb-starter | dummy-dependency,
+         tb-updater | dummy-dependency,
+         thunderbird,
+         tumbler,
+         vlc,
+         whonix-welcome-page,
+         whonix-workstation-packages-recommended-cli,
+         xpdf,
+         youtube-dl,
+         ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
  graphical user interface (GUI) Whonix-Workstation, because they are
@@ -147,12 +176,12 @@ Package: whonix-gateway-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: kicksecure-dependencies-cli,
- whonix-shared-default-applications-gui,
- whonix-shared-packages-dependencies-cli,
- whonix-shared-packages-recommended-cli,
- whonix-gateway-default-applications-gui,
- whonix-gateway-packages-dependencies-cli,
- ${misc:Depends}
+         whonix-gateway-default-applications-gui,
+         whonix-gateway-packages-dependencies-cli,
+         whonix-shared-default-applications-gui,
+         whonix-shared-packages-dependencies-cli,
+         whonix-shared-packages-recommended-cli,
+         ${misc:Depends}
 Description: Whonix-Gateway Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Gateway.
  .
@@ -163,15 +192,15 @@ Description: Whonix-Gateway Shared Packages
 Package: whonix-workstation-shared-packages-shared-meta
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: kicksecure-dependencies-cli,
- kicksecure-default-applications-cli,
- whonix-shared-default-applications-gui,
- whonix-shared-packages-dependencies-cli,
- whonix-shared-packages-recommended-cli,
- whonix-workstation-packages-dependencies-cli,
- whonix-workstation-packages-recommended-cli,
- whonix-workstation-packages-recommended-gui,
- ${misc:Depends}
+Depends: kicksecure-default-applications-cli,
+         kicksecure-dependencies-cli,
+         whonix-shared-default-applications-gui,
+         whonix-shared-packages-dependencies-cli,
+         whonix-shared-packages-recommended-cli,
+         whonix-workstation-packages-dependencies-cli,
+         whonix-workstation-packages-recommended-cli,
+         whonix-workstation-packages-recommended-gui,
+         ${misc:Depends}
 Description: Whonix-Workstation Shared Packages
  A metapackage, which installs packages, for a Whonix-Default-Workstation.
  .
@@ -182,13 +211,15 @@ Description: Whonix-Workstation Shared Packages
 Package: non-qubes-whonix-gateway-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: non-qubes-vm-enhancements-cli,
- kicksecure-dependencies-system,
- kicksecure-dependencies-cli,
- whonix-shared-packages-dependencies-cli,
- whonix-shared-packages-recommended-cli,
- whonix-gateway-packages-dependencies-cli,
- anon-connection-wizard, tor-control-panel, ${misc:Depends}
+Depends: anon-connection-wizard,
+         kicksecure-dependencies-cli,
+         kicksecure-dependencies-system,
+         non-qubes-vm-enhancements-cli,
+         tor-control-panel,
+         whonix-gateway-packages-dependencies-cli,
+         whonix-shared-packages-dependencies-cli,
+         whonix-shared-packages-recommended-cli,
+         ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway without graphical user interface (GUI).
@@ -198,7 +229,18 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway CLI
 Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: non-qubes-whonix-gateway-cli, raspi3-firmware, fake-hwclock, wpasupplicant, firmware-iwlwifi, firmware-atheros, firmware-brcm80211, firmware-ralink, firmware-realtek, iw, linux-image-arm64 (>= 4.16), ${misc:Depends}
+Depends: fake-hwclock,
+         firmware-atheros,
+         firmware-brcm80211,
+         firmware-iwlwifi,
+         firmware-ralink,
+         firmware-realtek,
+         iw,
+         linux-image-arm64 (>= 4.16),
+         non-qubes-whonix-gateway-cli,
+         raspi3-firmware,
+         wpasupplicant,
+         ${misc:Depends}
 Description: Default packages for Whonix-Gateway-RPi CLI
  A metapackage, which installs packages for a CLI
  Raspberry Pi 3 Whonix-Gateway.
@@ -208,12 +250,13 @@ Description: Default packages for Whonix-Gateway-RPi CLI
 Package: qubes-whonix-gateway
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-gateway-shared-packages-shared-meta, qubes-whonix,
- qubes-whonix-shared-packages-recommended,
- qubes-whonix-gateway-packages-recommended,
- kicksecure-desktop-applications-xfce,
- vm-config-dist,
- ${misc:Depends}
+Depends: kicksecure-desktop-applications-xfce,
+         qubes-whonix,
+         qubes-whonix-gateway-packages-recommended,
+         qubes-whonix-shared-packages-recommended,
+         vm-config-dist,
+         whonix-gateway-shared-packages-shared-meta,
+         ${misc:Depends}
 Description: Default packages for Qubes-Whonix-Gateway
  A metapackage, which installs packages, for a
  Qubes-Whonix-Default-Gateway.
@@ -227,12 +270,13 @@ Description: Default packages for Qubes-Whonix-Gateway
 Package: qubes-whonix-workstation
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-workstation-shared-packages-shared-meta, qubes-whonix,
- qubes-whonix-shared-packages-recommended,
- qubes-whonix-workstation-packages-recommended,
- kicksecure-desktop-applications-xfce,
- vm-config-dist,
- ${misc:Depends}
+Depends: kicksecure-desktop-applications-xfce,
+         qubes-whonix,
+         qubes-whonix-shared-packages-recommended,
+         qubes-whonix-workstation-packages-recommended,
+         vm-config-dist,
+         whonix-workstation-shared-packages-shared-meta,
+         ${misc:Depends}
 Description: Default packages for Qubes-Whonix-Workstation
  A metapackage, which installs packages, for a
  Qubes-Whonix-Default-Workstation.
@@ -246,14 +290,14 @@ Description: Default packages for Qubes-Whonix-Workstation
 Package: non-qubes-whonix-gateway-xfce
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: non-qubes-vm-enhancements-cli,
- non-qubes-vm-enhancements-gui,
- non-qubes-whonix-gateway-cli,
- kicksecure-desktop-environment-essential-xfce,
- kicksecure-desktop-applications-xfce,
- whonix-shared-default-applications-gui,
- whonix-gateway-default-applications-gui,
- ${misc:Depends}
+Depends: kicksecure-desktop-applications-xfce,
+         kicksecure-desktop-environment-essential-xfce,
+         non-qubes-vm-enhancements-cli,
+         non-qubes-vm-enhancements-gui,
+         non-qubes-whonix-gateway-cli,
+         whonix-gateway-default-applications-gui,
+         whonix-shared-default-applications-gui,
+         ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Gateway with Xfce.
@@ -267,14 +311,14 @@ Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
 Package: non-qubes-whonix-workstation-xfce
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: non-qubes-vm-enhancements-gui,
- non-qubes-audio,
- non-qubes-whonix-workstation-cli,
- kicksecure-desktop-environment-essential-xfce,
- kicksecure-desktop-applications-xfce,
- whonix-shared-default-applications-gui,
- whonix-workstation-packages-recommended-gui,
- ${misc:Depends}
+Depends: kicksecure-desktop-applications-xfce,
+         kicksecure-desktop-environment-essential-xfce,
+         non-qubes-audio,
+         non-qubes-vm-enhancements-gui,
+         non-qubes-whonix-workstation-cli,
+         whonix-shared-default-applications-gui,
+         whonix-workstation-packages-recommended-gui,
+         ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation with Xfce.
@@ -288,16 +332,16 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
 Package: non-qubes-whonix-workstation-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: non-qubes-vm-enhancements-cli,
- kicksecure-dependencies-system,
- kicksecure-dependencies-cli,
- kicksecure-default-applications-cli,
- whonix-shared-packages-dependencies-cli,
- whonix-shared-packages-recommended-cli,
- whonix-workstation-packages-dependencies-cli,
- whonix-workstation-packages-recommended-cli,
- kloak | dummy-dependency-kloak,
- ${misc:Depends}
+Depends: kicksecure-default-applications-cli,
+         kicksecure-dependencies-cli,
+         kicksecure-dependencies-system,
+         kloak | dummy-dependency-kloak,
+         non-qubes-vm-enhancements-cli,
+         whonix-shared-packages-dependencies-cli,
+         whonix-shared-packages-recommended-cli,
+         whonix-workstation-packages-dependencies-cli,
+         whonix-workstation-packages-recommended-cli,
+         ${misc:Depends}
 Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  A metapackage, which installs packages, for a
  Non-Qubes-Whonix-Default-Workstation without graphical user interface (GUI).
@@ -315,14 +359,16 @@ Pre-Depends: legacy-dist
 ##
 ## TODO:
 ## whonix-gateway-xfce-qcow2, whonix-workstation-xfce-qcow2,
-Depends: kicksecure-cli,
- kicksecure-xfce,
- kicksecure-shared-host-xfce,
- kicksecure-network-conf, kicksecure-network-conf-gui,
- arc-theme,
- whonix-base-files, libvirt-dist,
- qemu-utils,
- ${misc:Depends}
+Depends: arc-theme,
+         kicksecure-cli,
+         kicksecure-network-conf,
+         kicksecure-network-conf-gui,
+         kicksecure-shared-host-xfce,
+         kicksecure-xfce,
+         libvirt-dist,
+         qemu-utils,
+         whonix-base-files,
+         ${misc:Depends}
 Description: Whonix Host packages for Freedom Hardware Design
  Designed to run on hardware with Freedom Hardware Design.
  .
@@ -331,7 +377,7 @@ Description: Whonix Host packages for Freedom Hardware Design
 Package: whonix-host-xfce-kvm-nonfreedom
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-host-xfce-kvm-freedom, firmware-nonfreedom, ${misc:Depends}
+Depends: firmware-nonfreedom, whonix-host-xfce-kvm-freedom, ${misc:Depends}
 Section: non-free/metapackages
 Description: Whonix Host packages for nonfreedom hardware design
  Designed to run on hardware with nonfreedom hardware design.
