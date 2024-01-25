@@ -163,7 +163,7 @@ Depends: electrum | dummy-dependency-electrum,
          whonix-welcome-page,
          whonix-workstation-packages-recommended-cli,
          xpdf,
-         youtube-dl,
+         yt-dlp,
          ${misc:Depends}
 Description: Recommended packages for Whonix-Workstation GUI
  A metapackage, which installs packages, which are recommended for
