@@ -1,3 +1,17 @@
+commit b0fb0b520bd77cb13eb6a29eff24ac705e85e4c0
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jan 25 06:26:11 2024 -0500
+
+    change from youtube-dl to yt-dlp
+    
+    because this changed in Debian
+
+commit e963a2cd92b38ec099fcc84ecf9b36f13103ccc7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Nov 20 13:13:29 2023 +0000
+
+    bumped changelog version
+
 commit 653bb6965dc0cb6b84845cefe94350614f47b2db
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Nov 20 04:49:30 2023 -0500
