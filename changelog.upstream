@@ -1,3 +1,19 @@
+commit 7f570bf99f8f7539c710de2c39b8c108330b4a29
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 14 09:02:34 2024 -0500
+
+    no longer install HexChat by default
+    
+    because deprecated upstream
+    
+    https://forums.whonix.org/t/remove-hexchat-unmaintained/18391
+
+commit 388605b02e1b2f497492340fe0a4d6a111454bc5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jan 25 14:00:10 2024 +0000
+
+    bumped changelog version
+
 commit b0fb0b520bd77cb13eb6a29eff24ac705e85e4c0
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jan 25 06:26:11 2024 -0500
