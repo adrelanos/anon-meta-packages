@@ -4,4 +4,4 @@ debian-watch-does-not-check-openpgp-signature
 ## Just dummy packages without any contents.
 ## This package itself is not nonfree.
 ## This package itself is Free, Open, Freedom, Libre Software.
-source: archive-liberty-mismatch
+#source: archive-liberty-mismatch
