@@ -1,3 +1,15 @@
+commit a7c12efc72c177af83fe2799cf2da3ace5fb77de
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Apr 24 17:18:02 2024 -0400
+
+    remove Whonix-Host packages for now pending better re-implementation
+
+commit 321cff334fbfe45bd340b816e60116e70a323a8a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Feb 16 14:00:32 2024 +0000
+
+    bumped changelog version
+
 commit 7f570bf99f8f7539c710de2c39b8c108330b4a29
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Feb 14 09:02:34 2024 -0500
