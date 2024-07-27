@@ -1,3 +1,64 @@
+commit 84a972f9fc603ff02e7c2c1bebf9c8071e3bf133
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:35:28 2024 -0400
+
+    vm-config-dist
+
+commit f80dfafea1b4b169b594348a5e5c9e6a38729ab6
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:30:03 2024 -0400
+
+    fix
+
+commit 98aa9cc32589b63ce23db6ae0d73fc250b5e2403
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:29:03 2024 -0400
+
+    minor whonix-gateway-rpi
+
+commit 2292736cacb8a9658414122249aa5db640ef9ae5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:28:13 2024 -0400
+
+    remove duplication
+
+commit 9dd3e21e7ca8e48d5e44c2b160c3bffefe53da6a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:27:29 2024 -0400
+
+    description
+
+commit 9da3d8663ee1180d98b9f34cf29d29e0637166d8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:27:03 2024 -0400
+
+    comments
+
+commit ec12e091ef54009870e539daaeed4e185f88549b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:19:26 2024 -0400
+
+    no need to list linux-image here, because
+    linux-image is installed by derivative-maker
+
+commit 5651c93bcafb5c1ace33fd4325561ee72f1319df
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:18:55 2024 -0400
+
+    simplification
+
+commit 4ca477f4166ae0a56ec60b44720d4c855aa795cf
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 12:17:57 2024 -0400
+
+    unduplicate
+
+commit 5bf6e35f5b8d5281fa21f9a7a07edf854e369860
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 15:51:54 2024 +0000
+
+    bumped changelog version
+
 commit e1fe85c8d5e6383fa54a0b675c05a603cca3b5dd
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Jul 27 11:49:49 2024 -0400
