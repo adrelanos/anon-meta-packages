@@ -229,11 +229,6 @@ Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: fake-hwclock,
-         firmware-atheros,
-         firmware-brcm80211,
-         firmware-iwlwifi,
-         firmware-ralink,
-         firmware-realtek,
          iw,
          linux-image-arm64 (>= 4.16),
          non-qubes-whonix-gateway-cli,
