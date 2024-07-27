@@ -230,7 +230,7 @@ Architecture: all
 Pre-Depends: legacy-dist
 Depends: fake-hwclock,
          iw,
-         linux-image-arm64 (>= 4.16),
+         linux-image-arm64,
          non-qubes-whonix-gateway-cli,
          raspi3-firmware,
          wpasupplicant,
