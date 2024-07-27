@@ -229,10 +229,8 @@ Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: fake-hwclock,
-         iw,
          non-qubes-whonix-gateway-cli,
          raspi3-firmware,
-         wpasupplicant,
          ${misc:Depends}
 Description: Default packages for Whonix-Gateway-RPi CLI
  A metapackage, which installs packages for a CLI
