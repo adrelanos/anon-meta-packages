@@ -229,6 +229,8 @@ Package: whonix-gateway-rpi
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: fake-hwclock,
+         kicksecure-network-conf,
+         kicksecure-network-conf-gui,
          non-qubes-whonix-gateway-cli,
          raspi3-firmware,
          ${misc:Depends}
