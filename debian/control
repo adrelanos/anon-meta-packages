@@ -345,9 +345,10 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
 #Architecture: all
 #Pre-Depends: legacy-dist
 ## NOTE:
-## - kicksecure-xfce-host should not "Depends: kicksecure-xfce-host" because
-## - kicksecure-xfce-host is standalone, non-Whonix
-## - Also not Depends: on kicksecure-xfce since that would install
+## kicksecure-xfce-host:
+## - Is a standalone packge.
+## - Should not "Depends: kicksecure-xfce-host" because is standalone, non-Whonix.
+## - Should not "Depends: kicksecure-xfce" since that would install
 ##   binaries-freedom and other unwanted packages for Whonix-Host.
 #Depends: arc-theme,
 #         kicksecure-cli,
