@@ -238,6 +238,8 @@ Description: Default packages for Whonix-Gateway-RPi CLI
  A metapackage, which installs packages for a CLI
  Raspberry Pi 3 Whonix-Gateway.
  .
+ Unmaintained. Contributions welcome.
+ .
  Do not remove.
 
 Package: qubes-whonix-gateway
