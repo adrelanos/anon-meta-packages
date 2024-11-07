@@ -144,7 +144,9 @@ Description: Recommended packages for Whonix-Workstation CLI
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: electrum | dummy-dependency-electrum,
+Depends: catfish,
+         electrum | dummy-dependency-electrum,
+         flatpak,
          ffmpeg,
          gpa,
          keepassxc,
