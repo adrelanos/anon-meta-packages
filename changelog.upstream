@@ -1,3 +1,30 @@
+commit 7571ac5126088c5824e1cfd4b4b96d1659e53d4a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 7 11:12:23 2024 -0500
+
+    re-add flatpak, catfish (due to refactoring)
+
+commit db8a5536fdd9194f373df8b3b62d9d435e616ef5
+Merge: cf80e0a 3e232bf
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 7 11:07:13 2024 -0500
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/relocate-packages'
+
+commit 3e232bf39d51217ab883a0ebbdc6d8951239ca47
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Wed Nov 6 18:06:35 2024 -0600
+
+    Remove hunspell from whonix-workstation-packages-recommended-gui
+    
+    It's now provided by kicksecure-recommended-cli.
+
+commit cf80e0af42a431766f5a3928e1a51290514929c1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 27 16:35:51 2024 +0000
+
+    bumped changelog version
+
 commit 84a972f9fc603ff02e7c2c1bebf9c8071e3bf133
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Jul 27 12:35:28 2024 -0400
