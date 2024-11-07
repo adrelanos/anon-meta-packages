@@ -147,7 +147,6 @@ Pre-Depends: legacy-dist
 Depends: electrum | dummy-dependency-electrum,
          ffmpeg,
          gpa,
-         hunspell-en-us,
          keepassxc,
          mat2,
          metadata-cleaner,
