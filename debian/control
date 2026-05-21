@@ -102,6 +102,7 @@ Depends: whonix-gateway-general-cli,
  tinyproxy,
  dnf,
  qubes-core-agent-dom0-updates,
+ fwupd-qubes-vm,
  ${misc:Depends}
 Breaks: qubes-whonix-gateway-packages-recommended
 Replaces: qubes-whonix-gateway-packages-recommended
