@@ -1,3 +1,17 @@
+commit cdd1182924b6b62834984243bdc73a3b159d44a5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu May 21 13:10:11 2026 -0400
+
+    install `fwupd-qubes-vm` by default in Qubes-Whonix-Gateway CLI
+
+    fixes https://github.com/QubesOS/qubes-issues/issues/9972
+
+commit 9e50eaede9a11cbadebaddc28b8209116c76ab3b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 20 22:29:52 2026 +0000
+
+    bumped changelog version
+
 commit 4763fd11844755681c3323ee9f821705d552c73d
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed May 20 16:57:31 2026 -0400
